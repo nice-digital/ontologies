@@ -1,0 +1,11 @@
+[![Build Status](http://drone.notnice.org.uk/api/badge/github.com/nhsevidence/ontologies/status.svg?branch=master)](http://drone.notnice.org.uk/github.com/nhsevidence/ontologies)
+
+Repository and very basic build system / server for NICE ontologies. We will add more functionality as required. Currently it supports:
+
+* Build time conversion from owl syntax to Turtle
+* Serving of converted ontology files
+
+Assumes we will use the prefix http://nice.org.uk/ns/. OWL files placed in the ns folder will be validated and converted to Turtle. If this process is successful, then the nice/ontologies container is updated on [dockerhub](https://registry.hub.docker.com/u/nice/ontologies/).
+
+
+

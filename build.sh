@@ -1,4 +1,6 @@
 #!/bin/bash
+set -e
+npm install
 cd ns
 
 shopt -s nullglob
