@@ -1,6 +1,6 @@
 image: nice/ld-docker-build:latest
 script:
-  - build.sh
+  - ./build.sh
 publish:
   docker:
     image_name: nice/ontologies
