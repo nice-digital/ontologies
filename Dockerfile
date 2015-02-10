@@ -1,10 +1,35 @@
-FROM nice/ld-docker-app
+FROM nice/ld-docker-build
 MAINTAINER Ryan Roberts <ryansroberts@gmail.com>
 
-ADD src/owldin/ /owldin/
 
-ENV PROJECT_DIR="/tmp"
-ENV MIMIR_PORT=80
+# Install Nginx.
+RUN \
+  add-apt-repository -y ppa:nginx/stable && \
+  apt-get update && \
+  apt-get install -y nginx && \
+  rm -rf /var/lib/apt/lists/* && \
+  echo "\ndaemon off;" >> /etc/nginx/nginx.conf && \
+  chown -R www-data:www-data /var/lib/nginx
 
-EXPOSE  80
-CMD ["node", "/owldin/server.js"]
+# Define mountable directories.
+VOLUME ["/etc/nginx/certs", "/etc/nginx/conf.d", "/var/log/nginx"]
+
+# Define working directory.
+WORKDIR /etc/nginx
+
+RUN rm -rf /var/www/html/*
+ADD ns /var/www/html/ns
+
+RUN rm /etc/nginx/sites-enabled/default
+
+ADD site.conf /etc/nginx/sites-enabled/
+
+RUN rm /etc/nginx/mime.types
+ADD mime.types /etc/nginx/
+
+# Define default command.
+CMD ["nginx"]
+
+# Expose ports.
+EXPOSE 80
+EXPOSE 443

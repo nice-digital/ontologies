@@ -1,9 +1,9 @@
 image: nice/ld-docker-build:latest
 script:
-  - ./.drone/build.sh
+  - ./build.sh
 publish:
   docker:
-    image_name: nice/mimir
+    image_name: nice/ontologies
     username: $$DOCKERHUB_USER
     password: $$DOCKERHUB_PASS
     email: $$DOCKERHUB_EMAIL

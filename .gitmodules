@@ -1,0 +1,5 @@
+[submodule "ld-utilities"]
+	path = ld-utilities
+	url = https://github.com/nhsevidence/ld-utilities.git
+	branch = master
+	ignore = dirty

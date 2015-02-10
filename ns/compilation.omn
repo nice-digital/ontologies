@@ -1,0 +1,273 @@
+Prefix: : <http://nice.org.uk/ns/compilation#>
+Prefix: dc: <http://purl.org/dc/elements/1.1/>
+Prefix: qs: <http://nice.org.uk/ns/qualitystandard#>
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+Prefix: prov: <http://www.w3.org/ns/prov#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+
+
+Ontology: <http://nice.org.uk/ns/compilation>
+
+
+AnnotationProperty: rdfs:isDefinedBy
+
+    
+AnnotationProperty: rdfs:seeAlso
+
+    
+AnnotationProperty: represents
+
+    SubPropertyOf: 
+        rdfs:isDefinedBy
+    
+    Domain: 
+        <http://nice.org.uk/ns/compilation#FilePattern>
+    
+    Range: 
+        <http://www.w3.org/2002/07/owl#Thing>
+    
+    
+AnnotationProperty: rdfs:comment
+
+    
+AnnotationProperty: source
+
+    SubPropertyOf: 
+        rdfs:seeAlso
+    
+    
+Datatype: xsd:string
+
+    
+Datatype: xsd:positiveInteger
+
+    
+ObjectProperty: parent
+
+    Domain: 
+        parent only Glob
+    
+    Range: 
+        parent max 1 Glob
+    
+    
+ObjectProperty: message
+
+    Domain: 
+        Compilation
+    
+    Range: 
+        Message
+    
+    
+ObjectProperty: tool
+
+    Domain: 
+        FilePattern
+    
+    Range: 
+        Tool
+    
+    
+ObjectProperty: position
+
+    Domain: 
+        Message
+    
+    Range: 
+        Position
+    
+    Characteristics: 
+        Functional
+    
+    
+DataProperty: path
+
+    Annotations: 
+        rdfs:comment "The path to the resource"^^xsd:string
+    
+    Domain: 
+        Target,
+        Position
+    
+    Range: 
+        xsd:string
+    
+    Characteristics: 
+        Functional
+    
+    
+DataProperty: charPosition
+
+    Domain: 
+        Position
+    
+    Range: 
+        xsd:positiveInteger
+    
+    
+DataProperty: lineNumber
+
+    Domain: 
+        Position
+    
+    Range: 
+        xsd:positiveInteger
+    
+    
+DataProperty: expression
+
+    Annotations: 
+        rdfs:comment "A regular expression matching a directory path"^^xsd:string
+    
+    Domain: 
+        Glob
+    
+    Range: 
+        xsd:string
+    
+    Characteristics: 
+        Functional
+    
+    
+Class: Glob
+
+    
+Class: Compilation
+
+    Annotations: 
+        rdfs:comment "A set of resources to compile, and the results of that compilation"^^xsd:string
+    
+    
+Class: Tool
+
+    Annotations: 
+        rdfs:comment "A tool that takes a target and produces a  representation in triples"^^xsd:string
+    
+    
+Class: InFile
+
+    SubClassOf: 
+        Position
+    
+    
+Class: FromResource
+
+    SubClassOf: 
+        Position
+    
+    
+Class: owl:Thing
+
+    
+Class: Position
+
+    
+Class: Information
+
+    SubClassOf: 
+        Message
+    
+    
+Class: Message
+
+    
+Class: Warning
+
+    SubClassOf: 
+        Message
+    
+    
+Class: Target
+
+    Annotations: 
+        rdfs:comment "A resource that may require compilation"^^xsd:string
+    
+    
+Class: DirectoryPattern
+
+    SubClassOf: 
+        parent max 1 DirectoryPattern,
+        Glob
+    
+    
+Class: Error
+
+    SubClassOf: 
+        Message
+    
+    
+Class: FilePattern
+
+    SubClassOf: 
+        Glob,
+        parent only DirectoryPattern
+    
+    
+Individual: Root
+
+    Types: 
+        DirectoryPattern
+    
+    
+Individual: QualityStandards
+
+    Types: 
+        DirectoryPattern
+    
+    Facts:  
+     parent  Root,
+     expression  "qualitystandards"^^xsd:string
+    
+    
+Individual: Content
+
+    Types: 
+        Tool
+    
+    
+Individual: QualityStatement
+
+    Types: 
+        DirectoryPattern
+    
+    Facts:  
+     parent  QualityStandard,
+     expression  "st(?<QualityStatementId>\\d+)"^^xsd:string
+    
+    
+Individual: QualityStatementBlob
+
+    Annotations: 
+        represents <http://nice.org.uk/ns/qualitystandard#QualityStandard>
+    
+    Types: 
+        FilePattern
+    
+    Facts:  
+     tool  YamlMetadata,
+     parent  QualityStatement,
+     tool  Content,
+     expression  "Statement.md"^^xsd:string
+    
+    
+Individual: YamlMetadata
+
+    Types: 
+        Tool
+    
+    
+Individual: QualityStandard
+
+    Types: 
+        DirectoryPattern
+    
+    Facts:  
+     parent  QualityStandards,
+     expression  "qs(?<QualityStandardId>\\d+)"^^xsd:string
+    
+    
