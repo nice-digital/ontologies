@@ -2,10 +2,10 @@
 
 Repository and very basic build system / server for NICE ontologies. We will add more functionality as required. Currently it supports:
 
-* Build time conversion from owl syntax to Turtle
+* Build time conversion from OWL Manchester Syntax syntax to Turtle
 * Serving of converted ontology files
 
-Assumes we will use the prefix http://nice.org.uk/ns/. OWL files placed in the ns folder will be validated and converted to Turtle. If this process is successful, then the nice/ontologies container is updated on [dockerhub](https://registry.hub.docker.com/u/nice/ontologies/).
+Assumes we will use the prefix http://nice.org.uk/ns/. .omn files placed in the ns folder will be validated and converted to Turtle. If this process is successful, then the nice/ontologies container is updated on [dockerhub](https://registry.hub.docker.com/u/nice/ontologies/).
 
 
 
