@@ -3,28 +3,39 @@ Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 Prefix: xml: <http://www.w3.org/XML/1998/namespace>
 Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
 Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-
+Prefix: prov: <http://www.w3.org/ns/prov#>
 
 
 Ontology: <http://nice.org.uk/ns/compilation>
 
+DataProperty: hasTemplate
+    Domain: File
+    Range: ResourceTemplate
 
-DataProperty: <http://nice.org.uk/ns/compilation#template>
+DataProperty: command
+    Domain: CompilationTool
+    Range: string
 
-    
-Class: <http://nice.org.uk/ns/compilation#File>
-    SubClassOf: 
-        <http://nice.org.uk/ns/compilation#FileSystemResource>
-    
-    
-Class: <http://nice.org.uk/ns/compilation#Folder>
-    SubClassOf: 
-        <http://nice.org.uk/ns/compilation#FileSystemResource>
-    
-    
-Class: <http://nice.org.uk/ns/compilation#FileSystemResource>
+DataProperty: path
+    Domain: Target
+    Range: string
 
+Class: CompilationTool
     
-Class: <http://nice.org.uk/ns/compilation#ResourceTemplate>
+Class: File
+    SubClassOf: FileSystemResource
+    
+Class: Folder
+    SubClassOf: FileSystemResource
+
+Class: Compilation
+    SubClassOf: prov:Activity
+
+Class: Target
+    SubClassOf: prov:Entity
+
+Class: FileSystemResource
+
+Class: ResourceTemplate
 
     
