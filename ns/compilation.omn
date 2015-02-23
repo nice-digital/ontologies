@@ -5,34 +5,64 @@ Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
 Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 Prefix: prov: <http://www.w3.org/ns/prov#>
 
-
 Ontology: <http://nice.org.uk/ns/compilation>
 
 DataProperty: hasTemplate
-    Domain: File
-    Range: ResourceTemplate
+
+    Domain:
+      FilePattern
+
+    Range:
+      ResourceTemplate
 
 DataProperty: command
-    Domain: CompilationTool
-    Range: string
+    Domain:
+      CompilationTool
+
+    Range:
+      string
 
 DataProperty: path
-    Domain: Target
-    Range: string
+    Domain:
+      Target
+
+    Range:
+      string
+
+ObjectProperty: inFolder
+    Domain:
+      FilePattern
+    Range:
+      Folder
+
+DataProperty: expression
+
+    Domain:
+      FilePattern
+
+ObjectProperty: represents
+    Domain:
+      FilePattern
+    Range:
+      owl:Thing
 
 Class: CompilationTool
     
-Class: File
-    SubClassOf: FileSystemResource
-    
+Class: FilePattern
+    SubClassOf:
+      FileSystemResource
+
 Class: Folder
-    SubClassOf: FileSystemResource
+    SubClassOf:
+      FileSystemResource
 
 Class: Compilation
-    SubClassOf: prov:Activity
+    SubClassOf:
+      prov:Activity
 
 Class: Target
-    SubClassOf: prov:Entity
+    SubClassOf:
+      prov:Entity
 
 Class: FileSystemResource
 
