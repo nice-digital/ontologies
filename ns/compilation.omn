@@ -1,71 +1,112 @@
+Prefix: : <http://nice.org.uk/ns/compilation#>
+Prefix: dc: <http://purl.org/dc/elements/1.1/>
 Prefix: owl: <http://www.w3.org/2002/07/owl#>
 Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 Prefix: xml: <http://www.w3.org/XML/1998/namespace>
 Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
-Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 Prefix: prov: <http://www.w3.org/ns/prov#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+
 
 Ontology: <http://nice.org.uk/ns/compilation>
 
-DataProperty: hasTemplate
 
-    Domain:
-      FilePattern
+AnnotationProperty: rdfs:comment
 
-    Range:
-      ResourceTemplate
+    
+Datatype: xsd:string
 
-DataProperty: command
-    Domain:
-      CompilationTool
+    
+ObjectProperty: represents
 
-    Range:
-      string
+    Domain: 
+        FilePattern
+    
+    Range: 
+        represents only owl:Thing
+    
+    
+ObjectProperty: parent
 
-DataProperty: path
-    Domain:
-      Target
-
-    Range:
-      string
-
-ObjectProperty: inFolder
-    Domain:
-      FilePattern
-    Range:
-      Folder
-
+    Domain: 
+        parent only Glob
+    
+    Range: 
+        parent max 1 Glob
+    
+    
 DataProperty: expression
 
-    Domain:
-      FilePattern
+    Annotations: 
+        rdfs:comment "A regular expression matching a directory path"^^xsd:string
+    
+    Domain: 
+        Glob
+    
+    Range: 
+        xsd:string
+    
+    Characteristics: 
+        Functional
+    
+    
+DataProperty: path
 
-ObjectProperty: represents
-    Domain:
-      FilePattern
-    Range:
-      owl:Thing
+    Annotations: 
+        rdfs:comment "The path to the resource"^^xsd:string
+    
+    Domain: 
+        Target
+    
+    Range: 
+        xsd:string
+    
+    Characteristics: 
+        Functional
+    
+    
+Class: owl:Thing
 
-Class: CompilationTool
+    
+Class: Compilation
+
+    Annotations: 
+        rdfs:comment "A set of resources to compile, and the results of that compilation"^^xsd:string
+    
+    
+Class: Tool
+
+    Annotations: 
+        rdfs:comment "A tool that takes a target and produces a  representation in triples"^^xsd:string
+    
+    
+Class: Target
+
+    Annotations: 
+        rdfs:comment "A resource that may require compilation"^^xsd:string
+    
+    
+Class: Glob
+
+    
+Class: DirectoryPattern
+
+    SubClassOf: 
+        parent max 1 DirectoryPattern,
+        Glob
+    
     
 Class: FilePattern
-    SubClassOf:
-      FileSystemResource
 
-Class: Folder
-    SubClassOf:
-      FileSystemResource
+    SubClassOf: 
+        parent only DirectoryPattern,
+        Glob
+    
+    
+Individual: Content
 
-Class: Compilation
-    SubClassOf:
-      prov:Activity
-
-Class: Target
-    SubClassOf:
-      prov:Entity
-
-Class: FileSystemResource
-
-Class: ResourceTemplate
-
+    Types: 
+        Tool
+    
     
