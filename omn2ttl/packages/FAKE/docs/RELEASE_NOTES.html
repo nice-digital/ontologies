@@ -35,58 +35,60 @@
       <hr />
       <div class="row">
         <div class="span9" id="main">
-          <h4>3.17.12 - 25.02.2015</h4>
+          <h4>3.23.0 - 12.03.2015</h4>
 
 <ul>
-<li>BUGFIX: Paket helper should not override version for project packages - <a href="https://github.com/fsharp/FAKE/issues/666">https://github.com/fsharp/FAKE/issues/666</a></li>
+<li>BREAKING CHANGE: Adjusted Xamarin.iOS archive helper params - <a href="https://github.com/fsharp/FAKE/pull/693">https://github.com/fsharp/FAKE/pull/693</a></li>
+<li>New operator </> allows to combine paths similar to @@ but with no trimming operations - <a href="https://github.com/fsharp/FAKE/pull/695">https://github.com/fsharp/FAKE/pull/695</a></li>
 </ul>
 
-<h4>3.17.11 - 25.02.2015</h4>
+<h4>3.22.0 - 12.03.2015</h4>
 
 <ul>
-<li>BUGFIX: Allow endpoint in push task - <a href="https://github.com/fsprojects/Paket/pull/652">https://github.com/fsprojects/Paket/pull/652</a></li>
+<li>Globbing allows to grab folders without a trailing slash</li>
+<li>Removed long time obsolete globbing functions</li>
 </ul>
 
-<h4>3.17.9 - 24.02.2015</h4>
+<h4>3.21.0 - 11.03.2015</h4>
 
 <ul>
-<li>BUGFIX: Use correct apikey for paket push - <a href="https://github.com/fsharp/FAKE/pull/664">https://github.com/fsharp/FAKE/pull/664</a></li>
+<li>FAKE allows to run parallel builds - <a href="http://fsharp.github.io/FAKE/parallel-build.html">http://fsharp.github.io/FAKE/parallel-build.html</a></li>
 </ul>
 
-<h4>3.17.8 - 24.02.2015</h4>
+<h4>3.20.1 - 10.03.2015</h4>
 
 <ul>
+<li>Proper source index - <a href="https://github.com/fsharp/FAKE/issues/678">https://github.com/fsharp/FAKE/issues/678</a></li>
+</ul>
+
+<h4>3.20.0 - 10.03.2015</h4>
+
+<ul>
+<li>Always use FCS in FAKE and FSI in FAke.Deploy</li>
+<li>Modify VM size on a .csdef for Azure Cloud Services - <a href="https://github.com/fsharp/FAKE/pull/687">https://github.com/fsharp/FAKE/pull/687</a></li>
+<li>Added ZipHelper.ZipOfIncludes - <a href="https://github.com/fsharp/FAKE/pull/686">https://github.com/fsharp/FAKE/pull/686</a></li>
+<li>Added AppVeyorEnvironment.RepoTag &amp; .RepoTagName - <a href="https://github.com/fsharp/FAKE/pull/685">https://github.com/fsharp/FAKE/pull/685</a></li>
+<li>New tutorial about Azure Cloud Service - <a href="http://fsharp.github.io/FAKE/azurecloudservices.html">http://fsharp.github.io/FAKE/azurecloudservices.html</a></li>
+<li>Added basic support for creating Azure Cloud Services - <a href="http://fsharp.github.io/FAKE/apidocs/fake-azure-cloudservices.html">http://fsharp.github.io/FAKE/apidocs/fake-azure-cloudservices.html</a></li>
+<li>Added metadata property for AssemblyInfoReplacementParams - <a href="https://github.com/fsharp/FAKE/pull/675">https://github.com/fsharp/FAKE/pull/675</a></li>
+</ul>
+
+<h4>3.18.0 - 04.03.2015</h4>
+
+<ul>
+<li>Remvoved internal class generated in AssemblyInfo.Vb - <a href="https://github.com/fsharp/FAKE/pull/673">https://github.com/fsharp/FAKE/pull/673</a></li>
+<li>Adding ability to control type library export (/tlb flag) of RegAsm - <a href="https://github.com/fsharp/FAKE/pull/668">https://github.com/fsharp/FAKE/pull/668</a></li>
 <li>Adding ability to run nuget package restore on a visual studio solution - <a href="https://github.com/fsharp/FAKE/pull/662">https://github.com/fsharp/FAKE/pull/662</a></li>
-</ul>
-
-<h4>3.17.6 - 23.02.2015</h4>
-
-<ul>
 <li>Add OwnerId, type docs, and better error handling for HockeyAppHelper - <a href="https://github.com/fsharp/FAKE/pull/661">https://github.com/fsharp/FAKE/pull/661</a></li>
-</ul>
-
-<h4>3.17.5 - 23.02.2015</h4>
-
-<ul>
 <li>Don't report unit test failure twice to TeamCity - <a href="https://github.com/fsharp/FAKE/pull/659">https://github.com/fsharp/FAKE/pull/659</a></li>
-</ul>
-
-<h4>3.17.3 - 20.02.2015</h4>
-
-<ul>
 <li>New tasks for <code>paket pack</code> and <code>paket push</code>- <a href="http://fsprojects.github.io/Paket/index.html">http://fsprojects.github.io/Paket/index.html</a></li>
-</ul>
-
-<h4>3.17.2 - 19.02.2015</h4>
-
-<ul>
 <li>Allow csproj being passed as a NuSpec file - <a href="https://github.com/fsharp/FAKE/pull/644">https://github.com/fsharp/FAKE/pull/644</a></li>
-</ul>
-
-<h4>3.17.1 - 19.02.2015</h4>
-
-<ul>
 <li>Helper for uploading mobile apps to HockeyApp - <a href="https://github.com/fsharp/FAKE/pull/656">https://github.com/fsharp/FAKE/pull/656</a></li>
+<li>SCPHelper does allow copying single files - <a href="https://github.com/fsharp/FAKE/issues/671">https://github.com/fsharp/FAKE/issues/671</a></li>
+<li>BUGFIX: Paket helper should not submit the endpoint if no endpoint was given - <a href="https://github.com/fsharp/FAKE/issues/667">https://github.com/fsharp/FAKE/issues/667</a></li>
+<li>BUGFIX: Paket helper should not override version for project packages - <a href="https://github.com/fsharp/FAKE/issues/666">https://github.com/fsharp/FAKE/issues/666</a></li>
+<li>BUGFIX: Allow endpoint in push task - <a href="https://github.com/fsprojects/Paket/pull/652">https://github.com/fsprojects/Paket/pull/652</a></li>
+<li>BUGFIX: Use correct apikey for paket push - <a href="https://github.com/fsharp/FAKE/pull/664">https://github.com/fsharp/FAKE/pull/664</a></li>
 </ul>
 
 <h4>3.17.0 - 12.02.2015</h4>
@@ -579,6 +581,7 @@ This resets the breaking change introduced in <a href="https://github.com/fsharp
               <li><a href="create-nuget-package.html">Create NuGet packages</a></li>
               <li><a href="specifictargets.html">Running specific targets</a></li>
               <li><a href="commandline.html">Running FAKE from command line</a></li>
+              <li><a href="parallel-build.html">Running targets in parallel</a></li>
               <li><a href="fsc.html">Using the F# compiler from FAKE</a></li>
               <li><a href="customtasks.html">Creating custom tasks</a></li>
               <li><a href="teamcity.html">TeamCity integration</a></li>
@@ -586,6 +589,7 @@ This resets the breaking change introduced in <a href="https://github.com/fsharp
               <li><a href="octopusdeploy.html">Octopus Deploy</a></li>
               <li><a href="typescript.html">TypeScript support</a></li>
               <li><a href="azurewebjobs.html">Azure WebJobs support</a></li>
+              <li><a href="azurecloudservices.html">Azure Cloud Services support</a></li>
               <li class="divider"></li>
               <li><a href="deploy.html">Fake.Deploy</a></li>
               <li class="nav-header">Reference</li>

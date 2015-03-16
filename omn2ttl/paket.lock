@@ -19,6 +19,7 @@ NUGET
     Octokit (0.7.3)
       Microsoft.Net.Http
     SourceLink.Fake (0.4.2)
+    UnionArgParser (0.8.6)
 GITHUB
   remote: fsharp/FAKE
   specs:

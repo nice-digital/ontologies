@@ -1,0 +1,5 @@
+/Users/Nate/MEGA/Development/FSharp/ld-ontologies/ontologies/omn2ttl/tests/omn2ttl.Tests/obj/Release/.NETFramework,Version=v4.0.AssemblyAttribute.fs
+/Users/Nate/MEGA/Development/FSharp/ld-ontologies/ontologies/omn2ttl/tests/omn2ttl.Tests/bin/Release/FSharp.Core.dll
+/Users/Nate/MEGA/Development/FSharp/ld-ontologies/ontologies/omn2ttl/tests/omn2ttl.Tests/bin/Release/nunit.framework.dll
+/Users/Nate/MEGA/Development/FSharp/ld-ontologies/ontologies/omn2ttl/tests/omn2ttl.Tests/bin/Release/omn2ttl.Tests.dll.mdb
+/Users/Nate/MEGA/Development/FSharp/ld-ontologies/ontologies/omn2ttl/tests/omn2ttl.Tests/bin/Release/omn2ttl.Tests.dll

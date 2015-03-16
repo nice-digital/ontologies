@@ -29281,9 +29281,6 @@ Emit comparison instructions
 <member name="">
 
 </member>
-<member name="">
-
-</member>
 <member name="P:Microsoft.FSharp.Compiler.Interactive.Shell.FsiValue.ReflectionValue">
 <summary>
  The value, as an object
@@ -35994,6 +35991,13 @@ Emit comparison instructions
 <member name="">
 
 </member>
+<member name="M:Microsoft.FSharp.Compiler.SourceCodeServices.FSharpCheckFileResults.GetMethodsAsSymbols(System.Int32,System.Int32,System.String,Microsoft.FSharp.Collections.FSharpList{System.String})">
+ <summary>Compute a set of method overloads to show in a dialog relevant to the given code location.  The resulting method overloads are returned as symbols.</summary>
+ <param name="line">The line number where the information is being requested.</param>
+ <param name="colAtEndOfNames">The column number at the end of the identifiers where the information is being requested.</param>
+ <param name="lineText">The text of the line where the information is being requested.</param>
+ <param name="names">The identifiers at the location where the information is being requested.</param>
+</member>
 <member name="M:Microsoft.FSharp.Compiler.SourceCodeServices.FSharpCheckFileResults.GetMethodsAlternate(System.Int32,System.Int32,System.String,Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.String}})">
  <summary>Compute a set of method overloads to show in a dialog relevant to the given code location.</summary>
 
@@ -37445,6 +37449,12 @@ Emit comparison instructions
  Get the accessibility information for the member, function or value
 </summary>
 </member>
+<member name="M:Microsoft.FSharp.Compiler.SourceCodeServices.FSharpMemberOrFunctionOrValue.Overloads(System.Boolean)">
+<summary>
+ Gets the overloads for the current method
+ matchParameterNumber indicates whether to filter the overloads to match the number of parameters in the current symbol
+</summary>
+</member>
 <member name="">
 
 </member>
@@ -37983,6 +37993,9 @@ Emit comparison instructions
  The display context active at the point where the symbol is used. Can be passed to FSharpType.Format
  and other methods to format items in a way that is suitable for a specific source code location.
 </summary>
+</member>
+<member name="">
+
 </member>
 <member name="T:Microsoft.FSharp.Compiler.SourceCodeServices.FSharpSymbolUse">
 <summary>

@@ -98,8 +98,8 @@
       <span class="i">DirectoryToPackage</span> <span class="o">=</span> <span onmouseout="hideTip(event, 'fs9', 15)" onmouseover="showTip(event, 'fs9', 15)" class="i">sprintf</span> <span class="s">&quot;</span><span class="s">src</span><span class="s">/</span><span class="s">%</span><span class="s">s</span><span class="s">/</span><span class="s">bin</span><span class="s">/</span><span class="s">Release</span><span class="s">&quot;</span> <span onmouseout="hideTip(event, 'fs7', 16)" onmouseover="showTip(event, 'fs7', 16)" class="i">project</span>
       <span class="i">PackageLocation</span> <span class="o">=</span> <span onmouseout="hideTip(event, 'fs9', 17)" onmouseover="showTip(event, 'fs9', 17)" class="i">sprintf</span> <span class="s">&quot;</span><span class="s">bin</span><span class="s">/</span><span class="s">%</span><span class="s">s</span><span class="s">/</span><span class="s">webjobs</span><span class="s">/</span><span class="s">%</span><span class="s">s</span><span class="s">/</span><span class="s">%</span><span class="s">s</span><span class="s">.</span><span class="s">zip</span><span class="s">&quot;</span> <span onmouseout="hideTip(event, 'fs4', 18)" onmouseover="showTip(event, 'fs4', 18)" class="i">site</span> <span onmouseout="hideTip(event, 'fs8', 19)" onmouseover="showTip(event, 'fs8', 19)" class="i">path</span> <span onmouseout="hideTip(event, 'fs7', 20)" onmouseover="showTip(event, 'fs7', 20)" class="i">project</span> }
 
-<span class="k">let</span> <span onmouseout="hideTip(event, 'fs10', 21)" onmouseover="showTip(event, 'fs10', 21)" class="i">webJobs</span> <span onmouseout="hideTip(event, 'fs4', 22)" onmouseover="showTip(event, 'fs4', 22)" class="i">site</span> <span class="o">=</span> [<span onmouseout="hideTip(event, 'fs3', 23)" onmouseover="showTip(event, 'fs3', 23)" class="i">createWebJob</span> <span onmouseout="hideTip(event, 'fs4', 24)" onmouseover="showTip(event, 'fs4', 24)" class="i">site</span> <span class="s">&quot;</span><span class="s">webjob1</span><span class="s">&quot;</span> <span class="i">WebJobType</span><span class="o">.</span><span class="i">Continuous</span> <span class="s">&quot;</span><span class="s">WebJob1</span><span class="s">&quot;</span>
-                    <span onmouseout="hideTip(event, 'fs3', 25)" onmouseover="showTip(event, 'fs3', 25)" class="i">createWebJob</span> <span onmouseout="hideTip(event, 'fs4', 26)" onmouseover="showTip(event, 'fs4', 26)" class="i">site</span> <span class="s">&quot;</span><span class="s">webjob2</span><span class="s">&quot;</span> <span class="i">WebJobType</span><span class="o">.</span><span class="i">Triggered</span> <span class="s">&quot;</span><span class="s">WebJob2</span><span class="s">&quot;</span>]
+<span class="k">let</span> <span onmouseout="hideTip(event, 'fs10', 21)" onmouseover="showTip(event, 'fs10', 21)" class="i">webJobs</span> <span onmouseout="hideTip(event, 'fs4', 22)" onmouseover="showTip(event, 'fs4', 22)" class="i">site</span> <span class="o">=</span> [<span onmouseout="hideTip(event, 'fs3', 23)" onmouseover="showTip(event, 'fs3', 23)" class="i">createWebJob</span> <span onmouseout="hideTip(event, 'fs4', 24)" onmouseover="showTip(event, 'fs4', 24)" class="i">site</span> <span class="s">&quot;</span><span class="s">webjob1</span><span class="s">&quot;</span> <span class="i">WebJobType</span><span class="o">.</span><span class="i">Continuous</span> <span class="s">&quot;</span><span class="s">MyProject</span><span class="s">.</span><span class="s">WebJob1</span><span class="s">&quot;</span>
+                    <span onmouseout="hideTip(event, 'fs3', 25)" onmouseover="showTip(event, 'fs3', 25)" class="i">createWebJob</span> <span onmouseout="hideTip(event, 'fs4', 26)" onmouseover="showTip(event, 'fs4', 26)" class="i">site</span> <span class="s">&quot;</span><span class="s">webjob2</span><span class="s">&quot;</span> <span class="i">WebJobType</span><span class="o">.</span><span class="i">Triggered</span> <span class="s">&quot;</span><span class="s">MyProject</span><span class="s">.</span><span class="s">WebJob2</span><span class="s">&quot;</span>]
 
 <span class="k">let</span> <span onmouseout="hideTip(event, 'fs11', 27)" onmouseover="showTip(event, 'fs11', 27)" class="i">site</span> <span class="o">=</span> <span class="i">Uri</span>(<span class="s">&quot;</span><span class="s">https</span><span class="s">:</span><span class="s">/</span><span class="s">/</span><span class="s">yoursite</span><span class="s">.</span><span class="s">scm</span><span class="s">.</span><span class="s">azurewebsites</span><span class="s">.</span><span class="s">net</span><span class="s">&quot;</span>)
 <span class="k">let</span> <span onmouseout="hideTip(event, 'fs12', 28)" onmouseover="showTip(event, 'fs12', 28)" class="i">webSite</span> <span class="o">=</span> {<span class="i">WebSite</span><span class="o">.</span><span class="i">Url</span> <span class="o">=</span> <span onmouseout="hideTip(event, 'fs11', 29)" onmouseover="showTip(event, 'fs11', 29)" class="i">site</span>
@@ -141,11 +141,11 @@
 </tr>
 </table>
 
-<p>The effect of this create a zip in the <code>bin</code> folder in the root which contains the contents of the <code>bin/release</code> folder of each web job to deploy and push it to azure.</p>
+<p>The will create a zip file in the <code>bin</code> folder in the root which contains the contents of the <code>bin/release</code> folder of each web job to deploy and push it to azure.</p>
 
 <h2>Caveats</h2>
 
-<p>The zip controller will not remove files</p>
+<p>The zip controller will not remove files.</p>
 
           <div class="tip" id="fs1">val private jobTypePath : webJobType:&#39;a -&gt; &#39;b<br /><br />Full name: azurewebjobs.jobTypePath</div>
 <div class="tip" id="fs2">val webJobType : &#39;a</div>
@@ -185,6 +185,7 @@
               <li><a href="create-nuget-package.html">Create NuGet packages</a></li>
               <li><a href="specifictargets.html">Running specific targets</a></li>
               <li><a href="commandline.html">Running FAKE from command line</a></li>
+              <li><a href="parallel-build.html">Running targets in parallel</a></li>
               <li><a href="fsc.html">Using the F# compiler from FAKE</a></li>
               <li><a href="customtasks.html">Creating custom tasks</a></li>
               <li><a href="teamcity.html">TeamCity integration</a></li>
@@ -192,6 +193,7 @@
               <li><a href="octopusdeploy.html">Octopus Deploy</a></li>
               <li><a href="typescript.html">TypeScript support</a></li>
               <li><a href="azurewebjobs.html">Azure WebJobs support</a></li>
+              <li><a href="azurecloudservices.html">Azure Cloud Services support</a></li>
               <li class="divider"></li>
               <li><a href="deploy.html">Fake.Deploy</a></li>
               <li class="nav-header">Reference</li>

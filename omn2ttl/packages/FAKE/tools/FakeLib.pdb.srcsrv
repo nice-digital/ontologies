@@ -2,7 +2,7 @@ SRCSRV: ini ------------------------------------------------
 VERSION=2
 SRCSRV: variables ------------------------------------------
 SRCSRVVERCTRL=https
-SRCSRVTRG=https://raw.github.com/fsharp/FAKE/b28e4a984e94b9c7212b957737c37da3008d320d/%%var2%%
+SRCSRVTRG=https://raw.github.com/fsharp/FAKE/5f370b3e7b9e7adf2762ffe5f3505dd8c7f08d7f/%var2%
 SRCSRV: source files ---------------------------------------
 C:\code\fake\src\app\FakeLib\CSharpHelper.fs*src/app/FakeLib/CSharpHelper.fs
 C:\code\fake\src\app\FakeLib\EnvironmentHelper.fs*src/app/FakeLib/EnvironmentHelper.fs
@@ -23,6 +23,7 @@ C:\code\fake\src\app\FakeLib\GuardedAwaitObservable.fs*src/app/FakeLib/GuardedAw
 C:\code\fake\src\app\FakeLib\ProcessHelper.fs*src/app/FakeLib/ProcessHelper.fs
 C:\code\fake\src\app\FakeLib\AppVeyor.fs*src/app/FakeLib/AppVeyor.fs
 C:\code\fake\src\app\FakeLib\TaskRunnerHelper.fs*src/app/FakeLib/TaskRunnerHelper.fs
+C:\code\fake\src\app\FakeLib\Globbing\Globbing.fs*src/app/FakeLib/Globbing/Globbing.fs
 C:\code\fake\src\app\FakeLib\Globbing\FileSystem.fs*src/app/FakeLib/Globbing/FileSystem.fs
 C:\code\fake\src\app\FakeLib\UnitTest\UnitTestCommon.fs*src/app/FakeLib/UnitTest/UnitTestCommon.fs
 C:\code\fake\src\app\FakeLib\UnitTest\UnitTestHelper.fs*src/app/FakeLib/UnitTest/UnitTestHelper.fs
@@ -114,4 +115,5 @@ C:\code\fake\src\app\FakeLib\XamarinHelper.fs*src/app/FakeLib/XamarinHelper.fs
 C:\code\fake\src\app\FakeLib\XDTHelper.fs*src/app/FakeLib/XDTHelper.fs
 C:\code\fake\src\app\FakeLib\AzureWebJobs.fs*src/app/FakeLib/AzureWebJobs.fs
 C:\code\fake\src\app\FakeLib\HockeyAppHelper.fs*src/app/FakeLib/HockeyAppHelper.fs
+C:\code\fake\src\app\FakeLib\AzureCloudServices.fs*src/app/FakeLib/AzureCloudServices.fs
 SRCSRV: end ------------------------------------------------
