@@ -1,0 +1,429 @@
+Prefix: : <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#>
+Prefix: dc: <http://purl.org/dc/elements/1.1/>
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+
+
+Ontology: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112>
+
+
+AnnotationProperty: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#include_drug_abuse,_alcohol_abuse,_obesity>
+
+    SubPropertyOf: 
+        rdfs:comment
+    
+    
+AnnotationProperty: rdfs:comment
+
+    
+Datatype: rdf:PlainLiteral
+
+    
+Datatype: xsd:string
+
+    
+Datatype: rdfs:Literal
+
+    
+ObjectProperty: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:hasConcept>
+
+    Domain: 
+        <http://www.w3.org/2004/02/skos/core#skos:ConceptScheme>
+    
+    Range: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#skos:Concept>
+    
+    InverseOf: 
+        <http://www.w3.org/2004/02/skos/core#g:inConceptScheme>
+    
+    
+ObjectProperty: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:measureDefinedBy>
+
+    Domain: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:QualityMeasure>
+    
+    Range: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:QualityStatement>
+    
+    InverseOf: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:definesMeasure>
+    
+    
+ObjectProperty: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:setting>
+
+    Domain: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:QualityStatement>
+    
+    Range: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:Setting>
+    
+    InverseOf: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:isSettingOf>
+    
+    
+ObjectProperty: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:definedTaskOf>
+
+    Domain: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:Task>
+    
+    Range: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:QualityStatement>
+    
+    InverseOf: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:definesTask>
+    
+    
+ObjectProperty: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:isTargetPopulationOf>
+
+    SubPropertyOf: 
+        owl:topObjectProperty
+    
+    Domain: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#pico:Population>
+    
+    Range: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:QualityStatement>
+    
+    InverseOf: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:targetPopulation>
+    
+    
+ObjectProperty: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#prov:wasGeneratedby>
+
+    Domain: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:QualityStatement>
+    
+    Range: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:QualityStandard>
+    
+    InverseOf: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#prov:generated>
+    
+    
+ObjectProperty: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:specifies>
+
+    Domain: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:PopulationSpecifier>
+    
+    Range: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#pico:Population>
+    
+    InverseOf: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:isSpecifiedBy>
+    
+    
+ObjectProperty: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:isSpecifiedBy>
+
+    Domain: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#pico:Population>
+    
+    Range: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:PopulationSpecifier>
+    
+    InverseOf: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:specifies>
+    
+    
+ObjectProperty: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:measuresProgressAgainst>
+
+    Domain: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:QualityMeasure>
+    
+    Range: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:Task>
+    
+    
+ObjectProperty: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:age>
+
+    Domain: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#pico:Population>
+    
+    Range: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:AgeGroup>
+    
+    
+ObjectProperty: <http://www.w3.org/2004/02/skos/core#g:inConceptScheme>
+
+    Domain: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#skos:Concept>
+    
+    Range: 
+        <http://www.w3.org/2004/02/skos/core#skos:ConceptScheme>
+    
+    InverseOf: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:hasConcept>
+    
+    
+ObjectProperty: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:ownsTask>
+
+    Domain: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:ServiceRole>
+    
+    Range: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:Task>
+    
+    InverseOf: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:taskOwner>
+    
+    
+ObjectProperty: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:definesMeasure>
+
+    Annotations: 
+        rdfs:comment "one quality statement may hve several measures associated with it."
+    
+    Domain: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:QualityStatement>
+    
+    Range: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:QualityMeasure>
+    
+    InverseOf: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:measureDefinedBy>
+    
+    
+ObjectProperty: owl:topObjectProperty
+
+    
+ObjectProperty: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:definesTask>
+
+    Annotations: 
+        rdfs:comment "connects  proposed action of quality statement to tasks which enable this action to take place"
+    
+    SubPropertyOf: 
+        owl:topObjectProperty
+    
+    Domain: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:QualityStatement>
+    
+    Range: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:Task>
+    
+    InverseOf: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:definedTaskOf>
+    
+    
+ObjectProperty: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:targetPopulation>
+
+    Domain: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:QualityStatement>
+    
+    Range: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#pico:Population>
+    
+    InverseOf: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:isTargetPopulationOf>
+    
+    
+ObjectProperty: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:condition>
+
+    Domain: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#pico:Population>
+    
+    Range: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#snomed:Disease>
+    
+    
+ObjectProperty: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:lifestyleCondition>
+
+    Domain: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#pico:Population>
+    
+    Range: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:LifestyleCondition>
+    
+    
+ObjectProperty: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:isSettingOf>
+
+    Domain: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:Setting>
+    
+    Range: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:QualityStatement>
+    
+    InverseOf: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:setting>
+    
+    
+ObjectProperty: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#prov:generated>
+
+    Domain: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:QualityStandard>
+    
+    Range: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:QualityStatement>
+    
+    InverseOf: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#prov:wasGeneratedby>
+    
+    
+ObjectProperty: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:taskOwner>
+
+    Domain: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:Task>
+    
+    Range: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:ServiceRole>
+    
+    InverseOf: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:ownsTask>
+    
+    
+DataProperty: dc:identifier
+
+    Domain: 
+        owl:Thing
+    
+    Range: 
+        rdfs:Literal
+    
+    
+DataProperty: dc:title
+
+    Domain: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:QualityStandard>
+    
+    Range: 
+        rdfs:Literal
+    
+    
+DataProperty: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:hasDataSource>
+
+    Domain: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:QualityMeasure>
+    
+    Range: 
+        rdfs:Literal
+    
+    
+DataProperty: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs::hasDenominator>
+
+    Domain: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:QualityMeasure>
+    
+    Range: 
+        xsd:string
+    
+    
+DataProperty: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs::hasNumerator>
+
+    Domain: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:ProcessMeasure>
+    
+    Range: 
+        xsd:string
+    
+    
+Class: owl:Thing
+
+    
+Class: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:Setting>
+
+    Annotations: 
+        rdfs:comment "Setting - may be used for setting for population definition as well as setting where action of quality statement should occur"
+    
+    SubClassOf: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#skos:Concept>
+    
+    
+Class: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#skos:Concept>
+
+    
+Class: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:QualityStatement>
+
+    
+Class: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:ProcessMeasure>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:QualityMeasure>
+    
+    
+Class: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#snomed:Disease>
+
+    Annotations: 
+        rdfs:comment "Placeholder quality statement is fundamentally different from other quality statements as is equivalent of research recommendation - i.e. shows gap in evidence",
+        rdfs:comment "Will need to refer to URI specific part of SNOMED or other scheme rather than to whole schema",
+        rdfs:comment "use for medical condition"
+    
+    SubClassOf: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:PopulationSpecifier>
+    
+    
+Class: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:PopulationSpecifier>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#skos:Concept>
+    
+    
+Class: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:Task>
+
+    Annotations: 
+        rdfs:comment "specific action that is outlined in \"what the quality statement means for\" ... but only for service providers, commissioners etc. not for patients, carers"
+    
+    
+Class: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:AgeGroup>
+
+    Annotations: 
+        rdfs:comment "Some list of age groups to be defined to support population definition"
+    
+    SubClassOf: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:PopulationSpecifier>
+    
+    
+Class: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:QualityStandard>
+
+    
+Class: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:LifestyleCondition>
+
+    Annotations: 
+        rdfs:comment "to include drug abuse, alcohol abuse and other lifestyle conditions"
+    
+    SubClassOf: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:PopulationSpecifier>
+    
+    
+Class: <http://www.w3.org/2004/02/skos/core#skos:ConceptScheme>
+
+    Annotations: 
+        rdfs:comment "Class for concept schemes that we will be using to populate values for concepts of age, gender , disease etc. These can be a mixture of our own thesauri and external ones such as snomed and will be indicated by a URI"
+    
+    
+Class: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:QualityMeasure>
+
+    Annotations: 
+        rdfs:comment "measure associated with quality statement"
+    
+    
+Class: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:OutcomeMeasure>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:QualityMeasure>
+    
+    
+Class: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:StructureMeasure>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:QualityMeasure>
+    
+    
+Class: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:ServiceRole>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#skos:Concept>
+    
+    
+Class: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#pico:Population>
+
+    Annotations: 
+        rdfs:comment "defined by at least one of the age, gender, ethnicity, disease, lifestyle condition concepts."
+    
+    EquivalentTo: 
+        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:isSpecifiedBy> min 1 <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:PopulationSpecifier>
+    
+    
+DisjointClasses: 
+    <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#pico:Population>,<http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:OutcomeMeasure>,<http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:ProcessMeasure>,<http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:StructureMeasure>
+
