@@ -89,7 +89,9 @@ Class: Target
     
 Class: Glob
 
-    
+Class: AnotherClass
+
+
 Class: DirectoryPattern
 
     SubClassOf: 
