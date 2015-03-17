@@ -1,17 +1,18 @@
-Prefix: : <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#>
+Prefix: : <http://nice.org.uk/ns/qualitystandard#>
 Prefix: dc: <http://purl.org/dc/elements/1.1/>
 Prefix: owl: <http://www.w3.org/2002/07/owl#>
 Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 Prefix: xml: <http://www.w3.org/XML/1998/namespace>
 Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
 Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: skos: <http://www.w3.org/2004/02/skos/core#>
 
 
 
-Ontology: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112>
+Ontology: <http://nice.org.uk/ns/qualitystandard>
 
 
-AnnotationProperty: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#include_drug_abuse,_alcohol_abuse,_obesity>
+AnnotationProperty: <http://nice.org.uk/ns/qualitystandard#include_drug_abuse,_alcohol_abuse,_obesity>
 
     SubPropertyOf: 
         rdfs:comment
@@ -29,247 +30,247 @@ Datatype: xsd:string
 Datatype: rdfs:Literal
 
     
-ObjectProperty: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:hasConcept>
+ObjectProperty: <http://nice.org.uk/ns/qualitystandard#qs:ownsTask>
 
     Domain: 
-        <http://www.w3.org/2004/02/skos/core#skos:ConceptScheme>
+        <http://nice.org.uk/ns/qualitystandard#g:ServiceRole>
     
     Range: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#skos:Concept>
+        <http://nice.org.uk/ns/qualitystandard#qs:Task>
     
     InverseOf: 
-        <http://www.w3.org/2004/02/skos/core#g:inConceptScheme>
+        <http://nice.org.uk/ns/qualitystandard#qs:taskOwner>
     
     
-ObjectProperty: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:measureDefinedBy>
+ObjectProperty: <http://nice.org.uk/ns/qualitystandard#g:targetPopulation>
 
     Domain: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:QualityMeasure>
+        <http://nice.org.uk/ns/qualitystandard#qs:QualityStatement>
     
     Range: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:QualityStatement>
+        <http://nice.org.uk/ns/qualitystandard#pico:Population>
     
     InverseOf: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:definesMeasure>
+        <http://nice.org.uk/ns/qualitystandard#g:isTargetPopulationOf>
     
     
-ObjectProperty: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:setting>
+ObjectProperty: <http://nice.org.uk/ns/qualitystandard#g:setting>
 
     Domain: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:QualityStatement>
+        <http://nice.org.uk/ns/qualitystandard#qs:QualityStatement>
     
     Range: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:Setting>
+        <http://nice.org.uk/ns/qualitystandard#g:Setting>
     
     InverseOf: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:isSettingOf>
+        <http://nice.org.uk/ns/qualitystandard#qs:isSettingOf>
     
     
-ObjectProperty: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:definedTaskOf>
+ObjectProperty: <http://nice.org.uk/ns/qualitystandard#prov:wasGeneratedby>
 
     Domain: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:Task>
+        <http://nice.org.uk/ns/qualitystandard#qs:QualityStatement>
     
     Range: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:QualityStatement>
+        <http://nice.org.uk/ns/qualitystandard#qs:QualityStandard>
     
     InverseOf: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:definesTask>
+        <http://nice.org.uk/ns/qualitystandard#prov:generated>
     
     
-ObjectProperty: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:isTargetPopulationOf>
+ObjectProperty: <http://nice.org.uk/ns/qualitystandard#g:lifestyleCondition>
 
+    Domain: 
+        <http://nice.org.uk/ns/qualitystandard#pico:Population>
+    
+    Range: 
+        <http://nice.org.uk/ns/qualitystandard#g:LifestyleCondition>
+    
+    
+ObjectProperty: <http://nice.org.uk/ns/qualitystandard#qs:definedTaskOf>
+
+    Domain: 
+        <http://nice.org.uk/ns/qualitystandard#qs:Task>
+    
+    Range: 
+        <http://nice.org.uk/ns/qualitystandard#qs:QualityStatement>
+    
+    InverseOf: 
+        <http://nice.org.uk/ns/qualitystandard#qs:definesTask>
+    
+    
+ObjectProperty: <http://nice.org.uk/ns/qualitystandard#g:isTargetPopulationOf>
+
+    Domain: 
+        <http://nice.org.uk/ns/qualitystandard#pico:Population>
+    
+    Range: 
+        <http://nice.org.uk/ns/qualitystandard#qs:QualityStatement>
+    
     SubPropertyOf: 
         owl:topObjectProperty
     
+    InverseOf: 
+        <http://nice.org.uk/ns/qualitystandard#g:targetPopulation>
+    
+    
+ObjectProperty: <http://nice.org.uk/ns/qualitystandard#qs:definesTask>
+
+    Annotations: 
+        rdfs:comment "connects  proposed action of quality statement to tasks which enable this action to take place"
+    
     Domain: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#pico:Population>
+        <http://nice.org.uk/ns/qualitystandard#qs:QualityStatement>
     
     Range: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:QualityStatement>
+        <http://nice.org.uk/ns/qualitystandard#qs:Task>
+    
+    SubPropertyOf: 
+        owl:topObjectProperty
     
     InverseOf: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:targetPopulation>
+        <http://nice.org.uk/ns/qualitystandard#qs:definedTaskOf>
     
     
-ObjectProperty: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#prov:wasGeneratedby>
+ObjectProperty: <http://nice.org.uk/ns/qualitystandard#qs:measuresProgressAgainst>
 
     Domain: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:QualityStatement>
+        <http://nice.org.uk/ns/qualitystandard#qs:QualityMeasure>
     
     Range: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:QualityStandard>
+        <http://nice.org.uk/ns/qualitystandard#qs:Task>
+    
+    
+ObjectProperty: <http://nice.org.uk/ns/qualitystandard#qs:isSettingOf>
+
+    Domain: 
+        <http://nice.org.uk/ns/qualitystandard#g:Setting>
+    
+    Range: 
+        <http://nice.org.uk/ns/qualitystandard#qs:QualityStatement>
     
     InverseOf: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#prov:generated>
+        <http://nice.org.uk/ns/qualitystandard#g:setting>
     
     
-ObjectProperty: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:specifies>
+ObjectProperty: <http://nice.org.uk/ns/qualitystandard#g:condition>
 
     Domain: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:PopulationSpecifier>
+        <http://nice.org.uk/ns/qualitystandard#pico:Population>
     
     Range: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#pico:Population>
+        <http://nice.org.uk/ns/qualitystandard#snomed:Disease>
+    
+    
+ObjectProperty: <http://nice.org.uk/ns/qualitystandard#g:isSpecifiedBy>
+
+    Domain: 
+        <http://nice.org.uk/ns/qualitystandard#pico:Population>
+    
+    Range: 
+        <http://nice.org.uk/ns/qualitystandard#g:PopulationSpecifier>
     
     InverseOf: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:isSpecifiedBy>
+        <http://nice.org.uk/ns/qualitystandard#g:specifies>
     
     
-ObjectProperty: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:isSpecifiedBy>
-
-    Domain: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#pico:Population>
-    
-    Range: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:PopulationSpecifier>
-    
-    InverseOf: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:specifies>
-    
-    
-ObjectProperty: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:measuresProgressAgainst>
-
-    Domain: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:QualityMeasure>
-    
-    Range: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:Task>
-    
-    
-ObjectProperty: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:age>
-
-    Domain: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#pico:Population>
-    
-    Range: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:AgeGroup>
-    
-    
-ObjectProperty: <http://www.w3.org/2004/02/skos/core#g:inConceptScheme>
-
-    Domain: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#skos:Concept>
-    
-    Range: 
-        <http://www.w3.org/2004/02/skos/core#skos:ConceptScheme>
-    
-    InverseOf: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:hasConcept>
-    
-    
-ObjectProperty: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:ownsTask>
-
-    Domain: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:ServiceRole>
-    
-    Range: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:Task>
-    
-    InverseOf: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:taskOwner>
-    
-    
-ObjectProperty: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:definesMeasure>
+ObjectProperty: <http://nice.org.uk/ns/qualitystandard#qs:definesMeasure>
 
     Annotations: 
         rdfs:comment "one quality statement may hve several measures associated with it."
     
     Domain: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:QualityStatement>
+        <http://nice.org.uk/ns/qualitystandard#qs:QualityStatement>
     
     Range: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:QualityMeasure>
+        <http://nice.org.uk/ns/qualitystandard#qs:QualityMeasure>
     
     InverseOf: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:measureDefinedBy>
+        <http://nice.org.uk/ns/qualitystandard#qs:measureDefinedBy>
     
     
 ObjectProperty: owl:topObjectProperty
 
     
-ObjectProperty: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:definesTask>
+ObjectProperty: <http://nice.org.uk/ns/qualitystandard#qs:measureDefinedBy>
 
-    Annotations: 
-        rdfs:comment "connects  proposed action of quality statement to tasks which enable this action to take place"
-    
-    SubPropertyOf: 
-        owl:topObjectProperty
-    
     Domain: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:QualityStatement>
+        <http://nice.org.uk/ns/qualitystandard#qs:QualityMeasure>
     
     Range: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:Task>
+        <http://nice.org.uk/ns/qualitystandard#qs:QualityStatement>
     
     InverseOf: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:definedTaskOf>
+        <http://nice.org.uk/ns/qualitystandard#qs:definesMeasure>
     
     
-ObjectProperty: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:targetPopulation>
+ObjectProperty: <http://nice.org.uk/ns/qualitystandard#qs:taskOwner>
 
     Domain: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:QualityStatement>
+        <http://nice.org.uk/ns/qualitystandard#qs:Task>
     
     Range: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#pico:Population>
+        <http://nice.org.uk/ns/qualitystandard#g:ServiceRole>
     
     InverseOf: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:isTargetPopulationOf>
+        <http://nice.org.uk/ns/qualitystandard#qs:ownsTask>
     
     
-ObjectProperty: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:condition>
+ObjectProperty: <http://nice.org.uk/ns/qualitystandard#g:hasConcept>
 
     Domain: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#pico:Population>
+        <http://www.w3.org/2004/02/skos/core#skos:ConceptScheme>
     
     Range: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#snomed:Disease>
-    
-    
-ObjectProperty: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:lifestyleCondition>
-
-    Domain: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#pico:Population>
-    
-    Range: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:LifestyleCondition>
-    
-    
-ObjectProperty: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:isSettingOf>
-
-    Domain: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:Setting>
-    
-    Range: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:QualityStatement>
+        <http://nice.org.uk/ns/qualitystandard#skos:Concept>
     
     InverseOf: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:setting>
+        <http://www.w3.org/2004/02/skos/core#g:inConceptScheme>
     
     
-ObjectProperty: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#prov:generated>
+ObjectProperty: <http://nice.org.uk/ns/qualitystandard#g:specifies>
 
     Domain: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:QualityStandard>
+        <http://nice.org.uk/ns/qualitystandard#g:PopulationSpecifier>
     
     Range: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:QualityStatement>
+        <http://nice.org.uk/ns/qualitystandard#pico:Population>
     
     InverseOf: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#prov:wasGeneratedby>
+        <http://nice.org.uk/ns/qualitystandard#g:isSpecifiedBy>
     
     
-ObjectProperty: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:taskOwner>
+ObjectProperty: <http://nice.org.uk/ns/qualitystandard#prov:generated>
 
     Domain: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:Task>
+        <http://nice.org.uk/ns/qualitystandard#qs:QualityStandard>
     
     Range: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:ServiceRole>
+        <http://nice.org.uk/ns/qualitystandard#qs:QualityStatement>
     
     InverseOf: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:ownsTask>
+        <http://nice.org.uk/ns/qualitystandard#prov:wasGeneratedby>
+    
+    
+ObjectProperty: <http://www.w3.org/2004/02/skos/core#g:inConceptScheme>
+
+    Domain: 
+        <http://nice.org.uk/ns/qualitystandard#skos:Concept>
+    
+    Range: 
+        <http://www.w3.org/2004/02/skos/core#skos:ConceptScheme>
+    
+    InverseOf: 
+        <http://nice.org.uk/ns/qualitystandard#g:hasConcept>
+    
+    
+ObjectProperty: <http://nice.org.uk/ns/qualitystandard#g:age>
+
+    Domain: 
+        <http://nice.org.uk/ns/qualitystandard#pico:Population>
+    
+    Range: 
+        <http://nice.org.uk/ns/qualitystandard#g:AgeGroup>
     
     
 DataProperty: dc:identifier
@@ -281,37 +282,37 @@ DataProperty: dc:identifier
         rdfs:Literal
     
     
-DataProperty: dc:title
+DataProperty: <http://nice.org.uk/ns/qualitystandard#qs::hasDenominator>
 
     Domain: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:QualityStandard>
-    
-    Range: 
-        rdfs:Literal
-    
-    
-DataProperty: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:hasDataSource>
-
-    Domain: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:QualityMeasure>
-    
-    Range: 
-        rdfs:Literal
-    
-    
-DataProperty: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs::hasDenominator>
-
-    Domain: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:QualityMeasure>
+        <http://nice.org.uk/ns/qualitystandard#qs:QualityMeasure>
     
     Range: 
         xsd:string
     
     
-DataProperty: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs::hasNumerator>
+DataProperty: dc:title
 
     Domain: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:ProcessMeasure>
+        <http://nice.org.uk/ns/qualitystandard#qs:QualityStandard>
+    
+    Range: 
+        rdfs:Literal
+    
+    
+DataProperty: <http://nice.org.uk/ns/qualitystandard#qs:hasDataSource>
+
+    Domain: 
+        <http://nice.org.uk/ns/qualitystandard#qs:QualityMeasure>
+    
+    Range: 
+        rdfs:Literal
+    
+    
+DataProperty: <http://nice.org.uk/ns/qualitystandard#qs::hasNumerator>
+
+    Domain: 
+        <http://nice.org.uk/ns/qualitystandard#qs:ProcessMeasure>
     
     Range: 
         xsd:string
@@ -320,69 +321,28 @@ DataProperty: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-
 Class: owl:Thing
 
     
-Class: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:Setting>
-
-    Annotations: 
-        rdfs:comment "Setting - may be used for setting for population definition as well as setting where action of quality statement should occur"
-    
-    SubClassOf: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#skos:Concept>
-    
-    
-Class: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#skos:Concept>
-
-    
-Class: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:QualityStatement>
-
-    
-Class: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:ProcessMeasure>
-
-    SubClassOf: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:QualityMeasure>
-    
-    
-Class: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#snomed:Disease>
-
-    Annotations: 
-        rdfs:comment "Placeholder quality statement is fundamentally different from other quality statements as is equivalent of research recommendation - i.e. shows gap in evidence",
-        rdfs:comment "Will need to refer to URI specific part of SNOMED or other scheme rather than to whole schema",
-        rdfs:comment "use for medical condition"
-    
-    SubClassOf: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:PopulationSpecifier>
-    
-    
-Class: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:PopulationSpecifier>
-
-    SubClassOf: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#skos:Concept>
-    
-    
-Class: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:Task>
-
-    Annotations: 
-        rdfs:comment "specific action that is outlined in \"what the quality statement means for\" ... but only for service providers, commissioners etc. not for patients, carers"
-    
-    
-Class: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:AgeGroup>
-
-    Annotations: 
-        rdfs:comment "Some list of age groups to be defined to support population definition"
-    
-    SubClassOf: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:PopulationSpecifier>
-    
-    
-Class: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:QualityStandard>
-
-    
-Class: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:LifestyleCondition>
+Class: <http://nice.org.uk/ns/qualitystandard#g:LifestyleCondition>
 
     Annotations: 
         rdfs:comment "to include drug abuse, alcohol abuse and other lifestyle conditions"
     
     SubClassOf: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:PopulationSpecifier>
+        <http://nice.org.uk/ns/qualitystandard#g:PopulationSpecifier>
+    
+    
+Class: <http://nice.org.uk/ns/qualitystandard#g:AgeGroup>
+
+    Annotations: 
+        rdfs:comment "Some list of age groups to be defined to support population definition"
+    
+    SubClassOf: 
+        <http://nice.org.uk/ns/qualitystandard#g:PopulationSpecifier>
+    
+    
+Class: <http://nice.org.uk/ns/qualitystandard#qs:OutcomeMeasure>
+
+    SubClassOf: 
+        <http://nice.org.uk/ns/qualitystandard#qs:QualityMeasure>
     
     
 Class: <http://www.w3.org/2004/02/skos/core#skos:ConceptScheme>
@@ -391,39 +351,80 @@ Class: <http://www.w3.org/2004/02/skos/core#skos:ConceptScheme>
         rdfs:comment "Class for concept schemes that we will be using to populate values for concepts of age, gender , disease etc. These can be a mixture of our own thesauri and external ones such as snomed and will be indicated by a URI"
     
     
-Class: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:QualityMeasure>
+Class: <http://nice.org.uk/ns/qualitystandard#g:ServiceRole>
+
+    SubClassOf: 
+        <http://nice.org.uk/ns/qualitystandard#skos:Concept>
+    
+    
+Class: <http://nice.org.uk/ns/qualitystandard#qs:Task>
+
+    Annotations: 
+        rdfs:comment "specific action that is outlined in \"what the quality statement means for\" ... but only for service providers, commissioners etc. not for patients, carers"
+    
+    
+Class: <http://nice.org.uk/ns/qualitystandard#snomed:Disease>
+
+    Annotations: 
+        rdfs:comment "Will need to refer to URI specific part of SNOMED or other scheme rather than to whole schema",
+        rdfs:comment "use for medical condition",
+        rdfs:comment "Placeholder quality statement is fundamentally different from other quality statements as is equivalent of research recommendation - i.e. shows gap in evidence"
+    
+    SubClassOf: 
+        <http://nice.org.uk/ns/qualitystandard#g:PopulationSpecifier>
+    
+    
+Class: <http://nice.org.uk/ns/qualitystandard#qs:ProcessMeasure>
+
+    SubClassOf: 
+        <http://nice.org.uk/ns/qualitystandard#qs:QualityMeasure>
+    
+    
+Class: <http://nice.org.uk/ns/qualitystandard#qs:QualityMeasure>
 
     Annotations: 
         rdfs:comment "measure associated with quality statement"
     
     
-Class: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:OutcomeMeasure>
-
-    SubClassOf: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:QualityMeasure>
-    
-    
-Class: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:StructureMeasure>
-
-    SubClassOf: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:QualityMeasure>
-    
-    
-Class: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:ServiceRole>
-
-    SubClassOf: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#skos:Concept>
-    
-    
-Class: <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#pico:Population>
+Class: <http://nice.org.uk/ns/qualitystandard#pico:Population>
 
     Annotations: 
         rdfs:comment "defined by at least one of the age, gender, ethnicity, disease, lifestyle condition concepts."
     
     EquivalentTo: 
-        <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:isSpecifiedBy> min 1 <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#g:PopulationSpecifier>
+        <http://nice.org.uk/ns/qualitystandard#g:isSpecifiedBy> min 1 <http://nice.org.uk/ns/qualitystandard#g:PopulationSpecifier>
     
+    
+Class: <http://nice.org.uk/ns/qualitystandard#qs:QualityStandard>
+
+    
+Class: <http://nice.org.uk/ns/qualitystandard#qs:QualityStatement>
+
+    
+Class: <http://nice.org.uk/ns/qualitystandard#g:Setting>
+
+    Annotations: 
+        rdfs:comment "Setting - may be used for setting for population definition as well as setting where action of quality statement should occur"
+    
+    SubClassOf: 
+        <http://nice.org.uk/ns/qualitystandard#skos:Concept>
+    
+    
+Class: <http://nice.org.uk/ns/qualitystandard#g:PopulationSpecifier>
+
+    SubClassOf: 
+        <http://nice.org.uk/ns/qualitystandard#skos:Concept>
+    
+    
+Class: <http://nice.org.uk/ns/qualitystandard#qs:StructureMeasure>
+
+    SubClassOf: 
+        <http://nice.org.uk/ns/qualitystandard#qs:QualityMeasure>
+    
+    
+Class: <http://nice.org.uk/ns/qualitystandard#skos:Concept>
+
     
 DisjointClasses: 
-    <http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#pico:Population>,<http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:OutcomeMeasure>,<http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:ProcessMeasure>,<http://www.semanticweb.org/adesimone/ontologies/2014/11/untitled-ontology-112#qs:StructureMeasure>
+    <http://nice.org.uk/ns/qualitystandard#pico:Population>, <http://nice.org.uk/ns/qualitystandard#qs:OutcomeMeasure>, <http://nice.org.uk/ns/qualitystandard#qs:ProcessMeasure>, <http://nice.org.uk/ns/qualitystandard#qs:StructureMeasure>
 
