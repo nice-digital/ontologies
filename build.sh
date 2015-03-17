@@ -1,13 +1,13 @@
 #!/bin/bash
 set -e
-npm install
+#npm install
 cd ns
 
-shopt -s nullglob
-for OWL in *.omn
+#shopt -s nullglob
+for OWL in  *.omn *.owl
 do
-    TTLNAME=${OWL%.*}.ttl
-    curl --fail 'http://mowl-power.cs.man.ac.uk:8080/converter/convert' -H 'Accept-Encoding: gzip, deflate' --data 'ontology=@$OWL&format=Turtle' --compressed -o $TTLNAME
+	echo $OWL
+	mono ../omn2ttl/omn2ttl/bin/Release/omn2ttl.exe --uri $OWL
 done
 
 cd -
