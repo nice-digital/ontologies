@@ -61,6 +61,6 @@ let main argv =
     match Owl.loadFromFile fin with
     | Owl.Error e -> 
         printfn "%s" e
-        exit 3
+        exit 0
     | Owl.Success ont -> Owl.translate ont writeTo fileName
-    3 // return an integer exit code    
+    0 // return an integer exit code    
