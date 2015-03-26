@@ -1,7 +1,6 @@
 FROM nice/ld-docker-app
 MAINTAINER Ryan Roberts <ryansroberts@gmail.com>
 
-#CMD ["node", "index.js"]
 
 # Install Nginx.
 RUN \
