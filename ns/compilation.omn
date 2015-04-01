@@ -18,15 +18,6 @@ AnnotationProperty: rdfs:comment
 Datatype: xsd:string
 
     
-ObjectProperty: represents
-
-    Domain: 
-        FilePattern
-    
-    Range: 
-        represents only owl:Thing
-    
-    
 ObjectProperty: parent
 
     Domain: 
@@ -36,19 +27,13 @@ ObjectProperty: parent
         parent max 1 Glob
     
     
-DataProperty: expression
+ObjectProperty: represents
 
-    Annotations: 
-        rdfs:comment "A regular expression matching a directory path"^^xsd:string
-    
     Domain: 
-        Glob
+        FilePattern
     
     Range: 
-        xsd:string
-    
-    Characteristics: 
-        Functional
+        represents only owl:Thing
     
     
 DataProperty: path
@@ -66,7 +51,22 @@ DataProperty: path
         Functional
     
     
-Class: owl:Thing
+DataProperty: expression
+
+    Annotations: 
+        rdfs:comment "A regular expression matching a directory path"^^xsd:string
+    
+    Domain: 
+        Glob
+    
+    Range: 
+        xsd:string
+    
+    Characteristics: 
+        Functional
+    
+    
+Class: Glob
 
     
 Class: Compilation
@@ -81,17 +81,18 @@ Class: Tool
         rdfs:comment "A tool that takes a target and produces a  representation in triples"^^xsd:string
     
     
+Class: owl:Thing
+
+    
+Class: AnotherClass
+
+    
 Class: Target
 
     Annotations: 
         rdfs:comment "A resource that may require compilation"^^xsd:string
     
     
-Class: Glob
-
-Class: AnotherClass
-
-
 Class: DirectoryPattern
 
     SubClassOf: 
@@ -102,13 +103,60 @@ Class: DirectoryPattern
 Class: FilePattern
 
     SubClassOf: 
-        parent only DirectoryPattern,
+        Glob,
+        parent only DirectoryPattern
+    
+    
+Individual: Root
+
+    Types: 
         Glob
+    
+    
+Individual: QualityStandards
+
+    Types: 
+        DirectoryPattern
+    
+    Facts:  
+     parent  Root,
+     expression  "qualitystandards"^^xsd:string
     
     
 Individual: Content
 
     Types: 
         Tool
+    
+    
+Individual: QualityStatement
+
+    Types: 
+        DirectoryPattern
+    
+    Facts:  
+     parent  QualityStandard,
+     expression  "st(?<QualityStatementId>\\d+)"^^xsd:string
+    
+    
+Individual: QualityStatementBlob
+
+    Types: 
+        FilePattern
+    
+    Facts:  
+     represents  <http://nice.org.uk/ns/qualitystandard#QualityStatement>,
+     parent  QualityStatement,
+     expression  "Statement.md"^^xsd:string
+    
+    
+Individual: QualityStandard
+
+    Types: 
+        DirectoryPattern
+    
+    Facts:  
+     parent  QualityStandards,
+     expression  "qs(?<QualityStandardId>\\d+)"^^xsd:string
     
     
