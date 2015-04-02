@@ -1,5 +1,6 @@
 Prefix: : <http://nice.org.uk/ns/compilation#>
 Prefix: dc: <http://purl.org/dc/elements/1.1/>
+Prefix: qs: <http://nice.org.uk/ns/qualitystandard#>
 Prefix: owl: <http://www.w3.org/2002/07/owl#>
 Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 Prefix: xml: <http://www.w3.org/XML/1998/namespace>
@@ -12,6 +13,21 @@ Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 Ontology: <http://nice.org.uk/ns/compilation>
 
 
+AnnotationProperty: rdfs:isDefinedBy
+
+    
+AnnotationProperty: represents
+
+    SubPropertyOf: 
+        rdfs:isDefinedBy
+    
+    Domain: 
+        <http://nice.org.uk/ns/compilation#FilePattern>
+    
+    Range: 
+        <http://www.w3.org/2002/07/owl#Thing>
+    
+    
 AnnotationProperty: rdfs:comment
 
     
@@ -25,15 +41,6 @@ ObjectProperty: parent
     
     Range: 
         parent max 1 Glob
-    
-    
-ObjectProperty: represents
-
-    Domain: 
-        FilePattern
-    
-    Range: 
-        represents only owl:Thing
     
     
 DataProperty: path
@@ -84,9 +91,6 @@ Class: Tool
 Class: owl:Thing
 
     
-Class: AnotherClass
-
-    
 Class: Target
 
     Annotations: 
@@ -110,7 +114,7 @@ Class: FilePattern
 Individual: Root
 
     Types: 
-        Glob
+        DirectoryPattern
     
     
 Individual: QualityStandards
@@ -141,11 +145,10 @@ Individual: QualityStatement
     
 Individual: QualityStatementBlob
 
-    Types: 
-        FilePattern
+    Annotations: 
+        represents <http://nice.org.uk/ns/qualitystandard#qs:QualityStandard>
     
     Facts:  
-     represents  <http://nice.org.uk/ns/qualitystandard#QualityStatement>,
      parent  QualityStatement,
      expression  "Statement.md"^^xsd:string
     
