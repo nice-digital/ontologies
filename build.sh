@@ -1,5 +1,4 @@
 #!/bin/bash
-npm install
 cd ns
 
 for OWL in *.{omn,owl}

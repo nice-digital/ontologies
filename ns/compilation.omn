@@ -1,5 +1,6 @@
 Prefix: : <http://nice.org.uk/ns/compilation#>
 Prefix: dc: <http://purl.org/dc/elements/1.1/>
+Prefix: qs: <http://nice.org.uk/ns/qualitystandard#>
 Prefix: owl: <http://www.w3.org/2002/07/owl#>
 Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 Prefix: xml: <http://www.w3.org/XML/1998/namespace>
@@ -12,20 +13,26 @@ Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 Ontology: <http://nice.org.uk/ns/compilation>
 
 
+AnnotationProperty: rdfs:isDefinedBy
+
+    
+AnnotationProperty: represents
+
+    SubPropertyOf: 
+        rdfs:isDefinedBy
+    
+    Domain: 
+        <http://nice.org.uk/ns/compilation#FilePattern>
+    
+    Range: 
+        <http://www.w3.org/2002/07/owl#Thing>
+    
+    
 AnnotationProperty: rdfs:comment
 
     
 Datatype: xsd:string
 
-    
-ObjectProperty: represents
-
-    Domain: 
-        FilePattern
-    
-    Range: 
-        represents only owl:Thing
-    
     
 ObjectProperty: parent
 
@@ -34,21 +41,6 @@ ObjectProperty: parent
     
     Range: 
         parent max 1 Glob
-    
-    
-DataProperty: expression
-
-    Annotations: 
-        rdfs:comment "A regular expression matching a directory path"^^xsd:string
-    
-    Domain: 
-        Glob
-    
-    Range: 
-        xsd:string
-    
-    Characteristics: 
-        Functional
     
     
 DataProperty: path
@@ -66,7 +58,22 @@ DataProperty: path
         Functional
     
     
-Class: owl:Thing
+DataProperty: expression
+
+    Annotations: 
+        rdfs:comment "A regular expression matching a directory path"^^xsd:string
+    
+    Domain: 
+        Glob
+    
+    Range: 
+        xsd:string
+    
+    Characteristics: 
+        Functional
+    
+    
+Class: Glob
 
     
 Class: Compilation
@@ -81,17 +88,15 @@ Class: Tool
         rdfs:comment "A tool that takes a target and produces a  representation in triples"^^xsd:string
     
     
+Class: owl:Thing
+
+    
 Class: Target
 
     Annotations: 
         rdfs:comment "A resource that may require compilation"^^xsd:string
     
     
-Class: Glob
-
-Class: AnotherClass
-
-
 Class: DirectoryPattern
 
     SubClassOf: 
@@ -102,13 +107,59 @@ Class: DirectoryPattern
 Class: FilePattern
 
     SubClassOf: 
-        parent only DirectoryPattern,
-        Glob
+        Glob,
+        parent only DirectoryPattern
+    
+    
+Individual: Root
+
+    Types: 
+        DirectoryPattern
+    
+    
+Individual: QualityStandards
+
+    Types: 
+        DirectoryPattern
+    
+    Facts:  
+     parent  Root,
+     expression  "qualitystandards"^^xsd:string
     
     
 Individual: Content
 
     Types: 
         Tool
+    
+    
+Individual: QualityStatement
+
+    Types: 
+        DirectoryPattern
+    
+    Facts:  
+     parent  QualityStandard,
+     expression  "st(?<QualityStatementId>\\d+)"^^xsd:string
+    
+    
+Individual: QualityStatementBlob
+
+    Annotations: 
+        represents <http://nice.org.uk/ns/qualitystandard#qs:QualityStandard>
+    
+    Facts:  
+     parent  QualityStatement,
+     expression  "Statement.md"^^xsd:string
+    
+    
+Individual: QualityStandard
+
+    Types: 
+        DirectoryPattern
+    
+    Facts:  
+     parent  QualityStandards,
+     expression  "qs(?<QualityStandardId>\\d+)"^^xsd:string
     
     
