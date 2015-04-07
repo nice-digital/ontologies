@@ -148,6 +148,9 @@ Individual: QualityStatementBlob
     Annotations: 
         represents <http://nice.org.uk/ns/qualitystandard#qs:QualityStandard>
     
+    Types: 
+        FilePattern
+    
     Facts:  
      parent  QualityStatement,
      expression  "Statement.md"^^xsd:string
