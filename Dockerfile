@@ -18,7 +18,7 @@ VOLUME ["/etc/nginx/certs", "/etc/nginx/conf.d", "/var/log/nginx"]
 WORKDIR /etc/nginx
 
 RUN rm -rf /var/www/html/*
-ADD ns /var/www/html
+ADD ns /var/www/html/ns
 
 RUN rm /etc/nginx/sites-enabled/default
 
