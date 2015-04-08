@@ -1,5 +1,8 @@
 #!/bin/bash
 git submodule update --remote
+cd ld-utilities/
+./build.sh
+cd ..
 cd ns
 
 for OWL in *.{omn,owl}
