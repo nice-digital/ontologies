@@ -34,6 +34,9 @@ AnnotationProperty: rdfs:comment
 Datatype: xsd:string
 
     
+Datatype: xsd:positiveInteger
+
+    
 ObjectProperty: parent
 
     Domain: 
@@ -43,19 +46,68 @@ ObjectProperty: parent
         parent max 1 Glob
     
     
+ObjectProperty: message
+
+    Domain: 
+        Compilation
+    
+    Range: 
+        Message
+    
+    
+ObjectProperty: tool
+
+    Domain: 
+        FilePattern
+    
+    Range: 
+        Tool
+    
+    
+ObjectProperty: position
+
+    Domain: 
+        Message
+    
+    Range: 
+        Position
+    
+    Characteristics: 
+        Functional
+    
+    
 DataProperty: path
 
     Annotations: 
         rdfs:comment "The path to the resource"^^xsd:string
     
     Domain: 
-        Target
+        Target,
+        Position
     
     Range: 
         xsd:string
     
     Characteristics: 
         Functional
+    
+    
+DataProperty: charPosition
+
+    Domain: 
+        Position
+    
+    Range: 
+        xsd:positiveInteger
+    
+    
+DataProperty: lineNumber
+
+    Domain: 
+        Position
+    
+    Range: 
+        xsd:positiveInteger
     
     
 DataProperty: expression
@@ -88,8 +140,26 @@ Class: Tool
         rdfs:comment "A tool that takes a target and produces a  representation in triples"^^xsd:string
     
     
+Class: Position
+
+    
 Class: owl:Thing
 
+    
+Class: Information
+
+    SubClassOf: 
+        Message
+    
+    
+Class: Message
+
+    
+Class: Warning
+
+    SubClassOf: 
+        Message
+    
     
 Class: Target
 
@@ -102,6 +172,12 @@ Class: DirectoryPattern
     SubClassOf: 
         parent max 1 DirectoryPattern,
         Glob
+    
+    
+Class: Error
+
+    SubClassOf: 
+        Message
     
     
 Class: FilePattern
@@ -146,14 +222,22 @@ Individual: QualityStatement
 Individual: QualityStatementBlob
 
     Annotations: 
-        represents <http://nice.org.uk/ns/qualitystandard#qs:QualityStandard>
+        represents <http://nice.org.uk/ns/qualitystandard#QualityStandard>
     
     Types: 
         FilePattern
     
     Facts:  
+     tool  YamlMetadata,
      parent  QualityStatement,
+     tool  Content,
      expression  "Statement.md"^^xsd:string
+    
+    
+Individual: YamlMetadata
+
+    Types: 
+        Tool
     
     
 Individual: QualityStandard
