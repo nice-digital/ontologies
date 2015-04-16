@@ -4,7 +4,7 @@ cd ld-utilities/
 ./build.sh
 cd ../ns
 
-for OWL in *.omn
+for OWL in ./*.omn
 do
 	  mono ../ld-utilities/src/omn2ttl/omn2ttl/bin/Release/omn2ttl.exe --uri $OWL
 	  if [[ $OWL == *"qualitystandard"* ]]
@@ -28,7 +28,11 @@ do
 			         cat "$ttl" >> "$qs"
 		    done
 	  fi
-	  java -jar ../ld-utilities/src/ComLLODE/out/artifacts/CLLODE/ComLLODE.jar $OWL
+done
+
+for TTL in ./*.ttl
+do
+	  java -jar ../ld-utilities/src/ComLLODE/out/artifacts/CLLODE/ComLLODE.jar $TTL
 done
 
 cd -
