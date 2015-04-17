@@ -21,13 +21,13 @@ AnnotationProperty: <http://nice.org.uk/ns/qualitystandard#include_drug_abuse,_a
 AnnotationProperty: rdfs:comment
 
     
-Datatype: rdfs:Literal
+Datatype: rdf:PlainLiteral
 
     
 Datatype: xsd:string
 
     
-Datatype: rdf:PlainLiteral
+Datatype: rdfs:Literal
 
     
 ObjectProperty: ownsTask
@@ -42,6 +42,21 @@ ObjectProperty: ownsTask
         taskOwner
     
     
+ObjectProperty: specifies
+
+    Domain: 
+        PopulationSpecifier
+    
+    Range: 
+        <http://nice.org.uk/ns/qualitystandard#pico:Population>
+    
+    InverseOf: 
+        isSpecifiedBy
+    
+    
+ObjectProperty: owl:topObjectProperty
+
+    
 ObjectProperty: <http://nice.org.uk/ns/qualitystandard#prov:wasGeneratedby>
 
     Domain: 
@@ -52,6 +67,21 @@ ObjectProperty: <http://nice.org.uk/ns/qualitystandard#prov:wasGeneratedby>
     
     InverseOf: 
         <http://nice.org.uk/ns/qualitystandard#prov:generated>
+    
+    
+ObjectProperty: isTargetPopulationOf
+
+    SubPropertyOf: 
+        owl:topObjectProperty
+    
+    Domain: 
+        <http://nice.org.uk/ns/qualitystandard#pico:Population>
+    
+    Range: 
+        QualityStatement
+    
+    InverseOf: 
+        targetPopulation
     
     
 ObjectProperty: definesMeasure
@@ -69,52 +99,58 @@ ObjectProperty: definesMeasure
         measureDefinedBy
     
     
-ObjectProperty: owl:topObjectProperty
-
-    
-ObjectProperty: age
+ObjectProperty: isSpecifiedBy
 
     Domain: 
         <http://nice.org.uk/ns/qualitystandard#pico:Population>
     
     Range: 
-        AgeGroup
-    
-    
-ObjectProperty: skos:inConceptScheme
-
-    Domain: 
-        <http://nice.org.uk/ns/qualitystandard#skos:Concept>
-    
-    Range: 
-        <http://www.w3.org/2004/02/skos/core#skos:ConceptScheme>
+        PopulationSpecifier
     
     InverseOf: 
-        hasConcept
+        specifies
     
     
-ObjectProperty: setting
+ObjectProperty: measureDefinedBy
 
     Domain: 
-        QualityStatement
+        QualityMeasure
     
     Range: 
+        QualityStatement
+    
+    InverseOf: 
+        definesMeasure
+    
+    
+ObjectProperty: condition
+
+    Domain: 
+        <http://nice.org.uk/ns/qualitystandard#pico:Population>
+    
+    Range: 
+        <http://nice.org.uk/ns/qualitystandard#snomed:Disease>
+    
+    
+ObjectProperty: lifestyleCondition
+
+    Domain: 
+        <http://nice.org.uk/ns/qualitystandard#pico:Population>
+    
+    Range: 
+        LifestyleCondition
+    
+    
+ObjectProperty: isSettingOf
+
+    Domain: 
         Setting
     
-    InverseOf: 
-        isSettingOf
-    
-    
-ObjectProperty: targetPopulation
-
-    Domain: 
+    Range: 
         QualityStatement
     
-    Range: 
-        <http://nice.org.uk/ns/qualitystandard#pico:Population>
-    
     InverseOf: 
-        isTargetPopulationOf
+        setting
     
     
 ObjectProperty: definesTask
@@ -122,14 +158,14 @@ ObjectProperty: definesTask
     Annotations: 
         rdfs:comment "connects  proposed action of quality statement to tasks which enable this action to take place"
     
+    SubPropertyOf: 
+        owl:topObjectProperty
+    
     Domain: 
         QualityStatement
     
     Range: 
         Task
-    
-    SubPropertyOf: 
-        owl:topObjectProperty
     
     InverseOf: 
         definedTaskOf
@@ -159,13 +195,58 @@ ObjectProperty: definedTaskOf
         definesTask
     
     
-ObjectProperty: lifestyleCondition
+ObjectProperty: hasConcept
+
+    Domain: 
+        <http://www.w3.org/2004/02/skos/core#skos:ConceptScheme>
+    
+    Range: 
+        <http://nice.org.uk/ns/qualitystandard#skos:Concept>
+    
+    InverseOf: 
+        skos:inConceptScheme
+    
+    
+ObjectProperty: targetPopulation
+
+    Domain: 
+        QualityStatement
+    
+    Range: 
+        <http://nice.org.uk/ns/qualitystandard#pico:Population>
+    
+    InverseOf: 
+        isTargetPopulationOf
+    
+    
+ObjectProperty: age
 
     Domain: 
         <http://nice.org.uk/ns/qualitystandard#pico:Population>
     
     Range: 
-        LifestyleCondition
+        AgeGroup
+    
+    
+ObjectProperty: measuresProgressAgainst
+
+    Domain: 
+        QualityMeasure
+    
+    Range: 
+        Task
+    
+    
+ObjectProperty: skos:inConceptScheme
+
+    Domain: 
+        <http://nice.org.uk/ns/qualitystandard#skos:Concept>
+    
+    Range: 
+        <http://www.w3.org/2004/02/skos/core#skos:ConceptScheme>
+    
+    InverseOf: 
+        hasConcept
     
     
 ObjectProperty: <http://nice.org.uk/ns/qualitystandard#prov:generated>
@@ -180,103 +261,31 @@ ObjectProperty: <http://nice.org.uk/ns/qualitystandard#prov:generated>
         <http://nice.org.uk/ns/qualitystandard#prov:wasGeneratedby>
     
     
-ObjectProperty: measuresProgressAgainst
+ObjectProperty: setting
 
     Domain: 
-        QualityMeasure
+        QualityStatement
     
     Range: 
-        Task
-    
-    
-ObjectProperty: isSpecifiedBy
-
-    Domain: 
-        <http://nice.org.uk/ns/qualitystandard#pico:Population>
-    
-    Range: 
-        PopulationSpecifier
-    
-    InverseOf: 
-        specifies
-    
-    
-ObjectProperty: isSettingOf
-
-    Domain: 
         Setting
     
-    Range: 
-        QualityStatement
-    
     InverseOf: 
-        setting
+        isSettingOf
     
     
-ObjectProperty: specifies
+DataProperty: dc:identifier
 
     Domain: 
-        PopulationSpecifier
+        owl:Thing
     
     Range: 
-        <http://nice.org.uk/ns/qualitystandard#pico:Population>
-    
-    InverseOf: 
-        isSpecifiedBy
+        rdfs:Literal
     
     
-ObjectProperty: isTargetPopulationOf
+DataProperty: dc:title
 
     Domain: 
-        <http://nice.org.uk/ns/qualitystandard#pico:Population>
-    
-    Range: 
-        QualityStatement
-    
-    SubPropertyOf: 
-        owl:topObjectProperty
-    
-    InverseOf: 
-        targetPopulation
-    
-    
-ObjectProperty: measureDefinedBy
-
-    Domain: 
-        QualityMeasure
-    
-    Range: 
-        QualityStatement
-    
-    InverseOf: 
-        definesMeasure
-    
-    
-ObjectProperty: condition
-
-    Domain: 
-        <http://nice.org.uk/ns/qualitystandard#pico:Population>
-    
-    Range: 
-        <http://nice.org.uk/ns/qualitystandard#snomed:Disease>
-    
-    
-ObjectProperty: hasConcept
-
-    Domain: 
-        <http://www.w3.org/2004/02/skos/core#skos:ConceptScheme>
-    
-    Range: 
-        <http://nice.org.uk/ns/qualitystandard#skos:Concept>
-    
-    InverseOf: 
-        skos:inConceptScheme
-    
-    
-DataProperty: hasDataSource
-
-    Domain: 
-        QualityMeasure
+        QualityStandard
     
     Range: 
         rdfs:Literal
@@ -291,24 +300,6 @@ DataProperty: <http://nice.org.uk/ns/qualitystandard#qs::hasNumerator>
         xsd:string
     
     
-DataProperty: dc:title
-
-    Domain: 
-        QualityStandard
-    
-    Range: 
-        rdfs:Literal
-    
-    
-DataProperty: dc:identifier
-
-    Domain: 
-        owl:Thing
-    
-    Range: 
-        rdfs:Literal
-    
-    
 DataProperty: <http://nice.org.uk/ns/qualitystandard#qs::hasDenominator>
 
     Domain: 
@@ -318,29 +309,23 @@ DataProperty: <http://nice.org.uk/ns/qualitystandard#qs::hasDenominator>
         xsd:string
     
     
-Class: Task
+DataProperty: hasDataSource
 
-    Annotations: 
-        rdfs:comment "specific action that is outlined in \"what the quality statement means for\" ... but only for service providers, commissioners etc. not for patients, carers"
+    Domain: 
+        QualityMeasure
+    
+    Range: 
+        rdfs:Literal
     
     
-Class: PopulationSpecifier
+Class: ServiceRole
 
     SubClassOf: 
         <http://nice.org.uk/ns/qualitystandard#skos:Concept>
     
     
-Class: StructureMeasure
+Class: owl:Thing
 
-    SubClassOf: 
-        QualityMeasure
-    
-    
-Class: <http://www.w3.org/2004/02/skos/core#skos:ConceptScheme>
-
-    Annotations: 
-        rdfs:comment "Class for concept schemes that we will be using to populate values for concepts of age, gender , disease etc. These can be a mixture of our own thesauri and external ones such as snomed and will be indicated by a URI"
-    
     
 Class: Setting
 
@@ -351,61 +336,8 @@ Class: Setting
         <http://nice.org.uk/ns/qualitystandard#skos:Concept>
     
     
-Class: ProcessMeasure
-
-    SubClassOf: 
-        QualityMeasure
-    
-    
-Class: QualityStatement
-
-    
-Class: OutcomeMeasure
-
-    SubClassOf: 
-        QualityMeasure
-    
-    
-Class: owl:Thing
-
-    
-Class: QualityStandard
-
-    
-Class: ServiceRole
-
-    SubClassOf: 
-        <http://nice.org.uk/ns/qualitystandard#skos:Concept>
-    
-    
-Class: <http://nice.org.uk/ns/qualitystandard#pico:Population>
-
-    Annotations: 
-        rdfs:comment "defined by at least one of the age, gender, ethnicity, disease, lifestyle condition concepts."
-    
-    EquivalentTo: 
-        isSpecifiedBy min 1 PopulationSpecifier
-    
-    
-Class: QualityMeasure
-
-    Annotations: 
-        rdfs:comment "measure associated with quality statement"
-    
-    
 Class: <http://nice.org.uk/ns/qualitystandard#skos:Concept>
 
-    
-Class: <http://nice.org.uk/ns/qualitystandard#snomed:Disease>
-
-    Annotations: 
-        rdfs:comment "Will need to refer to URI specific part of SNOMED or other scheme rather than to whole schema",
-        rdfs:comment "use for medical condition",
-        rdfs:comment "Placeholder quality statement is fundamentally different from other quality statements as is equivalent of research recommendation - i.e. shows gap in evidence"
-    
-    SubClassOf: 
-        PopulationSpecifier
-    
     
 Class: AgeGroup
 
@@ -414,6 +346,61 @@ Class: AgeGroup
     
     SubClassOf: 
         PopulationSpecifier
+    
+    
+Class: Task
+
+    Annotations: 
+        rdfs:comment "specific action that is outlined in \"what the quality statement means for\" ... but only for service providers, commissioners etc. not for patients, carers"
+    
+    
+Class: OutcomeMeasure
+
+    SubClassOf: 
+        QualityMeasure
+    
+    DisjointWith: 
+        ProcessMeasure, StructureMeasure
+    
+    
+Class: PopulationSpecifier
+
+    SubClassOf: 
+        <http://nice.org.uk/ns/qualitystandard#skos:Concept>
+    
+    
+Class: QualityMeasure
+
+    Annotations: 
+        rdfs:comment "measure associated with quality statement"
+    
+    DisjointWith: 
+        QualityStandard, QualityStatement
+    
+    
+Class: ProcessMeasure
+
+    SubClassOf: 
+        QualityMeasure
+    
+    DisjointWith: 
+        OutcomeMeasure, StructureMeasure
+    
+    
+Class: <http://nice.org.uk/ns/qualitystandard#snomed:Disease>
+
+    Annotations: 
+        rdfs:comment "Will need to refer to URI specific part of SNOMED or other scheme rather than to whole schema",
+        rdfs:comment "use for medical condition"
+    
+    SubClassOf: 
+        PopulationSpecifier
+    
+    
+Class: <http://www.w3.org/2004/02/skos/core#skos:ConceptScheme>
+
+    Annotations: 
+        rdfs:comment "Class for concept schemes that we will be using to populate values for concepts of age, gender , disease etc. These can be a mixture of our own thesauri and external ones such as snomed and will be indicated by a URI"
     
     
 Class: LifestyleCondition
@@ -425,6 +412,33 @@ Class: LifestyleCondition
         PopulationSpecifier
     
     
-DisjointClasses: 
-    OutcomeMeasure, ProcessMeasure, StructureMeasure, <http://nice.org.uk/ns/qualitystandard#pico:Population>
+Class: QualityStandard
 
+    DisjointWith: 
+        QualityStatement, QualityMeasure
+    
+    
+Class: StructureMeasure
+
+    SubClassOf: 
+        QualityMeasure
+    
+    DisjointWith: 
+        ProcessMeasure, OutcomeMeasure
+    
+    
+Class: QualityStatement
+
+    DisjointWith: 
+        QualityStandard, QualityMeasure
+    
+    
+Class: <http://nice.org.uk/ns/qualitystandard#pico:Population>
+
+    Annotations: 
+        rdfs:comment "defined by at least one of the age, gender, ethnicity, disease, lifestyle condition concepts."
+    
+    EquivalentTo: 
+        isSpecifiedBy min 1 PopulationSpecifier
+    
+    
