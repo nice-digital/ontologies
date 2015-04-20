@@ -1,273 +1,444 @@
-Prefix: : <http://nice.org.uk/ns/compilation#>
+Prefix: : <http://nice.org.uk/ns/qualitystandard#>
 Prefix: dc: <http://purl.org/dc/elements/1.1/>
-Prefix: qs: <http://nice.org.uk/ns/qualitystandard#>
 Prefix: owl: <http://www.w3.org/2002/07/owl#>
 Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 Prefix: xml: <http://www.w3.org/XML/1998/namespace>
 Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
-Prefix: prov: <http://www.w3.org/ns/prov#>
 Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: skos: <http://www.w3.org/2004/02/skos/core#>
 
 
 
-Ontology: <http://nice.org.uk/ns/compilation>
+Ontology: <http://nice.org.uk/ns/qualitystandard>
 
 
-AnnotationProperty: rdfs:isDefinedBy
-
-    
-AnnotationProperty: rdfs:seeAlso
-
-    
-AnnotationProperty: represents
+AnnotationProperty: <http://nice.org.uk/ns/qualitystandard#include_drug_abuse,_alcohol_abuse,_obesity>
 
     SubPropertyOf: 
-        rdfs:isDefinedBy
-    
-    Domain: 
-        <http://nice.org.uk/ns/compilation#FilePattern>
-    
-    Range: 
-        <http://www.w3.org/2002/07/owl#Thing>
+        rdfs:comment
     
     
 AnnotationProperty: rdfs:comment
 
     
-AnnotationProperty: source
+Datatype: rdf:PlainLiteral
 
-    SubPropertyOf: 
-        rdfs:seeAlso
-    
     
 Datatype: xsd:string
 
     
-Datatype: xsd:positiveInteger
+Datatype: rdfs:Literal
 
     
-ObjectProperty: parent
-
-    Domain: 
-        parent only Glob
-    
-    Range: 
-        parent max 1 Glob
-    
-    
-ObjectProperty: message
+ObjectProperty: ownsTask
 
     Domain: 
-        Compilation
+        ServiceRole
     
     Range: 
-        Message
+        Task
+    
+    InverseOf: 
+        taskOwner
     
     
-ObjectProperty: tool
+ObjectProperty: specifies
 
     Domain: 
-        FilePattern
+        PopulationSpecifier
     
     Range: 
-        Tool
+        <http://nice.org.uk/ns/qualitystandard#pico:Population>
+    
+    InverseOf: 
+        isSpecifiedBy
     
     
-ObjectProperty: position
+ObjectProperty: owl:topObjectProperty
+
+    
+ObjectProperty: <http://nice.org.uk/ns/qualitystandard#prov:wasGeneratedby>
 
     Domain: 
-        Message
+        QualityStatement
     
     Range: 
-        Position
+        QualityStandard
     
-    Characteristics: 
-        Functional
+    InverseOf: 
+        <http://nice.org.uk/ns/qualitystandard#prov:generated>
     
     
-DataProperty: path
+ObjectProperty: isTargetPopulationOf
+
+    SubPropertyOf: 
+        owl:topObjectProperty
+    
+    Domain: 
+        <http://nice.org.uk/ns/qualitystandard#pico:Population>
+    
+    Range: 
+        QualityStatement
+    
+    InverseOf: 
+        targetPopulation
+    
+    
+ObjectProperty: definesMeasure
 
     Annotations: 
-        rdfs:comment "The path to the resource"^^xsd:string
+        rdfs:comment "one quality statement may hve several measures associated with it."
     
     Domain: 
-        Target,
-        Position
+        QualityStatement
+    
+    Range: 
+        QualityMeasure
+    
+    InverseOf: 
+        measureDefinedBy
+    
+    
+ObjectProperty: isSpecifiedBy
+
+    Domain: 
+        <http://nice.org.uk/ns/qualitystandard#pico:Population>
+    
+    Range: 
+        PopulationSpecifier
+    
+    InverseOf: 
+        specifies
+    
+    
+ObjectProperty: measureDefinedBy
+
+    Domain: 
+        QualityMeasure
+    
+    Range: 
+        QualityStatement
+    
+    InverseOf: 
+        definesMeasure
+    
+    
+ObjectProperty: condition
+
+    Domain: 
+        <http://nice.org.uk/ns/qualitystandard#pico:Population>
+    
+    Range: 
+        <http://nice.org.uk/ns/qualitystandard#snomed:Disease>
+    
+    
+ObjectProperty: lifestyleCondition
+
+    Domain: 
+        <http://nice.org.uk/ns/qualitystandard#pico:Population>
+    
+    Range: 
+        LifestyleCondition
+    
+    
+ObjectProperty: isSettingOf
+
+    Domain: 
+        Setting
+    
+    Range: 
+        QualityStatement
+    
+    InverseOf: 
+        setting
+    
+    
+ObjectProperty: definesTask
+
+    Annotations: 
+        rdfs:comment "connects  proposed action of quality statement to tasks which enable this action to take place"
+    
+    SubPropertyOf: 
+        owl:topObjectProperty
+    
+    Domain: 
+        QualityStatement
+    
+    Range: 
+        Task
+    
+    InverseOf: 
+        definedTaskOf
+    
+    
+ObjectProperty: taskOwner
+
+    Domain: 
+        Task
+    
+    Range: 
+        ServiceRole
+    
+    InverseOf: 
+        ownsTask
+    
+    
+ObjectProperty: definedTaskOf
+
+    Domain: 
+        Task
+    
+    Range: 
+        QualityStatement
+    
+    InverseOf: 
+        definesTask
+    
+    
+ObjectProperty: hasConcept
+
+    Domain: 
+        <http://www.w3.org/2004/02/skos/core#skos:ConceptScheme>
+    
+    Range: 
+        <http://nice.org.uk/ns/qualitystandard#skos:Concept>
+    
+    InverseOf: 
+        skos:inConceptScheme
+    
+    
+ObjectProperty: targetPopulation
+
+    Domain: 
+        QualityStatement
+    
+    Range: 
+        <http://nice.org.uk/ns/qualitystandard#pico:Population>
+    
+    InverseOf: 
+        isTargetPopulationOf
+    
+    
+ObjectProperty: age
+
+    Domain: 
+        <http://nice.org.uk/ns/qualitystandard#pico:Population>
+    
+    Range: 
+        AgeGroup
+    
+    
+ObjectProperty: measuresProgressAgainst
+
+    Domain: 
+        QualityMeasure
+    
+    Range: 
+        Task
+    
+    
+ObjectProperty: skos:inConceptScheme
+
+    Domain: 
+        <http://nice.org.uk/ns/qualitystandard#skos:Concept>
+    
+    Range: 
+        <http://www.w3.org/2004/02/skos/core#skos:ConceptScheme>
+    
+    InverseOf: 
+        hasConcept
+    
+    
+ObjectProperty: <http://nice.org.uk/ns/qualitystandard#prov:generated>
+
+    Domain: 
+        QualityStandard
+    
+    Range: 
+        QualityStatement
+    
+    InverseOf: 
+        <http://nice.org.uk/ns/qualitystandard#prov:wasGeneratedby>
+    
+    
+ObjectProperty: setting
+
+    Domain: 
+        QualityStatement
+    
+    Range: 
+        Setting
+    
+    InverseOf: 
+        isSettingOf
+    
+    
+DataProperty: dc:identifier
+
+    Domain: 
+        owl:Thing
+    
+    Range: 
+        rdfs:Literal
+    
+    
+DataProperty: dc:title
+
+    Domain: 
+        QualityStandard
+    
+    Range: 
+        rdfs:Literal
+    
+    
+DataProperty: <http://nice.org.uk/ns/qualitystandard#qs::hasNumerator>
+
+    Domain: 
+        ProcessMeasure
     
     Range: 
         xsd:string
     
-    Characteristics: 
-        Functional
     
-    
-DataProperty: charPosition
+DataProperty: <http://nice.org.uk/ns/qualitystandard#qs::hasDenominator>
 
     Domain: 
-        Position
-    
-    Range: 
-        xsd:positiveInteger
-    
-    
-DataProperty: lineNumber
-
-    Domain: 
-        Position
-    
-    Range: 
-        xsd:positiveInteger
-    
-    
-DataProperty: expression
-
-    Annotations: 
-        rdfs:comment "A regular expression matching a directory path"^^xsd:string
-    
-    Domain: 
-        Glob
+        QualityMeasure
     
     Range: 
         xsd:string
     
-    Characteristics: 
-        Functional
     
-    
-Class: Glob
+DataProperty: hasDataSource
 
+    Domain: 
+        QualityMeasure
     
-Class: Compilation
-
-    Annotations: 
-        rdfs:comment "A set of resources to compile, and the results of that compilation"^^xsd:string
-    
-    
-Class: Tool
-
-    Annotations: 
-        rdfs:comment "A tool that takes a target and produces a  representation in triples"^^xsd:string
+    Range: 
+        rdfs:Literal
     
     
-Class: InFile
+Class: ServiceRole
 
     SubClassOf: 
-        Position
-    
-    
-Class: FromResource
-
-    SubClassOf: 
-        Position
+        <http://nice.org.uk/ns/qualitystandard#skos:Concept>
     
     
 Class: owl:Thing
 
     
-Class: Position
-
-    
-Class: Information
-
-    SubClassOf: 
-        Message
-    
-    
-Class: Message
-
-    
-Class: Warning
-
-    SubClassOf: 
-        Message
-    
-    
-Class: Target
+Class: Setting
 
     Annotations: 
-        rdfs:comment "A resource that may require compilation"^^xsd:string
+        rdfs:comment "Setting - may be used for setting for population definition as well as setting where action of quality statement should occur"
     
-    
-Class: DirectoryPattern
-
     SubClassOf: 
-        parent max 1 DirectoryPattern,
-        Glob
+        <http://nice.org.uk/ns/qualitystandard#skos:Concept>
     
     
-Class: Error
+Class: <http://nice.org.uk/ns/qualitystandard#skos:Concept>
 
-    SubClassOf: 
-        Message
     
-    
-Class: FilePattern
-
-    SubClassOf: 
-        Glob,
-        parent only DirectoryPattern
-    
-    
-Individual: Root
-
-    Types: 
-        DirectoryPattern
-    
-    
-Individual: QualityStandards
-
-    Types: 
-        DirectoryPattern
-    
-    Facts:  
-     parent  Root,
-     expression  "qualitystandards"^^xsd:string
-    
-    
-Individual: Content
-
-    Types: 
-        Tool
-    
-    
-Individual: QualityStatement
-
-    Types: 
-        DirectoryPattern
-    
-    Facts:  
-     parent  QualityStandard,
-     expression  "st(?<QualityStatementId>\\d+)"^^xsd:string
-    
-    
-Individual: QualityStatementBlob
+Class: AgeGroup
 
     Annotations: 
-        represents <http://nice.org.uk/ns/qualitystandard#QualityStandard>
+        rdfs:comment "Some list of age groups to be defined to support population definition"
     
-    Types: 
-        FilePattern
-    
-    Facts:  
-     tool  YamlMetadata,
-     parent  QualityStatement,
-     tool  Content,
-     expression  "Statement.md"^^xsd:string
+    SubClassOf: 
+        PopulationSpecifier
     
     
-Individual: YamlMetadata
+Class: Task
 
-    Types: 
-        Tool
+    Annotations: 
+        rdfs:comment "specific action that is outlined in \"what the quality statement means for\" ... but only for service providers, commissioners etc. not for patients, carers"
     
     
-Individual: QualityStandard
+Class: OutcomeMeasure
 
-    Types: 
-        DirectoryPattern
+    SubClassOf: 
+        QualityMeasure
     
-    Facts:  
-     parent  QualityStandards,
-     expression  "qs(?<QualityStandardId>\\d+)"^^xsd:string
+    DisjointWith: 
+        ProcessMeasure, StructureMeasure
+    
+    
+Class: PopulationSpecifier
+
+    SubClassOf: 
+        <http://nice.org.uk/ns/qualitystandard#skos:Concept>
+    
+    
+Class: QualityMeasure
+
+    Annotations: 
+        rdfs:comment "measure associated with quality statement"
+    
+    DisjointWith: 
+        QualityStandard, QualityStatement
+    
+    
+Class: ProcessMeasure
+
+    SubClassOf: 
+        QualityMeasure
+    
+    DisjointWith: 
+        OutcomeMeasure, StructureMeasure
+    
+    
+Class: <http://nice.org.uk/ns/qualitystandard#snomed:Disease>
+
+    Annotations: 
+        rdfs:comment "Will need to refer to URI specific part of SNOMED or other scheme rather than to whole schema",
+        rdfs:comment "use for medical condition"
+    
+    SubClassOf: 
+        PopulationSpecifier
+    
+    
+Class: <http://www.w3.org/2004/02/skos/core#skos:ConceptScheme>
+
+    Annotations: 
+        rdfs:comment "Class for concept schemes that we will be using to populate values for concepts of age, gender , disease etc. These can be a mixture of our own thesauri and external ones such as snomed and will be indicated by a URI"
+    
+    
+Class: LifestyleCondition
+
+    Annotations: 
+        rdfs:comment "to include drug abuse, alcohol abuse and other lifestyle conditions"
+    
+    SubClassOf: 
+        PopulationSpecifier
+    
+    
+Class: QualityStandard
+
+    DisjointWith: 
+        QualityStatement, QualityMeasure
+    
+    
+Class: StructureMeasure
+
+    SubClassOf: 
+        QualityMeasure
+    
+    DisjointWith: 
+        ProcessMeasure, OutcomeMeasure
+    
+    
+Class: QualityStatement
+
+    DisjointWith: 
+        QualityStandard, QualityMeasure
+    
+    
+Class: <http://nice.org.uk/ns/qualitystandard#pico:Population>
+
+    Annotations: 
+        rdfs:comment "defined by at least one of the age, gender, ethnicity, disease, lifestyle condition concepts."
+    
+    EquivalentTo: 
+        isSpecifiedBy min 1 PopulationSpecifier
     
     
