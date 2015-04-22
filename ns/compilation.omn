@@ -134,8 +134,12 @@ DataProperty: expression
         Functional
     
     
-Class: Glob
+Class: FilePattern
 
+    SubClassOf: 
+        Glob,
+        parent only DirectoryPattern
+    
     
 Class: Compilation
 
@@ -143,10 +147,16 @@ Class: Compilation
         rdfs:comment "A set of resources to compile, and the results of that compilation"^^xsd:string
     
     
-Class: Tool
+Class: SemanticExtractor
 
-    Annotations: 
-        rdfs:comment "A tool that takes a target and produces a  representation in triples"^^xsd:string
+    SubClassOf: 
+        Tool
+    
+    
+Class: Warning
+
+    SubClassOf: 
+        Message
     
     
 Class: InFile
@@ -155,31 +165,16 @@ Class: InFile
         Position
     
     
+Class: KnowledgebaseProcessor
+
+    SubClassOf: 
+        Tool
+    
+    
 Class: FromResource
 
     SubClassOf: 
         Position
-    
-    
-Class: owl:Thing
-
-    
-Class: Position
-
-    
-Class: Information
-
-    SubClassOf: 
-        Message
-    
-    
-Class: Message
-
-    
-Class: Warning
-
-    SubClassOf: 
-        Message
     
     
 Class: Target
@@ -188,11 +183,10 @@ Class: Target
         rdfs:comment "A resource that may require compilation"^^xsd:string
     
     
-Class: DirectoryPattern
+Class: Information
 
     SubClassOf: 
-        parent max 1 DirectoryPattern,
-        Glob
+        Message
     
     
 Class: Error
@@ -201,12 +195,36 @@ Class: Error
         Message
     
     
-Class: FilePattern
+Class: Glob
+
+    
+Class: MarkdownConvertor
 
     SubClassOf: 
-        Glob,
-        parent only DirectoryPattern
+        KnowledgebaseProcessor
     
+    
+Class: Message
+
+    
+Class: DirectoryPattern
+
+    SubClassOf: 
+        parent max 1 DirectoryPattern,
+        Glob
+    
+    
+Class: owl:Thing
+
+    
+Class: Tool
+
+    Annotations: 
+        rdfs:comment "A tool that takes a target and produces a  representation in triples"^^xsd:string
+    
+    
+Class: Position
+
     
 Individual: Root
 
@@ -224,23 +242,25 @@ Individual: QualityStandards
      expression  "qualitystandards"^^xsd:string
     
     
+Individual: Pdf
+
+    Types: 
+        MarkdownConvertor
+    
+    
+Individual: Docx
+
+    Types: 
+        MarkdownConvertor
+    
+    
 Individual: Content
 
     Types: 
-        Tool
+        SemanticExtractor
     
     
 Individual: QualityStatement
-
-    Types: 
-        DirectoryPattern
-    
-    Facts:  
-     parent  QualityStandard,
-     expression  "st(?<QualityStatementId>\\d+)"^^xsd:string
-    
-    
-Individual: QualityStatementBlob
 
     Annotations: 
         represents <http://nice.org.uk/ns/qualitystandard#QualityStandard>
@@ -249,16 +269,31 @@ Individual: QualityStatementBlob
         FilePattern
     
     Facts:  
-     tool  YamlMetadata,
-     parent  QualityStatement,
+     parent  QualityStatementDir,
      tool  Content,
+     tool  Pdf,
+     tool  Docx,
+     tool  HtmlDocument,
+     tool  YamlMetadata,
      expression  "Statement.md"^^xsd:string
+    
+    
+Individual: HtmlDocument
+
+    Types: 
+        MarkdownConvertor
     
     
 Individual: YamlMetadata
 
     Types: 
-        Tool
+        SemanticExtractor
+    
+    
+Individual: HtmlFragment
+
+    Types: 
+        MarkdownConvertor
     
     
 Individual: QualityStandard
@@ -269,5 +304,15 @@ Individual: QualityStandard
     Facts:  
      parent  QualityStandards,
      expression  "qs(?<QualityStandardId>\\d+)"^^xsd:string
+    
+    
+Individual: QualityStatementDir
+
+    Types: 
+        DirectoryPattern
+    
+    Facts:  
+     parent  QualityStandard,
+     expression  "st(?<QualityStatementId>\\d+)"^^xsd:string
     
     
