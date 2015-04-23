@@ -270,11 +270,11 @@ Individual: QualityStatement
     
     Facts:  
      parent  QualityStatementDir,
+     tool  YamlMetadata,
      tool  Content,
      tool  Pdf,
      tool  Docx,
      tool  HtmlDocument,
-     tool  YamlMetadata,
      expression  "Statement.md"^^xsd:string
     
     
