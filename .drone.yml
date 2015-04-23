@@ -3,7 +3,6 @@ script:
   - ./build.sh
 publish:
   docker:
-    docker_version: 1.15
     image_name: nice/ontologies
     username: $$DOCKERHUB_USER
     password: $$DOCKERHUB_PASS
