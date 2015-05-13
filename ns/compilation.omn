@@ -8,7 +8,9 @@ Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
 Prefix: prov: <http://www.w3.org/ns/prov#>
 Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-Ontology: <http://nice.org.uk/ns/compilation>
+
+
+Ontology: <http://ld.nice.org.uk/ns/compilation>
 
 
 AnnotationProperty: rdfs:isDefinedBy
@@ -17,26 +19,26 @@ AnnotationProperty: rdfs:isDefinedBy
 AnnotationProperty: rdfs:seeAlso
 
     
-AnnotationProperty: represents
+AnnotationProperty: <http://ld.nice.org.uk/ns/compilation#represents>
 
     SubPropertyOf: 
         rdfs:isDefinedBy
     
     Domain: 
-        <http://nice.org.uk/ns/compilation#FilePattern>
+        <http://ld.nice.org.uk/ns/compilation#FilePattern>
     
     Range: 
         <http://www.w3.org/2002/07/owl#Thing>
     
     
-AnnotationProperty: rdfs:comment
-
-    
-AnnotationProperty: source
+AnnotationProperty: <http://ld.nice.org.uk/ns/compilation#source>
 
     SubPropertyOf: 
         rdfs:seeAlso
     
+    
+AnnotationProperty: rdfs:comment
+
     
 Datatype: xsd:string
 
@@ -44,53 +46,62 @@ Datatype: xsd:string
 Datatype: xsd:positiveInteger
 
     
-ObjectProperty: parent
+ObjectProperty: <http://ld.nice.org.uk/ns/compilation#parent>
 
     Domain: 
-        parent only Glob
+        <http://ld.nice.org.uk/ns/compilation#parent> only <http://ld.nice.org.uk/ns/compilation#Glob>
     
     Range: 
-        parent max 1 Glob
+        <http://ld.nice.org.uk/ns/compilation#parent> max 1 <http://ld.nice.org.uk/ns/compilation#Glob>
     
     
-ObjectProperty: message
+ObjectProperty: <http://ld.nice.org.uk/ns/compilation#message>
 
     Domain: 
-        Compilation
+        <http://ld.nice.org.uk/ns/compilation#Compilation>
     
     Range: 
-        Message
+        <http://ld.nice.org.uk/ns/compilation#Message>
     
     
-ObjectProperty: tool
+ObjectProperty: <http://ld.nice.org.uk/ns/compilation#tool>
 
     Domain: 
-        FilePattern
+        <http://ld.nice.org.uk/ns/compilation#FilePattern>
     
     Range: 
-        Tool
+        <http://ld.nice.org.uk/ns/compilation#Tool>
     
     
-ObjectProperty: position
+ObjectProperty: <http://ld.nice.org.uk/ns/compilation#position>
 
     Domain: 
-        Message
+        <http://ld.nice.org.uk/ns/compilation#Message>
     
     Range: 
-        Position
+        <http://ld.nice.org.uk/ns/compilation#Position>
     
     Characteristics: 
         Functional
     
     
-DataProperty: path
+DataProperty: <http://ld.nice.org.uk/ns/compilation#charPosition>
+
+    Domain: 
+        <http://ld.nice.org.uk/ns/compilation#Position>
+    
+    Range: 
+        xsd:positiveInteger
+    
+    
+DataProperty: <http://ld.nice.org.uk/ns/compilation#path>
 
     Annotations: 
         rdfs:comment "The path to the resource"^^xsd:string
     
     Domain: 
-        Target,
-        Position
+        <http://ld.nice.org.uk/ns/compilation#Target>,
+        <http://ld.nice.org.uk/ns/compilation#Position>
     
     Range: 
         xsd:string
@@ -99,31 +110,22 @@ DataProperty: path
         Functional
     
     
-DataProperty: charPosition
+DataProperty: <http://ld.nice.org.uk/ns/compilation#lineNumber>
 
     Domain: 
-        Position
+        <http://ld.nice.org.uk/ns/compilation#Position>
     
     Range: 
         xsd:positiveInteger
     
     
-DataProperty: lineNumber
-
-    Domain: 
-        Position
-    
-    Range: 
-        xsd:positiveInteger
-    
-    
-DataProperty: expression
+DataProperty: <http://ld.nice.org.uk/ns/compilation#expression>
 
     Annotations: 
         rdfs:comment "A regular expression matching a directory path"^^xsd:string
     
     Domain: 
-        Glob
+        <http://ld.nice.org.uk/ns/compilation#Glob>
     
     Range: 
         xsd:string
@@ -132,202 +134,203 @@ DataProperty: expression
         Functional
     
     
-Class: FilePattern
+Class: <http://ld.nice.org.uk/ns/compilation#FilePattern>
 
     SubClassOf: 
-        Glob,
-        parent only DirectoryPattern
+        <http://ld.nice.org.uk/ns/compilation#Glob>,
+        <http://ld.nice.org.uk/ns/compilation#parent> only <http://ld.nice.org.uk/ns/compilation#DirectoryPattern>
     
     
-Class: Compilation
+Class: <http://ld.nice.org.uk/ns/compilation#Compilation>
 
     Annotations: 
         rdfs:comment "A set of resources to compile, and the results of that compilation"^^xsd:string
     
     
-Class: SemanticExtractor
+Class: <http://ld.nice.org.uk/ns/compilation#MarkdownConvertor>
 
     SubClassOf: 
-        Tool
+        <http://ld.nice.org.uk/ns/compilation#KnowledgebaseProcessor>
     
     
-Class: Warning
+Class: <http://ld.nice.org.uk/ns/compilation#FromResource>
 
     SubClassOf: 
-        Message
+        <http://ld.nice.org.uk/ns/compilation#Position>
     
     
-Class: InFile
+Class: <http://ld.nice.org.uk/ns/compilation#SemanticExtractor>
 
     SubClassOf: 
-        Position
+        <http://ld.nice.org.uk/ns/compilation#Tool>
     
     
-Class: KnowledgebaseProcessor
-
-    SubClassOf: 
-        Tool
-    
-    
-Class: FromResource
-
-    SubClassOf: 
-        Position
-    
-    
-Class: Target
+Class: <http://ld.nice.org.uk/ns/compilation#Target>
 
     Annotations: 
         rdfs:comment "A resource that may require compilation"^^xsd:string
     
     
-Class: Information
+Class: <http://ld.nice.org.uk/ns/compilation#KnowledgebaseProcessor>
 
     SubClassOf: 
-        Message
+        <http://ld.nice.org.uk/ns/compilation#Tool>
     
     
-Class: Error
+Class: <http://ld.nice.org.uk/ns/compilation#Message>
+
+    
+Class: <http://ld.nice.org.uk/ns/compilation#Information>
 
     SubClassOf: 
-        Message
+        <http://ld.nice.org.uk/ns/compilation#Message>
     
     
-Class: Glob
-
-    
-Class: MarkdownConvertor
+Class: <http://ld.nice.org.uk/ns/compilation#Error>
 
     SubClassOf: 
-        KnowledgebaseProcessor
+        <http://ld.nice.org.uk/ns/compilation#Message>
     
     
-Class: Message
+Class: <http://ld.nice.org.uk/ns/compilation#Position>
 
-    
-Class: DirectoryPattern
-
-    SubClassOf: 
-        parent max 1 DirectoryPattern,
-        Glob
-    
     
 Class: owl:Thing
 
     
-Class: Tool
+Class: <http://ld.nice.org.uk/ns/compilation#InFile>
+
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/compilation#Position>
+    
+    
+Class: <http://ld.nice.org.uk/ns/compilation#DirectoryPattern>
+
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/compilation#Glob>,
+        <http://ld.nice.org.uk/ns/compilation#parent> max 1 <http://ld.nice.org.uk/ns/compilation#DirectoryPattern>
+    
+    
+Class: <http://ld.nice.org.uk/ns/compilation#Warning>
+
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/compilation#Message>
+    
+    
+Class: <http://ld.nice.org.uk/ns/compilation#Glob>
+
+    
+Class: <http://ld.nice.org.uk/ns/compilation#Tool>
 
     Annotations: 
         rdfs:comment "A tool that takes a target and produces a  representation in triples"^^xsd:string
     
     
-Class: Position
-
-    
-Individual: Root
+Individual: <http://ld.nice.org.uk/ns/compilation#Docx>
 
     Types: 
-        DirectoryPattern
+        <http://ld.nice.org.uk/ns/compilation#MarkdownConvertor>
     
     
-Individual: QualityStandards
+Individual: <http://ld.nice.org.uk/ns/compilation#YamlMetadata>
 
     Types: 
-        DirectoryPattern
+        <http://ld.nice.org.uk/ns/compilation#SemanticExtractor>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/compilation#QualityStatementDir>
+
+    Types: 
+        <http://ld.nice.org.uk/ns/compilation#DirectoryPattern>
     
     Facts:  
-     parent  Root,
-     expression  "qualitystandards"^^xsd:string
+     <http://ld.nice.org.uk/ns/compilation#parent>  <http://ld.nice.org.uk/ns/compilation#QualityStandardDir>,
+     <http://ld.nice.org.uk/ns/compilation#expression>  "st(?<QualityStatementId>\\d+)"^^xsd:string
     
     
-Individual: Pdf
+Individual: <http://ld.nice.org.uk/ns/compilation#HtmlDocument>
 
     Types: 
-        MarkdownConvertor
+        <http://ld.nice.org.uk/ns/compilation#MarkdownConvertor>
     
     
-Individual: Docx
+Individual: <http://ld.nice.org.uk/ns/compilation#Root>
 
     Types: 
-        MarkdownConvertor
+        <http://ld.nice.org.uk/ns/compilation#DirectoryPattern>
     
     
-Individual: Content
+Individual: <http://ld.nice.org.uk/ns/compilation#QualityStandards>
 
     Types: 
-        SemanticExtractor
+        <http://ld.nice.org.uk/ns/compilation#DirectoryPattern>
+    
+    Facts:  
+     <http://ld.nice.org.uk/ns/compilation#parent>  <http://ld.nice.org.uk/ns/compilation#Root>,
+     <http://ld.nice.org.uk/ns/compilation#expression>  "qualitystandards"^^xsd:string
     
     
-Individual: QualityStatement
+Individual: <http://ld.nice.org.uk/ns/compilation#Pdf>
+
+    Types: 
+        <http://ld.nice.org.uk/ns/compilation#MarkdownConvertor>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/compilation#Content>
+
+    Types: 
+        <http://ld.nice.org.uk/ns/compilation#SemanticExtractor>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/compilation#HtmlFragment>
+
+    Types: 
+        <http://ld.nice.org.uk/ns/compilation#MarkdownConvertor>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/compilation#QualityStatement>
 
     Annotations: 
-        represents <http://nice.org.uk/ns/qualitystandard#QualityStatement>
+        <http://ld.nice.org.uk/ns/compilation#represents> <http://nice.org.uk/ns/qualitystandard#QualityStatement>
     
     Types: 
-        FilePattern
+        <http://ld.nice.org.uk/ns/compilation#FilePattern>
     
     Facts:  
-     parent  QualityStatementDir,
-     tool  YamlMetadata,
-     tool  Content,
-     tool  Pdf,
-     tool  Docx,
-     tool  HtmlDocument,
-     expression  "Statement.md"^^xsd:string
-
-Individual: QualityStandard
+     <http://ld.nice.org.uk/ns/compilation#tool>  <http://ld.nice.org.uk/ns/compilation#Pdf>,
+     <http://ld.nice.org.uk/ns/compilation#tool>  <http://ld.nice.org.uk/ns/compilation#Docx>,
+     <http://ld.nice.org.uk/ns/compilation#tool>  <http://ld.nice.org.uk/ns/compilation#YamlMetadata>,
+     <http://ld.nice.org.uk/ns/compilation#parent>  <http://ld.nice.org.uk/ns/compilation#QualityStatementDir>,
+     <http://ld.nice.org.uk/ns/compilation#tool>  <http://ld.nice.org.uk/ns/compilation#Content>,
+     <http://ld.nice.org.uk/ns/compilation#tool>  <http://ld.nice.org.uk/ns/compilation#HtmlDocument>,
+     <http://ld.nice.org.uk/ns/compilation#expression>  "Statement.md"^^xsd:string
+    
+    
+Individual: <http://ld.nice.org.uk/ns/compilation#QualityStandard>
 
     Annotations: 
-        represents <http://nice.org.uk/ns/qualitystandard#QualityStandard>
+        <http://ld.nice.org.uk/ns/compilation#represents> <http://nice.org.uk/ns/qualitystandard#QualityStandard>
     
     Types: 
-        FilePattern
+        <http://ld.nice.org.uk/ns/compilation#FilePattern>
     
     Facts:  
-     parent  QualityStandardDir,
-     tool  YamlMetadata,
-     tool  Content,
-     tool  Pdf,
-     tool  Docx,
-     tool  HtmlDocument,
-     expression  "Standard.md"^^xsd:string
-   
+     <http://ld.nice.org.uk/ns/compilation#parent>  <http://ld.nice.org.uk/ns/compilation#QualityStandardDir>,
+     <http://ld.nice.org.uk/ns/compilation#tool>  <http://ld.nice.org.uk/ns/compilation#YamlMetadata>,
+     <http://ld.nice.org.uk/ns/compilation#tool>  <http://ld.nice.org.uk/ns/compilation#Content>,
+     <http://ld.nice.org.uk/ns/compilation#tool>  <http://ld.nice.org.uk/ns/compilation#HtmlDocument>,
+     <http://ld.nice.org.uk/ns/compilation#tool>  <http://ld.nice.org.uk/ns/compilation#Pdf>,
+     <http://ld.nice.org.uk/ns/compilation#tool>  <http://ld.nice.org.uk/ns/compilation#Docx>,
+     <http://ld.nice.org.uk/ns/compilation#expression>  "Standard.md"^^xsd:string
     
-Individual: HtmlDocument
+    
+Individual: <http://ld.nice.org.uk/ns/compilation#QualityStandardDir>
 
     Types: 
-        MarkdownConvertor
-    
-    
-Individual: YamlMetadata
-
-    Types: 
-        SemanticExtractor
-    
-    
-Individual: HtmlFragment
-
-    Types: 
-        MarkdownConvertor
-    
-    
-Individual: QualityStandardDir
-
-    Types: 
-        DirectoryPattern
+        <http://ld.nice.org.uk/ns/compilation#DirectoryPattern>
     
     Facts:  
-     parent  QualityStandards,
-     expression  "qs(?<QualityStandardId>\\d+)"^^xsd:string
-    
-    
-Individual: QualityStatementDir
-
-    Types: 
-        DirectoryPattern
-    
-    Facts:  
-     parent  QualityStandardDir,
-     expression  "st(?<QualityStatementId>\\d+)"^^xsd:string
+     <http://ld.nice.org.uk/ns/compilation#parent>  <http://ld.nice.org.uk/ns/compilation#QualityStandards>,
+     <http://ld.nice.org.uk/ns/compilation#expression>  "qs(?<QualityStandardId>\\d+)"^^xsd:string
     
     
