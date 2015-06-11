@@ -284,7 +284,7 @@ Individual: <http://ld.nice.org.uk/ns/compilation#QualityStandardDir>
     
     Facts:  
      <http://ld.nice.org.uk/ns/compilation#parent>  <http://ld.nice.org.uk/ns/compilation#QualityStandards>,
-     <http://ld.nice.org.uk/ns/compilation#expression>  "qs(?<QualityStandardId>\\d+)"^^xsd:string
+     <http://ld.nice.org.uk/ns/compilation#expression>  "qs$QualityStandardId"^^xsd:string
     
     
 Individual: <http://ld.nice.org.uk/ns/compilation#QualityStandards>
@@ -358,7 +358,7 @@ Individual: <http://ld.nice.org.uk/ns/compilation#QualityStatementDir>
     
     Facts:  
      <http://ld.nice.org.uk/ns/compilation#parent>  <http://ld.nice.org.uk/ns/compilation#QualityStandardDir>,
-     <http://ld.nice.org.uk/ns/compilation#expression>  "st(?<QualityStatementId>\\d+)"^^xsd:string
+     <http://ld.nice.org.uk/ns/compilation#expression>  "st$QualityStatementId"^^xsd:string
     
     
 Individual: <http://ld.nice.org.uk/ns/compilation#Docx>
