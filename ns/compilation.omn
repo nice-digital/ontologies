@@ -12,6 +12,8 @@ Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 Ontology: <http://ld.nice.org.uk/ns/compilation>
 
+Import: <http://www.w3.org/ns/prov-20130430>
+Import: <http://www.w3.org/2011/content>
 
 AnnotationProperty: rdfs:isDefinedBy
 
@@ -121,8 +123,8 @@ DataProperty: <http://ld.nice.org.uk/ns/compilation#path>
         rdfs:comment "The path to the resource"^^xsd:string
     
     Domain: 
-        <http://ld.nice.org.uk/ns/compilation#Target>,
-        <http://ld.nice.org.uk/ns/compilation#Position>
+        <http://ld.nice.org.uk/ns/compilation#Position>,
+        <http://ld.nice.org.uk/ns/compilation#Target>
     
     Range: 
         xsd:string
@@ -297,6 +299,12 @@ Individual: <http://ld.nice.org.uk/ns/compilation#QualityStandards>
      <http://ld.nice.org.uk/ns/compilation#expression>  "qualitystandards"^^xsd:string
     
     
+Individual: <http://ld.nice.org.uk/ns/compilation#HtmlDocument>
+
+    Types: 
+        <http://ld.nice.org.uk/ns/compilation#MarkdownConvertor>
+    
+    
 Individual: <http://ld.nice.org.uk/ns/compilation#Root>
 
     Types: 
@@ -340,12 +348,6 @@ Individual: <http://ld.nice.org.uk/ns/compilation#YamlMetadata>
     
     
 Individual: <http://ld.nice.org.uk/ns/compilation#HtmlFragment>
-
-    Types: 
-        <http://ld.nice.org.uk/ns/compilation#MarkdownConvertor>
-    
-    
-Individual: <http://ld.nice.org.uk/ns/compilation#HtmlDocument>
 
     Types: 
         <http://ld.nice.org.uk/ns/compilation#MarkdownConvertor>

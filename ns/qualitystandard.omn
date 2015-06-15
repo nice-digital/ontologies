@@ -11,6 +11,8 @@ Prefix: skos: <http://www.w3.org/2004/02/skos/core#>
 
 Ontology: <http://nice.org.uk/ns/qualitystandard>
 
+Import: <http://www.w3.org/ns/prov-20130430>
+Import: <http://www.w3.org/2004/02/skos/core>
 
 AnnotationProperty: <http://nice.org.uk/ns/qualitystandard#include_drug_abuse,_alcohol_abuse,_obesity>
 
