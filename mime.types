@@ -6,5 +6,6 @@ types {
     image/gif                             gif;
     image/jpeg                            jpeg jpg;
     text/turtle				                    ttl;
+    application/ld+json                   jsonld;
     text/owl-manchester			              omn;
 }
