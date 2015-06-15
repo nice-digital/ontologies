@@ -5347,6 +5347,9 @@ Class: <http://ld.nice.org.uk/ns/compilation#Compilation>
     Annotations: 
         rdfs:comment "A set of resources to compile, and the results of that compilation"^^xsd:string
     
+    SubClassOf: 
+        prov:Activity
+    
     
 Class: <http://purl.org/dc/dcam/VocabularyEncodingScheme>
 
