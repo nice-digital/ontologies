@@ -5,14 +5,14 @@ Prefix: owl: <http://www.w3.org/2002/07/owl#>
 Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 Prefix: xml: <http://www.w3.org/XML/1998/namespace>
 Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
-Prefix: prov: <http://www.w3.org/ns/prov#>
+Prefix: prov: <https://dvcs.w3.org/hg/prov/raw-file/tip/ontology/ProvenanceOntology.owl#>
 Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 
 
 Ontology: <http://ld.nice.org.uk/ns/compilation>
 
-Import: <http://www.w3.org/ns/prov-o-20130430>
+Import: <https://dvcs.w3.org/hg/prov/raw-file/tip/ontology/ProvenanceOntology.owl>
 Import: <http://www.w3.org/2011/content>
 
 AnnotationProperty: rdfs:isDefinedBy
