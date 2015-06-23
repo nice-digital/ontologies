@@ -6484,7 +6484,6 @@ Individual: <http://ld.nice.org.uk/ns/compilation#QualityStandard>
      <http://ld.nice.org.uk/ns/compilation#tool>  <http://ld.nice.org.uk/ns/compilation#YamlMetadata>,
      <http://ld.nice.org.uk/ns/compilation#tool>  <http://ld.nice.org.uk/ns/compilation#Content>,
      <http://ld.nice.org.uk/ns/compilation#tool>  <http://ld.nice.org.uk/ns/compilation#HtmlDocument>,
-     <http://ld.nice.org.uk/ns/compilation#tool>  <http://ld.nice.org.uk/ns/compilation#Pdf>,
      <http://ld.nice.org.uk/ns/compilation#tool>  <http://ld.nice.org.uk/ns/compilation#Docx>,
      <http://ld.nice.org.uk/ns/compilation#expression>  "Standard.md"^^xsd:string
     
@@ -6498,7 +6497,6 @@ Individual: <http://ld.nice.org.uk/ns/compilation#QualityStatement>
         <http://ld.nice.org.uk/ns/compilation#FilePattern>
     
     Facts:  
-     <http://ld.nice.org.uk/ns/compilation#tool>  <http://ld.nice.org.uk/ns/compilation#Pdf>,
      <http://ld.nice.org.uk/ns/compilation#tool>  <http://ld.nice.org.uk/ns/compilation#Docx>,
      <http://ld.nice.org.uk/ns/compilation#tool>  <http://ld.nice.org.uk/ns/compilation#YamlMetadata>,
      <http://ld.nice.org.uk/ns/compilation#parent>  <http://ld.nice.org.uk/ns/compilation#QualityStatementDir>,
