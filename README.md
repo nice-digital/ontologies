@@ -1,4 +1,4 @@
-[![Build Status](http://drone.notnice.org.uk/api/badge/github.com/nhsevidence/ontologies/status.svg?branch=master)](http://drone.notnice.org.uk/github.com/nhsevidence/ontologies)
+[![Build Status](http://drone.labs.nice.org.uk/api/badge/github.com/nhsevidence/ontologies/status.svg?branch=master)](http://drone.notnice.org.uk/github.com/nhsevidence/ontologies)
 
 Repository and very basic build system / server for NICE ontologies. We will add more functionality as required. Currently it supports:
 
