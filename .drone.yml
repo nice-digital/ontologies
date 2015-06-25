@@ -10,4 +10,3 @@ publish:
     registry_login: true
     tag: latest
     docker_host: tcp://172.16.204.198:5555
-    
