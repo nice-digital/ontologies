@@ -47,10 +47,6 @@ Datatype: xsd:string
     
 Datatype: xsd:positiveInteger
 
-ObjectProperty: <http://ld.nice.org.uk/ns/compilation#content>
-
-    SubPropertyOf: 
-        prov:wasDerivedFrom
     
 ObjectProperty: <http://ld.nice.org.uk/ns/compilation#message>
 
@@ -69,6 +65,9 @@ ObjectProperty: <http://ld.nice.org.uk/ns/compilation#parent>
     Range: 
         <http://ld.nice.org.uk/ns/compilation#parent> max 1 <http://ld.nice.org.uk/ns/compilation#Glob>
     
+    
+ObjectProperty: prov:wasDerivedFrom
+
     
 ObjectProperty: <http://ld.nice.org.uk/ns/compilation#action>
 
@@ -101,6 +100,12 @@ ObjectProperty: <http://ld.nice.org.uk/ns/compilation#tool>
     
     Range: 
         <http://ld.nice.org.uk/ns/compilation#Tool>
+    
+    
+ObjectProperty: <http://ld.nice.org.uk/ns/compilation#content>
+
+    SubPropertyOf: 
+        prov:wasDerivedFrom
     
     
 DataProperty: <http://ld.nice.org.uk/ns/compilation#charPosition>
@@ -295,7 +300,7 @@ Individual: <http://ld.nice.org.uk/ns/compilation#QualityStandardDir>
     
     Facts:  
      <http://ld.nice.org.uk/ns/compilation#parent>  <http://ld.nice.org.uk/ns/compilation#QualityStandards>,
-     <http://ld.nice.org.uk/ns/compilation#expression>  "qs$QualityStandardId"^^xsd:string
+     <http://ld.nice.org.uk/ns/compilation#expression>  "qs$(QualityStandardId)"^^xsd:string
     
     
 Individual: <http://ld.nice.org.uk/ns/compilation#QualityStandards>
@@ -323,7 +328,7 @@ Individual: <http://ld.nice.org.uk/ns/compilation#Root>
 Individual: <http://ld.nice.org.uk/ns/compilation#QualityStatement>
 
     Annotations: 
-        <http://ld.nice.org.uk/ns/compilation#represents> <http://nice.org.uk/ns/qualitystandard#QualityStatement>
+        <http://ld.nice.org.uk/ns/compilation#represents> <http://ld.nice.org.uk/ns/qualitystandard#QualityStatement>
     
     Types: 
         <http://ld.nice.org.uk/ns/compilation#FilePattern>
@@ -343,13 +348,13 @@ Individual: <http://ld.nice.org.uk/ns/compilation#Pdf>
         <http://ld.nice.org.uk/ns/compilation#MarkdownConvertor>
     
     
-Individual: <http://ld.nice.org.uk/ns/compilation#Docx>
+Individual: <http://ld.nice.org.uk/ns/compilation#Content>
 
     Types: 
-        <http://ld.nice.org.uk/ns/compilation#MarkdownConvertor>
+        <http://ld.nice.org.uk/ns/compilation#SemanticExtractor>
     
     
-Individual: <http://ld.nice.org.uk/ns/compilation#Content>
+Individual: <http://ld.nice.org.uk/ns/compilation#YamlMetadata>
 
     Types: 
         <http://ld.nice.org.uk/ns/compilation#SemanticExtractor>
@@ -374,12 +379,12 @@ Individual: <http://ld.nice.org.uk/ns/compilation#QualityStatementDir>
     
     Facts:  
      <http://ld.nice.org.uk/ns/compilation#parent>  <http://ld.nice.org.uk/ns/compilation#QualityStandardDir>,
-     <http://ld.nice.org.uk/ns/compilation#expression>  "st$QualityStatementId"^^xsd:string
+     <http://ld.nice.org.uk/ns/compilation#expression>  "st$(QualityStatementId)"^^xsd:string
     
     
-Individual: <http://ld.nice.org.uk/ns/compilation#YamlMetadata>
+Individual: <http://ld.nice.org.uk/ns/compilation#Docx>
 
     Types: 
-        <http://ld.nice.org.uk/ns/compilation#SemanticExtractor>
+        <http://ld.nice.org.uk/ns/compilation#MarkdownConvertor>
     
     
