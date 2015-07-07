@@ -69,6 +69,15 @@ ObjectProperty: <http://ld.nice.org.uk/ns/compilation#parent>
 ObjectProperty: prov:wasDerivedFrom
 
     
+ObjectProperty: <http://ld.nice.org.uk/ns/compilation#inTree>
+
+    Domain: 
+        prov:Entity
+    
+    Range: 
+        prov:Activity
+    
+    
 ObjectProperty: <http://ld.nice.org.uk/ns/compilation#action>
 
     Domain: 
@@ -171,6 +180,9 @@ Class: <http://ld.nice.org.uk/ns/compilation#KnowledgebaseProcessor>
     SubClassOf: 
         <http://ld.nice.org.uk/ns/compilation#Tool>
     
+    
+Class: prov:Entity
+
     
 Class: <http://ld.nice.org.uk/ns/compilation#FilePattern>
 
