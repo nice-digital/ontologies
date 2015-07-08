@@ -1,0 +1,200 @@
+Class,snomed code
+Allergies,473011001
+Anaphylaxis,39579001
+Blood and bone marrow cancers,269475001
+Leukemia,93143009
+Lymphoma,118600007
+Multiple myeloma,109989006
+Blood conditions,362970003
+Coeliac disease,396331005
+Lymphoedema,234097001
+Systemic lupus erythematosus,55464009
+Bladder cancer,399326009
+Brain cancers,126952004
+Breast cancer,254837009
+Cervical cancer,363354003
+Colorectal cancer,363508008
+Endometrial cancers,123844007
+Head and neck cancers,255056009
+Oral cancer,363505006
+Oesophageal cancer,363402007
+Liver cancers,93870000
+Lung cancer,126713003
+Metastases,14799000
+Ovarian cancer,363443007
+Pancreatic cancer,187793004
+Penile  cancer,363516004
+Testicular cancer,94087009
+Prostate cancer,399068003
+Renal cancer,363518003
+Sarcoma,424413001
+Skin cancer,372130007
+Stomach cancer,363349007
+Upper airways tract cancers,126668007
+Cardiovascular conditions,49601007
+Acute coronary syndromes,394659003
+Myocardial infarction,22298006
+NSTEMI,401314000
+Angina,194828000
+Stable angina,233819005
+Unstable angina,4557003
+Aortic aneurysms,67362008
+Cranial aneurysms,128609009
+Embolism,414086009
+Thrombosis,439127006
+Heart failure,84114007
+Heart rhythm conditions,698247007
+Atrial fibrillation,49436004
+Hypertension,38341003
+Lipid disorders,48286001
+Peripheral vascular disease,400047006
+Peripheral arterial disease,399957001
+Stroke ,230690007
+Transient ischaemic attack,266257000
+Structural heart defects,128599005
+Varicose veins,128060009
+Adrenal dysfunction,30171000
+Diabetes,73211009
+Type 1 diabetes,46635009
+Type 2 diabetes,44054006
+Failure to thrive,432788009
+Malnutrition,238107002
+Obesity,414916001
+Osteoporosis,64859006
+Thyroid disorders,4304000
+Digestive tract conditions,84410009
+Cholelithiasis and Cholecystitis,235919008
+Constipation,14760008
+Diarrhoea,62315008
+Vomiting,422400008
+Diverticular disease,397881000
+Faecal incontinence,72042002
+Gastro-oesophageal reflux,235595009
+Barrett's oesophagus,302914006
+Haemorrhoids ,70153002
+Anal disorders,32110003
+Hernia,414403008
+Inflammatory bowel disease,24526004
+Irritable bowel syndrome,10743008
+Pancreatitis,75694006
+Upper gastrointestinal bleeding,37372002
+"Ear, nose and throat conditions",232208008
+Ear and hearing conditions,118236001
+Nasal conditions,118237005
+Sleep apnoea,73430006
+Snoring,72863001
+Tonsil conditions,23023009
+Eye conditions,371405004
+Cataracts,128306009
+Corneal conditions,15250008
+Glaucoma,23986001
+Macular degeneration,267718000
+Macular oedema ,37231002
+Retinal vein occlusion,46085004
+"Refractive errors including astigmatism, myopia and presbyopia",39021009
+"Fertility, pregnancy and childbirth",
+Fertility,27034006
+Pregnancy,289908002
+Cystic fibrosis,190905008
+Gynaecological conditions,310789003
+Endometriosis ,396224008
+Fibroids,44598004
+Heavy menstrual bleeding,386692008
+Menopause,161712005
+Uterine prolapse,24976005
+Vaginal conditions,25658005
+Infections,40733004
+Healthcare-associated infections,408678008
+Hepatitis,3738000
+Hiv and aids,81000119104
+Influenza,6142004
+Meningitis and meningococcal septicaemia,314130008
+Sexually transmitted infections,8098009
+Tuberculosis,56717001
+Head injuries,82271004
+Trauma,417746004
+Kidney conditions,443820000
+Acute kidney injury,14669001
+Chronic kidney disease,236425005
+Renal stones,95570007
+Liver conditions,235856003
+Alcohol-use  liver disorders,41309000
+Chronic liver disease,328383001
+Mental health and behavioural conditions,74732009
+Addiction,32709003
+Anxiety,197480006
+Attention deficit disorder,406506008
+Autism,408856003
+Bipolar disorder,13746004
+Delirium,2776000
+Dementia,52448006
+Depression,35489007
+Eating disorders,72366004
+Personality disorders,33449004
+Psychosis ,69322001
+Schizophrenia,58214004
+Self-harm,58214004
+Musculoskeletal conditions,928000
+Arthritis,3723001
+Fractures,125605004
+Hip conditions,118935006
+Knee conditions,128136007
+Low back pain,161891005
+Spinal conditions,262521009
+Neurological conditions,118940003
+Cerebral palsy,128188000
+Epilepsy,84757009
+Headaches,25064002
+Motor neurone disease,37340000
+Multiple sclerosis,24700007
+Neuropathic pain,247398009
+Parkinson's disease,49049000
+Spasticity,221360009
+Transient loss of consciousness,419045004
+Urinary incontinence,165232002
+Oral and dental health,18718003
+Respiratory conditions,50043002
+Asthma,195967001
+Chronic obstructive pulmonary disease,13645005
+Mesothelioma,115232000
+Pulmonary fibrosis,51615001
+Respiratory infections,275498002
+Sleep apnoea ,73430006
+Skin conditions,95320005
+Acne,88616000
+Diabetic foot,280137006
+Eczema,43116000
+Pressure ulcers,420226006
+Psoriasis,9014002
+Lower urinary tract symptoms,307541003
+Urinary tract infection,68566005
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,

@@ -1,6 +1,4 @@
 #!/bin/bash
-set -xe
-
 git submodule update --remote
 cd ld-utilities/
 ./build.sh
@@ -30,12 +28,6 @@ do
 			         cat "$ttl" >> "$qs"
 		    done
 	  fi
-done
-
-for TTL in ./*.ttl
-do
-		ld=${TTL%.*}
-    java -jar ../ld-utilities/lib/owl2jsonld/owl2jsonld.jar --all-imports --output $ld.jsonld file:$TTL
 done
 
 for TTL in ./*.ttl
