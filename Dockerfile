@@ -1,15 +1,9 @@
-FROM nice/ld-docker-build
+FROM alpine
+
 MAINTAINER Ryan Roberts <ryansroberts@gmail.com>
 
-
 # Install Nginx.
-RUN \
-  add-apt-repository -y ppa:nginx/stable && \
-  apt-get update && \
-  apt-get install -y nginx && \
-  rm -rf /var/lib/apt/lists/* && \
-  echo "\ndaemon off;" >> /etc/nginx/nginx.conf && \
-  chown -R www-data:www-data /var/lib/nginx
+RUN apk add --update nginx && rm -rf /var/cache/apk/*
 
 # Define mountable directories.
 VOLUME ["/etc/nginx/certs", "/etc/nginx/conf.d", "/var/log/nginx"]
@@ -17,19 +11,20 @@ VOLUME ["/etc/nginx/certs", "/etc/nginx/conf.d", "/var/log/nginx"]
 # Define working directory.
 WORKDIR /etc/nginx
 
-RUN rm -rf /var/www/html/*
-ADD ns /var/www/html/ns
+RUN rm -rf /usr/share/nginx/html/*
+ADD ns /usr/share/nginx/html/ns
+RUN rm -f /etc/nginx/mime.types
 
-RUN rm /etc/nginx/sites-enabled/default
+COPY nginx.conf /etc/nginx/nginx.conf
+COPY default.conf /etc/nginx/conf.d/default.conf
+COPY mime.types /etc/nginx/
 
-ADD site.conf /etc/nginx/sites-enabled/
-
-RUN rm /etc/nginx/mime.types
-ADD mime.types /etc/nginx/
+# forward request and error logs to docker log collector
+RUN ln -sf /dev/stdout /var/log/nginx/access.log
+RUN ln -sf /dev/stderr /var/log/nginx/error.log
 
 # Define default command.
-CMD ["nginx"]
-
+CMD ["nginx", "-g", "daemon off;"]
 # Expose ports.
 EXPOSE 80
 EXPOSE 443
