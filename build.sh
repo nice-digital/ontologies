@@ -8,7 +8,7 @@ cd ../ns
 
 for OWL in ./*.omn
 do
-	  mono ../ld-utilities/src/omn2ttl/omn2ttl/bin/Release/omn2ttl.exe --uri $OWL
+	  mono ../ld-utilities/src/omn2ttl/omn2ttl/bin/Release/omn2ttl.exe --uri $OWL || true
 	  if [[ $OWL == *"qualitystandard"* ]]
 	  then
 		    qs=${OWL%.*}
