@@ -21,7 +21,6 @@ AnnotationProperty: <http://ld.nice.org.uk/ns/qualitystandard#include_drug_abuse
     
     
 AnnotationProperty: rdfs:comment
-
     
 AnnotationProperty: skos:altLabel
 
