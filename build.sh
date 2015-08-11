@@ -15,8 +15,8 @@ do
 	  then
 		    qs=${OWL%.*}
         qs="$qs.ttl"
-        cd $base/ld-utilities/src/csv2skos/
-        fsharpi csv2skos.fsx >> $base/ns/$qs
+        cd $base/ld-utilities
+        fsharpi ./csv2skos.fsx >> $base/ns/$qs
         cd -
 	  fi
 done
