@@ -11,21 +11,7 @@ do
 	  then
 		    qs=${OWL%.*}
         qs="$qs.ttl"
-		    for csv in ../skoscsv/*.csv
-		    do
-            concept=""
-            if [[ $csv == *"Settings"* ]]
-            then
-                concept="qs:Setting"
-            else
-                concept="qs:PopulationSpecifier"
-            fi
-			         fPath=`pwd`
-			         fPath="$fPath/$csv"
-			         ttl=${fPath%.*}
-			         ttl="$ttl.ttl"
-			         mono ../ld-utilities/src/csv2skos/csv2skos/bin/Release/csv2skos.exe --uri "$fPath" --baseconcept $concept
-			         cat "$ttl" >> "$qs"
+			         fsharpi ../ld-utilities/src/csv2skos/csv2skos.fsx >> "$qs"
 		    done
 	  fi
 done
