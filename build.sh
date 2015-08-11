@@ -1,25 +1,27 @@
 #!/bin/bash
 set -xe
 
+base=`pwd`
+
 git submodule update --remote
-cd ld-utilities/
+cd $base/ld-utilities/
 ./build.sh
-cd ../ns
+cd $base/ns
 
 for OWL in ./*.omn
 do
-	  mono ../ld-utilities/src/omn2ttl/omn2ttl/bin/Release/omn2ttl.exe --uri $OWL || true
+	  mono $base/ld-utilities/src/omn2ttl/omn2ttl/bin/Release/omn2ttl.exe --uri $OWL
 	  if [[ $OWL == *"qualitystandard"* ]]
 	  then
 		    qs=${OWL%.*}
         qs="$qs.ttl"
-        cd ../ld-utilities/src/csv2skos/
-        fsharpi csv2skos.fsx >> "../../ns/$qs"
+        cd $base/ld-utilities/src/csv2skos/
+        fsharpi csv2skos.fsx >> $base/ns/$qs
         cd -
 	  fi
 done
 
-for TTL in ./*.ttl
+for TTL in $base/ns/*.ttl
 do
 	  java -jar ../ld-utilities/src/ComLLODE/out/artifacts/CLLODE/ComLLODE.jar $TTL
 done
