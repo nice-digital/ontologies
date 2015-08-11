@@ -1,4 +1,6 @@
 #!/bin/bash
+set -xe
+
 git submodule update --remote
 cd ld-utilities/
 ./build.sh
