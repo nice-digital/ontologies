@@ -11,10 +11,6 @@ Prefix: skos: <http://www.w3.org/2004/02/skos/core#>
 
 Ontology: <http://ld.nice.org.uk/ns/qualitystandard>
 
-
-AnnotationProperty: skos:prefLabel
-
-    
 AnnotationProperty: <http://ld.nice.org.uk/ns/qualitystandard#include_drug_abuse,_alcohol_abuse,_obesity>
 
     SubPropertyOf: 
