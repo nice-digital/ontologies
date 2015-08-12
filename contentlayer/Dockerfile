@@ -1,3 +1,3 @@
 FROM nice/ontologies
 
-COPY ns /user/share/nginx/html/ns
+COPY ns/ /usr/share/nginx/html/ns
