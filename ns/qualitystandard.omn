@@ -14,6 +14,12 @@ Ontology: <http://ld.nice.org.uk/ns/qualitystandard>
 
 AnnotationProperty: skos:prefLabel
 
+    Annotations: 
+        rdfs:comment "Should be the same as the class label"
+    
+    Annotations: 
+        rdfs:comment "Should be the same as the class label"
+    
     
 AnnotationProperty: <http://ld.nice.org.uk/ns/qualitystandard#include_drug_abuse,_alcohol_abuse,_obesity>
 
@@ -26,6 +32,12 @@ AnnotationProperty: rdfs:comment
     
 AnnotationProperty: skos:altLabel
 
+    Annotations: 
+        rdfs:comment "Use for synonyms"
+    
+    Annotations: 
+        rdfs:comment "Use for synonyms"
+    
     
 Datatype: rdfs:Literal
 
@@ -262,6 +274,15 @@ ObjectProperty: <http://ld.nice.org.uk/ns/qualitystandard#definedTaskOf>
     
     InverseOf: 
         <http://ld.nice.org.uk/ns/qualitystandard#definesTask>
+    
+    
+ObjectProperty: skos:closeMatch
+
+    Annotations: 
+        rdfs:comment "To be used for mapping to  external ontology concepts e.g. SnoMED"
+    
+    Domain: 
+        <http://ld.nice.org.uk/ns/qualitystandard#ConditionDisease>
     
     
 ObjectProperty: <http://ld.nice.org.uk/ns/qualitystandard#taskOwner>
