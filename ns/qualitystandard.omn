@@ -25,6 +25,12 @@ AnnotationProperty: rdfs:comment
     
 AnnotationProperty: skos:altLabel
 
+    Annotations: 
+        rdfs:comment "Use for synonyms"
+    
+    Annotations: 
+        rdfs:comment "Use for synonyms"
+    
     
 Datatype: rdfs:Literal
 
@@ -260,6 +266,16 @@ ObjectProperty: definedTaskOf
     
     InverseOf: 
         definesTask
+    
+    
+
+ObjectProperty: skos:closeMatch
+
+    Annotations: 
+        rdfs:comment "To be used for mapping to  external ontology concepts e.g. SnoMED"
+    
+    Domain: 
+        <http://ld.nice.org.uk/ns/qualitystandard#ConditionDisease>
     
     
 ObjectProperty: taskOwner
