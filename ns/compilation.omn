@@ -190,6 +190,13 @@ Class: <http://ld.nice.org.uk/ns/compilation#FilePattern>
         <http://ld.nice.org.uk/ns/compilation#parent> only <http://ld.nice.org.uk/ns/compilation#DirectoryPattern>,
         <http://ld.nice.org.uk/ns/compilation#Glob>
     
+Class: <http://ld.nice.org.uk/ns/compilation#Commit>
+
+    Annotations: 
+        rdfs:comment "A provenance activity that represents a Git commit"^^xsd:string
+    
+    SubClassOf: 
+        prov:Activity
     
 Class: <http://ld.nice.org.uk/ns/compilation#Compilation>
 
