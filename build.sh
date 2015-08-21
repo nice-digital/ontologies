@@ -20,7 +20,11 @@ do
         cd -
 	  fi
 done
-
+for TTL in $base/ns/*.ttl
+do
+		ld=${TTL%.*}
+    java -jar ../ld-utilities/lib/owl2jsonld/owl2jsonld.jar --all-imports --output $base/ns/$ld.jsonld file:$TTL
+done
 for TTL in $base/ns/*.ttl
 do
 	  java -jar ../ld-utilities/src/ComLLODE/out/artifacts/CLLODE/ComLLODE.jar $TTL
