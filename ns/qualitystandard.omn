@@ -12,8 +12,9 @@ Prefix: pico: <http://ld.nice.org.uk/ns/pico#>
 Prefix: lifestylecondition: <http://ld.nice.org.uk/ns/qualitystandard/lifestylecondition#>
 Prefix: agegroup: <http://ld.nice.org.uk/ns/qualitystandard/agegroup#>
 Prefix: conditiondisease: <http://ld.nice.org.uk/ns/qualitystandard/conditiondisease#>
-Ontology: <http://ld.nice.org.uk/ns/qualitystandard>
 
+Ontology: <http://ld.nice.org.uk/ns/qualitystandard>
+  
 AnnotationProperty: <http://ld.nice.org.uk/ns/qualitystandard#include_drug_abuse,_alcohol_abuse,_obesity>
 
     SubPropertyOf: 
@@ -275,7 +276,7 @@ ObjectProperty: skos:closeMatch
         rdfs:comment "To be used for mapping to  external ontology concepts e.g. SnoMED"
     
     Domain: 
-        <http://ld.nice.org.uk/ns/qualitystandard#ConditionDisease>
+        conditiondisease:ConditionDisease
     
     
 ObjectProperty: taskOwner
