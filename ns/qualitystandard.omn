@@ -285,7 +285,7 @@ ObjectProperty: skos:closeMatch
         rdfs:comment "To be used for mapping to  external ontology concepts e.g. SnoMED"
     
     Domain: 
-        <http://ld.nice.org.uk/ns/qualitystandard#ConditionDisease>
+        conditiondisease:ConditionDisease
     
     
 
