@@ -124,6 +124,11 @@ DataProperty: <http://ld.nice.org.uk/ns/compilation#lineNumber>
    
 Class: prov:Entity
 
+
+Class: <http://ld.nice.org.uk/ns/compilation#Position>
+
+      DisjointWith:
+        prov:Entity
    
 Class: <http://ld.nice.org.uk/ns/compilation#Commit>
 
