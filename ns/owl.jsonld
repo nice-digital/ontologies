@@ -1,0 +1,309 @@
+{
+  "@context" : {
+    "owl:minCardinality" : {
+      "@id" : "http://www.w3.org/2002/07/owl#minCardinality",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "owl:qualifiedCardinality" : {
+      "@id" : "http://www.w3.org/2002/07/owl#qualifiedCardinality",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "owl:annotatedTarget" : {
+      "@id" : "http://www.w3.org/2002/07/owl#annotatedTarget",
+      "@type" : "@id"
+    },
+    "owl:DataRange" : {
+      "@id" : "http://www.w3.org/2002/07/owl#DataRange"
+    },
+    "owl:seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    "owl:isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "owl:DatatypeProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    },
+    "owl:TransitiveProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#TransitiveProperty"
+    },
+    "owl:cardinality" : {
+      "@id" : "http://www.w3.org/2002/07/owl#cardinality",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "owl:ReflexiveProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#ReflexiveProperty"
+    },
+    "owl:Ontology" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Ontology"
+    },
+    "owl:hasSelf" : {
+      "@id" : "http://www.w3.org/2002/07/owl#hasSelf",
+      "@type" : "@id"
+    },
+    "owl:onDatatype" : {
+      "@id" : "http://www.w3.org/2002/07/owl#onDatatype",
+      "@type" : "@id"
+    },
+    "owl:Annotation" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Annotation"
+    },
+    "owl:onDataRange" : {
+      "@id" : "http://www.w3.org/2002/07/owl#onDataRange",
+      "@type" : "@id"
+    },
+    "owl:differentFrom" : {
+      "@id" : "http://www.w3.org/2002/07/owl#differentFrom",
+      "@type" : "@id"
+    },
+    "owl:someValuesFrom" : {
+      "@id" : "http://www.w3.org/2002/07/owl#someValuesFrom",
+      "@type" : "@id"
+    },
+    "owl:disjointUnionOf" : {
+      "@id" : "http://www.w3.org/2002/07/owl#disjointUnionOf",
+      "@type" : "@id"
+    },
+    "owl:Datatype" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#Datatype"
+    },
+    "owl:namespaceTransformation" : {
+      "@id" : "http://www.w3.org/2003/g/data-view#namespaceTransformation"
+    },
+    "owl:Property" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    },
+    "owl:versionIRI" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionIRI"
+    },
+    "owl:DeprecatedProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#DeprecatedProperty"
+    },
+    "owl:versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "owl:label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "owl:allValuesFrom" : {
+      "@id" : "http://www.w3.org/2002/07/owl#allValuesFrom",
+      "@type" : "@id"
+    },
+    "owl:inverseOf" : {
+      "@id" : "http://www.w3.org/2002/07/owl#inverseOf",
+      "@type" : "@id"
+    },
+    "owl:SymmetricProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#SymmetricProperty"
+    },
+    "owl:onProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#onProperty",
+      "@type" : "@id"
+    },
+    "owl:priorVersion" : {
+      "@id" : "http://www.w3.org/2002/07/owl#priorVersion"
+    },
+    "owl:complementOf" : {
+      "@id" : "http://www.w3.org/2002/07/owl#complementOf",
+      "@type" : "@id"
+    },
+    "owl:disjointWith" : {
+      "@id" : "http://www.w3.org/2002/07/owl#disjointWith",
+      "@type" : "@id"
+    },
+    "owl:unionOf" : {
+      "@id" : "http://www.w3.org/2002/07/owl#unionOf",
+      "@type" : "@id"
+    },
+    "owl:maxCardinality" : {
+      "@id" : "http://www.w3.org/2002/07/owl#maxCardinality",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "owl:withRestrictions" : {
+      "@id" : "http://www.w3.org/2002/07/owl#withRestrictions",
+      "@type" : "@id"
+    },
+    "owl:IrreflexiveProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#IrreflexiveProperty"
+    },
+    "owl:Restriction" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Restriction"
+    },
+    "owl:bottomDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#bottomDataProperty",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "owl:propertyChainAxiom" : {
+      "@id" : "http://www.w3.org/2002/07/owl#propertyChainAxiom",
+      "@type" : "@id"
+    },
+    "owl:Resource" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#Resource"
+    },
+    "owl:sameAs" : {
+      "@id" : "http://www.w3.org/2002/07/owl#sameAs",
+      "@type" : "@id"
+    },
+    "owl:equivalentClass" : {
+      "@id" : "http://www.w3.org/2002/07/owl#equivalentClass",
+      "@type" : "@id"
+    },
+    "owl:equivalentProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#equivalentProperty",
+      "@type" : "@id"
+    },
+    "owl:hasValue" : {
+      "@id" : "http://www.w3.org/2002/07/owl#hasValue",
+      "@type" : "@id"
+    },
+    "owl:AllDisjointProperties" : {
+      "@id" : "http://www.w3.org/2002/07/owl#AllDisjointProperties"
+    },
+    "owl:members" : {
+      "@id" : "http://www.w3.org/2002/07/owl#members",
+      "@type" : "@id"
+    },
+    "owl:DeprecatedClass" : {
+      "@id" : "http://www.w3.org/2002/07/owl#DeprecatedClass"
+    },
+    "owl:incompatibleWith" : {
+      "@id" : "http://www.w3.org/2002/07/owl#incompatibleWith"
+    },
+    "owl:AsymmetricProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#AsymmetricProperty"
+    },
+    "owl:intersectionOf" : {
+      "@id" : "http://www.w3.org/2002/07/owl#intersectionOf",
+      "@type" : "@id"
+    },
+    "owl:distinctMembers" : {
+      "@id" : "http://www.w3.org/2002/07/owl#distinctMembers",
+      "@type" : "@id"
+    },
+    "owl:sourceIndividual" : {
+      "@id" : "http://www.w3.org/2002/07/owl#sourceIndividual",
+      "@type" : "@id"
+    },
+    "owl:AnnotationProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    },
+    "owl:bottomObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#bottomObjectProperty",
+      "@type" : "@id"
+    },
+    "owl:Class" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#Class"
+    },
+    "owl:comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "owl:FunctionalProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#FunctionalProperty"
+    },
+    "owl:topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "owl:hasKey" : {
+      "@id" : "http://www.w3.org/2002/07/owl#hasKey",
+      "@type" : "@id"
+    },
+    "owl:annotatedSource" : {
+      "@id" : "http://www.w3.org/2002/07/owl#annotatedSource",
+      "@type" : "@id"
+    },
+    "owl:onClass" : {
+      "@id" : "http://www.w3.org/2002/07/owl#onClass",
+      "@type" : "@id"
+    },
+    "owl:onProperties" : {
+      "@id" : "http://www.w3.org/2002/07/owl#onProperties",
+      "@type" : "@id"
+    },
+    "owl:Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "owl:targetIndividual" : {
+      "@id" : "http://www.w3.org/2002/07/owl#targetIndividual",
+      "@type" : "@id"
+    },
+    "owl:deprecated" : {
+      "@id" : "http://www.w3.org/2002/07/owl#deprecated"
+    },
+    "owl:assertionProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#assertionProperty",
+      "@type" : "@id"
+    },
+    "owl:maxQualifiedCardinality" : {
+      "@id" : "http://www.w3.org/2002/07/owl#maxQualifiedCardinality",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "owl:AllDifferent" : {
+      "@id" : "http://www.w3.org/2002/07/owl#AllDifferent"
+    },
+    "owl:datatypeComplementOf" : {
+      "@id" : "http://www.w3.org/2002/07/owl#datatypeComplementOf",
+      "@type" : "@id"
+    },
+    "owl:backwardCompatibleWith" : {
+      "@id" : "http://www.w3.org/2002/07/owl#backwardCompatibleWith"
+    },
+    "owl:NegativePropertyAssertion" : {
+      "@id" : "http://www.w3.org/2002/07/owl#NegativePropertyAssertion"
+    },
+    "owl:title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "owl:NamedIndividual" : {
+      "@id" : "http://www.w3.org/2002/07/owl#NamedIndividual"
+    },
+    "owl:ObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#ObjectProperty"
+    },
+    "owl:oneOf" : {
+      "@id" : "http://www.w3.org/2002/07/owl#oneOf",
+      "@type" : "@id"
+    },
+    "owl:InverseFunctionalProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#InverseFunctionalProperty"
+    },
+    "owl:List" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List"
+    },
+    "owl:Nothing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Nothing"
+    },
+    "owl:targetValue" : {
+      "@id" : "http://www.w3.org/2002/07/owl#targetValue",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "owl:Axiom" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Axiom"
+    },
+    "owl:propertyDisjointWith" : {
+      "@id" : "http://www.w3.org/2002/07/owl#propertyDisjointWith",
+      "@type" : "@id"
+    },
+    "owl:imports" : {
+      "@id" : "http://www.w3.org/2002/07/owl#imports"
+    },
+    "owl:annotatedProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#annotatedProperty",
+      "@type" : "@id"
+    },
+    "owl:minQualifiedCardinality" : {
+      "@id" : "http://www.w3.org/2002/07/owl#minQualifiedCardinality",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "owl:topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "owl:OntologyProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#OntologyProperty"
+    },
+    "owl:AllDisjointClasses" : {
+      "@id" : "http://www.w3.org/2002/07/owl#AllDisjointClasses"
+    }
+  }
+}
