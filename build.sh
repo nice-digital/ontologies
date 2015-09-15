@@ -15,8 +15,8 @@ done
 fsharpi -I $base/ld-utilities ./csv2skos.fsx $base/ld-utilities
 for TTL in $base/ns/{,**/}*.ttl
 do
-    prefix=${TTL%%.*}
 		ld=${TTL%.*}
+		prefix=${ld##*/}
     java -jar ../ld-utilities/lib/owl2jsonld/owl2jsonld.jar --all-imports --prefix $prefix --output $ld.jsonld file:$TTL
 done
 for TTL in $base/ns/{,**/}*.ttl
