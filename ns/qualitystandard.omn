@@ -313,13 +313,22 @@ DataProperty: hasDataSource
         rdfs:Literal
     
     
+DataProperty: abstract
+
+    Domain: 
+        owl:Thing
+    
+    Range: 
+        xsd:string
+    
+    
 DataProperty: dc:title
 
     Domain: 
-        QualityStandard
+        owl:Thing
     
     Range: 
-        rdfs:Literal
+        xsd:string
     
     
 DataProperty: dc:identifier
