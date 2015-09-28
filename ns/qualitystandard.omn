@@ -4,14 +4,16 @@ Prefix: owl: <http://www.w3.org/2002/07/owl#>
 Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 Prefix: xml: <http://www.w3.org/XML/1998/namespace>
 Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+Prefix: pico: <http://ld.nice.org.uk/ns/pico#>
 Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 Prefix: skos: <http://www.w3.org/2004/02/skos/core#>
 Prefix: setting: <http://ld.nice.org.uk/ns/qualitystandard/setting#>
-Prefix: servicearea: <http://ld.nice.org.uk/ns/qualitystandard/servicearea#>
-Prefix: pico: <http://ld.nice.org.uk/ns/pico#>
-Prefix: lifestylecondition: <http://ld.nice.org.uk/ns/qualitystandard/lifestylecondition#>
 Prefix: agegroup: <http://ld.nice.org.uk/ns/qualitystandard/agegroup#>
+Prefix: servicearea: <http://ld.nice.org.uk/ns/qualitystandard/servicearea#>
 Prefix: conditiondisease: <http://ld.nice.org.uk/ns/qualitystandard/conditiondisease#>
+Prefix: lifestylecondition: <http://ld.nice.org.uk/ns/qualitystandard/lifestylecondition#>
+
+
 
 Ontology: <http://ld.nice.org.uk/ns/qualitystandard>
 
@@ -54,7 +56,8 @@ Datatype: rdf:PlainLiteral
     
 ObjectProperty: condition
 
-    Domain: pico:Population
+    Domain: 
+        pico:Population
     
     Range: 
         conditiondisease:ConditionDisease
@@ -288,16 +291,6 @@ ObjectProperty: skos:closeMatch
         conditiondisease:ConditionDisease
     
     
-
-ObjectProperty: skos:closeMatch
-
-    Annotations: 
-        rdfs:comment "To be used for mapping to  external ontology concepts e.g. SnoMED"
-    
-    Domain: 
-        conditiondisease:ConditionDisease
-    
-    
 ObjectProperty: taskOwner
 
     InverseOf: 
@@ -367,15 +360,6 @@ Class: lifestylecondition:LifestyleCondition
         PopulationSpecifier
     
     
-Class: pico:Population
-
-    Annotations: 
-        rdfs:comment "defined by at least one of the age, gender, ethnicity, disease, lifestyle condition concepts."
-    
-    EquivalentTo: 
-        isSpecifiedBy min 1 PopulationSpecifier
-    
-    
 Class: agegroup:AgeGroup
 
     Annotations: 
@@ -434,6 +418,21 @@ Class: QualityStandard
         QualityStatement, QualityMeasure
     
     
+Class: pico:Population
+
+    Annotations: 
+        rdfs:comment "defined by at least one of the age, gender, ethnicity, disease, lifestyle condition concepts."
+    
+    EquivalentTo: 
+        isSpecifiedBy min 1 PopulationSpecifier
+    
+    
+Class: setting:Setting
+
+    Annotations: 
+        rdfs:comment "Setting - may be used for setting for population definition as well as setting where action of quality statement should occur"
+    
+    
 Class: StructureMeasure
 
     SubClassOf: 
@@ -441,12 +440,6 @@ Class: StructureMeasure
     
     DisjointWith: 
         ProcessMeasure, OutcomeMeasure
-    
-    
-Class: setting:Setting
-
-    Annotations: 
-        rdfs:comment "Setting - may be used for setting for population definition as well as setting where action of quality statement should occur"
     
     
 Class: PopulationSpecifier
