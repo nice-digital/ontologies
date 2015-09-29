@@ -75,23 +75,20 @@ ObjectProperty: <http://ld.nice.org.uk/ns/qualitystandard#prov:generated>
         <http://ld.nice.org.uk/ns/qualitystandard#prov:wasGeneratedby>
     
     
-ObjectProperty: <http://ld.nice.org.uk/ns/qualitystandard#prov:wasGeneratedby>
-
-    Domain: 
-        QualityStatement
-    
-    Range: 
-        QualityStandard
-    
-    InverseOf: 
-        <http://ld.nice.org.uk/ns/qualitystandard#prov:generated>
-    
-    
 ObjectProperty: measuresProgressAgainst
 
     Domain: 
         QualityMeasure
     
+    
+ObjectProperty: taskOwner
+
+    InverseOf: 
+        ownsTask
+    
+    
+ObjectProperty: owl:topObjectProperty
+
     
 ObjectProperty: hasConcept
 
@@ -114,6 +111,27 @@ ObjectProperty: definesTask
         definedTaskOf
     
     
+ObjectProperty: haschangeType
+
+    Domain: 
+        owl:Thing
+    
+    Range: 
+        ChangeType
+    
+    
+ObjectProperty: isSettingOf
+
+    Domain: 
+        setting:Setting
+    
+    Range: 
+        QualityStatement
+    
+    InverseOf: 
+        setting
+    
+    
 ObjectProperty: isServiceAreaOf
 
     Domain: 
@@ -126,8 +144,17 @@ ObjectProperty: isServiceAreaOf
         serviceArea
     
     
-ObjectProperty: owl:topObjectProperty
+ObjectProperty: measureDefinedBy
 
+    Domain: 
+        QualityMeasure
+    
+    Range: 
+        QualityStatement
+    
+    InverseOf: 
+        definesMeasure
+    
     
 ObjectProperty: definesMeasure
 
@@ -225,28 +252,31 @@ ObjectProperty: lifestylecondition:lifestyleCondition
         lifestylecondition:LifestyleCondition
     
     
-ObjectProperty: isSettingOf
+ObjectProperty: haschangeLog
 
     Domain: 
-        setting:Setting
+        owl:Thing
     
     Range: 
-        QualityStatement
-    
-    InverseOf: 
-        setting
+        ChangeLog
     
     
-ObjectProperty: measureDefinedBy
+ObjectProperty: haschangeEntry
 
     Domain: 
-        QualityMeasure
+        ChangeLog
     
     Range: 
-        QualityStatement
+        ChangeEntry
     
-    InverseOf: 
-        definesMeasure
+    
+ObjectProperty: skos:closeMatch
+
+    Annotations: 
+        rdfs:comment "To be used for mapping to  external ontology concepts e.g. SnoMED"
+    
+    Domain: 
+        conditiondisease:ConditionDisease
     
     
 ObjectProperty: isSpecifiedBy
@@ -282,19 +312,16 @@ ObjectProperty: definedTaskOf
         definesTask
     
     
-ObjectProperty: skos:closeMatch
+ObjectProperty: <http://ld.nice.org.uk/ns/qualitystandard#prov:wasGeneratedby>
 
-    Annotations: 
-        rdfs:comment "To be used for mapping to  external ontology concepts e.g. SnoMED"
-    
     Domain: 
-        conditiondisease:ConditionDisease
+        QualityStatement
     
+    Range: 
+        QualityStandard
     
-ObjectProperty: taskOwner
-
     InverseOf: 
-        ownsTask
+        <http://ld.nice.org.uk/ns/qualitystandard#prov:generated>
     
     
 DataProperty: hasDataSource
@@ -307,6 +334,15 @@ DataProperty: hasDataSource
     
     
 DataProperty: abstract
+
+    Domain: 
+        owl:Thing
+    
+    Range: 
+        xsd:string
+    
+    
+DataProperty: haschangeSummary
 
     Domain: 
         owl:Thing
@@ -351,10 +387,32 @@ DataProperty: <http://ld.nice.org.uk/ns/qualitystandard#qs::hasDenominator>
         xsd:string
     
     
+DataProperty: haschangeDescription
+
+    Domain: 
+        owl:Thing
+    
+    Range: 
+        xsd:string
+    
+    
 Class: lifestylecondition:LifestyleCondition
 
     Annotations: 
         rdfs:comment "to include drug abuse, alcohol abuse and other lifestyle conditions"
+    
+    SubClassOf: 
+        PopulationSpecifier
+    
+    
+Class: TopLevelProvenanceConcept
+
+    
+Class: conditiondisease:ConditionDisease
+
+    Annotations: 
+        rdfs:comment "Base on NICE Browse taxonomy structure with mapping to equivalent SNOMED code where possible",
+        rdfs:comment "use for medical condition"
     
     SubClassOf: 
         PopulationSpecifier
@@ -367,6 +425,52 @@ Class: agegroup:AgeGroup
     
     SubClassOf: 
         PopulationSpecifier
+    
+    
+Class: OutcomeMeasure
+
+    SubClassOf: 
+        QualityMeasure
+    
+    DisjointWith: 
+        ProcessMeasure, StructureMeasure
+    
+    
+Class: StructureMeasure
+
+    SubClassOf: 
+        QualityMeasure
+    
+    DisjointWith: 
+        ProcessMeasure, OutcomeMeasure
+    
+    
+Class: QualityStandard
+
+    DisjointWith: 
+        QualityStatement, QualityMeasure
+    
+    
+Class: owl:Thing
+
+    
+Class: ChangeLog
+
+    SubClassOf: 
+        TopLevelProvenanceConcept,
+        haschangeEntry min 1 ChangeEntry
+    
+    
+Class: PopulationSpecifier
+
+    
+Class: MajorChange
+
+    SubClassOf: 
+        ChangeType
+    
+    DisjointWith: 
+        MinorChange
     
     
 Class: QualityMeasure
@@ -393,29 +497,22 @@ Class: ProcessMeasure
         OutcomeMeasure, StructureMeasure
     
     
-Class: owl:Thing
+Class: MinorChange
 
-    
-Class: servicearea:ServiceArea
-
-    Annotations: 
-        rdfs:comment "Service area for which quality statement is relevant."
-    
-    
-Class: conditiondisease:ConditionDisease
-
-    Annotations: 
-        rdfs:comment "Base on NICE Browse taxonomy structure with mapping to equivalent SNOMED code where possible",
-        rdfs:comment "use for medical condition"
-    
     SubClassOf: 
-        PopulationSpecifier
+        ChangeType
     
-    
-Class: QualityStandard
-
     DisjointWith: 
-        QualityStatement, QualityMeasure
+        MajorChange
+    
+    
+Class: ChangeEntry
+
+    SubClassOf: 
+        haschangeDescription some xsd:string,
+        haschangeType exactly 1 ChangeType,
+        TopLevelProvenanceConcept,
+        haschangeSummary some xsd:string
     
     
 Class: pico:Population
@@ -427,30 +524,21 @@ Class: pico:Population
         isSpecifiedBy min 1 PopulationSpecifier
     
     
+Class: servicearea:ServiceArea
+
+    Annotations: 
+        rdfs:comment "Service area for which quality statement is relevant."
+    
+    
 Class: setting:Setting
 
     Annotations: 
         rdfs:comment "Setting - may be used for setting for population definition as well as setting where action of quality statement should occur"
     
     
-Class: StructureMeasure
+Class: ChangeType
 
     SubClassOf: 
-        QualityMeasure
-    
-    DisjointWith: 
-        ProcessMeasure, OutcomeMeasure
-    
-    
-Class: PopulationSpecifier
-
-    
-Class: OutcomeMeasure
-
-    SubClassOf: 
-        QualityMeasure
-    
-    DisjointWith: 
-        ProcessMeasure, StructureMeasure
+        TopLevelProvenanceConcept
     
     
