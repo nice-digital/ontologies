@@ -1,0 +1,104 @@
+Prefix: dc: <http://purl.org/dc/elements/1.1/>
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+Prefix: rdfa: <http://www.w3.org/ns/rdfa#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: schema: <http://schema.org/>
+
+
+
+Ontology: <http://ld.nice.org.uk/ns/bnf>
+
+
+AnnotationProperty: rdfa:usesVocabulary
+
+
+AnnotationProperty: <http://ld.nice.org.uk/ns/bnf#name>
+
+    Annotations:
+        rdfs:comment "The name of the drug monograph"@en,
+        rdfs:label "name"@en
+
+    Annotations:
+        rdfs:comment "The name of the drug monograph"@en,
+        rdfs:label "name"@en
+
+    SubPropertyOf:
+        rdfs:label
+
+    Domain:
+        <http://ld.nice.org.uk/ns/bnf#Drug>
+
+
+AnnotationProperty: rdfs:label
+
+
+AnnotationProperty: <http://ld.nice.org.uk/ns/bnf#vtmid>
+
+    Annotations:
+        rdfs:label "vtmid"@en,
+        rdfs:comment "The VTM-ID of a drug monograph"@en
+
+    Annotations:
+        rdfs:comment "The VTM-ID of a drug monograph"@en,
+        rdfs:label "vtmid"@en
+
+    Domain:
+        <http://ld.nice.org.uk/ns/bnf#Drug>
+
+
+AnnotationProperty: rdfs:comment
+
+
+Datatype: rdf:PlainLiteral
+
+
+ObjectProperty: schema:MedicalEntity
+
+
+ObjectProperty: <http://wifo5-04.informatik.uni-mannheim.de/drugbank/data/drugbank/drugs>
+
+
+Class: <http://ld.nice.org.uk/ns/bnf#Drug>
+
+    Annotations:
+        rdfs:label "drug"@en,
+        rdfa:usesVocabulary <http://ld.nice.org.uk/ns/bnf>,
+        rdfs:comment "A drug Monograph"@en
+
+    EquivalentTo:
+        schema:MedicalEntity some <http://ld.nice.org.uk/ns/bnf#Drug>,
+        <http://wifo5-04.informatik.uni-mannheim.de/drugbank/data/drugbank/drugs> some <http://ld.nice.org.uk/ns/bnf#Drug>
+
+    SubClassOf:
+        <http://ld.nice.org.uk/ns/bnf#Drug>
+
+
+Class: <http://ld.nice.org.uk/ns/bnf#clinicalAdvice>
+
+    Annotations:
+        rdfs:label "clinicalAdvice"@en,
+        rdfa:usesVocabulary <http://ld.nice.org.uk/ns/bnf>,
+        rdfs:comment "Clinical advice given to a person"@en
+
+
+Individual: <http://ld.nice.org.uk/ns/bnf#breastFeeding>
+
+    Annotations:
+        rdfs:comment "Clinical advice for people who are breast feeding"@en,
+        rdfs:label "breastFeeding"@en
+
+    Types:
+        <http://ld.nice.org.uk/ns/bnf#clinicalAdvice>
+
+
+Individual: <http://ld.nice.org.uk/ns/bnf#pregnancy>
+
+    Annotations:
+        rdfs:label "pregnancy"@en,
+        rdfs:comment "Clinical advice for people who are pregnant"@en
+
+    Types:
+        <http://ld.nice.org.uk/ns/bnf#clinicalAdvice>
