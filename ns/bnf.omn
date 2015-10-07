@@ -14,91 +14,128 @@ Ontology: <http://ld.nice.org.uk/ns/bnf>
 
 AnnotationProperty: rdfa:usesVocabulary
 
-
+    
 AnnotationProperty: <http://ld.nice.org.uk/ns/bnf#name>
 
-    Annotations:
-        rdfs:comment "The name of the drug monograph"@en,
+    Annotations: 
+        rdfs:comment "The name of a BNF entity"@en,
         rdfs:label "name"@en
-
-    Annotations:
-        rdfs:comment "The name of the drug monograph"@en,
+    
+    Annotations: 
+        rdfs:comment "The name of a BNF entity"@en,
         rdfs:label "name"@en
-
-    SubPropertyOf:
+    
+    SubPropertyOf: 
         rdfs:label
-
-    Domain:
-        <http://ld.nice.org.uk/ns/bnf#Drug>
-
-
+    
+    
 AnnotationProperty: rdfs:label
 
-
-AnnotationProperty: <http://ld.nice.org.uk/ns/bnf#vtmid>
-
-    Annotations:
-        rdfs:label "vtmid"@en,
-        rdfs:comment "The VTM-ID of a drug monograph"@en
-
-    Annotations:
-        rdfs:comment "The VTM-ID of a drug monograph"@en,
-        rdfs:label "vtmid"@en
-
-    Domain:
-        <http://ld.nice.org.uk/ns/bnf#Drug>
-
-
+    
 AnnotationProperty: rdfs:comment
 
+    
+Datatype: rdfs:Literal
 
+    
+Datatype: xsd:int
+
+    
 Datatype: rdf:PlainLiteral
 
-
+    
 ObjectProperty: schema:MedicalEntity
 
+    
+ObjectProperty: <http://ld.nice.org.uk/ns/bnf#pregnancy>
 
+    Range: 
+        <http://ld.nice.org.uk/ns/bnf#Pregnancy>
+    
+    
+ObjectProperty: rdf:Property
+
+    
+ObjectProperty: <http://ld.nice.org.uk/ns/bnf#hasClassification>
+
+    Range: 
+        <http://ld.nice.org.uk/ns/bnf/Classification>
+    
+    
+ObjectProperty: <http://ld.nice.org.uk/ns/bnf#breastFeeding>
+
+    Range: 
+        <http://ld.nice.org.uk/ns/bnf#BreastFeeding>
+    
+    
 ObjectProperty: <http://wifo5-04.informatik.uni-mannheim.de/drugbank/data/drugbank/drugs>
 
+    
+ObjectProperty: <http://ld.nice.org.uk/ns/bnf#interaction>
 
+    Domain: 
+        <http://ld.nice.org.uk/ns/bnf#Drug>
+    
+    Range: 
+        <http://ld.nice.org.uk/ns/bnf#Interaction>
+    
+    
+ObjectProperty: <http://ld.nice.org.uk/ns/bnf#hepaticImpairment>
+
+    Range: 
+        <http://ld.nice.org.uk/ns/bnf#HepaticImpairment>
+    
+    
+ObjectProperty: <http://ld.nice.org.uk/ns/bnf#generalInformation>
+
+    Range: 
+        <http://ld.nice.org.uk/ns/bnf#GeneralInformation>
+    
+    
+DataProperty: <http://ld.nice.org.uk/ns/bnf#vtmid>
+
+    Range: 
+        xsd:int
+    
+    
+DataProperty: <http://ld.nice.org.uk/ns/bnf#hasSpecificity>
+
+    Range: 
+        rdfs:Literal
+    
+    
+Class: <http://ld.nice.org.uk/ns/bnf#Interaction>
+
+    
+Class: <http://ld.nice.org.uk/ns/bnf#BreastFeeding>
+
+    
 Class: <http://ld.nice.org.uk/ns/bnf#Drug>
 
-    Annotations:
-        rdfs:label "drug"@en,
-        rdfa:usesVocabulary <http://ld.nice.org.uk/ns/bnf>,
-        rdfs:comment "A drug Monograph"@en
-
-    EquivalentTo:
+    Annotations: 
+        rdfs:label "Drug"@en,
+        rdfs:comment "A drug monograph"@en,
+        rdfa:usesVocabulary <http://ld.nice.org.uk/ns/bnf>
+    
+    EquivalentTo: 
         schema:MedicalEntity some <http://ld.nice.org.uk/ns/bnf#Drug>,
         <http://wifo5-04.informatik.uni-mannheim.de/drugbank/data/drugbank/drugs> some <http://ld.nice.org.uk/ns/bnf#Drug>
+    
+    
+Class: <http://ld.nice.org.uk/ns/bnf/Classification>
 
-    SubClassOf:
-        <http://ld.nice.org.uk/ns/bnf#Drug>
-
-
-Class: <http://ld.nice.org.uk/ns/bnf#clinicalAdvice>
-
-    Annotations:
-        rdfs:label "clinicalAdvice"@en,
+    Annotations: 
+        rdfs:label "Classification"@en,
         rdfa:usesVocabulary <http://ld.nice.org.uk/ns/bnf>,
-        rdfs:comment "Clinical advice given to a person"@en
+        rdfs:comment "BNF drug monograph classification category"@en
+    
+    
+Class: <http://ld.nice.org.uk/ns/bnf#Pregnancy>
 
+    
+Class: <http://ld.nice.org.uk/ns/bnf#GeneralInformation>
 
-Individual: <http://ld.nice.org.uk/ns/bnf#breastFeeding>
+    
+Class: <http://ld.nice.org.uk/ns/bnf#HepaticImpairment>
 
-    Annotations:
-        rdfs:comment "Clinical advice for people who are breast feeding"@en,
-        rdfs:label "breastFeeding"@en
-
-    Types:
-        <http://ld.nice.org.uk/ns/bnf#clinicalAdvice>
-
-
-Individual: <http://ld.nice.org.uk/ns/bnf#pregnancy>
-
-    Annotations:
-        rdfs:label "pregnancy"@en,
-        rdfs:comment "Clinical advice for people who are pregnant"@en
-
-    Types:
-        <http://ld.nice.org.uk/ns/bnf#clinicalAdvice>
+    
