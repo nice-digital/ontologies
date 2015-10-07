@@ -157,6 +157,9 @@ DataProperty: <http://ld.nice.org.uk/ns/bnf#OWLDataPropertyImpl_87167c94_2ce9_45
     Annotations: 
         rdfs:label "vtmid"@en
     
+    Domain: 
+        <http://ld.nice.org.uk/ns/bnf#OWLClassImpl_78e4b524_3783_46fb_aa77_6f32dfca0d94>
+    
     Range: 
         xsd:int
     
