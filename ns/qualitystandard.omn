@@ -222,7 +222,7 @@ ObjectProperty: specifies
         isSpecifiedBy
     
     
-ObjectProperty: lifestylecondition:lifestyleCondition
+ObjectProperty: lifestyleCondition
 
     Domain: 
         pico:Population
