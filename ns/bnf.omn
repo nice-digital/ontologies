@@ -14,182 +14,229 @@ Ontology: <http://ld.nice.org.uk/ns/bnf#>
 
 AnnotationProperty: rdfa:usesVocabulary
 
-
+    
 AnnotationProperty: rdfs:label
 
-    Annotations:
+    Annotations: 
         rdfs:label "rdfs:label"@en
-
-    Annotations:
+    
+    Annotations: 
         rdfs:label "rdfs:label"@en
-
-
+    
+    
 AnnotationProperty: rdfs:comment
 
-    Annotations:
+    Annotations: 
         rdfs:label "rdfs:comment"@en
-
-    Annotations:
+    
+    Annotations: 
         rdfs:label "rdfs:comment"@en
-
-
+    
+    
 Datatype: rdfs:Literal
 
-    Annotations:
+    Annotations: 
         rdfs:label "rdfs:Literal"@en
-
-
+    
+    
 Datatype: xsd:int
 
-    Annotations:
+    Annotations: 
         rdfs:label "xsd:int"@en
-
-
+    
+    
 Datatype: rdf:PlainLiteral
 
-    Annotations:
+    Annotations: 
         rdfs:label "rdf:PlainLiteral"@en
+    
+    
+ObjectProperty: <http://ld.nice.org.uk/ns/bnf#refersTo>
 
-
-ObjectProperty: <http://ld.nice.org.uk/ns/bnf#hasHepaticImpairment>
-
-    Domain:
-        <http://ld.nice.org.uk/ns/bnf#BNFEntity>
-
-    Range:
-        <http://ld.nice.org.uk/ns/bnf#HepaticImpairment>
-
-
+    InverseOf: 
+        <http://ld.nice.org.uk/ns/bnf#hasBreastFeeding>,
+        <http://ld.nice.org.uk/ns/bnf#hasGeneralInformation>,
+        <http://ld.nice.org.uk/ns/bnf#hasHepaticImpairment>,
+        <http://ld.nice.org.uk/ns/bnf#hasPregnancy>
+    
+    
 ObjectProperty: <http://ld.nice.org.uk/ns/bnf#hasBreastFeeding>
 
-    Domain:
-        <http://ld.nice.org.uk/ns/bnf#BNFEntity>
-
-    Range:
+    Domain: 
+        <http://ld.nice.org.uk/ns/bnf#PrescribingInformation>
+    
+    Range: 
         <http://ld.nice.org.uk/ns/bnf#BreastFeeding>
+    
+    InverseOf: 
+        <http://ld.nice.org.uk/ns/bnf#refersTo>
+    
+    
+ObjectProperty: <http://ld.nice.org.uk/ns/bnf#hasHepaticImpairment>
 
-
-ObjectProperty: <http://ld.nice.org.uk/ns/bnf#hasPregnancy>
-
-    Domain:
-        <http://ld.nice.org.uk/ns/bnf#BNFEntity>
-
-    Range:
-        <http://ld.nice.org.uk/ns/bnf#Pregnancy>
-
-
-ObjectProperty: <http://ld.nice.org.uk/ns/bnf#hasClassification>
-
-    Domain:
-        <http://ld.nice.org.uk/ns/bnf#Drug>
-
-    Range:
-        <http://ld.nice.org.uk/ns/bnf/Classification>
-
-
-ObjectProperty: <http://ld.nice.org.uk/ns/bnf#hasRoute>
-
-    Range:
-        <http://ld.nice.org.uk/ns/bnf#Route>
-
-
-ObjectProperty: <http://ld.nice.org.uk/ns/bnf#interaction>
-
-    Domain:
-        <http://ld.nice.org.uk/ns/bnf#Drug>
-
-    Range:
-        <http://ld.nice.org.uk/ns/bnf#Interaction>
-
-
-ObjectProperty: <http://ld.nice.org.uk/ns/bnf#hasGeneralInformation>
-
-    Range:
-        <http://ld.nice.org.uk/ns/bnf#GeneralInformation>
-
-
+    Domain: 
+        <http://ld.nice.org.uk/ns/bnf#PrescribingInformation>
+    
+    Range: 
+        <http://ld.nice.org.uk/ns/bnf#HepaticImpairment>
+    
+    InverseOf: 
+        <http://ld.nice.org.uk/ns/bnf#refersTo>
+    
+    
 ObjectProperty: <http://ld.nice.org.uk/ns/bnf#hasIndication>
 
-    Range:
+    Range: 
         <http://ld.nice.org.uk/ns/bnf#Indication>
+    
+    
+ObjectProperty: <http://ld.nice.org.uk/ns/bnf#hasRoute>
 
+    Range: 
+        <http://ld.nice.org.uk/ns/bnf#Route>
+    
+    
+ObjectProperty: <http://ld.nice.org.uk/ns/bnf#hasClassification>
 
+    Domain: 
+        <http://ld.nice.org.uk/ns/bnf#Drug>
+    
+    Range: 
+        <http://ld.nice.org.uk/ns/bnf/Classification>
+    
+    InverseOf: 
+        <http://ld.nice.org.uk/ns/bnf#classifiesDrug>
+    
+    
+ObjectProperty: <http://ld.nice.org.uk/ns/bnf#hasPregnancy>
+
+    Domain: 
+        <http://ld.nice.org.uk/ns/bnf#PrescribingInformation>
+    
+    Range: 
+        <http://ld.nice.org.uk/ns/bnf#Pregnancy>
+    
+    InverseOf: 
+        <http://ld.nice.org.uk/ns/bnf#refersTo>
+    
+    
+ObjectProperty: <http://ld.nice.org.uk/ns/bnf#interaction>
+
+    Domain: 
+        <http://ld.nice.org.uk/ns/bnf#Drug>
+    
+    Range: 
+        <http://ld.nice.org.uk/ns/bnf#Interaction>
+    
+    
+ObjectProperty: <http://ld.nice.org.uk/ns/bnf#hasGeneralInformation>
+
+    Range: 
+        <http://ld.nice.org.uk/ns/bnf#GeneralInformation>
+    
+    InverseOf: 
+        <http://ld.nice.org.uk/ns/bnf#refersTo>
+    
+    
+ObjectProperty: <http://ld.nice.org.uk/ns/bnf#classifiesDrug>
+
+    Domain: 
+        <http://ld.nice.org.uk/ns/bnf/Classification>
+    
+    InverseOf: 
+        <http://ld.nice.org.uk/ns/bnf#hasClassification>
+    
+    
 DataProperty: <http://ld.nice.org.uk/ns/bnf#vtmid>
 
-    Domain:
+    Domain: 
         <http://ld.nice.org.uk/ns/bnf#Drug>
-
-    Range:
+    
+    Range: 
         xsd:int
-
-
+    
+    
 DataProperty: <http://ld.nice.org.uk/ns/bnf#hasSpecificity>
 
-    Range:
+    Range: 
         rdfs:Literal
-
-
+    
+    
 Class: <http://ld.nice.org.uk/ns/bnf#Interaction>
 
-
-Class: <http://ld.nice.org.uk/ns/bnf#GeneralInformation>
-
-    Annotations:
-        rdfs:label "General information"@en
-
-
+    
 Class: <http://ld.nice.org.uk/ns/bnf#Route>
 
-    Annotations:
+    Annotations: 
         rdfs:label "Route of administration"@en
+    
+    
+Class: <http://ld.nice.org.uk/ns/bnf#PrescribingWarning>
 
-
+    
 Class: <http://ld.nice.org.uk/ns/bnf#BreastFeeding>
 
-    Annotations:
+    Annotations: 
         rdfs:label "Breast feeding"@en
-
-
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/bnf#PrescribingWarning>
+    
+    
 Class: <http://ld.nice.org.uk/ns/bnf#Drug>
 
-    Annotations:
+    Annotations: 
         rdfs:label "Drug monograph"@en
-
-    SubClassOf:
-        <http://ld.nice.org.uk/ns/bnf#BNFEntity>
-
-
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/bnf#PrescribingInformation>
+    
+    
 Class: <http://ld.nice.org.uk/ns/bnf#Indication>
 
-
+    
 Class: <http://ld.nice.org.uk/ns/bnf/Classification>
 
-
+    
 Class: <http://ld.nice.org.uk/ns/bnf#ClinicalMedicinalProductInformation>
 
-    Annotations:
+    Annotations: 
         rdfs:label "Clinical medicinal product information"@en
-
-    SubClassOf:
-        <http://ld.nice.org.uk/ns/bnf#BNFEntity>
-
-
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/bnf#PrescribingInformation>
+    
+    
 Class: <http://ld.nice.org.uk/ns/bnf#Pregnancy>
 
-
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/bnf#PrescribingWarning>
+    
+    
 Class: <http://ld.nice.org.uk/ns/bnf#DrugClass>
 
-    Annotations:
+    Annotations: 
         rdfs:label "Drug Class"@en
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/bnf#PrescribingInformation>
+    
+    
+Class: <http://ld.nice.org.uk/ns/bnf#GeneralInformation>
 
-    SubClassOf:
-        <http://ld.nice.org.uk/ns/bnf#BNFEntity>
-
-
-Class: <http://ld.nice.org.uk/ns/bnf#BNFEntity>
-
-
+    Annotations: 
+        rdfs:label "General information"@en
+    
+    
 Class: <http://ld.nice.org.uk/ns/bnf#HepaticImpairment>
 
-    Annotations:
+    Annotations: 
         rdfs:label "Hepatic Impairment"@en
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/bnf#PrescribingWarning>
+    
+    
+Class: <http://ld.nice.org.uk/ns/bnf#PrescribingInformation>
+
+    
