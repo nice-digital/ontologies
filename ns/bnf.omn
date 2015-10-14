@@ -45,6 +45,9 @@ Datatype: xsd:int
         rdfs:label "xsd:int"@en
     
     
+Datatype: xsd:string
+
+    
 Datatype: rdf:PlainLiteral
 
     Annotations: 
@@ -66,7 +69,7 @@ ObjectProperty: <http://ld.nice.org.uk/ns/bnf#hasBreastFeeding>
         <http://ld.nice.org.uk/ns/bnf#PrescribingInformation>
     
     Range: 
-        <http://ld.nice.org.uk/ns/bnf#BreastFeeding>
+        <http://ld.nice.org.uk/ns/bnf#BreastFeedingWarning>
     
     InverseOf: 
         <http://ld.nice.org.uk/ns/bnf#refersTo>
@@ -78,7 +81,7 @@ ObjectProperty: <http://ld.nice.org.uk/ns/bnf#hasHepaticImpairment>
         <http://ld.nice.org.uk/ns/bnf#PrescribingInformation>
     
     Range: 
-        <http://ld.nice.org.uk/ns/bnf#HepaticImpairment>
+        <http://ld.nice.org.uk/ns/bnf#HepaticImpairmentWarning>
     
     InverseOf: 
         <http://ld.nice.org.uk/ns/bnf#refersTo>
@@ -114,7 +117,7 @@ ObjectProperty: <http://ld.nice.org.uk/ns/bnf#hasPregnancy>
         <http://ld.nice.org.uk/ns/bnf#PrescribingInformation>
     
     Range: 
-        <http://ld.nice.org.uk/ns/bnf#Pregnancy>
+        <http://ld.nice.org.uk/ns/bnf#PregnancyWarning>
     
     InverseOf: 
         <http://ld.nice.org.uk/ns/bnf#refersTo>
@@ -165,6 +168,15 @@ DataProperty: <http://ld.nice.org.uk/ns/bnf#hasSpecificity>
 Class: <http://ld.nice.org.uk/ns/bnf#Interaction>
 
     
+Class: <http://ld.nice.org.uk/ns/bnf#BreastFeedingWarning>
+
+    Annotations: 
+        rdfs:label "Breast feeding warning"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/bnf#PrescribingWarning>
+    
+    
 Class: <http://ld.nice.org.uk/ns/bnf#Route>
 
     Annotations: 
@@ -174,10 +186,10 @@ Class: <http://ld.nice.org.uk/ns/bnf#Route>
 Class: <http://ld.nice.org.uk/ns/bnf#PrescribingWarning>
 
     
-Class: <http://ld.nice.org.uk/ns/bnf#BreastFeeding>
+Class: <http://ld.nice.org.uk/ns/bnf#HepaticImpairmentWarning>
 
     Annotations: 
-        rdfs:label "Breast feeding"@en
+        rdfs:label "Hepatic impairment warning"^^xsd:string
     
     SubClassOf: 
         <http://ld.nice.org.uk/ns/bnf#PrescribingWarning>
@@ -207,12 +219,6 @@ Class: <http://ld.nice.org.uk/ns/bnf#ClinicalMedicinalProductInformation>
         <http://ld.nice.org.uk/ns/bnf#PrescribingInformation>
     
     
-Class: <http://ld.nice.org.uk/ns/bnf#Pregnancy>
-
-    SubClassOf: 
-        <http://ld.nice.org.uk/ns/bnf#PrescribingWarning>
-    
-    
 Class: <http://ld.nice.org.uk/ns/bnf#DrugClass>
 
     Annotations: 
@@ -228,15 +234,15 @@ Class: <http://ld.nice.org.uk/ns/bnf#GeneralInformation>
         rdfs:label "General information"@en
     
     
-Class: <http://ld.nice.org.uk/ns/bnf#HepaticImpairment>
+Class: <http://ld.nice.org.uk/ns/bnf#PrescribingInformation>
+
+    
+Class: <http://ld.nice.org.uk/ns/bnf#PregnancyWarning>
 
     Annotations: 
-        rdfs:label "Hepatic Impairment"@en
+        rdfs:label "Pregancy warning"^^xsd:string
     
     SubClassOf: 
         <http://ld.nice.org.uk/ns/bnf#PrescribingWarning>
     
-    
-Class: <http://ld.nice.org.uk/ns/bnf#PrescribingInformation>
-
     
