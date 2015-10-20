@@ -63,47 +63,14 @@ ObjectProperty: condition
         conditiondisease:ConditionDisease
     
     
-ObjectProperty: <http://ld.nice.org.uk/ns/qualitystandard#prov:generated>
+ObjectProperty: lifestyleCondition
 
     Domain: 
-        QualityStandard
+        pico:Population
     
     Range: 
-        QualityStatement
+        lifestylecondition:LifestyleCondition
     
-    InverseOf: 
-        <http://ld.nice.org.uk/ns/qualitystandard#prov:wasGeneratedby>
-    
-    
-ObjectProperty: <http://ld.nice.org.uk/ns/qualitystandard#prov:wasGeneratedby>
-
-    Domain: 
-        QualityStatement
-    
-    Range: 
-        QualityStandard
-    
-    InverseOf: 
-        <http://ld.nice.org.uk/ns/qualitystandard#prov:generated>
-    
-    
-ObjectProperty: measuresProgressAgainst
-
-    Domain: 
-        QualityMeasure
-    
-    
-ObjectProperty: hasGuidanceStatus
-
-    Domain: 
-        owl:Thing
-    
-    Range: 
-        GuidanceStatus
-    
-    
-ObjectProperty: owl:topObjectProperty
-
     
 ObjectProperty: definesTask
 
@@ -120,6 +87,36 @@ ObjectProperty: definesTask
         definedTaskOf
     
     
+ObjectProperty: hasGuidanceStatus
+
+    Domain: 
+        owl:Thing
+    
+    Range: 
+        GuidanceStatus
+    
+    
+ObjectProperty: measuresProgressAgainst
+
+    Domain: 
+        QualityMeasure
+    
+    
+ObjectProperty: hasPart
+
+    Characteristics: 
+        Transitive
+    
+    InverseOf: 
+        partOf
+    
+    
+ObjectProperty: hasConcept
+
+    InverseOf: 
+        skos:inConceptScheme
+    
+    
 ObjectProperty: isServiceAreaOf
 
     Domain: 
@@ -132,10 +129,16 @@ ObjectProperty: isServiceAreaOf
         serviceArea
     
     
-ObjectProperty: hasConcept
+ObjectProperty: measureDefinedBy
 
+    Domain: 
+        QualityMeasure
+    
+    Range: 
+        QualityStatement
+    
     InverseOf: 
-        skos:inConceptScheme
+        definesMeasure
     
     
 ObjectProperty: definesMeasure
@@ -222,15 +225,6 @@ ObjectProperty: specifies
         isSpecifiedBy
     
     
-ObjectProperty: lifestyleCondition
-
-    Domain: 
-        pico:Population
-    
-    Range: 
-        lifestylecondition:LifestyleCondition
-    
-    
 ObjectProperty: haschangeType
 
     Domain: 
@@ -249,6 +243,15 @@ ObjectProperty: haschangeEntry
         ChangeEntry
     
     
+ObjectProperty: partOf
+
+    Characteristics: 
+        Transitive
+    
+    InverseOf: 
+        hasPart
+    
+    
 ObjectProperty: isSettingOf
 
     Domain: 
@@ -261,17 +264,8 @@ ObjectProperty: isSettingOf
         setting
     
     
-ObjectProperty: measureDefinedBy
+ObjectProperty: owl:topObjectProperty
 
-    Domain: 
-        QualityMeasure
-    
-    Range: 
-        QualityStatement
-    
-    InverseOf: 
-        definesMeasure
-    
     
 ObjectProperty: targetPopulation
 
@@ -351,6 +345,15 @@ DataProperty: abstract
         xsd:string
     
     
+DataProperty: <http://ld.nice.org.uk/ns/qualitystandard#qs::hasDenominator>
+
+    Domain: 
+        QualityMeasure
+    
+    Range: 
+        xsd:string
+    
+    
 DataProperty: haschangeSummary
 
     Domain: 
@@ -387,15 +390,6 @@ DataProperty: <http://ld.nice.org.uk/ns/qualitystandard#qs::hasNumerator>
         xsd:string
     
     
-DataProperty: <http://ld.nice.org.uk/ns/qualitystandard#qs::hasDenominator>
-
-    Domain: 
-        QualityMeasure
-    
-    Range: 
-        xsd:string
-    
-    
 DataProperty: haschangeDescription
 
     Domain: 
@@ -404,6 +398,9 @@ DataProperty: haschangeDescription
     Range: 
         xsd:string
     
+    
+Class: Product
+
     
 Class: Withdrawn
 
@@ -454,10 +451,23 @@ Class: OutcomeMeasure
         ProcessMeasure, StructureMeasure
     
     
+Class: StructureMeasure
+
+    SubClassOf: 
+        QualityMeasure
+    
+    DisjointWith: 
+        ProcessMeasure, OutcomeMeasure
+    
+    
 Class: QualityStandard
 
+    SubClassOf: 
+        Product,
+        hasPart some QualityStatement
+    
     DisjointWith: 
-        QualityStatement, QualityMeasure
+        QualityStatement
     
     
 Class: Published
@@ -472,23 +482,14 @@ Class: Published
 Class: owl:Thing
 
     
+Class: PopulationSpecifier
+
+    
 Class: ChangeLog
 
     SubClassOf: 
         TopLevelProvenanceConcept,
         haschangeEntry min 1 ChangeEntry
-    
-    
-Class: PopulationSpecifier
-
-    
-Class: StructureMeasure
-
-    SubClassOf: 
-        QualityMeasure
-    
-    DisjointWith: 
-        ProcessMeasure, OutcomeMeasure
     
     
 Class: GuidanceStatus
@@ -508,14 +509,15 @@ Class: QualityMeasure
     Annotations: 
         rdfs:comment "measure associated with quality statement"
     
-    DisjointWith: 
-        QualityStandard, QualityStatement
-    
     
 Class: QualityStatement
 
+    SubClassOf: 
+        Product,
+        partOf some QualityStandard
+    
     DisjointWith: 
-        QualityStandard, QualityMeasure
+        QualityStandard
     
     
 Class: ProcessMeasure
@@ -524,7 +526,7 @@ Class: ProcessMeasure
         QualityMeasure
     
     DisjointWith: 
-        OutcomeMeasure, StructureMeasure
+        StructureMeasure, OutcomeMeasure
     
     
 Class: MinorChange
