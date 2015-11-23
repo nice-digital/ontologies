@@ -1,13 +1,13 @@
-image: nice/ld-docker-build:latest
-script:
-  - ./build.sh
+build:
+  image: nice/ld-docker-build
 publish:
   docker:
-    docker_version: 1.8.1
-    image_name: nice/ontologies
+    repo: nice/ontologies
     username: $$DOCKERHUB_USER
     password: $$DOCKERHUB_PASS
     email: $$DOCKERHUB_EMAIL
-    registry_login: true
-    tag: latest
-    docker_host: tcp://172.16.204.198:5555
+    file: Dockerfile
+    insecure: false
+    tag:
+      - latest
+      - $$COMMIT
