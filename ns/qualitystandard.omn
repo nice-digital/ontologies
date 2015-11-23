@@ -18,6 +18,9 @@ Prefix: lifestylecondition: <http://ld.nice.org.uk/ns/qualitystandard/lifestylec
 Ontology: <http://ld.nice.org.uk/ns/qualitystandard>
 
 
+AnnotationProperty: rdfs:isDefinedBy
+
+    
 AnnotationProperty: skos:prefLabel
 
     Annotations: 
@@ -45,7 +48,13 @@ AnnotationProperty: skos:altLabel
         rdfs:comment "Use for synonyms"
     
     
+Datatype: xsd:dateTime
+
+    
 Datatype: rdfs:Literal
+
+    
+Datatype: xsd:integer
 
     
 Datatype: xsd:string
@@ -72,21 +81,6 @@ ObjectProperty: lifestyleCondition
         lifestylecondition:LifestyleCondition
     
     
-ObjectProperty: definesTask
-
-    Annotations: 
-        rdfs:comment "connects  proposed action of quality statement to tasks which enable this action to take place"
-    
-    Domain: 
-        QualityStatement
-    
-    SubPropertyOf: 
-        owl:topObjectProperty
-    
-    InverseOf: 
-        definedTaskOf
-    
-    
 ObjectProperty: hasGuidanceStatus
 
     Domain: 
@@ -94,6 +88,18 @@ ObjectProperty: hasGuidanceStatus
     
     Range: 
         GuidanceStatus
+    
+    
+ObjectProperty: replacedBy
+
+    Domain: 
+        owl:Thing
+    
+    Range: 
+        owl:Thing
+    
+    InverseOf: 
+        replaces
     
     
 ObjectProperty: measuresProgressAgainst
@@ -117,6 +123,33 @@ ObjectProperty: hasConcept
         skos:inConceptScheme
     
     
+ObjectProperty: replaces
+
+    Domain: 
+        owl:Thing
+    
+    Range: 
+        owl:Thing
+    
+    InverseOf: 
+        replacedBy
+    
+    
+ObjectProperty: definesTask
+
+    Annotations: 
+        rdfs:comment "connects  proposed action of quality statement to tasks which enable this action to take place"
+    
+    Domain: 
+        QualityStatement
+    
+    SubPropertyOf: 
+        owl:topObjectProperty
+    
+    InverseOf: 
+        definedTaskOf
+    
+    
 ObjectProperty: isServiceAreaOf
 
     Domain: 
@@ -129,17 +162,8 @@ ObjectProperty: isServiceAreaOf
         serviceArea
     
     
-ObjectProperty: measureDefinedBy
+ObjectProperty: owl:topObjectProperty
 
-    Domain: 
-        QualityMeasure
-    
-    Range: 
-        QualityStatement
-    
-    InverseOf: 
-        definesMeasure
-    
     
 ObjectProperty: definesMeasure
 
@@ -264,8 +288,17 @@ ObjectProperty: isSettingOf
         setting
     
     
-ObjectProperty: owl:topObjectProperty
+ObjectProperty: measureDefinedBy
 
+    Domain: 
+        QualityMeasure
+    
+    Range: 
+        QualityStatement
+    
+    InverseOf: 
+        definesMeasure
+    
     
 ObjectProperty: targetPopulation
 
@@ -338,8 +371,82 @@ DataProperty: hasDataSource
     
 DataProperty: abstract
 
+    Annotations: 
+        rdfs:comment "A summary of the resource."
+    
     Domain: 
         owl:Thing
+    
+    Range: 
+        xsd:string
+    
+    
+DataProperty: dateModified
+
+    Annotations: 
+        rdfs:isDefinedBy "<http://purl.org/dc/terms/>",
+        rdfs:comment "Date on which the resource was changed."
+    
+    Domain: 
+        owl:Thing
+    
+    Range: 
+        xsd:dateTime
+    
+    SubPropertyOf: 
+        <http://purl.org/dc/terms/date>
+    
+    
+DataProperty: haschangeSummary
+
+    Domain: 
+        owl:Thing
+    
+    Range: 
+        xsd:string
+    
+    
+DataProperty: dateIssued
+
+    Annotations: 
+        rdfs:isDefinedBy "<http://purl.org/dc/terms/>",
+        rdfs:comment "Date of formal issuance (e.g., publication) of the resource."
+    
+    Domain: 
+        owl:Thing
+    
+    Range: 
+        xsd:dateTime
+    
+    SubPropertyOf: 
+        <http://purl.org/dc/terms/date>
+    
+    
+DataProperty: dc:title
+
+    Domain: 
+        owl:Thing
+    
+    Range: 
+        xsd:string
+    
+    
+DataProperty: <http://purl.org/dc/terms/date>
+
+    
+DataProperty: dc:identifier
+
+    Domain: 
+        Product
+    
+    Range: 
+        xsd:integer
+    
+    
+DataProperty: <http://ld.nice.org.uk/ns/qualitystandard#qs::hasNumerator>
+
+    Domain: 
+        ProcessMeasure
     
     Range: 
         xsd:string
@@ -354,42 +461,6 @@ DataProperty: <http://ld.nice.org.uk/ns/qualitystandard#qs::hasDenominator>
         xsd:string
     
     
-DataProperty: haschangeSummary
-
-    Domain: 
-        owl:Thing
-    
-    Range: 
-        xsd:string
-    
-    
-DataProperty: dc:title
-
-    Domain: 
-        owl:Thing
-    
-    Range: 
-        xsd:string
-    
-    
-DataProperty: dc:identifier
-
-    Domain: 
-        owl:Thing
-    
-    Range: 
-        rdfs:Literal
-    
-    
-DataProperty: <http://ld.nice.org.uk/ns/qualitystandard#qs::hasNumerator>
-
-    Domain: 
-        ProcessMeasure
-    
-    Range: 
-        xsd:string
-    
-    
 DataProperty: haschangeDescription
 
     Domain: 
@@ -399,11 +470,29 @@ DataProperty: haschangeDescription
         xsd:string
     
     
+DataProperty: dateWithdrawn
+
+    Annotations: 
+        rdfs:comment "Date on which the resource was withdrawn."
+    
+    Domain: 
+        owl:Thing
+    
+    Range: 
+        xsd:dateTime
+    
+    SubPropertyOf: 
+        <http://purl.org/dc/terms/date>
+    
+    
 Class: Product
 
     
 Class: Withdrawn
 
+    EquivalentTo: 
+        dateWithdrawn some xsd:dateTime
+    
     SubClassOf: 
         GuidanceStatus
     
@@ -463,8 +552,8 @@ Class: StructureMeasure
 Class: QualityStandard
 
     SubClassOf: 
-        Product,
-        hasPart some QualityStatement
+        hasPart some QualityStatement,
+        Product
     
     DisjointWith: 
         QualityStatement
@@ -472,7 +561,12 @@ Class: QualityStandard
     
 Class: Published
 
+    Annotations: 
+        rdfs:comment "The resource has been published and has not been withdrawn ( still valid)."
+    
     SubClassOf: 
+        dateIssued some xsd:dateTime,
+        dateWithdrawn max 0 xsd:dateTime,
         GuidanceStatus
     
     DisjointWith: 
@@ -512,6 +606,9 @@ Class: QualityMeasure
     
 Class: QualityStatement
 
+    Annotations: 
+        rdfs:comment "A NICE Quality statement is a clear, measurable and concise statement to describe ‘enhanced practice’, which is both aspirational and achievable."
+    
     SubClassOf: 
         Product,
         partOf some QualityStandard
@@ -527,6 +624,12 @@ Class: ProcessMeasure
     
     DisjointWith: 
         StructureMeasure, OutcomeMeasure
+    
+    
+Class: PlaceholderStatement
+
+    Annotations: 
+        rdfs:comment "A placeholder statement is an area of care that has been prioritised by the Quality Standards Advisory Committee but for which no source guidance is currently available. A placeholder statement indicates the need for evidence‑based guidance to be developed in this area."
     
     
 Class: MinorChange
@@ -559,18 +662,27 @@ Class: pico:Population
 Class: servicearea:ServiceArea
 
     Annotations: 
-        rdfs:comment "Service area for which quality statement is relevant."
+        rdfs:comment "Service area for which NICE Quality statement is applicable"
     
     
 Class: setting:Setting
 
     Annotations: 
-        rdfs:comment "Setting - may be used for setting for population definition as well as setting where action of quality statement should occur"
+        rdfs:comment "Physical setting - may be used for setting for population definition as well as physical setting where action of quality statement should occur"
     
     
 Class: ChangeType
 
     SubClassOf: 
         TopLevelProvenanceConcept
+    
+    
+Class: DevelopmentalQualityStatement
+
+    Annotations: 
+        rdfs:comment "A developmental quality statement sets out an emergent area of cutting‑edge service delivery or technology currently found in a minority of providers and indicating outstanding performance. It will require specific, significant changes to be put in place, such as redesign of services or new equipment."
+    
+    SubClassOf: 
+        QualityStatement
     
     
