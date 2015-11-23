@@ -1,23 +1,30 @@
 Prefix: : <http://ld.nice.org.uk/ns/qualitystandard/servicearea#>
-Prefix: dc: <http://purl.org/dc/elements/1.1/>
 Prefix: owl: <http://www.w3.org/2002/07/owl#>
 Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 Prefix: xml: <http://www.w3.org/XML/1998/namespace>
 Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+Prefix: base: <http://ld.nice.org.uk/ns/qualitystandard/servicearea>
 Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-Prefix: skos: <http://www.w3.org/2004/02/skos/core#>
+
+
 
 Ontology: <http://ld.nice.org.uk/ns/qualitystandard/servicearea>
 
-AnnotationProperty: rdfs:comment
+
+AnnotationProperty: rdfs:label
+
     
-AnnotationProperty: skos:altLabel
+AnnotationProperty: rdfs:comment
+
+    
+AnnotationProperty: <http://www.w3.org/2004/02/skos/core#altLabel>
 
     Annotations: 
         rdfs:comment "Use for synonyms"
     
     Annotations: 
         rdfs:comment "Use for synonyms"
+    
     
 Datatype: rdfs:Literal
 
@@ -27,4 +34,251 @@ Datatype: xsd:string
     
 Datatype: rdf:PlainLiteral
 
-Class: ServiceArea 
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/servicearea#Surgical%20care>
+
+    Annotations: 
+        rdfs:label "Surgical care"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Surgical services"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Surgery"^^xsd:string,
+        rdfs:comment "To include pre and post-operative care, as well as surgery."
+    
+    SubClassOf: 
+        ServiceArea
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/servicearea#Secondary%20medical%20care>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Secondary medical services"^^xsd:string,
+        rdfs:label "Secondary medical care"^^xsd:string,
+        rdfs:comment "To cover all specialist secondary medical care, excluding critical, urgent and emergency, maternity care and surgical care"
+    
+    SubClassOf: 
+        ServiceArea
+    
+    
+Class: ServiceArea
+
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/servicearea#Maternity%20care>
+
+    Annotations: 
+        rdfs:label "Maternity care"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Maternity services"^^xsd:string,
+        rdfs:comment "To include midwifery services, antenatal, postnatal and intrapartum care."
+    
+    SubClassOf: 
+        ServiceArea
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/servicearea#Community%20health%20care>
+
+    Annotations: 
+        rdfs:label "Community health care"^^xsd:string,
+        rdfs:comment "Health care services delivered outside a hospital and within communities but not formingHealth care services delivered outside a hospital and within communities but not forming part of contacted NHS primary care services. Includes: district nurses, health visitors, school nursing, community specialist services, hospital at home, and home-based rehabilitation and community physiotherapy. part of contacted NHS primary care services. Includes: district nurses, health visitors, school nursing, community specialist services, hospital at home, and home-based rehabilitation and community physiotherapy.",
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Community  health services"^^xsd:string
+    
+    SubClassOf: 
+        ServiceArea
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/servicearea#Medicines%20management>
+
+    Annotations: 
+        rdfs:comment "To include prescribing, supply and review of medicines and the education and continuing support of those providing these services and for people taking medicines. This includes homecare, medicines information, medicines adherence, medicines optimisation, formulary management, medicines optimisation, safety, cost-effectiveness assessment, monitoring, outcomes and the use of evidence.",
+        rdfs:label "Medicines management"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Prescribing"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Management of medicines"^^xsd:string
+    
+    SubClassOf: 
+        ServiceArea
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/servicearea#Critical%20care>
+
+    Annotations: 
+        rdfs:label "Critical care "^^xsd:string,
+        rdfs:comment "Care provided through facilities that specialise in treating critically ill children or adults in high dependency and intensive care units",
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Intensive care"^^xsd:string
+    
+    SubClassOf: 
+        ServiceArea
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/servicearea#Mental%20health%20care>
+
+    Annotations: 
+        rdfs:label "Mental health care"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Mental health services"^^xsd:string,
+        rdfs:comment "To include community based mental health  services, crisis resolution and home treatment  services, day psychiatric hospitals and crisis houses, inpatient psychiatric facilities,  mental health assertive outreach teams, forensic mental health services, perinatal psychiatric services, mental health helplines,  liaison psychiatry services, recovery colleges, child and adolescent mental health services, recovery-focused mental health services, drug and alcohol services, dementia services and learning disabilities services."
+    
+    SubClassOf: 
+        ServiceArea
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/servicearea#Urgent%20and%20emergency%20care>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "A&E"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Emergency medicine"^^xsd:string,
+        rdfs:label "Urgent and emergency care"^^xsd:string,
+        rdfs:comment "Services providing care to adults and children with unplanned, urgent care needs, to include emergency ambulance services, accident and emergency departments,  999 emergency service and care provided at urgent care centres such as walk in and minor injuries units.",
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Urgent  and emergency services"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Ambulance services"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Casualty"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Accident and emergency"^^xsd:string
+    
+    SubClassOf: 
+        ServiceArea
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/servicearea#Public%20health%20care>
+
+    Annotations: 
+        rdfs:label "Public health care"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Public health services"^^xsd:string,
+        rdfs:comment "Organized measures to prevent disease, promote health, and prolong life among the population as a whole, rather than for individual patients or diseases. Typically measures will address inequalities, education, housing, employment, family/community, lifestyle issues, and surveillance/monitoring for specific diseases and risk factors, including environmental hazards."
+    
+    SubClassOf: 
+        ServiceArea
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/servicearea#Social%20care>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Social services"^^xsd:string,
+        rdfs:comment "The provision of social work, personal care and practical support services for adults and children in need or at risk due to illness, disability, old age or poverty. This may include home/domiciliary care or day care, housing options with levels of care support attached, residential nursing home care, specialist non-medical  transport services, information and advisory services and support for informal carers, delivered by local authorities, third sector and commercial organisations.",
+        rdfs:label "Social care "^^xsd:string
+    
+    SubClassOf: 
+        ServiceArea
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/servicearea#End%20of%20life%20care>
+
+    Annotations: 
+        rdfs:comment "To include palliative and supportive care at home or in  a hospice",
+        rdfs:label "End of life care"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "End of life services"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Palliative care"^^xsd:string
+    
+    SubClassOf: 
+        ServiceArea
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/servicearea#Primary%20care>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "GP services"^^xsd:string,
+        rdfs:comment "To include primary medical, dental, eye health and pharmacy services.",
+        rdfs:label "Primary care "^^xsd:string
+    
+    SubClassOf: 
+        ServiceArea
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/servicearea#Social%20care>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Social services"^^xsd:string,
+        rdfs:comment "The provision of social work, personal care and practical support services for adults and children in need or at risk due to illness, disability, old age or poverty. This may include home/domiciliary care or day care, housing options with levels of care support attached, residential nursing home care, specialist non-medical  transport services, information and advisory services and support for informal carers, delivered by local authorities, third sector and commercial organisations.",
+        rdfs:label "Social care "^^xsd:string
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/servicearea#End%20of%20life%20care>
+
+    Annotations: 
+        rdfs:comment "To include palliative and supportive care at home or in  a hospice",
+        rdfs:label "End of life care"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "End of life services"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Palliative care"^^xsd:string
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/servicearea#Primary%20care>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "GP services"^^xsd:string,
+        rdfs:comment "To include primary medical, dental, eye health and pharmacy services.",
+        rdfs:label "Primary care "^^xsd:string
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/servicearea#Surgical%20care>
+
+    Annotations: 
+        rdfs:label "Surgical care"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Surgical services"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Surgery"^^xsd:string,
+        rdfs:comment "To include pre and post-operative care, as well as surgery."
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/servicearea#Secondary%20medical%20care>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Secondary medical services"^^xsd:string,
+        rdfs:label "Secondary medical care"^^xsd:string,
+        rdfs:comment "To cover all specialist secondary medical care, excluding critical, urgent and emergency, maternity care and surgical care"
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/servicearea#Public%20health%20care>
+
+    Annotations: 
+        rdfs:label "Public health care"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Public health services"^^xsd:string,
+        rdfs:comment "Organized measures to prevent disease, promote health, and prolong life among the population as a whole, rather than for individual patients or diseases. Typically measures will address inequalities, education, housing, employment, family/community, lifestyle issues, and surveillance/monitoring for specific diseases and risk factors, including environmental hazards."
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/servicearea#Maternity%20care>
+
+    Annotations: 
+        rdfs:label "Maternity care"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Maternity services"^^xsd:string,
+        rdfs:comment "To include midwifery services, antenatal, postnatal and intrapartum care."
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/servicearea#Community%20health%20care>
+
+    Annotations: 
+        rdfs:label "Community health care"^^xsd:string,
+        rdfs:comment "Health care services delivered outside a hospital and within communities but not formingHealth care services delivered outside a hospital and within communities but not forming part of contacted NHS primary care services. Includes: district nurses, health visitors, school nursing, community specialist services, hospital at home, and home-based rehabilitation and community physiotherapy. part of contacted NHS primary care services. Includes: district nurses, health visitors, school nursing, community specialist services, hospital at home, and home-based rehabilitation and community physiotherapy.",
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Community  health services"^^xsd:string
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/servicearea#Medicines%20management>
+
+    Annotations: 
+        rdfs:comment "To include prescribing, supply and review of medicines and the education and continuing support of those providing these services and for people taking medicines. This includes homecare, medicines information, medicines adherence, medicines optimisation, formulary management, medicines optimisation, safety, cost-effectiveness assessment, monitoring, outcomes and the use of evidence.",
+        rdfs:label "Medicines management"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Prescribing"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Management of medicines"^^xsd:string
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/servicearea#Critical%20care>
+
+    Annotations: 
+        rdfs:label "Critical care "^^xsd:string,
+        rdfs:comment "Care provided through facilities that specialise in treating critically ill children or adults in high dependency and intensive care units",
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Intensive care"^^xsd:string
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/servicearea#Mental%20health%20care>
+
+    Annotations: 
+        rdfs:label "Mental health care"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Mental health services"^^xsd:string,
+        rdfs:comment "To include community based mental health  services, crisis resolution and home treatment  services, day psychiatric hospitals and crisis houses, inpatient psychiatric facilities,  mental health assertive outreach teams, forensic mental health services, perinatal psychiatric services, mental health helplines,  liaison psychiatry services, recovery colleges, child and adolescent mental health services, recovery-focused mental health services, drug and alcohol services, dementia services and learning disabilities services."
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/servicearea#Urgent%20and%20emergency%20care>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "A&E"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Emergency medicine"^^xsd:string,
+        rdfs:label "Urgent and emergency care"^^xsd:string,
+        rdfs:comment "Services providing care to adults and children with unplanned, urgent care needs, to include emergency ambulance services, accident and emergency departments,  999 emergency service and care provided at urgent care centres such as walk in and minor injuries units.",
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Urgent  and emergency services"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Ambulance services"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Casualty"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Accident and emergency"^^xsd:string
+    
+    
