@@ -1,5 +1,7 @@
 build:
   image: nice/ld-docker-build
+  commands:
+    - ./build.sh
 publish:
   docker:
     repo: nice/ontologies
