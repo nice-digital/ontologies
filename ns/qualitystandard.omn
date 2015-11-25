@@ -81,13 +81,19 @@ ObjectProperty: lifestyleCondition
         lifestylecondition:LifestyleCondition
     
     
-ObjectProperty: hasGuidanceStatus
+ObjectProperty: definesTask
 
-    Domain: 
-        owl:Thing
+    Annotations: 
+        rdfs:comment "connects  proposed action of quality statement to tasks which enable this action to take place"
     
-    Range: 
-        GuidanceStatus
+    Domain: 
+        QualityStatement
+    
+    SubPropertyOf: 
+        owl:topObjectProperty
+    
+    InverseOf: 
+        definedTaskOf
     
     
 ObjectProperty: replacedBy
@@ -102,19 +108,19 @@ ObjectProperty: replacedBy
         replaces
     
     
+ObjectProperty: hasGuidanceStatus
+
+    Domain: 
+        owl:Thing
+    
+    Range: 
+        GuidanceStatus
+    
+    
 ObjectProperty: measuresProgressAgainst
 
     Domain: 
         QualityMeasure
-    
-    
-ObjectProperty: hasPart
-
-    Characteristics: 
-        Transitive
-    
-    InverseOf: 
-        partOf
     
     
 ObjectProperty: hasConcept
@@ -133,21 +139,6 @@ ObjectProperty: replaces
     
     InverseOf: 
         replacedBy
-    
-    
-ObjectProperty: definesTask
-
-    Annotations: 
-        rdfs:comment "connects  proposed action of quality statement to tasks which enable this action to take place"
-    
-    Domain: 
-        QualityStatement
-    
-    SubPropertyOf: 
-        owl:topObjectProperty
-    
-    InverseOf: 
-        definedTaskOf
     
     
 ObjectProperty: isServiceAreaOf
@@ -180,19 +171,10 @@ ObjectProperty: definesMeasure
         measureDefinedBy
     
     
-ObjectProperty: isTargetPopulationOf
+ObjectProperty: taskOwner
 
-    Domain: 
-        pico:Population
-    
-    Range: 
-        QualityStatement
-    
-    SubPropertyOf: 
-        owl:topObjectProperty
-    
     InverseOf: 
-        targetPopulation
+        ownsTask
     
     
 ObjectProperty: age
@@ -267,6 +249,21 @@ ObjectProperty: haschangeEntry
         ChangeEntry
     
     
+ObjectProperty: isTargetPopulationOf
+
+    Domain: 
+        pico:Population
+    
+    Range: 
+        QualityStatement
+    
+    SubPropertyOf: 
+        owl:topObjectProperty
+    
+    InverseOf: 
+        targetPopulation
+    
+    
 ObjectProperty: partOf
 
     Characteristics: 
@@ -276,16 +273,13 @@ ObjectProperty: partOf
         hasPart
     
     
-ObjectProperty: isSettingOf
+ObjectProperty: hasPart
 
-    Domain: 
-        setting:Setting
-    
-    Range: 
-        QualityStatement
+    Characteristics: 
+        Transitive
     
     InverseOf: 
-        setting
+        partOf
     
     
 ObjectProperty: measureDefinedBy
@@ -354,10 +348,41 @@ ObjectProperty: skos:closeMatch
         conditiondisease:ConditionDisease
     
     
-ObjectProperty: taskOwner
+ObjectProperty: isSettingOf
 
+    Domain: 
+        setting:Setting
+    
+    Range: 
+        QualityStatement
+    
     InverseOf: 
-        ownsTask
+        setting
+    
+    
+DataProperty: <http://purl.org/dc/terms/identifier>
+
+    Annotations: 
+        rdfs:comment "An unambiguous reference to the resource within a given context.",
+        rdfs:isDefinedBy <http://purl.org/dc/terms>
+    
+    Domain: 
+        Product
+    
+    Range: 
+        xsd:integer
+    
+    
+DataProperty: <http://purl.org/dc/terms/date>
+
+    
+DataProperty: haschangeSummary
+
+    Domain: 
+        owl:Thing
+    
+    Range: 
+        xsd:string
     
     
 DataProperty: hasDataSource
@@ -367,18 +392,6 @@ DataProperty: hasDataSource
     
     Range: 
         rdfs:Literal
-    
-    
-DataProperty: abstract
-
-    Annotations: 
-        rdfs:comment "A summary of the resource."
-    
-    Domain: 
-        owl:Thing
-    
-    Range: 
-        xsd:string
     
     
 DataProperty: dateModified
@@ -397,7 +410,66 @@ DataProperty: dateModified
         <http://purl.org/dc/terms/date>
     
     
-DataProperty: haschangeSummary
+DataProperty: <http://purl.org/dc/terms/abstract>
+
+    Annotations: 
+        rdfs:isDefinedBy <http://purl.org/dc/terms>,
+        rdfs:comment "A summary of the resource."
+    
+    Domain: 
+        owl:Thing
+    
+    Range: 
+        xsd:string
+    
+    
+DataProperty: <http://purl.org/dc/terms/title>
+
+    Annotations: 
+        rdfs:isDefinedBy "http://purl.org/dc/terms",
+        rdfs:comment "A name given to the resource."
+    
+    Domain: 
+        owl:Thing
+    
+    Range: 
+        xsd:string
+    
+    
+DataProperty: <http://ld.nice.org.uk/ns/qualitystandard#qs::hasNumerator>
+
+    Domain: 
+        ProcessMeasure
+    
+    Range: 
+        xsd:string
+    
+    
+DataProperty: dateWithdrawn
+
+    Annotations: 
+        rdfs:comment "Date on which the resource was withdrawn."
+    
+    Domain: 
+        owl:Thing
+    
+    Range: 
+        xsd:dateTime
+    
+    SubPropertyOf: 
+        <http://purl.org/dc/terms/date>
+    
+    
+DataProperty: <http://ld.nice.org.uk/ns/qualitystandard#qs::hasDenominator>
+
+    Domain: 
+        QualityMeasure
+    
+    Range: 
+        xsd:string
+    
+    
+DataProperty: haschangeDescription
 
     Domain: 
         owl:Thing
@@ -422,82 +494,13 @@ DataProperty: dateIssued
         <http://purl.org/dc/terms/date>
     
     
-DataProperty: dc:title
-
-    Domain: 
-        owl:Thing
-    
-    Range: 
-        xsd:string
-    
-    
-DataProperty: <http://purl.org/dc/terms/date>
-
-    
-DataProperty: dc:identifier
-
-    Domain: 
-        Product
-    
-    Range: 
-        xsd:integer
-    
-    
-DataProperty: <http://ld.nice.org.uk/ns/qualitystandard#qs::hasNumerator>
-
-    Domain: 
-        ProcessMeasure
-    
-    Range: 
-        xsd:string
-    
-    
-DataProperty: <http://ld.nice.org.uk/ns/qualitystandard#qs::hasDenominator>
-
-    Domain: 
-        QualityMeasure
-    
-    Range: 
-        xsd:string
-    
-    
-DataProperty: haschangeDescription
-
-    Domain: 
-        owl:Thing
-    
-    Range: 
-        xsd:string
-    
-    
-DataProperty: dateWithdrawn
-
-    Annotations: 
-        rdfs:comment "Date on which the resource was withdrawn."
-    
-    Domain: 
-        owl:Thing
-    
-    Range: 
-        xsd:dateTime
-    
-    SubPropertyOf: 
-        <http://purl.org/dc/terms/date>
-    
-    
 Class: Product
 
     
-Class: Withdrawn
+Class: servicearea:ServiceArea
 
-    EquivalentTo: 
-        dateWithdrawn some xsd:dateTime
-    
-    SubClassOf: 
-        GuidanceStatus
-    
-    DisjointWith: 
-        Published
+    Annotations: 
+        rdfs:comment "Service area for which NICE Quality statement is applicable"
     
     
 Class: lifestylecondition:LifestyleCondition
@@ -540,15 +543,6 @@ Class: OutcomeMeasure
         ProcessMeasure, StructureMeasure
     
     
-Class: StructureMeasure
-
-    SubClassOf: 
-        QualityMeasure
-    
-    DisjointWith: 
-        ProcessMeasure, OutcomeMeasure
-    
-    
 Class: QualityStandard
 
     SubClassOf: 
@@ -576,14 +570,23 @@ Class: Published
 Class: owl:Thing
 
     
-Class: PopulationSpecifier
-
-    
 Class: ChangeLog
 
     SubClassOf: 
         TopLevelProvenanceConcept,
         haschangeEntry min 1 ChangeEntry
+    
+    
+Class: PopulationSpecifier
+
+    
+Class: StructureMeasure
+
+    SubClassOf: 
+        QualityMeasure
+    
+    DisjointWith: 
+        ProcessMeasure, OutcomeMeasure
     
     
 Class: GuidanceStatus
@@ -659,10 +662,16 @@ Class: pico:Population
         isSpecifiedBy min 1 PopulationSpecifier
     
     
-Class: servicearea:ServiceArea
+Class: Withdrawn
 
-    Annotations: 
-        rdfs:comment "Service area for which NICE Quality statement is applicable"
+    EquivalentTo: 
+        dateWithdrawn some xsd:dateTime
+    
+    SubClassOf: 
+        GuidanceStatus
+    
+    DisjointWith: 
+        Published
     
     
 Class: setting:Setting
