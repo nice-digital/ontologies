@@ -360,17 +360,13 @@ ObjectProperty: isSettingOf
         setting
     
     
-DataProperty: <http://purl.org/dc/terms/identifier>
+DataProperty: hasDataSource
 
-    Annotations: 
-        rdfs:comment "An unambiguous reference to the resource within a given context.",
-        rdfs:isDefinedBy <http://purl.org/dc/terms>
-    
     Domain: 
-        Product
+        QualityMeasure
     
     Range: 
-        xsd:integer
+        rdfs:Literal
     
     
 DataProperty: <http://purl.org/dc/terms/date>
@@ -385,13 +381,17 @@ DataProperty: haschangeSummary
         xsd:string
     
     
-DataProperty: hasDataSource
+DataProperty: <http://purl.org/dc/terms/title>
 
+    Annotations: 
+        rdfs:isDefinedBy "http://purl.org/dc/terms",
+        rdfs:comment "A name given to the resource."
+    
     Domain: 
-        QualityMeasure
+        owl:Thing
     
     Range: 
-        rdfs:Literal
+        xsd:string
     
     
 DataProperty: dateModified
@@ -423,17 +423,17 @@ DataProperty: <http://purl.org/dc/terms/abstract>
         xsd:string
     
     
-DataProperty: <http://purl.org/dc/terms/title>
+DataProperty: <http://purl.org/dc/terms/identifier>
 
     Annotations: 
-        rdfs:isDefinedBy "http://purl.org/dc/terms",
-        rdfs:comment "A name given to the resource."
+        rdfs:comment "An unambiguous reference to the resource within a given context.",
+        rdfs:isDefinedBy <http://purl.org/dc/terms>
     
     Domain: 
-        owl:Thing
+        Product
     
     Range: 
-        xsd:string
+        xsd:integer
     
     
 DataProperty: <http://ld.nice.org.uk/ns/qualitystandard#qs::hasNumerator>
@@ -664,11 +664,9 @@ Class: pico:Population
     
 Class: Withdrawn
 
-    EquivalentTo: 
-        dateWithdrawn some xsd:dateTime
-    
     SubClassOf: 
-        GuidanceStatus
+        GuidanceStatus,
+        dateWithdrawn some xsd:dateTime
     
     DisjointWith: 
         Published
@@ -677,7 +675,7 @@ Class: Withdrawn
 Class: setting:Setting
 
     Annotations: 
-        rdfs:comment "Physical setting - may be used for setting for population definition as well as physical setting where action of quality statement should occur"
+        rdfs:comment "Physical setting  for which Quality Statement is applicable"
     
     
 Class: ChangeType
