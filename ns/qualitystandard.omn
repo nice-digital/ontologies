@@ -15,7 +15,7 @@ Prefix: lifestylecondition: <http://ld.nice.org.uk/ns/qualitystandard/lifestylec
 
 
 
-Ontology: <http://ld.nice.org.uk/ns/qualitystandard>
+Ontology: <http://www.w3.org/2004/02/skos/core#closeMatch>
 
 
 AnnotationProperty: rdfs:isDefinedBy
@@ -84,7 +84,7 @@ ObjectProperty: lifestyleCondition
 ObjectProperty: definesTask
 
     Annotations: 
-        rdfs:comment "connects  proposed action of quality statement to tasks which enable this action to take place"
+        rdfs:comment "Connects  proposed action of quality statement to tasks which enable this action to take place"
     
     Domain: 
         QualityStatement
@@ -108,25 +108,31 @@ ObjectProperty: replacedBy
         replaces
     
     
-ObjectProperty: hasGuidanceStatus
+ObjectProperty: taskOwner
 
-    Domain: 
-        owl:Thing
-    
-    Range: 
-        GuidanceStatus
+    InverseOf: 
+        ownsTask
     
     
-ObjectProperty: measuresProgressAgainst
+ObjectProperty: hasPart
 
-    Domain: 
-        QualityMeasure
+    Characteristics: 
+        Transitive
+    
+    InverseOf: 
+        partOf
     
     
 ObjectProperty: hasConcept
 
     InverseOf: 
         skos:inConceptScheme
+    
+    
+ObjectProperty: measuresProgressAgainst
+
+    Domain: 
+        QualityMeasure
     
     
 ObjectProperty: replaces
@@ -139,6 +145,27 @@ ObjectProperty: replaces
     
     InverseOf: 
         replacedBy
+    
+    
+ObjectProperty: isSpecifiedBy
+
+    Domain: 
+        pico:Population
+    
+    Range: 
+        PopulationSpecifier
+    
+    InverseOf: 
+        specifies
+    
+    
+ObjectProperty: hasGuidanceStatus
+
+    Domain: 
+        owl:Thing
+    
+    Range: 
+        GuidanceStatus
     
     
 ObjectProperty: isServiceAreaOf
@@ -171,14 +198,26 @@ ObjectProperty: definesMeasure
         measureDefinedBy
     
     
-ObjectProperty: taskOwner
+ObjectProperty: isTargetPopulationOf
 
+    Domain: 
+        pico:Population
+    
+    Range: 
+        QualityStatement
+    
+    SubPropertyOf: 
+        owl:topObjectProperty
+    
     InverseOf: 
-        ownsTask
+        targetPopulation
     
     
 ObjectProperty: age
 
+    Annotations: 
+        rdfs:comment "Defines age profile of target population by linking to age group"
+    
     Domain: 
         pico:Population
     
@@ -209,6 +248,9 @@ ObjectProperty: ownsTask
     
 ObjectProperty: serviceArea
 
+    Annotations: 
+        rdfs:comment "links a quality statement to service area that  the statement is applicable to."
+    
     Domain: 
         QualityStatement
     
@@ -219,16 +261,16 @@ ObjectProperty: serviceArea
         isServiceAreaOf
     
     
-ObjectProperty: specifies
+ObjectProperty: measureDefinedBy
 
     Domain: 
-        PopulationSpecifier
+        QualityMeasure
     
     Range: 
-        pico:Population
+        QualityStatement
     
     InverseOf: 
-        isSpecifiedBy
+        definesMeasure
     
     
 ObjectProperty: haschangeType
@@ -249,21 +291,6 @@ ObjectProperty: haschangeEntry
         ChangeEntry
     
     
-ObjectProperty: isTargetPopulationOf
-
-    Domain: 
-        pico:Population
-    
-    Range: 
-        QualityStatement
-    
-    SubPropertyOf: 
-        owl:topObjectProperty
-    
-    InverseOf: 
-        targetPopulation
-    
-    
 ObjectProperty: partOf
 
     Characteristics: 
@@ -273,29 +300,20 @@ ObjectProperty: partOf
         hasPart
     
     
-ObjectProperty: hasPart
+ObjectProperty: skos:closeMatch
 
-    Characteristics: 
-        Transitive
+    Annotations: 
+        rdfs:comment "To be used for mapping to  external ontology concepts e.g. SNOMED"
     
-    InverseOf: 
-        partOf
-    
-    
-ObjectProperty: measureDefinedBy
-
     Domain: 
-        QualityMeasure
-    
-    Range: 
-        QualityStatement
-    
-    InverseOf: 
-        definesMeasure
+        conditiondisease:ConditionDisease
     
     
 ObjectProperty: targetPopulation
 
+    Annotations: 
+        rdfs:comment "Links a quality statement with the target population for which the statement is applicable"
+    
     Domain: 
         QualityStatement
     
@@ -306,20 +324,23 @@ ObjectProperty: targetPopulation
         isTargetPopulationOf
     
     
-ObjectProperty: isSpecifiedBy
+ObjectProperty: specifies
 
     Domain: 
-        pico:Population
-    
-    Range: 
         PopulationSpecifier
     
+    Range: 
+        pico:Population
+    
     InverseOf: 
-        specifies
+        isSpecifiedBy
     
     
 ObjectProperty: setting
 
+    Annotations: 
+        rdfs:comment "Links a quality statement to a physical setting that the statement is applicable to."
+    
     Domain: 
         QualityStatement
     
@@ -337,15 +358,6 @@ ObjectProperty: definedTaskOf
     
     InverseOf: 
         definesTask
-    
-    
-ObjectProperty: skos:closeMatch
-
-    Annotations: 
-        rdfs:comment "To be used for mapping to  external ontology concepts e.g. SnoMED"
-    
-    Domain: 
-        conditiondisease:ConditionDisease
     
     
 ObjectProperty: isSettingOf
@@ -369,29 +381,36 @@ DataProperty: hasDataSource
         rdfs:Literal
     
     
+DataProperty: <http://purl.org/dc/terms/identifier>
+
+    Annotations: 
+        rdfs:comment "An unambiguous reference to the resource within a given context.",
+        rdfs:isDefinedBy <http://purl.org/dc/terms>
+    
+    Domain: 
+        Product
+    
+    Range: 
+        xsd:integer
+    
+    
 DataProperty: <http://purl.org/dc/terms/date>
 
     
-DataProperty: haschangeSummary
-
-    Domain: 
-        owl:Thing
-    
-    Range: 
-        xsd:string
-    
-    
-DataProperty: <http://purl.org/dc/terms/title>
+DataProperty: dateIssued
 
     Annotations: 
-        rdfs:isDefinedBy "http://purl.org/dc/terms",
-        rdfs:comment "A name given to the resource."
+        rdfs:isDefinedBy "<http://purl.org/dc/terms/>",
+        rdfs:comment "Date of formal issuance (e.g., publication) of the resource."
     
     Domain: 
         owl:Thing
     
     Range: 
-        xsd:string
+        xsd:dateTime
+    
+    SubPropertyOf: 
+        <http://purl.org/dc/terms/date>
     
     
 DataProperty: dateModified
@@ -423,23 +442,41 @@ DataProperty: <http://purl.org/dc/terms/abstract>
         xsd:string
     
     
-DataProperty: <http://purl.org/dc/terms/identifier>
+DataProperty: <http://purl.org/dc/terms/title>
 
     Annotations: 
-        rdfs:comment "An unambiguous reference to the resource within a given context.",
-        rdfs:isDefinedBy <http://purl.org/dc/terms>
+        rdfs:isDefinedBy "http://purl.org/dc/terms",
+        rdfs:comment "A name given to the resource."
     
     Domain: 
-        Product
+        owl:Thing
     
     Range: 
-        xsd:integer
+        xsd:string
     
     
 DataProperty: <http://ld.nice.org.uk/ns/qualitystandard#qs::hasNumerator>
 
     Domain: 
         ProcessMeasure
+    
+    Range: 
+        xsd:string
+    
+    
+DataProperty: <http://ld.nice.org.uk/ns/qualitystandard#qs::hasDenominator>
+
+    Domain: 
+        QualityMeasure
+    
+    Range: 
+        xsd:string
+    
+    
+DataProperty: haschangeSummary
+
+    Domain: 
+        owl:Thing
     
     Range: 
         xsd:string
@@ -460,15 +497,6 @@ DataProperty: dateWithdrawn
         <http://purl.org/dc/terms/date>
     
     
-DataProperty: <http://ld.nice.org.uk/ns/qualitystandard#qs::hasDenominator>
-
-    Domain: 
-        QualityMeasure
-    
-    Range: 
-        xsd:string
-    
-    
 DataProperty: haschangeDescription
 
     Domain: 
@@ -478,38 +506,13 @@ DataProperty: haschangeDescription
         xsd:string
     
     
-DataProperty: dateIssued
-
-    Annotations: 
-        rdfs:isDefinedBy "<http://purl.org/dc/terms/>",
-        rdfs:comment "Date of formal issuance (e.g., publication) of the resource."
-    
-    Domain: 
-        owl:Thing
-    
-    Range: 
-        xsd:dateTime
-    
-    SubPropertyOf: 
-        <http://purl.org/dc/terms/date>
-    
-    
 Class: Product
 
     
-Class: servicearea:ServiceArea
+Class: QualityMeasure
 
     Annotations: 
-        rdfs:comment "Service area for which NICE Quality statement is applicable"
-    
-    
-Class: lifestylecondition:LifestyleCondition
-
-    Annotations: 
-        rdfs:comment "to include drug abuse, alcohol abuse and other lifestyle conditions"
-    
-    SubClassOf: 
-        PopulationSpecifier
+        rdfs:comment "Quality measures are used to assess the quality of care or service provision specified in the quality statement."
     
     
 Class: TopLevelProvenanceConcept
@@ -518,8 +521,7 @@ Class: TopLevelProvenanceConcept
 Class: conditiondisease:ConditionDisease
 
     Annotations: 
-        rdfs:comment "Base on NICE Browse taxonomy structure with mapping to equivalent SNOMED code where possible",
-        rdfs:comment "use for medical condition"
+        rdfs:comment "Class of conditions and diseases for population specification. Top level based on NICE Browse taxonomy structure. Mapping to equivalent SNOMED code where possible. Used for medical and mental health conditions."
     
     SubClassOf: 
         PopulationSpecifier
@@ -528,7 +530,7 @@ Class: conditiondisease:ConditionDisease
 Class: agegroup:AgeGroup
 
     Annotations: 
-        rdfs:comment "Some list of age groups to be defined to support population definition"
+        rdfs:comment "List of age groups to support population definition."
     
     SubClassOf: 
         PopulationSpecifier
@@ -536,6 +538,9 @@ Class: agegroup:AgeGroup
     
 Class: OutcomeMeasure
 
+    Annotations: 
+        rdfs:comment "An outcome measure addresses the outcome of care or service provision."
+    
     SubClassOf: 
         QualityMeasure
     
@@ -545,9 +550,12 @@ Class: OutcomeMeasure
     
 Class: QualityStandard
 
+    Annotations: 
+        rdfs:comment "NICE quality standards are concise sets of prioritised  quality statements designed to drive measurable quality improvements within a particular area of health or care."
+    
     SubClassOf: 
-        hasPart some QualityStatement,
-        Product
+        Product,
+        hasPart some QualityStatement
     
     DisjointWith: 
         QualityStatement
@@ -556,7 +564,7 @@ Class: QualityStandard
 Class: Published
 
     Annotations: 
-        rdfs:comment "The resource has been published and has not been withdrawn ( still valid)."
+        rdfs:comment "Status of a resource that has been published and has not been withdrawn (still valid)."
     
     SubClassOf: 
         dateIssued some xsd:dateTime,
@@ -579,9 +587,15 @@ Class: ChangeLog
     
 Class: PopulationSpecifier
 
+    Annotations: 
+        rdfs:comment "A class of facets by which a target population can be specified."
+    
     
 Class: StructureMeasure
 
+    Annotations: 
+        rdfs:comment "A  structure measure addresses the structure of care or services."
+    
     SubClassOf: 
         QualityMeasure
     
@@ -591,6 +605,9 @@ Class: StructureMeasure
     
 Class: GuidanceStatus
 
+    Annotations: 
+        rdfs:comment "The publication status of a NICE resource."
+    
     
 Class: MajorChange
 
@@ -601,10 +618,17 @@ Class: MajorChange
         MinorChange
     
     
-Class: QualityMeasure
+Class: Withdrawn
 
     Annotations: 
-        rdfs:comment "measure associated with quality statement"
+        rdfs:comment "Status of a resource that thas been withdrawn after some time when it was a valid, published resource. No longer valid."
+    
+    SubClassOf: 
+        GuidanceStatus,
+        dateWithdrawn some xsd:dateTime
+    
+    DisjointWith: 
+        Published
     
     
 Class: QualityStatement
@@ -622,11 +646,23 @@ Class: QualityStatement
     
 Class: ProcessMeasure
 
+    Annotations: 
+        rdfs:comment "A process measure addresses the process of care or service provision"
+    
     SubClassOf: 
         QualityMeasure
     
     DisjointWith: 
         StructureMeasure, OutcomeMeasure
+    
+    
+Class: lifestylecondition:LifestyleCondition
+
+    Annotations: 
+        rdfs:comment "Conditions which have associated lifestyle factors, to include drug abuse, alcohol abuse and diet and physical activity related conditions."
+    
+    SubClassOf: 
+        PopulationSpecifier
     
     
 Class: PlaceholderStatement
@@ -656,26 +692,22 @@ Class: ChangeEntry
 Class: pico:Population
 
     Annotations: 
-        rdfs:comment "defined by at least one of the age, gender, ethnicity, disease, lifestyle condition concepts."
+        rdfs:comment "Defined by at least one of the age, gender, ethnicity, disease, lifestyle condition concepts."
     
     EquivalentTo: 
         isSpecifiedBy min 1 PopulationSpecifier
     
     
-Class: Withdrawn
+Class: servicearea:ServiceArea
 
-    SubClassOf: 
-        GuidanceStatus,
-        dateWithdrawn some xsd:dateTime
-    
-    DisjointWith: 
-        Published
+    Annotations: 
+        rdfs:comment "Health or care service area to which a NICE quality statement is applicable."
     
     
 Class: setting:Setting
 
     Annotations: 
-        rdfs:comment "Physical setting  for which Quality Statement is applicable"
+        rdfs:comment "Physical setting  to which NICE quality statement is applicable."
     
     
 Class: ChangeType
