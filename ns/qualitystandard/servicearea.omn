@@ -134,10 +134,10 @@ Class: <http://ld.nice.org.uk/ns/qualitystandard/servicearea#Urgent%20and%20emer
         ServiceArea
     
     
-Class: <http://ld.nice.org.uk/ns/qualitystandard/servicearea#Public%20health%20care>
+Class: <http://ld.nice.org.uk/ns/qualitystandard/servicearea#Public%20health>
 
     Annotations: 
-        rdfs:label "Public health care"^^xsd:string,
+        rdfs:label "Public health"^^xsd:string,
         <http://www.w3.org/2004/02/skos/core#altLabel> "Public health services"^^xsd:string,
         rdfs:comment "Organized measures to prevent disease, promote health, and prolong life among the population as a whole, rather than for individual patients or diseases. Typically measures will address inequalities, education, housing, employment, family/community, lifestyle issues, and surveillance/monitoring for specific diseases and risk factors, including environmental hazards."
     
@@ -221,10 +221,10 @@ Individual: <http://ld.nice.org.uk/ns/qualitystandard/servicearea#Secondary%20me
         rdfs:comment "To cover all specialist secondary medical care, excluding critical, urgent and emergency, maternity care and surgical care"
     
     
-Individual: <http://ld.nice.org.uk/ns/qualitystandard/servicearea#Public%20health%20care>
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/servicearea#Public%20health>
 
     Annotations: 
-        rdfs:label "Public health care"^^xsd:string,
+        rdfs:label "Public health"^^xsd:string,
         <http://www.w3.org/2004/02/skos/core#altLabel> "Public health services"^^xsd:string,
         rdfs:comment "Organized measures to prevent disease, promote health, and prolong life among the population as a whole, rather than for individual patients or diseases. Typically measures will address inequalities, education, housing, employment, family/community, lifestyle issues, and surveillance/monitoring for specific diseases and risk factors, including environmental hazards."
     
