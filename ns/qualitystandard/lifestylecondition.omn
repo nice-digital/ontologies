@@ -22,10 +22,14 @@ AnnotationProperty: skos:altLabel
     
 Datatype: rdfs:Literal
 
-    
+Datatype: rdfs:Label
+
 Datatype: xsd:string
 
     
 Datatype: rdf:PlainLiteral
 
 Class: LifestyleCondition
+
+   Annotations:
+       rdfs:Label "Lifestyle condition"

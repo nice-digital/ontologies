@@ -32,4 +32,4 @@ Datatype: rdf:PlainLiteral
 Class: ConditionOrDisease
 
    Annotations:
-       rdfs:Label "Condition Or Disease"
+       rdfs:Label "Condition or disease"

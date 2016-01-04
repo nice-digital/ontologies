@@ -22,6 +22,7 @@ AnnotationProperty: skos:altLabel
     
 Datatype: rdfs:Literal
 
+Datatype: rdfs:Label
     
 Datatype: xsd:string
 
@@ -29,3 +30,6 @@ Datatype: xsd:string
 Datatype: rdf:PlainLiteral
 
 Class: AgeGroup
+
+   Annotations:
+       rdfs:Label "Age group"
