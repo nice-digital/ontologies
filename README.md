@@ -8,6 +8,3 @@ Repository and very basic build system / server for NICE ontologies. We will add
 Assumes we will use the prefix http://nice.org.uk/ns/. .omn files placed in the ns folder will be validated and converted to Turtle. If this process is successful, then the nice/ontologies container is updated on [dockerhub](https://registry.hub.docker.com/u/nice/ontologies/).
 
 
-
-
-
