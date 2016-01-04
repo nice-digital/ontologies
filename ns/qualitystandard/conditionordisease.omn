@@ -22,8 +22,6 @@ AnnotationProperty: skos:altLabel
     
 Datatype: rdfs:Literal
 
-Datatype: rdfs:Label
-    
 Datatype: xsd:string
 
     
@@ -31,5 +29,7 @@ Datatype: rdf:PlainLiteral
 
 Class: ConditionOrDisease
 
+AnnotationProperty: rdfs:label
+
    Annotations:
-       rdfs:Label "Condition or disease"
+       rdfs:label "Condition or disease"

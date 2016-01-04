@@ -28,8 +28,6 @@ AnnotationProperty: <http://www.w3.org/2004/02/skos/core#altLabel>
     
 Datatype: rdfs:Literal
 
-Datatype: rdfs:Label
-    
 Datatype: xsd:string
 
     
@@ -59,8 +57,10 @@ Class: <http://ld.nice.org.uk/ns/qualitystandard/setting#Outpatient%20clinic>
     
 Class: Setting
 
+AnnotationProperty: rdfs:label
+
    Annotations:
-       rdfs:Label "Setting"
+       rdfs:label "Setting"
 
     
 Class: Community
