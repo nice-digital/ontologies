@@ -10,7 +10,7 @@ Prefix: skos: <http://www.w3.org/2004/02/skos/core#>
 Prefix: setting: <http://ld.nice.org.uk/ns/qualitystandard/setting#>
 Prefix: agegroup: <http://ld.nice.org.uk/ns/qualitystandard/agegroup#>
 Prefix: servicearea: <http://ld.nice.org.uk/ns/qualitystandard/servicearea#>
-Prefix: conditiondisease: <http://ld.nice.org.uk/ns/qualitystandard/conditiondisease#>
+Prefix: conditionordisease: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#>
 Prefix: lifestylecondition: <http://ld.nice.org.uk/ns/qualitystandard/lifestylecondition#>
 
 
@@ -69,7 +69,7 @@ ObjectProperty: condition
         pico:Population
     
     Range: 
-        conditiondisease:ConditionDisease
+        conditionordisease:ConditionOrDisease
     
     
 ObjectProperty: lifestyleCondition
@@ -306,7 +306,7 @@ ObjectProperty: skos:closeMatch
         rdfs:comment "To be used for mapping to  external ontology concepts e.g. SNOMED"
     
     Domain: 
-        conditiondisease:ConditionDisease
+        conditionordisease:ConditionOrDisease
     
     
 ObjectProperty: targetPopulation
@@ -518,7 +518,7 @@ Class: QualityMeasure
 Class: TopLevelProvenanceConcept
 
     
-Class: conditiondisease:ConditionDisease
+Class: conditionordisease:ConditionOrDisease
 
     Annotations: 
         rdfs:comment "Class of conditions and diseases for population specification. Top level based on NICE Browse taxonomy structure. Mapping to equivalent SNOMED code where possible. Used for medical and mental health conditions."
