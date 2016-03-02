@@ -1,4 +1,5 @@
 Prefix: : <http://ld.nice.org.uk/ns/qualitystandard/setting#>
+Prefix: dc: <http://purl.org/dc/elements/1.1/>
 Prefix: owl: <http://www.w3.org/2002/07/owl#>
 Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 Prefix: xml: <http://www.w3.org/XML/1998/namespace>
@@ -13,6 +14,12 @@ Ontology: <http://ld.nice.org.uk/ns/qualitystandard/setting>
 
 AnnotationProperty: rdfs:label
 
+    Annotations: 
+        rdfs:label "Setting"
+    
+    Annotations: 
+        rdfs:label "Setting"
+    
     
 AnnotationProperty: rdfs:comment
 
@@ -28,21 +35,12 @@ AnnotationProperty: <http://www.w3.org/2004/02/skos/core#altLabel>
     
 Datatype: rdfs:Literal
 
+    
 Datatype: xsd:string
 
     
 Datatype: rdf:PlainLiteral
 
-    
-Class: <http://ld.nice.org.uk/ns/qualitystandard/setting#Primary%20care%20setting>
-
-    Annotations: 
-        rdfs:comment "To include GP practices, dental surgeries, optometrists, community pharmacies.",
-        rdfs:label "Primary care setting"^^xsd:string
-    
-    SubClassOf: 
-        Setting
-    
     
 Class: <http://ld.nice.org.uk/ns/qualitystandard/setting#Outpatient%20clinic>
 
@@ -55,29 +53,31 @@ Class: <http://ld.nice.org.uk/ns/qualitystandard/setting#Outpatient%20clinic>
         Setting
     
     
-Class: Setting
+Class: Hospice
 
-AnnotationProperty: rdfs:label
+    Annotations: 
+        rdfs:comment "To include inpatient and day hospices.",
+        rdfs:label "Hospice"^^xsd:string
+    
+    SubClassOf: 
+        Setting
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/setting#Primary%20care%20setting>
 
-   Annotations:
-       rdfs:label "Setting"
-
+    Annotations: 
+        rdfs:label "Primary care setting"^^xsd:string,
+        rdfs:comment "To include GP practices, dental surgeries, optometrists, community pharmacies."
+    
+    SubClassOf: 
+        Setting
+    
     
 Class: Community
 
     Annotations: 
         rdfs:label "Community"^^xsd:string,
         rdfs:comment "To include schools, workplaces, in the home, supported living."
-    
-    SubClassOf: 
-        Setting
-    
-    
-Class: Hospice
-
-    Annotations: 
-        rdfs:comment "To include inpatient and day hospices.",
-        rdfs:label "Hospice"^^xsd:string
     
     SubClassOf: 
         Setting
@@ -95,6 +95,9 @@ Class: <http://ld.nice.org.uk/ns/qualitystandard/setting#Care%20home>
         Setting
     
     
+Class: Setting
+
+    
 Class: Hospital
 
     Annotations: 
@@ -107,12 +110,6 @@ Class: Hospital
         Setting
     
     
-Class: Testing
-
-    Annotations: 
-        <http://www.w3.org/2004/02/skos/core#altLabel> "Residential home"^^xsd:string
-    
-    
 Individual: Hospital
 
     Annotations: 
@@ -120,6 +117,19 @@ Individual: Hospital
         <http://www.w3.org/2004/02/skos/core#altLabel> "Inpatient"^^xsd:string,
         <http://www.w3.org/2004/02/skos/core#altLabel> "Ward"^^xsd:string,
         rdfs:comment "To include acute,  community and mental health hospitals  providing inpatient services"
+    
+    Types: 
+        Hospital
+    
+    
+Individual: Community
+
+    Annotations: 
+        rdfs:label "Community"^^xsd:string,
+        rdfs:comment "To include schools, workplaces, in the home, supported living."
+    
+    Types: 
+        Community
     
     
 Individual: <http://ld.nice.org.uk/ns/qualitystandard/setting#Outpatient%20clinic>
@@ -129,12 +139,8 @@ Individual: <http://ld.nice.org.uk/ns/qualitystandard/setting#Outpatient%20clini
         <http://www.w3.org/2004/02/skos/core#altLabel> "Outpatient department"^^xsd:string,
         rdfs:comment "To include outpatient clinics providing specialist secondary medical and mental health outpatient services  that may  or may not be attached to hospital."
     
-    
-Individual: <http://ld.nice.org.uk/ns/qualitystandard/setting#Primary%20care%20setting>
-
-    Annotations: 
-        rdfs:comment "To include GP practices, dental surgeries, optometrists, community pharmacies.",
-        rdfs:label "Primary care setting"^^xsd:string
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/setting#Outpatient%20clinic>
     
     
 Individual: Hospice
@@ -143,12 +149,18 @@ Individual: Hospice
         rdfs:comment "To include inpatient and day hospices.",
         rdfs:label "Hospice"^^xsd:string
     
+    Types: 
+        Hospice
     
-Individual: Community
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/setting#Primary%20care%20setting>
 
     Annotations: 
-        rdfs:label "Community"^^xsd:string,
-        rdfs:comment "To include schools, workplaces, in the home, supported living."
+        rdfs:label "Primary care setting"^^xsd:string,
+        rdfs:comment "To include GP practices, dental surgeries, optometrists, community pharmacies."
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/setting#Primary%20care%20setting>
     
     
 Individual: <http://ld.nice.org.uk/ns/qualitystandard/setting#Care%20home>
@@ -158,5 +170,8 @@ Individual: <http://ld.nice.org.uk/ns/qualitystandard/setting#Care%20home>
         rdfs:label "Care home"^^xsd:string,
         <http://www.w3.org/2004/02/skos/core#altLabel> "Rest home"^^xsd:string,
         <http://www.w3.org/2004/02/skos/core#altLabel> "Nursing home"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/setting#Care%20home>
     
     
