@@ -1,0 +1,223 @@
+Prefix: : <http://ld.nice.org.uk/ns/qualitystandard/agegroup#>
+Prefix: base: <http://ld.nice.org.uk/ns/qualitystandard/agegroup>
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+
+Ontology: <http://ld.nice.org.uk/ns/qualitystandard/agegroup>
+
+
+AnnotationProperty: <http://www.w3.org/2004/02/skos/core#altLabel>
+
+    Annotations: 
+        rdfs:comment "Use for synonyms"
+    
+    
+AnnotationProperty: rdfs:comment
+
+    
+AnnotationProperty: rdfs:label
+
+    Annotations: 
+        rdfs:label "Age group"
+    
+    
+Datatype: rdf:PlainLiteral
+
+    
+Datatype: rdfs:Literal
+
+    
+Datatype: xsd:string
+
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/agegroup#Adults%2018-24%20years>
+
+    Annotations: 
+        rdfs:label "Adults 18-24 years"^^xsd:string
+    
+    SubClassOf: 
+        Adults
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/agegroup#Adults%2025-64%20years>
+
+    Annotations: 
+        rdfs:label "Adults 25-64 years"^^xsd:string
+    
+    SubClassOf: 
+        Adults
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/agegroup#Adults%2065+%20years>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Old people"^^xsd:string,
+        rdfs:label "Adults 65+ years"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Older adults"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Elderly"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Older people"^^xsd:string
+    
+    SubClassOf: 
+        Adults
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/agegroup#All%20age%20groups>
+
+    Annotations: 
+        rdfs:label "All age groups"^^xsd:string
+    
+    SubClassOf: 
+        AgeGroup
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/agegroup#Babies%200-1%20year>
+
+    Annotations: 
+        rdfs:label "Babies 0-1 year"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Infants"^^xsd:string
+    
+    SubClassOf: 
+        Children
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/agegroup#Babies%201%20month-1%20year>
+
+    Annotations: 
+        rdfs:label "Babies 1 month-1 year"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/agegroup#Babies%200-1%20year>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/agegroup#Children%201-15%20years>
+
+    Annotations: 
+        rdfs:label "Children 1-15 years"^^xsd:string
+    
+    SubClassOf: 
+        Children
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/agegroup#Neonates%200-28%20days>
+
+    Annotations: 
+        rdfs:label "Neonates 0-28 days"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/agegroup#Babies%200-1%20year>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/agegroup#Young%20people%2016-17%20years>
+
+    Annotations: 
+        rdfs:label "Young people 16-17 years"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Adolescents"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/agegroup#All%20age%20groups>
+    
+    
+Class: Adults
+
+    Annotations: 
+        rdfs:label "Adults "^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/agegroup#All%20age%20groups>
+    
+    
+Class: AgeGroup
+
+    
+Class: Children
+
+    Annotations: 
+        rdfs:label "Children"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/agegroup#All%20age%20groups>
+    
+    
+Class: Neonates
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Newborns"^^xsd:string
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/agegroup#Adults%2018-24%20years>
+
+    Annotations: 
+        rdfs:label "Adults 18-24 years"^^xsd:string
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/agegroup#Adults%2025-64%20years>
+
+    Annotations: 
+        rdfs:label "Adults 25-64 years"^^xsd:string
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/agegroup#Adults%2065+%20years>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Old people"^^xsd:string,
+        rdfs:label "Adults 65+ years"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Older adults"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Elderly"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Older people"^^xsd:string
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/agegroup#All%20age%20groups>
+
+    Annotations: 
+        rdfs:label "All age groups"^^xsd:string
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/agegroup#Babies%200-1%20year>
+
+    Annotations: 
+        rdfs:label "Babies 0-1 year"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Infants"^^xsd:string
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/agegroup#Babies%201%20month-1%20year>
+
+    Annotations: 
+        rdfs:label "Babies 1 month-1 year"^^xsd:string
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/agegroup#Children%201-15%20years>
+
+    Annotations: 
+        rdfs:label "Children 1-15 years"^^xsd:string
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/agegroup#Neonates%200-28%20days>
+
+    Annotations: 
+        rdfs:label "Neonates 0-28 days"^^xsd:string
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/agegroup#Young%20people%2016-17%20years>
+
+    Annotations: 
+        rdfs:label "Young people 16-17 years"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Adolescents"^^xsd:string
+    
+    
+Individual: Adults
+
+    Annotations: 
+        rdfs:label "Adults "^^xsd:string
+    
+    
+Individual: Children
+
+    Annotations: 
+        rdfs:label "Children"^^xsd:string
+    
+    
