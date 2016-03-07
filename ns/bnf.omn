@@ -10,6 +10,12 @@ Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 Ontology: <http://ld.nice.org.uk/ns/bnf>
 
 
+AnnotationProperty: rdfs:label
+
+    
+Datatype: rdf:PlainLiteral
+
+    
 ObjectProperty: <http://ld.nice.org.uk/ns/bnf#isPrimaryClassificationOf>
 
     SubPropertyOf: 
@@ -34,19 +40,13 @@ ObjectProperty: <http://ld.nice.org.uk/ns/bnf#hasSideEffectsGroup>
         <http://ld.nice.org.uk/ns/bnf#isSideEffectsGroupOf>
     
     
-ObjectProperty: <http://ld.nice.org.uk/ns/bnf#hasPrimaryDomainOfEffect>
+ObjectProperty: <http://ld.nice.org.uk/ns/bnf#isSecondaryDomainOfEffectOf>
 
-    Domain: 
-        <http://ld.nice.org.uk/ns/bnf#Drug>
-    
-    Range: 
-        <http://ld.nice.org.uk/ns/bnf/DomainOfEffect>
-    
     SubPropertyOf: 
-        <http://ld.nice.org.uk/ns/bnf#hasDomainOfEffect>
+        <http://ld.nice.org.uk/ns/bnf#isDomainOfEffectOf>
     
     InverseOf: 
-        <http://ld.nice.org.uk/ns/bnf#isPrimaryDomainOfEffectOf>
+        <http://ld.nice.org.uk/ns/bnf#hasSecondaryDomainOfEffect>
     
     
 ObjectProperty: <http://ld.nice.org.uk/ns/bnf#isInteractionOf>
@@ -139,13 +139,19 @@ ObjectProperty: <http://ld.nice.org.uk/ns/bnf#isPackOf>
         <http://ld.nice.org.uk/ns/bnf#hasPack>
     
     
-ObjectProperty: <http://ld.nice.org.uk/ns/bnf#hasClinicalMedicinalProductInformation>
+ObjectProperty: <http://ld.nice.org.uk/ns/bnf#hasCautionsGroup>
 
     Range: 
-        <http://ld.nice.org.uk/ns/bnf#ClinicalMedicinalProductInformation>
+        <http://ld.nice.org.uk/ns/bnf#CautionsGroup>
     
     InverseOf: 
-        <http://ld.nice.org.uk/ns/bnf#isClinicalMedicinalProductInformationOf>
+        <http://ld.nice.org.uk/ns/bnf#isCautionsGroupOf>
+    
+    
+ObjectProperty: <http://ld.nice.org.uk/ns/bnf#isSubjectOf>
+
+    InverseOf: 
+        <http://ld.nice.org.uk/ns/bnf#hasSubject>
     
     
 ObjectProperty: <http://ld.nice.org.uk/ns/bnf#hasIndication>
@@ -155,6 +161,12 @@ ObjectProperty: <http://ld.nice.org.uk/ns/bnf#hasIndication>
     
     InverseOf: 
         <http://ld.nice.org.uk/ns/bnf#isIndicationOf>
+    
+    
+ObjectProperty: <http://ld.nice.org.uk/ns/bnf#isMedicinalProductOf>
+
+    InverseOf: 
+        <http://ld.nice.org.uk/ns/bnf#hasMedicinalProduct>
     
     
 ObjectProperty: <http://ld.nice.org.uk/ns/bnf#isCautionsGroupOf>
@@ -184,10 +196,19 @@ ObjectProperty: <http://ld.nice.org.uk/ns/bnf#hasSecondaryDomainOfEffect>
         <http://ld.nice.org.uk/ns/bnf#isSecondaryDomainOfEffectOf>
     
     
-ObjectProperty: <http://ld.nice.org.uk/ns/bnf#isMedicinalProductOf>
+ObjectProperty: <http://ld.nice.org.uk/ns/bnf#hasPrimaryClassification>
 
+    Domain: 
+        <http://ld.nice.org.uk/ns/bnf#Drug>
+    
+    Range: 
+        <http://ld.nice.org.uk/ns/bnf/Classification>
+    
+    SubPropertyOf: 
+        <http://ld.nice.org.uk/ns/bnf#hasClassification>
+    
     InverseOf: 
-        <http://ld.nice.org.uk/ns/bnf#hasMedicinalProduct>
+        <http://ld.nice.org.uk/ns/bnf#isPrimaryClassificationOf>
     
     
 ObjectProperty: <http://ld.nice.org.uk/ns/bnf#hasInteraction>
@@ -220,16 +241,16 @@ ObjectProperty: <http://ld.nice.org.uk/ns/bnf#isPatientGroupOf>
         <http://ld.nice.org.uk/ns/bnf#hasPatientGroup>
     
     
-ObjectProperty: <http://ld.nice.org.uk/ns/bnf#isDomainOfEffectOf>
-
-    InverseOf: 
-        <http://ld.nice.org.uk/ns/bnf#hasDomainOfEffect>
-    
-    
 ObjectProperty: <http://ld.nice.org.uk/ns/bnf#isTreatmentSummaryOf>
 
     InverseOf: 
         <http://ld.nice.org.uk/ns/bnf#hasTreatmentSummary>
+    
+    
+ObjectProperty: <http://ld.nice.org.uk/ns/bnf#isRouteOf>
+
+    InverseOf: 
+        <http://ld.nice.org.uk/ns/bnf#hasRoute>
     
     
 ObjectProperty: <http://ld.nice.org.uk/ns/bnf#hasInteractionList>
@@ -343,10 +364,13 @@ ObjectProperty: <http://ld.nice.org.uk/ns/bnf#isContraindicationsGroupOf>
         <http://ld.nice.org.uk/ns/bnf#hasContraindicationsGroup>
     
     
-ObjectProperty: <http://ld.nice.org.uk/ns/bnf#isSubjectOf>
+ObjectProperty: <http://ld.nice.org.uk/ns/bnf#hasClinicalMedicinalProductInformation>
 
+    Range: 
+        <http://ld.nice.org.uk/ns/bnf#ClinicalMedicinalProductInformation>
+    
     InverseOf: 
-        <http://ld.nice.org.uk/ns/bnf#hasSubject>
+        <http://ld.nice.org.uk/ns/bnf#isClinicalMedicinalProductInformationOf>
     
     
 ObjectProperty: <http://ld.nice.org.uk/ns/bnf#hasTreatmentSummary>
@@ -373,13 +397,25 @@ ObjectProperty: <http://ld.nice.org.uk/ns/bnf#isFundingDecisionOf>
         <http://ld.nice.org.uk/ns/bnf#hasFundingDecision>
     
     
-ObjectProperty: <http://ld.nice.org.uk/ns/bnf#hasRoute>
+ObjectProperty: <http://ld.nice.org.uk/ns/bnf#isDomainOfEffectOf>
 
+    InverseOf: 
+        <http://ld.nice.org.uk/ns/bnf#hasDomainOfEffect>
+    
+    
+ObjectProperty: <http://ld.nice.org.uk/ns/bnf#hasPrimaryDomainOfEffect>
+
+    Domain: 
+        <http://ld.nice.org.uk/ns/bnf#Drug>
+    
     Range: 
-        <http://ld.nice.org.uk/ns/bnf/Route>
+        <http://ld.nice.org.uk/ns/bnf/DomainOfEffect>
+    
+    SubPropertyOf: 
+        <http://ld.nice.org.uk/ns/bnf#hasDomainOfEffect>
     
     InverseOf: 
-        <http://ld.nice.org.uk/ns/bnf#isRouteOf>
+        <http://ld.nice.org.uk/ns/bnf#isPrimaryDomainOfEffectOf>
     
     
 ObjectProperty: <http://ld.nice.org.uk/ns/bnf#hasClinicalMedicalDeviceInformationGroup>
@@ -389,21 +425,6 @@ ObjectProperty: <http://ld.nice.org.uk/ns/bnf#hasClinicalMedicalDeviceInformatio
     
     InverseOf: 
         <http://ld.nice.org.uk/ns/bnf#isClinicalMedicalDeviceInformationGroupOf>
-    
-    
-ObjectProperty: <http://ld.nice.org.uk/ns/bnf#hasPrimaryClassification>
-
-    Domain: 
-        <http://ld.nice.org.uk/ns/bnf#Drug>
-    
-    Range: 
-        <http://ld.nice.org.uk/ns/bnf/Classification>
-    
-    SubPropertyOf: 
-        <http://ld.nice.org.uk/ns/bnf#hasClassification>
-    
-    InverseOf: 
-        <http://ld.nice.org.uk/ns/bnf#isPrimaryClassificationOf>
     
     
 ObjectProperty: <http://ld.nice.org.uk/ns/bnf#hasContraindication>
@@ -472,15 +493,6 @@ ObjectProperty: <http://ld.nice.org.uk/ns/bnf#hasPrescribingInformationSection>
         <http://ld.nice.org.uk/ns/bnf#isPrescribingInformationSectionOf>
     
     
-ObjectProperty: <http://ld.nice.org.uk/ns/bnf#isSecondaryDomainOfEffectOf>
-
-    SubPropertyOf: 
-        <http://ld.nice.org.uk/ns/bnf#isDomainOfEffectOf>
-    
-    InverseOf: 
-        <http://ld.nice.org.uk/ns/bnf#hasSecondaryDomainOfEffect>
-    
-    
 ObjectProperty: <http://ld.nice.org.uk/ns/bnf#isLinkedFrom>
 
     InverseOf: 
@@ -511,19 +523,13 @@ ObjectProperty: <http://ld.nice.org.uk/ns/bnf#isClinicalMedicinalProductInformat
         <http://ld.nice.org.uk/ns/bnf#hasClinicalMedicinalProductInformation>
     
     
-ObjectProperty: <http://ld.nice.org.uk/ns/bnf#isRouteOf>
-
-    InverseOf: 
-        <http://ld.nice.org.uk/ns/bnf#hasRoute>
-    
-    
-ObjectProperty: <http://ld.nice.org.uk/ns/bnf#hasCautionsGroup>
+ObjectProperty: <http://ld.nice.org.uk/ns/bnf#hasRoute>
 
     Range: 
-        <http://ld.nice.org.uk/ns/bnf#CautionsGroup>
+        <http://ld.nice.org.uk/ns/bnf/Route>
     
     InverseOf: 
-        <http://ld.nice.org.uk/ns/bnf#isCautionsGroupOf>
+        <http://ld.nice.org.uk/ns/bnf#isRouteOf>
     
     
 ObjectProperty: <http://ld.nice.org.uk/ns/bnf#isPrescribingInformationSectionOf>
@@ -640,6 +646,9 @@ DataProperty: <http://ld.nice.org.uk/ns/bnf#hasNhsIndicativePrice>
 DataProperty: <http://ld.nice.org.uk/ns/bnf#hasBorderlineSubstancePrep>
 
     
+DataProperty: <http://ld.nice.org.uk/ns/bnf#hasTextContent>
+
+    
 DataProperty: <http://ld.nice.org.uk/ns/bnf#hasPackSize>
 
     
@@ -720,6 +729,9 @@ Class: <http://ld.nice.org.uk/ns/bnf#NiceTechnologyAppraisals>
     
 Class: <http://ld.nice.org.uk/ns/bnf#DirectionForAdministration>
 
+    Annotations: 
+        rdfs:label "Direction for administration"
+    
     SubClassOf: 
         <http://ld.nice.org.uk/ns/bnf#PrescribingInformationSection>
     
@@ -729,6 +741,9 @@ Class: <http://ld.nice.org.uk/ns/bnf#PrescribingInformation>
     
 Class: <http://ld.nice.org.uk/ns/bnf#PrescribingAndDispensingInformation>
 
+    Annotations: 
+        rdfs:label "Prescribing and dispensing information"
+    
     SubClassOf: 
         <http://ld.nice.org.uk/ns/bnf#PrescribingInformationSection>
     
@@ -738,24 +753,36 @@ Class: <http://ld.nice.org.uk/ns/bnf#DrugClass>
     
 Class: <http://ld.nice.org.uk/ns/bnf#Pharmacokinetics>
 
+    Annotations: 
+        rdfs:label "Pharmacokinetics"
+    
     SubClassOf: 
         <http://ld.nice.org.uk/ns/bnf#PrescribingInformationSection>
     
     
 Class: <http://ld.nice.org.uk/ns/bnf#SideEffectAdvice>
 
+    Annotations: 
+        rdfs:label "Side-effects, further information"
+    
     SubClassOf: 
         <http://ld.nice.org.uk/ns/bnf#PrescribingInformationSection>
     
     
 Class: <http://ld.nice.org.uk/ns/bnf#LessSuitableForPrescribing>
 
+    Annotations: 
+        rdfs:label "Less suitable for prescribing"
+    
     SubClassOf: 
         <http://ld.nice.org.uk/ns/bnf#PrescribingInformationSection>
     
     
 Class: <http://ld.nice.org.uk/ns/bnf#InteractionStatement>
 
+    Annotations: 
+        rdfs:label "Interaction statement"
+    
     SubClassOf: 
         <http://ld.nice.org.uk/ns/bnf#PrescribingInformationSection>
     
@@ -768,6 +795,9 @@ Class: <http://ld.nice.org.uk/ns/bnf#ClinicalMedicalDeviceInformationGroup>
     
 Class: <http://ld.nice.org.uk/ns/bnf#DrugActions>
 
+    Annotations: 
+        rdfs:label "Drug actions"
+    
     SubClassOf: 
         <http://ld.nice.org.uk/ns/bnf#PrescribingInformation>
     
@@ -792,8 +822,11 @@ Class: <http://ld.nice.org.uk/ns/bnf#InteractionList>
     
 Class: <http://ld.nice.org.uk/ns/bnf#AdviceForDentalPractitioners>
 
+    Annotations: 
+        rdfs:label "Advice for dental practitioners"
+    
     SubClassOf: 
-        <http://ld.nice.org.uk/ns/bnf#PrescribingInformationSection>
+        <http://ld.nice.org.uk/ns/bnf#Advice>
     
     
 Class: <http://ld.nice.org.uk/ns/bnf#ManagementOfConditions>
@@ -802,20 +835,35 @@ Class: <http://ld.nice.org.uk/ns/bnf#ManagementOfConditions>
         <http://ld.nice.org.uk/ns/bnf#TreatmentSummary>
     
     
+Class: <http://ld.nice.org.uk/ns/bnf#Advice>
+
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/bnf#PrescribingInformationSection>
+    
+    
 Class: <http://ld.nice.org.uk/ns/bnf#HepaticImpairment>
 
+    Annotations: 
+        rdfs:label "Hepatic impairment"
+    
     SubClassOf: 
         <http://ld.nice.org.uk/ns/bnf#PrescribingInformation>
     
     
 Class: <http://ld.nice.org.uk/ns/bnf#ImportantSafetyInformations>
 
+    Annotations: 
+        rdfs:label "Important safety information"
+    
     SubClassOf: 
         <http://ld.nice.org.uk/ns/bnf#PrescribingInformation>
     
     
 Class: <http://ld.nice.org.uk/ns/bnf#Potency>
 
+    Annotations: 
+        rdfs:label "Potency"
+    
     SubClassOf: 
         <http://ld.nice.org.uk/ns/bnf#PrescribingInformationSection>
     
@@ -825,12 +873,18 @@ Class: <http://ld.nice.org.uk/ns/bnf#MedicalDeviceType>
     
 Class: <http://ld.nice.org.uk/ns/bnf#AllergyAndCrossSensitivity>
 
+    Annotations: 
+        rdfs:label "Allergy and cross sensitivity"
+    
     SubClassOf: 
         <http://ld.nice.org.uk/ns/bnf#PrescribingInformation>
     
     
 Class: <http://ld.nice.org.uk/ns/bnf#TreatmentCessationInformation>
 
+    Annotations: 
+        rdfs:label "Treatment cessation information"
+    
     SubClassOf: 
         <http://ld.nice.org.uk/ns/bnf#PrescribingInformation>
     
@@ -843,6 +897,9 @@ Class: <http://ld.nice.org.uk/ns/bnf#MedicinalForm>
     
 Class: <http://ld.nice.org.uk/ns/bnf#HandlingAndStorage>
 
+    Annotations: 
+        rdfs:label "Handling and storage"
+    
     SubClassOf: 
         <http://ld.nice.org.uk/ns/bnf#PrescribingInformationSection>
     
@@ -850,14 +907,26 @@ Class: <http://ld.nice.org.uk/ns/bnf#HandlingAndStorage>
 Class: <http://ld.nice.org.uk/ns/bnf#PatientAdviceInPregnancy>
 
     SubClassOf: 
-        <http://ld.nice.org.uk/ns/bnf#PrescribingInformationSection>
+        <http://ld.nice.org.uk/ns/bnf#PatientAdvice>
     
     
 Class: <http://ld.nice.org.uk/ns/bnf#CautionsGroup>
 
     
+Class: <http://ld.nice.org.uk/ns/bnf#AdditionalMonitoring>
+
+    Annotations: 
+        rdfs:label "Additional monitoring"
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/bnf#PrescribingInformationSection>
+    
+    
 Class: <http://ld.nice.org.uk/ns/bnf#TheraputicDrugMonitoring>
 
+    Annotations: 
+        rdfs:label "Theraputic drug monitoring"
+    
     SubClassOf: 
         <http://ld.nice.org.uk/ns/bnf#PrescribingInformationSection>
     
@@ -871,19 +940,13 @@ Class: <http://ld.nice.org.uk/ns/bnf#NonNHS>
 Class: <http://ld.nice.org.uk/ns/bnf#AdditionalMonitoringInRenalImpairment>
 
     SubClassOf: 
-        <http://ld.nice.org.uk/ns/bnf#PrescribingInformationSection>
-    
-    
-Class: <http://ld.nice.org.uk/ns/bnf#EffectOnLaboratoryTests>
-
-    SubClassOf: 
-        <http://ld.nice.org.uk/ns/bnf#PrescribingInformationSection>
+        <http://ld.nice.org.uk/ns/bnf#AdditionalMonitoring>
     
     
 Class: <http://ld.nice.org.uk/ns/bnf#AdditionalMonitoringInHepaticImpairment>
 
     SubClassOf: 
-        <http://ld.nice.org.uk/ns/bnf#PrescribingInformationSection>
+        <http://ld.nice.org.uk/ns/bnf#AdditionalMonitoring>
     
     
 Class: <http://ld.nice.org.uk/ns/bnf/Classification>
@@ -891,48 +954,69 @@ Class: <http://ld.nice.org.uk/ns/bnf/Classification>
     
 Class: <http://ld.nice.org.uk/ns/bnf#LessSuitableForPrescribings>
 
+    Annotations: 
+        rdfs:label "Less suitable for prescribing"
+    
     SubClassOf: 
         <http://ld.nice.org.uk/ns/bnf#PrescribingInformation>
     
     
 Class: <http://ld.nice.org.uk/ns/bnf#AdviceAroundMissedDoses>
 
+    Annotations: 
+        rdfs:label "Advice around missed doses"
+    
     SubClassOf: 
-        <http://ld.nice.org.uk/ns/bnf#PrescribingInformationSection>
+        <http://ld.nice.org.uk/ns/bnf#Advice>
     
     
 Class: <http://ld.nice.org.uk/ns/bnf#HandlingAndStorageInformation>
 
+    Annotations: 
+        rdfs:label "Handling and storage information"
+    
     SubClassOf: 
         <http://ld.nice.org.uk/ns/bnf#PrescribingInformation>
     
     
 Class: <http://ld.nice.org.uk/ns/bnf#AdviceAroundDrivingAndOtherTasks>
 
+    Annotations: 
+        rdfs:label "Advice around driving and other tasks"
+    
     SubClassOf: 
-        <http://ld.nice.org.uk/ns/bnf#PrescribingInformationSection>
+        <http://ld.nice.org.uk/ns/bnf#Advice>
     
     
 Class: <http://ld.nice.org.uk/ns/bnf#AdditionalMonitoringInBreastFeeding>
 
     SubClassOf: 
-        <http://ld.nice.org.uk/ns/bnf#PrescribingInformationSection>
+        <http://ld.nice.org.uk/ns/bnf#AdditionalMonitoring>
     
     
 Class: <http://ld.nice.org.uk/ns/bnf#RenalImpairment>
 
+    Annotations: 
+        rdfs:label "Renal impairment"
+    
     SubClassOf: 
         <http://ld.nice.org.uk/ns/bnf#PrescribingInformation>
     
     
 Class: <http://ld.nice.org.uk/ns/bnf#ExtremesOfBodyWeight>
 
+    Annotations: 
+        rdfs:label "Extremes of body weight"
+    
     SubClassOf: 
         <http://ld.nice.org.uk/ns/bnf#PrescribingInformationSection>
     
     
 Class: <http://ld.nice.org.uk/ns/bnf#ImportantSafetyInformation>
 
+    Annotations: 
+        rdfs:label "Important safety information"
+    
     SubClassOf: 
         <http://ld.nice.org.uk/ns/bnf#PrescribingInformationSection>
     
@@ -942,6 +1026,9 @@ Class: <http://ld.nice.org.uk/ns/bnf/PatientGroup>
     
 Class: <http://ld.nice.org.uk/ns/bnf#ContraindicationsRenalImpairment>
 
+    Annotations: 
+        rdfs:label "Contra-indications"
+    
     SubClassOf: 
         <http://ld.nice.org.uk/ns/bnf#PrescribingInformationSection>
     
@@ -957,12 +1044,18 @@ Class: <http://ld.nice.org.uk/ns/bnf/Indication>
     
 Class: <http://ld.nice.org.uk/ns/bnf#ConceptionAndContraceptionWarning>
 
+    Annotations: 
+        rdfs:label "Conception and contraception warning"
+    
     SubClassOf: 
-        <http://ld.nice.org.uk/ns/bnf#PrescribingInformation>
+        <http://ld.nice.org.uk/ns/bnf#PrescribingInformationSection>
     
     
 Class: <http://ld.nice.org.uk/ns/bnf#UnlicencedUsageInformation>
 
+    Annotations: 
+        rdfs:label "Unlicensed usage information"
+    
     SubClassOf: 
         <http://ld.nice.org.uk/ns/bnf#PrescribingInformation>
     
@@ -970,29 +1063,41 @@ Class: <http://ld.nice.org.uk/ns/bnf#UnlicencedUsageInformation>
 Class: <http://ld.nice.org.uk/ns/bnf#AdditionalMonitoringInPregnancy>
 
     SubClassOf: 
-        <http://ld.nice.org.uk/ns/bnf#PrescribingInformationSection>
+        <http://ld.nice.org.uk/ns/bnf#AdditionalMonitoring>
     
     
 Class: <http://ld.nice.org.uk/ns/bnf#NationalFunding>
 
+    Annotations: 
+        rdfs:label "National funding"
+    
     SubClassOf: 
         <http://ld.nice.org.uk/ns/bnf#PrescribingInformation>
     
     
 Class: <http://ld.nice.org.uk/ns/bnf#GeneralInformation>
 
+    Annotations: 
+        rdfs:label "General information"
+    
     SubClassOf: 
         <http://ld.nice.org.uk/ns/bnf#PrescribingInformationSection>
     
     
 Class: <http://ld.nice.org.uk/ns/bnf#Interactions>
 
+    Annotations: 
+        rdfs:label "Interactions"
+    
     SubClassOf: 
         <http://ld.nice.org.uk/ns/bnf#PrescribingInformation>
     
     
 Class: <http://ld.nice.org.uk/ns/bnf#MedicinalFormInformation>
 
+    Annotations: 
+        rdfs:label "Medicinal form information"
+    
     SubClassOf: 
         <http://ld.nice.org.uk/ns/bnf#PrescribingInformation>
     
@@ -1005,60 +1110,90 @@ Class: <http://ld.nice.org.uk/ns/bnf#TreatmentOfBodySystems>
     
 Class: <http://ld.nice.org.uk/ns/bnf#Cautions>
 
+    Annotations: 
+        rdfs:label "Cautions"
+    
     SubClassOf: 
         <http://ld.nice.org.uk/ns/bnf#PrescribingInformation>
     
     
 Class: <http://ld.nice.org.uk/ns/bnf#ImportantAdvice>
 
+    Annotations: 
+        rdfs:label "Important advice"
+    
     SubClassOf: 
         <http://ld.nice.org.uk/ns/bnf#PrescribingInformationSection>
     
     
 Class: <http://ld.nice.org.uk/ns/bnf#ProfessionSpecificInformation>
 
+    Annotations: 
+        rdfs:label "Profession specific information"
+    
     SubClassOf: 
         <http://ld.nice.org.uk/ns/bnf#PrescribingInformation>
     
     
 Class: <http://ld.nice.org.uk/ns/bnf#SideEffects>
 
+    Annotations: 
+        rdfs:label "Side-effects"
+    
     SubClassOf: 
         <http://ld.nice.org.uk/ns/bnf#PrescribingInformation>
     
     
 Class: <http://ld.nice.org.uk/ns/bnf#IndicationAndDosageInformation>
 
+    Annotations: 
+        rdfs:label "Indication and dosage information"
+    
     SubClassOf: 
         <http://ld.nice.org.uk/ns/bnf#PrescribingInformation>
     
     
 Class: <http://ld.nice.org.uk/ns/bnf#Pregnancy>
 
+    Annotations: 
+        rdfs:label "Pregnancy"
+    
     SubClassOf: 
         <http://ld.nice.org.uk/ns/bnf#PrescribingInformation>
     
     
 Class: <http://ld.nice.org.uk/ns/bnf#MonitoringRequirement>
 
+    Annotations: 
+        rdfs:label "Monitoring requirement"
+    
     SubClassOf: 
         <http://ld.nice.org.uk/ns/bnf#PrescribingInformationSection>
     
     
 Class: <http://ld.nice.org.uk/ns/bnf#DentalPractitionersFormularyInformation>
 
+    Annotations: 
+        rdfs:label "Dental practitioners formulary information"
+    
     SubClassOf: 
         <http://ld.nice.org.uk/ns/bnf#PrescribingInformationSection>
     
     
 Class: <http://ld.nice.org.uk/ns/bnf#TreatmentCessation>
 
+    Annotations: 
+        rdfs:label "Treatment cessation"
+    
     SubClassOf: 
         <http://ld.nice.org.uk/ns/bnf#PrescribingInformationSection>
     
     
 Class: <http://ld.nice.org.uk/ns/bnf#DoseEquivalence>
 
+    Annotations: 
+        rdfs:label "Dose equivalence"
+    
     SubClassOf: 
         <http://ld.nice.org.uk/ns/bnf#PrescribingInformationSection>
     
@@ -1077,18 +1212,27 @@ Class: <http://ld.nice.org.uk/ns/bnf#Interaction>
     
 Class: <http://ld.nice.org.uk/ns/bnf#PreTreatmentScreeningInformation>
 
+    Annotations: 
+        rdfs:label "Pre-treatment screening information"
+    
     SubClassOf: 
         <http://ld.nice.org.uk/ns/bnf#PrescribingInformation>
     
     
 Class: <http://ld.nice.org.uk/ns/bnf#LicensingVariationStatement>
 
+    Annotations: 
+        rdfs:label "Licensing variation statement"
+    
     SubClassOf: 
         <http://ld.nice.org.uk/ns/bnf#PrescribingInformationSection>
     
     
 Class: <http://ld.nice.org.uk/ns/bnf#PatientMonitoringProgrammes>
 
+    Annotations: 
+        rdfs:label "Patient monitoring programmes"
+    
     SubClassOf: 
         <http://ld.nice.org.uk/ns/bnf#PrescribingInformationSection>
     
@@ -1110,6 +1254,9 @@ Class: <http://ld.nice.org.uk/ns/bnf#GeneralContraindications>
     
 Class: <http://ld.nice.org.uk/ns/bnf#GeneralPatientAdvice>
 
+    Annotations: 
+        rdfs:label "General patient advice"
+    
     SubClassOf: 
         <http://ld.nice.org.uk/ns/bnf#PrescribingInformationSection>
     
@@ -1119,6 +1266,9 @@ Class: <http://ld.nice.org.uk/ns/bnf/SideEffect>
     
 Class: <http://ld.nice.org.uk/ns/bnf#MonitoringRequirements>
 
+    Annotations: 
+        rdfs:label "Monitoring requirements"
+    
     SubClassOf: 
         <http://ld.nice.org.uk/ns/bnf#PrescribingInformation>
     
@@ -1134,6 +1284,9 @@ Class: <http://ld.nice.org.uk/ns/bnf#Dosage>
     
 Class: <http://ld.nice.org.uk/ns/bnf#AllergyAndCrossSensitivityContraindications>
 
+    Annotations: 
+        rdfs:label "Contra-indications"
+    
     SubClassOf: 
         <http://ld.nice.org.uk/ns/bnf#PrescribingInformationSection>
     
@@ -1146,12 +1299,18 @@ Class: <http://ld.nice.org.uk/ns/bnf#ComparativeInformation>
     
 Class: <http://ld.nice.org.uk/ns/bnf#ConceptionAndContraception>
 
+    Annotations: 
+        rdfs:label "Conception and contraception"
+    
     SubClassOf: 
-        <http://ld.nice.org.uk/ns/bnf#PrescribingInformationSection>
+        <http://ld.nice.org.uk/ns/bnf#PrescribingInformation>
     
     
 Class: <http://ld.nice.org.uk/ns/bnf#SideEffectsOverdosageInformation>
 
+    Annotations: 
+        rdfs:label "Overdose"
+    
     SubClassOf: 
         <http://ld.nice.org.uk/ns/bnf#PrescribingInformationSection>
     
@@ -1167,18 +1326,27 @@ Class: <http://ld.nice.org.uk/ns/bnf#PrescribingInformationSection>
     
 Class: <http://ld.nice.org.uk/ns/bnf#AllergyAndCrossSensitivityCrossSensitivity>
 
+    Annotations: 
+        rdfs:label "Cross sensitivity"
+    
     SubClassOf: 
         <http://ld.nice.org.uk/ns/bnf#PrescribingInformationSection>
     
     
 Class: <http://ld.nice.org.uk/ns/bnf#DrugAction>
 
+    Annotations: 
+        rdfs:label "Drug action"
+    
     SubClassOf: 
         <http://ld.nice.org.uk/ns/bnf#PrescribingInformationSection>
     
     
 Class: <http://ld.nice.org.uk/ns/bnf#BreastFeeding>
 
+    Annotations: 
+        rdfs:label "Breast feeding"
+    
     SubClassOf: 
         <http://ld.nice.org.uk/ns/bnf#PrescribingInformation>
     
@@ -1191,6 +1359,9 @@ Class: <http://ld.nice.org.uk/ns/bnf#ContraindicationWithRoutes>
     
 Class: <http://ld.nice.org.uk/ns/bnf#EffectsOnLaboratoryTests>
 
+    Annotations: 
+        rdfs:label "Effects on laboratory tests"
+    
     SubClassOf: 
         <http://ld.nice.org.uk/ns/bnf#PrescribingInformation>
     
@@ -1199,6 +1370,15 @@ Class: <http://ld.nice.org.uk/ns/bnf#ContraindicationWithIndications>
 
     SubClassOf: 
         <http://ld.nice.org.uk/ns/bnf#ContraindicationsGroup>
+    
+    
+Class: <http://ld.nice.org.uk/ns/bnf#PatientAdvice>
+
+    Annotations: 
+        rdfs:label "Patient advice"
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/bnf#PrescribingInformationSection>
     
     
 Class: <http://ld.nice.org.uk/ns/bnf#BorderlineSubstance>
@@ -1221,12 +1401,18 @@ Class: <http://ld.nice.org.uk/ns/bnf#SmcDecisions>
     
 Class: <http://ld.nice.org.uk/ns/bnf#IndicationsAndDoseSection>
 
+    Annotations: 
+        rdfs:label "Indications and dose section"
+    
     SubClassOf: 
         <http://ld.nice.org.uk/ns/bnf#PrescribingInformationSection>
     
     
 Class: <http://ld.nice.org.uk/ns/bnf#PatientResources>
 
+    Annotations: 
+        rdfs:label "Patient resources"
+    
     SubClassOf: 
         <http://ld.nice.org.uk/ns/bnf#PrescribingInformationSection>
     
@@ -1239,6 +1425,9 @@ Class: <http://ld.nice.org.uk/ns/bnf#SideEffectGroup>
     
 Class: <http://ld.nice.org.uk/ns/bnf#ExceptionToLegalCategory>
 
+    Annotations: 
+        rdfs:label "Exception to legal category"
+    
     SubClassOf: 
         <http://ld.nice.org.uk/ns/bnf#PrescribingInformationSection>
     
@@ -1248,6 +1437,9 @@ Class: <http://ld.nice.org.uk/ns/bnf#SideEffectsGroup>
     
 Class: <http://ld.nice.org.uk/ns/bnf#EffectOnLaboratoryTest>
 
+    Annotations: 
+        rdfs:label "Effect on laboratory test"
+    
     SubClassOf: 
         <http://ld.nice.org.uk/ns/bnf#PrescribingInformationSection>
     
@@ -1266,12 +1458,18 @@ Class: <http://ld.nice.org.uk/ns/bnf#Pack>
     
 Class: <http://ld.nice.org.uk/ns/bnf#ContraIndications>
 
+    Annotations: 
+        rdfs:label "Contra-indications"
+    
     SubClassOf: 
         <http://ld.nice.org.uk/ns/bnf#PrescribingInformation>
     
     
 Class: <http://ld.nice.org.uk/ns/bnf#PreTreatmentScreening>
 
+    Annotations: 
+        rdfs:label "Pre-treatment screening"
+    
     SubClassOf: 
         <http://ld.nice.org.uk/ns/bnf#PrescribingInformationSection>
     
@@ -1279,11 +1477,14 @@ Class: <http://ld.nice.org.uk/ns/bnf#PreTreatmentScreening>
 Class: <http://ld.nice.org.uk/ns/bnf#PatientAdviceInConceptionAndContraception>
 
     SubClassOf: 
-        <http://ld.nice.org.uk/ns/bnf#PrescribingInformationSection>
+        <http://ld.nice.org.uk/ns/bnf#PatientAdvice>
     
     
 Class: <http://ld.nice.org.uk/ns/bnf#PatientAndCarerAdvice>
 
+    Annotations: 
+        rdfs:label "Patient and carer advice"
+    
     SubClassOf: 
         <http://ld.nice.org.uk/ns/bnf#PrescribingInformation>
     
@@ -1296,6 +1497,12 @@ Class: <http://ld.nice.org.uk/ns/bnf#ConstituentDrug>
     
 Class: <http://ld.nice.org.uk/ns/bnf#DoseAdjustments>
 
+    Annotations: 
+        rdfs:label "Dose adjustments"
+    
+    EquivalentTo: 
+        <http://ld.nice.org.uk/ns/bnf#DoseAdjustment>
+    
     SubClassOf: 
         <http://ld.nice.org.uk/ns/bnf#PrescribingInformationSection>
     
@@ -1305,24 +1512,39 @@ Class: <http://ld.nice.org.uk/ns/bnf/Route>
     
 Class: <http://ld.nice.org.uk/ns/bnf#UnlicencedUse>
 
+    Annotations: 
+        rdfs:label "Unlicensed use"
+    
     SubClassOf: 
         <http://ld.nice.org.uk/ns/bnf#PrescribingInformationSection>
     
     
 Class: <http://ld.nice.org.uk/ns/bnf#DirectionsForAdministration>
 
+    Annotations: 
+        rdfs:label "Directions for administration"
+    
     SubClassOf: 
         <http://ld.nice.org.uk/ns/bnf#PrescribingInformation>
     
     
 Class: <http://ld.nice.org.uk/ns/bnf#DoseAdjustment>
 
+    Annotations: 
+        rdfs:label "Dose adjustment"
+    
+    EquivalentTo: 
+        <http://ld.nice.org.uk/ns/bnf#DoseAdjustments>
+    
     SubClassOf: 
         <http://ld.nice.org.uk/ns/bnf#PrescribingInformationSection>
     
     
 Class: <http://ld.nice.org.uk/ns/bnf#ExceptionsToLegalCategory>
 
+    Annotations: 
+        rdfs:label "Exceptions to legal category"
+    
     SubClassOf: 
         <http://ld.nice.org.uk/ns/bnf#PrescribingInformation>
     
@@ -1332,12 +1554,18 @@ Class: <http://ld.nice.org.uk/ns/bnf#Frequency>
     
 Class: <http://ld.nice.org.uk/ns/bnf#PrescribingAndDispensingInformations>
 
+    Annotations: 
+        rdfs:label "Prescribing and dispensing information"
+    
     SubClassOf: 
         <http://ld.nice.org.uk/ns/bnf#PrescribingInformation>
     
     
 Class: <http://ld.nice.org.uk/ns/bnf#MonitoringOfPatientParameters>
 
+    Annotations: 
+        rdfs:label "Monitoring of patient parameters"
+    
     SubClassOf: 
         <http://ld.nice.org.uk/ns/bnf#PrescribingInformationSection>
     
