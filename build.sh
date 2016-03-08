@@ -12,7 +12,7 @@ for OWL in ./{,**/}*.omn
 do
 	  mono $base/ld-utilities/src/omn2ttl/omn2ttl/bin/Release/omn2ttl.exe --uri $OWL
 done
-#fsharpi -I $base/ld-utilities ./csv2skos.fsx $base/ld-utilities
+
 for TTL in $base/ns/{,**/}*.ttl
 do
 		ld=${TTL%.*}
