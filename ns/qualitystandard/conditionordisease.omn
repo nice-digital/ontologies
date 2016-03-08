@@ -4,32 +4,4637 @@ Prefix: owl: <http://www.w3.org/2002/07/owl#>
 Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 Prefix: xml: <http://www.w3.org/XML/1998/namespace>
 Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+Prefix: base: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease>
 Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-Prefix: skos: <http://www.w3.org/2004/02/skos/core#>
+
+
 
 Ontology: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease>
 
+
+AnnotationProperty: <http://www.w3.org/2004/02/skos/core#closeMatch>
+
+    
+AnnotationProperty: rdfs:label
+
+    Annotations: 
+        rdfs:label "Condition or disease"
+    
+    Annotations: 
+        rdfs:label "Condition or disease"
+    
+    
 AnnotationProperty: rdfs:comment
 
     
-AnnotationProperty: skos:altLabel
+AnnotationProperty: <http://www.w3.org/2004/02/skos/core#altLabel>
 
     Annotations: 
         rdfs:comment "Use for synonyms"
     
     Annotations: 
         rdfs:comment "Use for synonyms"
+    
     
 Datatype: rdfs:Literal
 
+    
 Datatype: xsd:string
 
     
 Datatype: rdf:PlainLiteral
 
+    
+Class: Pre-eclampsia
+
+    Annotations: 
+        rdfs:label "Pre-eclampsia"^^xsd:string
+    
+    SubClassOf: 
+        Pregnancy
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Ocular%20hypertension>
+
+    Annotations: 
+        rdfs:label "Ocular hypertension"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/4210003>
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Eye%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Mental%20health%20and%20behavioural%20conditions>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/74732009>,
+        rdfs:label "Mental health and behavioural conditions"^^xsd:string
+    
+    SubClassOf: 
+        ConditionOrDisease
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Macular%20degeneration>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "ARMD"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Age related macular degeneration"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "AMD"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Age-related macular degeneration"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/267718000>,
+        rdfs:label "Macular degeneration"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Eye%20conditions>
+    
+    
+Class: STEMI
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/401303003>,
+        rdfs:label "STEMI"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Acute%20myocardial%20infarction>
+    
+    
+Class: Falls
+
+    Annotations: 
+        rdfs:label "Falls"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Injuries,%20accidents%20and%20wounds>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Upper%20gastrointestinal%20bleeding>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Upper GI haemorrhage"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "UGIB"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Upper GI hemorrhage"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Upper GI bleeding"^^xsd:string,
+        rdfs:label "Upper gastrointestinal bleeding"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/37372002>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Upper gastrointestinal haemorrhage"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Digestive%20tract%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Inflammatory%20bowel%20disease>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/24526004>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "IBD"^^xsd:string,
+        rdfs:label "Inflammatory bowel disease"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Digestive%20tract%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Breast%20cancer>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Breast neoplasms"^^xsd:string,
+        rdfs:label "Breast cancer"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/254837009>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Malignant tumor of breast"^^xsd:string
+    
+    SubClassOf: 
+        Cancer
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Cystic%20fibrosis>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "CF"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Mucoviscidosis"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/190905008>,
+        rdfs:label "Cystic fibrosis"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Fibrocystic disease"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Genetic%20conditions>,
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Respiratory%20conditions>
+    
+    
+Class: Cataracts
+
+    Annotations: 
+        rdfs:label "Cataracts"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/128306009>
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Eye%20conditions>
+    
+    
+Class: Anxiety
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Generalised anxiety disorder"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/197480006>,
+        rdfs:label "Anxiety"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Generalized anxiety disorder"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Mental%20health%20and%20behavioural%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Penile%20%20cancer>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Cancer of the penis",
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Penile neoplasms",
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Malignant tumour of the penis",
+        rdfs:label "Penile  cancer"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Malignant tumor of the penis",
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/363516004>
+    
+    SubClassOf: 
+        Cancer
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Rheumatoid%20arthritis>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/69896004>,
+        rdfs:label "Rheumatoid arthritis"^^xsd:string
+    
+    SubClassOf: 
+        Arthritis
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Respiratory%20infections>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/275498002>,
+        rdfs:label "Respiratory infections"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Respiratory%20conditions>
+    
+    
+Class: Thrombosis
+
+    Annotations: 
+        rdfs:label "Thrombosis"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/439127006>
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Cardiovascular%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Feverish%20illness>
+
+    Annotations: 
+        rdfs:label "Feverish illness"^^xsd:string
+    
+    SubClassOf: 
+        Infections
+    
+    
+Class: Leukemia
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Leukaemia"^^xsd:string,
+        rdfs:label "Leukemia"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/93143009>
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Blood%20and%20bone%20marrow%20cancers>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Nasal%20conditions>
+
+    Annotations: 
+        rdfs:label "Nasal conditions"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/118237005>
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Ear,%20nose%20and%20throat%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Postnatal%20depression>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Postpartum depression"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/58703003>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Post-partum depression"^^xsd:string,
+        rdfs:label "Postnatal depression"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Post-natal depression"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Postnatal%20conditions>,
+        Depression
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Blood%20conditions>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Haematological disorders"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Haematological conditions"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/362970003>,
+        rdfs:label "Blood conditions"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Blood%20and%20immune%20system%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Head%20injuries>
+
+    Annotations: 
+        rdfs:label "Head injuries"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Head injury"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/82271004>
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Injuries,%20accidents%20and%20wounds>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Corneal%20conditions>
+
+    Annotations: 
+        rdfs:label "Corneal conditions"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/15250008>
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Eye%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Aortic%20aneurysms>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/67362008>,
+        rdfs:label "Aortic aneurysms"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Cardiovascular%20conditions>
+    
+    
+Class: Addiction
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/32709003>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Addictive behaviour"^^xsd:string,
+        rdfs:label "Addiction"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Mental%20health%20and%20behavioural%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Multiple%20myeloma>
+
+    Annotations: 
+        rdfs:label "Multiple myeloma"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Myeloma"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/109989006>
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Blood%20and%20bone%20marrow%20cancers>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Refractive%20errors>
+
+    Annotations: 
+        rdfs:label "Refractive errors"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/39021009>
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Eye%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Thyroid%20disorders>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/4304000>,
+        rdfs:label "Thyroid disorders"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Diabetes%20and%20other%20endocrinal,%20nutritional%20and%20metabolic%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Personality%20disorders>
+
+    Annotations: 
+        rdfs:label "Personality disorders"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/33449004>
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Mental%20health%20and%20behavioural%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Urological%20conditions>
+
+    Annotations: 
+        rdfs:label "Urological conditions"^^xsd:string
+    
+    SubClassOf: 
+        ConditionOrDisease
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Motor%20neurone%20disease>
+
+    Annotations: 
+        rdfs:label "Motor neurone disease"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Lou Gehrig's disease"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "QMND"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Amyotrophic lateral sclerosis"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Charcot disease"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "ALS"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/37340000>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Motor neuron disease"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Neurological%20conditions>
+    
+    
+Class: Myopia
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/57190000>,
+        rdfs:label "Myopia"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Refractive%20errors>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Liver%20conditions>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/235856003>,
+        rdfs:label "Liver conditions"^^xsd:string
+    
+    SubClassOf: 
+        ConditionOrDisease
+    
+    
+Class: Psoriasis
+
+    Annotations: 
+        rdfs:label "Psoriasis"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Pustulosis Palmaris et Plantaris"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/9014002>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Palmoplantaris pustulosis"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Skin%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Urinary%20incontinence>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/165232002>,
+        rdfs:label "Urinary incontinence"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Bladder incontinence"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Urological%20conditions>,
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Neurological%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Hip%20conditions>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/118935006>,
+        rdfs:label "Hip conditions"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Musculoskeletal%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Unstable%20angina>
+
+    Annotations: 
+        rdfs:label "Unstable angina"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Angina at rest"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/4557003>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Preinfarction syndrome"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Myocardial preinfarction syndrome"^^xsd:string
+    
+    SubClassOf: 
+        Angina
+    
+    
+Class: Hypertension
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "High blood pressure"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/38341003>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Hypertensive disorder"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "HBP"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Hyperpiesis"^^xsd:string,
+        rdfs:label "Hypertension"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Hyperpiesia"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Cardiovascular%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Gastro-oesophageal%20reflux>
+
+    Annotations: 
+        rdfs:label "Gastro-oesophageal reflux"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Gastro-esophaegeal reflux disease"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Gastro-oesophageal reflux disease"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "GORD"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/235595009>
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Digestive%20tract%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Vaginal%20conditions>
+
+    Annotations: 
+        rdfs:label "Vaginal conditions"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/25658005>
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Gynaecological%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Endometrial%20cancers>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Endometiral neoplasm"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Uterine cancer"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Neoplasm of endometrium"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/123844007>,
+        rdfs:label "Endometrial cancers"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Womb cancer"^^xsd:string
+    
+    SubClassOf: 
+        Cancer,
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Gynaecological%20conditions>
+    
+    
+Class: Psychosis
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Psychotic disorder"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/69322001>,
+        rdfs:label "Psychosis "^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Mental%20health%20and%20behavioural%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Genetic%20conditions>
+
+    Annotations: 
+        rdfs:label "Genetic conditions"^^xsd:string
+    
+    SubClassOf: 
+        ConditionOrDisease
+    
+    
+Class: Dementia
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/52448006>,
+        rdfs:label "Dementia"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Mental%20health%20and%20behavioural%20conditions>,
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Neurological%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Oesophageal%20cancer>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Esophageal cancer"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/363402007>,
+        rdfs:label "Oesophageal cancer"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Cancer of the oesophagus"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Esophageal neoplasms"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Malignant tumor of esophagus"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Head%20and%20neck%20cancers>,
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Digestive%20tract%20conditions>
+    
+    
+Class: Cancer
+
+    Annotations: 
+        rdfs:label "Cancer"^^xsd:string
+    
+    SubClassOf: 
+        ConditionOrDisease
+    
+    
+Class: Tuberculosis
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Phthisis"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/56717001>,
+        rdfs:label "Tuberculosis"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Consumption"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "TB"^^xsd:string
+    
+    SubClassOf: 
+        Infections,
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Respiratory%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Venous%20thromboembolism>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/429098002>,
+        rdfs:label "Venous thromboembolism"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Thromboembolism of vein"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "VTE"^^xsd:string
+    
+    SubClassOf: 
+        Thrombosis
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Heart%20failure>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/84114007>,
+        rdfs:label "Heart failure"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Cardiac failure"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Cardiovascular%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Heart%20rhythm%20conditions>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/698247007>,
+        rdfs:label "Heart rhythm conditions"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Cardiovascular%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Learning%20disabilities>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Learning disability"^^xsd:string,
+        rdfs:label "Learning disabilities"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Mental%20health%20and%20behavioural%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Alcohol-use%20%20liver%20disorders>
+
+    Annotations: 
+        rdfs:label "Alcohol-use  liver disorders"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/41309000>
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Liver%20conditions>
+    
+    
+Class: Infections
+
+    Annotations: 
+        rdfs:label "Infections"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/40733004>
+    
+    SubClassOf: 
+        ConditionOrDisease
+    
+    
+Class: Diarrhoea
+
+    Annotations: 
+        rdfs:label "Diarrhoea"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Diarrhea"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/62315008>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Loose bowel motions"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Digestive%20tract%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Sleep%20apnoea>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Sleep apnea"^^xsd:string,
+        rdfs:label "Sleep apnoea"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/73430006>,
+        rdfs:label "Sleep apnoea "^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Respiratory%20conditions>,
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Ear,%20nose%20and%20throat%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Eating%20disorders>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/72366004>,
+        rdfs:label "Eating disorders"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Mental%20health%20and%20behavioural%20conditions>
+    
+    
+Class: Asthma
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/195967001>,
+        rdfs:label "Asthma"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Respiratory%20conditions>
+    
+    
+Class: Mesothelioma
+
+    Annotations: 
+        rdfs:label "Mesothelioma"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/115232000>
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Respiratory%20conditions>
+    
+    
+Class: Influenza
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Flu"^^xsd:string,
+        rdfs:label "Influenza"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/6142004>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Seasonal flu"^^xsd:string
+    
+    SubClassOf: 
+        Infections
+    
+    
+Class: Depression
+
+    Annotations: 
+        rdfs:label "Depression"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/35489007>
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Mental%20health%20and%20behavioural%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Colorectal%20cancer>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Colorectal neoplasms"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/363508008>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Malignant tumor of intestine"^^xsd:string,
+        rdfs:label "Colorectal cancer"^^xsd:string
+    
+    SubClassOf: 
+        Cancer,
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Digestive%20tract%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Head%20and%20neck%20cancers>
+
+    Annotations: 
+        rdfs:label "Head and neck cancers"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/255056009>
+    
+    SubClassOf: 
+        Cancer
+    
+    
+Class: NSTEMI
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Acute non-ST segment elevation myocardial infarction"^^xsd:string,
+        rdfs:label "NSTEMI"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Acute non-ST segment elevation MI"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/401314000>
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Acute%20myocardial%20infarction>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Parkinson's%20disease>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Hypokinetic rigid syndrome"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Shaking palsy"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/49049000>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Primary parkinsonism"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Paralysis agitans"^^xsd:string,
+        rdfs:label "Parkinson's disease"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Neurological%20conditions>
+    
+    
+Class: Arthritis
+
+    Annotations: 
+        rdfs:label "Arthritis"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/3723001>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Joint inflammation"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Musculoskeletal%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Structural%20heart%20defects>
+
+    Annotations: 
+        rdfs:label "Structural heart defects"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/128599005>
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Cardiovascular%20conditions>
+    
+    
+Class: Presbyopia
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/41256004>,
+        rdfs:label "Presbyopia"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Refractive%20errors>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Attention%20deficit%20disorder>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Attention deficit hyperactivity disorder"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/406506008>,
+        rdfs:label "Attention deficit disorder"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "ADHD"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Mental%20health%20and%20behavioural%20conditions>
+    
+    
+Class: Anaphylaxis
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Allergic shock"^^xsd:string,
+        rdfs:label "Anaphylaxis"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Anaphylactic shock"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/39579001>
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Blood%20and%20immune%20system%20conditions>
+    
+    
+Class: Sarcoma
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Chondrosarcoma"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Adenosarcoma"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Carcinosarcoma"^^xsd:string,
+        rdfs:label "Sarcoma"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Bone cancer"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/424413001>
+    
+    SubClassOf: 
+        Cancer
+    
+    
+Class: Miscarriage
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/17369002>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Spontaneous abortion"^^xsd:string,
+        rdfs:label "Miscarriage"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Fertility,%20pregnancy%20and%20childbirth>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Liver%20cancers>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/93870000>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Liver neoplasms"^^xsd:string,
+        rdfs:label "Liver cancers"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Malignant neoplasm of liver"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Liver%20conditions>,
+        Cancer
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Peripheral%20arterial%20disease>
+
+    Annotations: 
+        rdfs:label "Peripheral arterial disease"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "PAD"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Peripheral vascular disease"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/399957001>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Peripheral artery disease"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "PVD"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Cardiovascular%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Conduct%20disorder>
+
+    Annotations: 
+        rdfs:label "Conduct disorder"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/430909002>
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Mental%20health%20and%20behavioural%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Chronic%20obstructive%20pulmonary%20disease>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/13645005>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "COPD"^^xsd:string,
+        rdfs:label "Chronic obstructive pulmonary disease"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Respiratory%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Oral%20and%20dental%20health>
+
+    Annotations: 
+        rdfs:label "Oral and dental health"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/18718003>
+    
+    SubClassOf: 
+        ConditionOrDisease
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Faecal%20incontinence>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Fecal incontinence"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Incontinence of feces"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/72042002>,
+        rdfs:label "Faecal incontinence"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Bowel incontinence"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Digestive%20tract%20conditions>,
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Neurological%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Neonatal%20jaundice>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Jaundice in babies"^^xsd:string,
+        rdfs:label "Neonatal jaundice"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Neonatal hyperbilirubinemia"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/281610001>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Neonatal hyperbilirubinaemia"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Jaundice in newborns"^^xsd:string
+    
+    SubClassOf: 
+        Jaundice
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Prostate%20cancer>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Malignant tumor of prostate"^^xsd:string,
+        rdfs:label "Prostate cancer"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Prostatic neoplasms"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/399068003>
+    
+    SubClassOf: 
+        Cancer,
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Urological%20conditions>
+    
+    
 Class: ConditionOrDisease
 
-AnnotationProperty: rdfs:label
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Fertility,%20pregnancy%20and%20childbirth>
 
-   Annotations:
-       rdfs:label "Condition or disease"
+    Annotations: 
+        rdfs:label "Fertility, pregnancy and childbirth"^^xsd:string
+    
+    SubClassOf: 
+        ConditionOrDisease
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Neuropathic%20pain>
+
+    Annotations: 
+        rdfs:label "Neuropathic pain"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/247398009>
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Neurological%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Sexually%20transmitted%20infections>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Sexually trasmitted infectious disease"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "STIs"^^xsd:string,
+        rdfs:label "Sexually transmitted infections"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/8098009>
+    
+    SubClassOf: 
+        Infections
+    
+    
+Class: Osteoporosis
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/64859006>,
+        rdfs:label "Osteoporosis"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Diabetes%20and%20other%20endocrinal,%20nutritional%20and%20metabolic%20conditions>,
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Musculoskeletal%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Acute%20myocardial%20infarction>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Heart attack"^^xsd:string,
+        rdfs:label "Acute myocardial infarction"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "MI"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Acute%20coronary%20syndromes>
+    
+    
+Class: Delirium
+
+    Annotations: 
+        rdfs:label "Delirium"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Acute confusional state"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/2776000>
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Neurological%20conditions>,
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Mental%20health%20and%20behavioural%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Barrett's%20oesophagus>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Barrett syndrome",
+        rdfs:label "Barrett's oesophagus"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Barrett oesophagus",
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Barrett esophagus",
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/302914006>
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Digestive%20tract%20conditions>
+    
+    
+Class: Schizophrenia
+
+    Annotations: 
+        rdfs:label "Schizophrenia"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/58214004>
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Mental%20health%20and%20behavioural%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Postnatal%20conditions>
+
+    Annotations: 
+        rdfs:label "Postnatal conditions"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Pos-partum conditions"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Postpartum conditions"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/118213005>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Post-natal conditions"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Fertility,%20pregnancy%20and%20childbirth>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Tonsil%20conditions>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/23023009>,
+        rdfs:label "Tonsil conditions"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Ear,%20nose%20and%20throat%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Urinary%20tract%20infection>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/68566005>,
+        rdfs:label "Urinary tract infection"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "UTI"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Urinary tract infectious disease"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Urological%20conditions>,
+        Infections
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Pulmonary%20embolism>
+
+    Annotations: 
+        rdfs:label "Pulmonary embolism"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/59282003>
+    
+    SubClassOf: 
+        Embolism
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Lung%20cancer>
+
+    Annotations: 
+        rdfs:label "Lung cancer"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Lung neoplasms"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Malignant tumor of lung"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/126713003>
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Respiratory%20conditions>,
+        Cancer
+    
+    
+Class: Dyspepsia
+
+    Annotations: 
+        rdfs:label "Dyspepsia"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Indigestion"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/162031009>
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Digestive%20tract%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Respiratory%20conditions>
+
+    Annotations: 
+        rdfs:label "Respiratory conditions"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/50043002>
+    
+    SubClassOf: 
+        ConditionOrDisease
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Oral%20cancer>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Oral cavity cancers"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/363505006>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Mouth neoplasms"^^xsd:string,
+        rdfs:label "Oral cancer"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Malignant neoplasm of oral cavity "^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Mouth cancer"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Head%20and%20neck%20cancers>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Lower%20gastrointestinal%20lesions>
+
+    Annotations: 
+        rdfs:label "Lower gastrointestinal lesions"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Digestive%20tract%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Neonatal%20infections>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/128271002>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Early-onset neonatal infection"^^xsd:string,
+        rdfs:label "Neonatal infections"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Neonatal sepsis"^^xsd:string
+    
+    SubClassOf: 
+        Infections
+    
+    
+Class: Cholecystitis
+
+    Annotations: 
+        rdfs:label "Cholecystitis"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Inflammation of gallbladder"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/76581006>
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Digestive%20tract%20conditions>
+    
+    
+Class: Headaches
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Cephalgia"^^xsd:string,
+        rdfs:label "Headaches"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/25064002>
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Neurological%20conditions>
+    
+    
+Class: Hernia
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/414403008>,
+        rdfs:label "Hernia"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Digestive%20tract%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Multiple%20sclerosis>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/24700007>,
+        rdfs:label "Multiple sclerosis"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "MS"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Neurological%20conditions>
+    
+    
+Class: Jaundice
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/14783006>,
+        rdfs:label "Jaundice"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Hyperbilirubinaemia"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Hyperbilirubinemia"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Diabetes%20and%20other%20endocrinal,%20nutritional%20and%20metabolic%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Cardiovascular%20conditions>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/49601007>,
+        rdfs:label "Cardiovascular conditions"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Cardiovascular disease"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "CVD"^^xsd:string
+    
+    SubClassOf: 
+        ConditionOrDisease
+    
+    
+Class: Lymphoma
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Hodgkin disease"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/118600007>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Non-Hodgkin lymphoma"^^xsd:string,
+        rdfs:label "Lymphoma"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Hodgkin's disease"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Hodgkin's lymphoma"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Blood%20and%20bone%20marrow%20cancers>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Blood%20and%20immune%20system%20conditions>
+
+    Annotations: 
+        rdfs:label "Blood and immune system conditions"^^xsd:string
+    
+    SubClassOf: 
+        ConditionOrDisease
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Metastatic%20spinal%20cord%20compression>
+
+    Annotations: 
+        rdfs:label "Metastatic spinal cord compression"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Neurological%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Ear%20and%20hearing%20conditions>
+
+    Annotations: 
+        rdfs:label "Ear and hearing conditions"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/118236001>
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Ear,%20nose%20and%20throat%20conditions>
+    
+    
+Class: Angina
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Stenocardia"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Angina pectoris"^^xsd:string,
+        rdfs:label "Angina"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/194828000>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Anginal syndrome"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Cardiovascular%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Familial%20hypercholesterolaemia>
+
+    Annotations: 
+        rdfs:label "Familial hypercholesterolaemia"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/398036000>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "FH"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Lipid%20disorders>,
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Genetic%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Low%20back%20pain>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/161891005>,
+        rdfs:label "Low back pain"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Musculoskeletal%20conditions>
+    
+    
+Class: Fibroids
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Fibroleiomyoma"^^xsd:string,
+        rdfs:label "Fibroids"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/44598004>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Fibromyoma"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Gynaecological%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Skin%20conditions>
+
+    Annotations: 
+        rdfs:label "Skin conditions"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/95320005>
+    
+    SubClassOf: 
+        ConditionOrDisease
+    
+    
+Class: Spasticity
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/221360009>,
+        rdfs:label "Spasticity"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Neurological%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#HIV%20and%20AIDS>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Acquired immunodeficiency syndrome"^^xsd:string,
+        rdfs:label "HIV and AIDS"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Acquired immune deficiency syndrome"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Human immunodeficiency virus"^^xsd:string
+    
+    SubClassOf: 
+        Infections
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Pancreatic%20cancer>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Malignant tumor of pancreatic duct"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/187793004>,
+        rdfs:label "Pancreatic cancer"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Pancreatic neoplasms"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Digestive%20tract%20conditions>,
+        Cancer
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Acute%20coronary%20syndromes>
+
+    Annotations: 
+        rdfs:label "Acute coronary syndromes"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "ACS"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/394659003>
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Cardiovascular%20conditions>
+    
+    
+Class: Stroke
+
+    Annotations: 
+        rdfs:label "Stroke "^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Cerebrovascular accident"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/230690007>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "CVA"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Cardiovascular%20conditions>
+    
+    
+Class: Epilepsy
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Epileptic fit"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/84757009>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Epileptic convulsions"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Epileptic seizure"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Seizure disorder"^^xsd:string,
+        rdfs:label "Epilepsy"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Epileptic attack"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Epileptic disorder"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Neurological%20conditions>
+    
+    
+Class: Snoring
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/72863001>,
+        rdfs:label "Snoring"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Respiratory%20conditions>,
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Ear,%20nose%20and%20throat%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Complications%20of%20cancer>
+
+    Annotations: 
+        rdfs:label "Complications of cancer"^^xsd:string
+    
+    SubClassOf: 
+        Cancer
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Macular%20oedema>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Macular edema "^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/37231002>,
+        rdfs:label "Macular oedema "^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Macular%20degeneration>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Chronic%20liver%20disease>
+
+    Annotations: 
+        rdfs:label "Chronic liver disease"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/328383001>
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Liver%20conditions>
+    
+    
+Class: Constipation
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Costiveness"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/14760008>,
+        rdfs:label "Constipation"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Digestive%20tract%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Ovarian%20cancer>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Ovarian neoplasms"^^xsd:string,
+        rdfs:label "Ovarian cancer"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/363443007>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Extra-ovarian serous carcinoma"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Malignant tumor of ovary"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Gynaecological%20conditions>,
+        Cancer
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Blood%20and%20bone%20marrow%20cancers>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Haematological cancers"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/269475001>,
+        rdfs:label "Blood and bone marrow cancers"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Blood%20and%20immune%20system%20conditions>,
+        Cancer
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Chronic%20kidney%20disease>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Chronic renal disease"^^xsd:string,
+        rdfs:label "Chronic kidney disease"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "CKD"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/236425005>
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Kidney%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Skin%20cancer>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/372130007>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Skin neoplasm"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Melanoma"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Malignant neoplasm of skin"^^xsd:string,
+        rdfs:label "Skin cancer"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Skin%20conditions>,
+        Cancer
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Injuries,%20accidents%20and%20wounds>
+
+    Annotations: 
+        rdfs:label "Injuries, accidents and wounds"^^xsd:string
+    
+    SubClassOf: 
+        ConditionOrDisease
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Maxillofacial%20conditions>
+
+    Annotations: 
+        rdfs:label "Maxillofacial conditions"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Musculoskeletal%20conditions>
+    
+    
+Class: Fertility
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Ability to conceive"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Infertility"^^xsd:string,
+        rdfs:label "Fertility"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/27034006>
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Fertility,%20pregnancy%20and%20childbirth>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Type%201%20diabetes>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "T1DM"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Diabetes mellitus type 1"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Type 1 diabetes mellitus"^^xsd:string,
+        rdfs:label "Type 1 diabetes"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Insulin-dependent diabetes"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/46635009>
+    
+    SubClassOf: 
+        Diabetes
+    
+    
+Class: Obesity
+
+    Annotations: 
+        rdfs:label "Obesity"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/414916001>
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Diabetes%20and%20other%20endocrinal,%20nutritional%20and%20metabolic%20conditions>
+    
+    
+Class: Childbirth
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Intrapartum"^^xsd:string,
+        rdfs:label "Childbirth"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/276987000>
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Fertility,%20pregnancy%20and%20childbirth>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Transient%20loss%20of%20consciousness>
+
+    Annotations: 
+        rdfs:label "Transient loss of consciousness"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Anoxic seizure"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/419045004>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Temporary loss of consciousness"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Syncope"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Neurological%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Acute%20kidney%20injury>
+
+    Annotations: 
+        rdfs:label "Acute kidney injury"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/14669001>
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Kidney%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Retinal%20vein%20occlusion>
+
+    Annotations: 
+        rdfs:label "Retinal vein occlusion"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/46085004>
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Eye%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Coeliac%20disease>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/396331005>,
+        rdfs:label "Coeliac disease"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Celiac disease"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Blood%20and%20immune%20system%20conditions>,
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Digestive%20tract%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Healthcare-associated%20infections>
+
+    Annotations: 
+        rdfs:label "Healthcare-associated infections"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/408678008>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "HCAI"
+    
+    SubClassOf: 
+        Infections
+    
+    
+Class: Osteoarthritis
+
+    Annotations: 
+        rdfs:label "Osteoarthritis"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/396275006>
+    
+    SubClassOf: 
+        Arthritis
+    
+    
+Class: Synovitis
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/416209007>,
+        rdfs:label "Synovitis"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Musculoskeletal%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Anal%20disorders>
+
+    Annotations: 
+        rdfs:label "Anal disorders"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/32110003>
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Digestive%20tract%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Digestive%20tract%20conditions>
+
+    Annotations: 
+        rdfs:label "Digestive tract conditions"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/84410009>
+    
+    SubClassOf: 
+        ConditionOrDisease
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Bladder%20cancer>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/399326009>,
+        rdfs:label "Bladder cancer"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Malignant tumour of urinary bladder"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Urinary bladder neoplasms"^^xsd:string
+    
+    SubClassOf: 
+        Cancer,
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Urological%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Neurological%20conditions>
+
+    Annotations: 
+        rdfs:label "Neurological conditions"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/118940003>
+    
+    SubClassOf: 
+        ConditionOrDisease
+    
+    
+Class: Menopause
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/161712005>,
+        rdfs:label "Menopause"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Gynaecological%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Upper%20airways%20tract%20cancers>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/126668007>,
+        rdfs:label "Upper airways tract cancers"^^xsd:string
+    
+    SubClassOf: 
+        Cancer
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Alcohol-use%20disorders>
+
+    Annotations: 
+        rdfs:label "Alcohol-use disorders"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Mental%20health%20and%20behavioural%20conditions>
+    
+    
+Class: Astigmatism
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/82649003>,
+        rdfs:label "Astigmatism"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Refractive%20errors>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Lipid%20disorders>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/48286001>,
+        rdfs:label "Lipid disorders"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Diabetes%20and%20other%20endocrinal,%20nutritional%20and%20metabolic%20conditions>,
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Cardiovascular%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Knee%20conditions>
+
+    Annotations: 
+        rdfs:label "Knee conditions"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/128136007>
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Musculoskeletal%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Varicose%20veins>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Venous varices"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/128060009>,
+        rdfs:label "Varicose veins"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Cardiovascular%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Sickle%20cell%20disease>
+
+    Annotations: 
+        rdfs:label "Sickle cell disease"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Sickle cell anaemia"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Hb SS disease"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/127040003>
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Blood%20and%20immune%20system%20conditions>,
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Genetic%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Diabetes%20and%20other%20endocrinal,%20nutritional%20and%20metabolic%20conditions>
+
+    Annotations: 
+        rdfs:label "Diabetes and other endocrinal, nutritional and metabolic conditions"^^xsd:string
+    
+    SubClassOf: 
+        ConditionOrDisease
+    
+    
+Class: Metastases
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Metastasis"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/14799000>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Metastatic cancer"^^xsd:string,
+        rdfs:label "Metastases"^^xsd:string
+    
+    SubClassOf: 
+        Cancer
+    
+    
+Class: Pancreatitis
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/75694006>,
+        rdfs:label "Pancreatitis"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Inflammation of the pancreas"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Digestive%20tract%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Pressure%20ulcers>
+
+    Annotations: 
+        rdfs:label "Pressure ulcers"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/420226006>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Pressure sore"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Bed sore"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Bedsore"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Skin%20conditions>
+    
+    
+Class: Acne
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Acne vulgaris"^^xsd:string,
+        rdfs:label "Acne"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/88616000>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Common acne"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Skin%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Gynaecological%20conditions>
+
+    Annotations: 
+        rdfs:label "Gynaecological conditions"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/310789003>
+    
+    SubClassOf: 
+        ConditionOrDisease
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Diverticular%20disease>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/397881000>,
+        rdfs:label "Diverticular disease"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Digestive%20tract%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Diabetic%20foot>
+
+    Annotations: 
+        rdfs:label "Diabetic foot"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/280137006>
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Skin%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Type%202%20diabetes>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Non-insulin dependent diabetes"^^xsd:string,
+        rdfs:label "Type 2 diabetes"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Diabetes mellitus type 2"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/44054006>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "T2DM"^^xsd:string
+    
+    SubClassOf: 
+        Diabetes
+    
+    
+Class: Allergies
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/473011001>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Allergy"^^xsd:string,
+        rdfs:label "Allergies"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Allergic condition"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Blood%20and%20immune%20system%20conditions>
+    
+    
+Class: Haemorrhoids
+
+    Annotations: 
+        rdfs:label "Haemorrhoids "^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Piles"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Hemorrhoids"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/70153002>
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Digestive%20tract%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Eye%20conditions>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/371405004>,
+        rdfs:label "Eye conditions"^^xsd:string
+    
+    SubClassOf: 
+        ConditionOrDisease
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Cervical%20cancer>
+
+    Annotations: 
+        rdfs:label "Cervical cancer"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/363354003>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Cervical neoplasms"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Uterine cervical neoplasms"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Cancer of the cervix"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Gynaecological%20conditions>,
+        Cancer
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Systemic%20lupus%20erythematosus>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/55464009>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "SLE"^^xsd:string,
+        rdfs:label "Systemic lupus erythematosus"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Blood%20and%20immune%20system%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Cerebral%20palsy>
+
+    Annotations: 
+        rdfs:label "Cerebral palsy"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/128188000>
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Neurological%20conditions>
+    
+    
+Class: Lymphoedema
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Lymphedema"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/234097001>,
+        rdfs:label "Lymphoedema"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Lymphatic edema"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Lymphatic oedema"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Blood%20and%20immune%20system%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Spinal%20conditions>
+
+    Annotations: 
+        rdfs:label "Spinal conditions"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/262521009>
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Musculoskeletal%20conditions>
+    
+    
+Class: Autism
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Autism spectrum"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Autistic spectrum disorder"^^xsd:string,
+        rdfs:label "Autism"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/408856003>
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Mental%20health%20and%20behavioural%20conditions>
+    
+    
+Class: Vomiting
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/422400008>,
+        rdfs:label "Vomiting"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Emesis"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Digestive%20tract%20conditions>
+    
+    
+Class: Glaucoma
+
+    Annotations: 
+        rdfs:label "Glaucoma"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/23986001>
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Eye%20conditions>
+    
+    
+Class: Embolism
+
+    Annotations: 
+        rdfs:label "Embolism"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/414086009>
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Cardiovascular%20conditions>
+    
+    
+Class: Gallstones
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/256896000>,
+        rdfs:label "Gallstones"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Cholelithiasis"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Gallstone disease"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Digestive%20tract%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Stable%20angina>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/233819005>,
+        rdfs:label "Stable angina"^^xsd:string
+    
+    SubClassOf: 
+        Angina
+    
+    
+Class: Pregnancy
+
+    Annotations: 
+        rdfs:label "Pregnancy"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/289908002>
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Fertility,%20pregnancy%20and%20childbirth>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Brain%20cancers>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Brain tumours"^^xsd:string,
+        rdfs:label "Brain cancers"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/126952004>
+    
+    SubClassOf: 
+        Cancer,
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Neurological%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Lower%20urinary%20tract%20symptoms>
+
+    Annotations: 
+        rdfs:label "Lower urinary tract symptoms"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/307541003>
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Urological%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Renal%20stones>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/95570007>,
+        rdfs:label "Renal stones"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Kidney stones"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Kidney%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Musculoskeletal%20conditions>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/928000>,
+        rdfs:label "Musculoskeletal conditions"^^xsd:string
+    
+    SubClassOf: 
+        ConditionOrDisease
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Uterine%20prolapse>
+
+    Annotations: 
+        rdfs:label "Uterine prolapse"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Prolapsed uterus"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/24976005>
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Gynaecological%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Stomach%20cancer>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Malignant tumor of stomach"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/363349007>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Stomach neoplasms"^^xsd:string,
+        rdfs:label "Stomach cancer"^^xsd:string
+    
+    SubClassOf: 
+        Cancer,
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Digestive%20tract%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Kidney%20conditions>
+
+    Annotations: 
+        rdfs:label "Kidney conditions"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/443820000>
+    
+    SubClassOf: 
+        ConditionOrDisease
+    
+    
+Class: Self-harm
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Self-injury"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/58214004>,
+        rdfs:label "Self-harm"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Learning%20disabilities>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Testicular%20cancer>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Cancer of the testis"^^xsd:string,
+        rdfs:label "Testicular cancer"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Cancer of the testes"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/94087009>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Testicular neoplasms"^^xsd:string
+    
+    SubClassOf: 
+        Cancer
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Failure%20to%20thrive>
+
+    Annotations: 
+        rdfs:label "Failure to thrive"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/432788009>
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Diabetes%20and%20other%20endocrinal,%20nutritional%20and%20metabolic%20conditions>
+    
+    
+Class: Eczema
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Dermatitis eczema"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/43116000>,
+        rdfs:label "Eczema"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Atopic eczema"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Skin%20conditions>
+    
+    
+Class: Trauma
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/417746004>,
+        rdfs:label "Trauma"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Injuries,%20accidents%20and%20wounds>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Bipolar%20disorder>
+
+    Annotations: 
+        rdfs:label "Bipolar disorder"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/13746004>
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Mental%20health%20and%20behavioural%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Cranial%20aneurysms>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Intracranial aneurysm"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/128609009>,
+        rdfs:label "Cranial aneurysms"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Brain aneurysms"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Cardiovascular%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Pulmonary%20fibrosis>
+
+    Annotations: 
+        rdfs:label "Pulmonary fibrosis"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Pulmonary fibroses"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Cirrhosis of lung"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Fibrosis of lung"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/51615001>
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Respiratory%20conditions>
+    
+    
+Class: Hepatitis
+
+    Annotations: 
+        rdfs:label "Hepatitis"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/3738000>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Viral hepatitis"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "VH"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Liver%20conditions>,
+        Infections
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Ear,%20nose%20and%20throat%20conditions>
+
+    Annotations: 
+        rdfs:label "Ear, nose and throat conditions"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/232208008>
+    
+    SubClassOf: 
+        ConditionOrDisease
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Deep%20vein%20thrombosis>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "DVT"^^xsd:string,
+        rdfs:label "Deep vein thrombosis"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Deep venous thrombosis"^^xsd:string
+    
+    SubClassOf: 
+        Thrombosis
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Meningitis%20and%20meningococcal%20septicaemia>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/314130008>,
+        rdfs:label "Meningitis and meningococcal septicaemia"^^xsd:string
+    
+    SubClassOf: 
+        Infections
+    
+    
+Class: Endometriosis
+
+    Annotations: 
+        rdfs:label "Endometriosis "^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/396224008>
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Gynaecological%20conditions>
+    
+    
+Class: Diabetes
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/73211009>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Diabetes mellitus"^^xsd:string,
+        rdfs:label "Diabetes"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Diabetes%20and%20other%20endocrinal,%20nutritional%20and%20metabolic%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Renal%20cancer>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/363518003>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Kidney neoplasms"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Kidney cancer"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Malignant tumour of kidney"^^xsd:string,
+        rdfs:label "Renal cancer"^^xsd:string
+    
+    SubClassOf: 
+        Cancer,
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Urological%20conditions>,
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Kidney%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Transient%20ischaemic%20attack>
+
+    Annotations: 
+        rdfs:label "Transient ischaemic attack"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/266257000>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Transient ischemic attack"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Cardiovascular%20conditions>
+    
+    
+Class: Fractures
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Bone fractures"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Broken bones"^^xsd:string,
+        rdfs:label "Fractures"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/125605004>
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Musculoskeletal%20conditions>
+    
+    
+Class: Malnutrition
+
+    Annotations: 
+        rdfs:label "Malnutrition"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Undernutrition"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/238107002>
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Diabetes%20and%20other%20endocrinal,%20nutritional%20and%20metabolic%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Adrenal%20dysfunction>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/30171000>,
+        rdfs:label "Adrenal dysfunction"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Diabetes%20and%20other%20endocrinal,%20nutritional%20and%20metabolic%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Irritable%20bowel%20syndrome>
+
+    Annotations: 
+        rdfs:label "Irritable bowel syndrome"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "IBS"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/10743008>
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Digestive%20tract%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Heavy%20menstrual%20bleeding>
+
+    Annotations: 
+        rdfs:label "Heavy menstrual bleeding"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Menorrhagia"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Heavy periods"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Hypermenorrhea"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Hypermenorrhoea"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/386692008>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Heavy menstrual flow"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Gynaecological%20conditions>
+    
+    
+Class: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Atrial%20fibrillation>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/49436004>,
+        rdfs:label "Atrial fibrillation"^^xsd:string
+    
+    SubClassOf: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Heart%20rhythm%20conditions>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Faecal%20incontinence>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Fecal incontinence"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Incontinence of feces"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/72042002>,
+        rdfs:label "Faecal incontinence"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Bowel incontinence"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Faecal%20incontinence>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Structural%20heart%20defects>
+
+    Annotations: 
+        rdfs:label "Structural heart defects"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/128599005>
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Structural%20heart%20defects>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Metastatic%20spinal%20cord%20compression>
+
+    Annotations: 
+        rdfs:label "Metastatic spinal cord compression"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Metastatic%20spinal%20cord%20compression>
+    
+    
+Individual: Presbyopia
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/41256004>,
+        rdfs:label "Presbyopia"^^xsd:string
+    
+    Types: 
+        Presbyopia
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Prostate%20cancer>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Malignant tumor of prostate"^^xsd:string,
+        rdfs:label "Prostate cancer"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Prostatic neoplasms"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/399068003>
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Prostate%20cancer>
+    
+    
+Individual: Diabetes
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/73211009>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Diabetes mellitus"^^xsd:string,
+        rdfs:label "Diabetes"^^xsd:string
+    
+    Types: 
+        Diabetes
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Nasal%20conditions>
+
+    Annotations: 
+        rdfs:label "Nasal conditions"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/118237005>
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Nasal%20conditions>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Neuropathic%20pain>
+
+    Annotations: 
+        rdfs:label "Neuropathic pain"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/247398009>
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Neuropathic%20pain>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Coeliac%20disease>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/396331005>,
+        rdfs:label "Coeliac disease"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Celiac disease"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Coeliac%20disease>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Sexually%20transmitted%20infections>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Sexually trasmitted infectious disease"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "STIs"^^xsd:string,
+        rdfs:label "Sexually transmitted infections"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/8098009>
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Sexually%20transmitted%20infections>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Acute%20myocardial%20infarction>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Heart attack"^^xsd:string,
+        rdfs:label "Acute myocardial infarction"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "MI"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Acute%20myocardial%20infarction>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Skin%20cancer>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/372130007>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Skin neoplasm"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Melanoma"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Malignant neoplasm of skin"^^xsd:string,
+        rdfs:label "Skin cancer"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Skin%20cancer>
+    
+    
+Individual: Delirium
+
+    Annotations: 
+        rdfs:label "Delirium"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Acute confusional state"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/2776000>
+    
+    Types: 
+        Delirium
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Barrett's%20oesophagus>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Barrett syndrome",
+        rdfs:label "Barrett's oesophagus"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Barrett oesophagus",
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Barrett esophagus",
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/302914006>
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Barrett's%20oesophagus>
+    
+    
+Individual: Schizophrenia
+
+    Annotations: 
+        rdfs:label "Schizophrenia"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/58214004>
+    
+    Types: 
+        Schizophrenia
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Postnatal%20conditions>
+
+    Annotations: 
+        rdfs:label "Postnatal conditions"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Pos-partum conditions"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Postpartum conditions"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/118213005>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Post-natal conditions"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Postnatal%20conditions>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Tonsil%20conditions>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/23023009>,
+        rdfs:label "Tonsil conditions"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Tonsil%20conditions>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Urinary%20tract%20infection>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/68566005>,
+        rdfs:label "Urinary tract infection"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "UTI"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Urinary tract infectious disease"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Urinary%20tract%20infection>
+    
+    
+Individual: Falls
+
+    Annotations: 
+        rdfs:label "Falls"^^xsd:string
+    
+    Types: 
+        Falls
+    
+    
+Individual: Lymphoedema
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Lymphedema"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/234097001>,
+        rdfs:label "Lymphoedema"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Lymphatic edema"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Lymphatic oedema"^^xsd:string
+    
+    Types: 
+        Lymphoedema
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Breast%20cancer>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Breast neoplasms"^^xsd:string,
+        rdfs:label "Breast cancer"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/254837009>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Malignant tumor of breast"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Breast%20cancer>
+    
+    
+Individual: Miscarriage
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/17369002>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Spontaneous abortion"^^xsd:string,
+        rdfs:label "Miscarriage"^^xsd:string
+    
+    Types: 
+        Miscarriage
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Lung%20cancer>
+
+    Annotations: 
+        rdfs:label "Lung cancer"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Lung neoplasms"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Malignant tumor of lung"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/126713003>
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Lung%20cancer>
+    
+    
+Individual: Dyspepsia
+
+    Annotations: 
+        rdfs:label "Dyspepsia"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Indigestion"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/162031009>
+    
+    Types: 
+        Dyspepsia
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Respiratory%20conditions>
+
+    Annotations: 
+        rdfs:label "Respiratory conditions"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/50043002>
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Respiratory%20conditions>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Oral%20cancer>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Oral cavity cancers"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/363505006>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Mouth neoplasms"^^xsd:string,
+        rdfs:label "Oral cancer"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Malignant neoplasm of oral cavity "^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Mouth cancer"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Oral%20cancer>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Lower%20gastrointestinal%20lesions>
+
+    Annotations: 
+        rdfs:label "Lower gastrointestinal lesions"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Lower%20gastrointestinal%20lesions>
+    
+    
+Individual: Cholecystitis
+
+    Annotations: 
+        rdfs:label "Cholecystitis"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Inflammation of gallbladder"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/76581006>
+    
+    Types: 
+        Cholecystitis
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Motor%20neurone%20disease>
+
+    Annotations: 
+        rdfs:label "Motor neurone disease"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Lou Gehrig's disease"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "QMND"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Amyotrophic lateral sclerosis"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Charcot disease"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "ALS"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/37340000>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Motor neuron disease"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Motor%20neurone%20disease>
+    
+    
+Individual: Anxiety
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Generalised anxiety disorder"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/197480006>,
+        rdfs:label "Anxiety"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Generalized anxiety disorder"^^xsd:string
+    
+    Types: 
+        Anxiety
+    
+    
+Individual: Hernia
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/414403008>,
+        rdfs:label "Hernia"^^xsd:string
+    
+    Types: 
+        Hernia
+    
+    
+Individual: Leukemia
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Leukaemia"^^xsd:string,
+        rdfs:label "Leukemia"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/93143009>
+    
+    Types: 
+        Leukemia
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Multiple%20sclerosis>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/24700007>,
+        rdfs:label "Multiple sclerosis"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "MS"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Multiple%20sclerosis>
+    
+    
+Individual: Jaundice
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/14783006>,
+        rdfs:label "Jaundice"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Hyperbilirubinaemia"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Hyperbilirubinemia"^^xsd:string
+    
+    Types: 
+        Jaundice
+    
+    
+Individual: Lymphoma
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Hodgkin disease"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/118600007>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Non-Hodgkin lymphoma"^^xsd:string,
+        rdfs:label "Lymphoma"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Hodgkin's disease"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Hodgkin's lymphoma"^^xsd:string
+    
+    Types: 
+        Lymphoma
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Testicular%20cancer>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Cancer of the testis"^^xsd:string,
+        rdfs:label "Testicular cancer"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Cancer of the testes"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/94087009>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Testicular neoplasms"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Testicular%20cancer>
+    
+    
+Individual: Fertility
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Ability to conceive"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Infertility"^^xsd:string,
+        rdfs:label "Fertility"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/27034006>
+    
+    Types: 
+        Fertility
+    
+    
+Individual: Angina
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Stenocardia"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Angina pectoris"^^xsd:string,
+        rdfs:label "Angina"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/194828000>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Anginal syndrome"^^xsd:string
+    
+    Types: 
+        Angina
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Familial%20hypercholesterolaemia>
+
+    Annotations: 
+        rdfs:label "Familial hypercholesterolaemia"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/398036000>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "FH"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Familial%20hypercholesterolaemia>
+    
+    
+Individual: Spasticity
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/221360009>,
+        rdfs:label "Spasticity"^^xsd:string
+    
+    Types: 
+        Spasticity
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Multiple%20myeloma>
+
+    Annotations: 
+        rdfs:label "Multiple myeloma"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Myeloma"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/109989006>
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Multiple%20myeloma>
+    
+    
+Individual: Fibroids
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Fibroleiomyoma"^^xsd:string,
+        rdfs:label "Fibroids"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/44598004>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Fibromyoma"^^xsd:string
+    
+    Types: 
+        Fibroids
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Skin%20conditions>
+
+    Annotations: 
+        rdfs:label "Skin conditions"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/95320005>
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Skin%20conditions>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Transient%20loss%20of%20consciousness>
+
+    Annotations: 
+        rdfs:label "Transient loss of consciousness"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Anoxic seizure"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/419045004>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Temporary loss of consciousness"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Syncope"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Transient%20loss%20of%20consciousness>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#HIV%20and%20AIDS>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Acquired immunodeficiency syndrome"^^xsd:string,
+        rdfs:label "HIV and AIDS"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Acquired immune deficiency syndrome"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Human immunodeficiency virus"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#HIV%20and%20AIDS>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Pancreatic%20cancer>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Malignant tumor of pancreatic duct"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/187793004>,
+        rdfs:label "Pancreatic cancer"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Pancreatic neoplasms"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Pancreatic%20cancer>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Acute%20coronary%20syndromes>
+
+    Annotations: 
+        rdfs:label "Acute coronary syndromes"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "ACS"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/394659003>
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Acute%20coronary%20syndromes>
+    
+    
+Individual: Epilepsy
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Epileptic fit"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/84757009>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Epileptic convulsions"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Epileptic seizure"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Seizure disorder"^^xsd:string,
+        rdfs:label "Epilepsy"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Epileptic attack"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Epileptic disorder"^^xsd:string
+    
+    Types: 
+        Epilepsy
+    
+    
+Individual: Snoring
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/72863001>,
+        rdfs:label "Snoring"^^xsd:string
+    
+    Types: 
+        Snoring
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Complications%20of%20cancer>
+
+    Annotations: 
+        rdfs:label "Complications of cancer"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Complications%20of%20cancer>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Macular%20oedema>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Macular edema "^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/37231002>,
+        rdfs:label "Macular oedema "^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Macular%20oedema>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Chronic%20liver%20disease>
+
+    Annotations: 
+        rdfs:label "Chronic liver disease"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/328383001>
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Chronic%20liver%20disease>
+    
+    
+Individual: Constipation
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Costiveness"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/14760008>,
+        rdfs:label "Constipation"^^xsd:string
+    
+    Types: 
+        Constipation
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Ovarian%20cancer>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Ovarian neoplasms"^^xsd:string,
+        rdfs:label "Ovarian cancer"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/363443007>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Extra-ovarian serous carcinoma"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Malignant tumor of ovary"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Ovarian%20cancer>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Blood%20and%20bone%20marrow%20cancers>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Haematological cancers"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/269475001>,
+        rdfs:label "Blood and bone marrow cancers"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Blood%20and%20bone%20marrow%20cancers>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Chronic%20kidney%20disease>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Chronic renal disease"^^xsd:string,
+        rdfs:label "Chronic kidney disease"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "CKD"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/236425005>
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Chronic%20kidney%20disease>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Injuries,%20accidents%20and%20wounds>
+
+    Annotations: 
+        rdfs:label "Injuries, accidents and wounds"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Injuries,%20accidents%20and%20wounds>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Maxillofacial%20conditions>
+
+    Annotations: 
+        rdfs:label "Maxillofacial conditions"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Maxillofacial%20conditions>
+    
+    
+Individual: Tuberculosis
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Phthisis"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/56717001>,
+        rdfs:label "Tuberculosis"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Consumption"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "TB"^^xsd:string
+    
+    Types: 
+        Tuberculosis
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Alcohol-use%20%20liver%20disorders>
+
+    Annotations: 
+        rdfs:label "Alcohol-use  liver disorders"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/41309000>
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Alcohol-use%20%20liver%20disorders>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Type%201%20diabetes>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "T1DM"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Diabetes mellitus type 1"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Type 1 diabetes mellitus"^^xsd:string,
+        rdfs:label "Type 1 diabetes"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Insulin-dependent diabetes"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/46635009>
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Type%201%20diabetes>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Liver%20cancers>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/93870000>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Liver neoplasms"^^xsd:string,
+        rdfs:label "Liver cancers"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Malignant neoplasm of liver"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Liver%20cancers>
+    
+    
+Individual: Childbirth
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Intrapartum"^^xsd:string,
+        rdfs:label "Childbirth"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/276987000>
+    
+    Types: 
+        Childbirth
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Retinal%20vein%20occlusion>
+
+    Annotations: 
+        rdfs:label "Retinal vein occlusion"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/46085004>
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Retinal%20vein%20occlusion>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Eating%20disorders>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/72366004>,
+        rdfs:label "Eating disorders"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Eating%20disorders>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Deep%20vein%20thrombosis>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "DVT"^^xsd:string,
+        rdfs:label "Deep vein thrombosis"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Deep venous thrombosis"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Deep%20vein%20thrombosis>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Healthcare-associated%20infections>
+
+    Annotations: 
+        rdfs:label "Healthcare-associated infections"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/408678008>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "HCAI"
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Healthcare-associated%20infections>
+    
+    
+Individual: Osteoarthritis
+
+    Annotations: 
+        rdfs:label "Osteoarthritis"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/396275006>
+    
+    Types: 
+        Osteoarthritis
+    
+    
+Individual: Influenza
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Flu"^^xsd:string,
+        rdfs:label "Influenza"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/6142004>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Seasonal flu"^^xsd:string
+    
+    Types: 
+        Influenza
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Gynaecological%20conditions>
+
+    Annotations: 
+        rdfs:label "Gynaecological conditions"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/310789003>
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Gynaecological%20conditions>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Anal%20disorders>
+
+    Annotations: 
+        rdfs:label "Anal disorders"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/32110003>
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Anal%20disorders>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Acute%20kidney%20injury>
+
+    Annotations: 
+        rdfs:label "Acute kidney injury"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/14669001>
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Acute%20kidney%20injury>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Penile%20%20cancer>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Cancer of the penis",
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Penile neoplasms",
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Malignant tumour of the penis",
+        rdfs:label "Penile  cancer"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Malignant tumor of the penis",
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/363516004>
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Penile%20%20cancer>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Neurological%20conditions>
+
+    Annotations: 
+        rdfs:label "Neurological conditions"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/118940003>
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Neurological%20conditions>
+    
+    
+Individual: Menopause
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/161712005>,
+        rdfs:label "Menopause"^^xsd:string
+    
+    Types: 
+        Menopause
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Upper%20airways%20tract%20cancers>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/126668007>,
+        rdfs:label "Upper airways tract cancers"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Upper%20airways%20tract%20cancers>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Head%20and%20neck%20cancers>
+
+    Annotations: 
+        rdfs:label "Head and neck cancers"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/255056009>
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Head%20and%20neck%20cancers>
+    
+    
+Individual: STEMI
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/401303003>,
+        rdfs:label "STEMI"^^xsd:string
+    
+    Types: 
+        STEMI
+    
+    
+Individual: Astigmatism
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/82649003>,
+        rdfs:label "Astigmatism"^^xsd:string
+    
+    Types: 
+        Astigmatism
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Cerebral%20palsy>
+
+    Annotations: 
+        rdfs:label "Cerebral palsy"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/128188000>
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Cerebral%20palsy>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Knee%20conditions>
+
+    Annotations: 
+        rdfs:label "Knee conditions"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/128136007>
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Knee%20conditions>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Varicose%20veins>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Venous varices"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/128060009>,
+        rdfs:label "Varicose veins"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Varicose%20veins>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Sickle%20cell%20disease>
+
+    Annotations: 
+        rdfs:label "Sickle cell disease"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Sickle cell anaemia"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Hb SS disease"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/127040003>
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Sickle%20cell%20disease>
+    
+    
+Individual: Metastases
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Metastasis"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/14799000>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Metastatic cancer"^^xsd:string,
+        rdfs:label "Metastases"^^xsd:string
+    
+    Types: 
+        Metastases
+    
+    
+Individual: NSTEMI
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Acute non-ST segment elevation myocardial infarction"^^xsd:string,
+        rdfs:label "NSTEMI"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Acute non-ST segment elevation MI"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/401314000>
+    
+    Types: 
+        NSTEMI
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Neonatal%20infections>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/128271002>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Early-onset neonatal infection"^^xsd:string,
+        rdfs:label "Neonatal infections"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Neonatal sepsis"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Neonatal%20infections>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Alcohol-use%20disorders>
+
+    Annotations: 
+        rdfs:label "Alcohol-use disorders"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Alcohol-use%20disorders>
+    
+    
+Individual: Pancreatitis
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/75694006>,
+        rdfs:label "Pancreatitis"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Inflammation of the pancreas"^^xsd:string
+    
+    Types: 
+        Pancreatitis
+    
+    
+Individual: Sarcoma
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Chondrosarcoma"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Adenosarcoma"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Carcinosarcoma"^^xsd:string,
+        rdfs:label "Sarcoma"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Bone cancer"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/424413001>
+    
+    Types: 
+        Sarcoma
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Pressure%20ulcers>
+
+    Annotations: 
+        rdfs:label "Pressure ulcers"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/420226006>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Pressure sore"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Bed sore"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Bedsore"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Pressure%20ulcers>
+    
+    
+Individual: Acne
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Acne vulgaris"^^xsd:string,
+        rdfs:label "Acne"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/88616000>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Common acne"^^xsd:string
+    
+    Types: 
+        Acne
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Diverticular%20disease>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/397881000>,
+        rdfs:label "Diverticular disease"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Diverticular%20disease>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Oral%20and%20dental%20health>
+
+    Annotations: 
+        rdfs:label "Oral and dental health"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/18718003>
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Oral%20and%20dental%20health>
+    
+    
+Individual: Psoriasis
+
+    Annotations: 
+        rdfs:label "Psoriasis"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Pustulosis Palmaris et Plantaris"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/9014002>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Palmoplantaris pustulosis"^^xsd:string
+    
+    Types: 
+        Psoriasis
+    
+    
+Individual: Allergies
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/473011001>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Allergy"^^xsd:string,
+        rdfs:label "Allergies"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Allergic condition"^^xsd:string
+    
+    Types: 
+        Allergies
+    
+    
+Individual: Haemorrhoids
+
+    Annotations: 
+        rdfs:label "Haemorrhoids "^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Piles"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Hemorrhoids"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/70153002>
+    
+    Types: 
+        Haemorrhoids
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Eye%20conditions>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/371405004>,
+        rdfs:label "Eye conditions"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Eye%20conditions>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Diabetic%20foot>
+
+    Annotations: 
+        rdfs:label "Diabetic foot"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/280137006>
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Diabetic%20foot>
+    
+    
+Individual: Fractures
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Bone fractures"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Broken bones"^^xsd:string,
+        rdfs:label "Fractures"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/125605004>
+    
+    Types: 
+        Fractures
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Cardiovascular%20conditions>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/49601007>,
+        rdfs:label "Cardiovascular conditions"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Cardiovascular disease"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "CVD"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Cardiovascular%20conditions>
+    
+    
+Individual: Stroke
+
+    Annotations: 
+        rdfs:label "Stroke "^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Cerebrovascular accident"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/230690007>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "CVA"^^xsd:string
+    
+    Types: 
+        Stroke
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Spinal%20conditions>
+
+    Annotations: 
+        rdfs:label "Spinal conditions"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/262521009>
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Spinal%20conditions>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Cervical%20cancer>
+
+    Annotations: 
+        rdfs:label "Cervical cancer"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/363354003>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Cervical neoplasms"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Uterine cervical neoplasms"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Cancer of the cervix"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Cervical%20cancer>
+    
+    
+Individual: Vomiting
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/422400008>,
+        rdfs:label "Vomiting"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Emesis"^^xsd:string
+    
+    Types: 
+        Vomiting
+    
+    
+Individual: Glaucoma
+
+    Annotations: 
+        rdfs:label "Glaucoma"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/23986001>
+    
+    Types: 
+        Glaucoma
+    
+    
+Individual: Embolism
+
+    Annotations: 
+        rdfs:label "Embolism"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/414086009>
+    
+    Types: 
+        Embolism
+    
+    
+Individual: Gallstones
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/256896000>,
+        rdfs:label "Gallstones"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Cholelithiasis"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Gallstone disease"^^xsd:string
+    
+    Types: 
+        Gallstones
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Stable%20angina>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/233819005>,
+        rdfs:label "Stable angina"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Stable%20angina>
+    
+    
+Individual: Pregnancy
+
+    Annotations: 
+        rdfs:label "Pregnancy"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/289908002>
+    
+    Types: 
+        Pregnancy
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Brain%20cancers>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Brain tumours"^^xsd:string,
+        rdfs:label "Brain cancers"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/126952004>
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Brain%20cancers>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Lower%20urinary%20tract%20symptoms>
+
+    Annotations: 
+        rdfs:label "Lower urinary tract symptoms"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/307541003>
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Lower%20urinary%20tract%20symptoms>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Renal%20stones>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/95570007>,
+        rdfs:label "Renal stones"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Kidney stones"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Renal%20stones>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Musculoskeletal%20conditions>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/928000>,
+        rdfs:label "Musculoskeletal conditions"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Musculoskeletal%20conditions>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Uterine%20prolapse>
+
+    Annotations: 
+        rdfs:label "Uterine prolapse"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Prolapsed uterus"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/24976005>
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Uterine%20prolapse>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Stomach%20cancer>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Malignant tumor of stomach"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/363349007>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Stomach neoplasms"^^xsd:string,
+        rdfs:label "Stomach cancer"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Stomach%20cancer>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Kidney%20conditions>
+
+    Annotations: 
+        rdfs:label "Kidney conditions"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/443820000>
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Kidney%20conditions>
+    
+    
+Individual: Trauma
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/417746004>,
+        rdfs:label "Trauma"^^xsd:string
+    
+    Types: 
+        Trauma
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Bipolar%20disorder>
+
+    Annotations: 
+        rdfs:label "Bipolar disorder"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/13746004>
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Bipolar%20disorder>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Cranial%20aneurysms>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Intracranial aneurysm"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/128609009>,
+        rdfs:label "Cranial aneurysms"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Brain aneurysms"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Cranial%20aneurysms>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Gastro-oesophageal%20reflux>
+
+    Annotations: 
+        rdfs:label "Gastro-oesophageal reflux"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Gastro-esophaegeal reflux disease"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Gastro-oesophageal reflux disease"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "GORD"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/235595009>
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Gastro-oesophageal%20reflux>
+    
+    
+Individual: Hepatitis
+
+    Annotations: 
+        rdfs:label "Hepatitis"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/3738000>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Viral hepatitis"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "VH"^^xsd:string
+    
+    Types: 
+        Hepatitis
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Ear,%20nose%20and%20throat%20conditions>
+
+    Annotations: 
+        rdfs:label "Ear, nose and throat conditions"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/232208008>
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Ear,%20nose%20and%20throat%20conditions>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Meningitis%20and%20meningococcal%20septicaemia>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/314130008>,
+        rdfs:label "Meningitis and meningococcal septicaemia"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Meningitis%20and%20meningococcal%20septicaemia>
+    
+    
+Individual: Endometriosis
+
+    Annotations: 
+        rdfs:label "Endometriosis "^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/396224008>
+    
+    Types: 
+        Endometriosis
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Renal%20cancer>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/363518003>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Kidney neoplasms"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Kidney cancer"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Malignant tumour of kidney"^^xsd:string,
+        rdfs:label "Renal cancer"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Renal%20cancer>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Heart%20failure>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/84114007>,
+        rdfs:label "Heart failure"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Cardiac failure"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Heart%20failure>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Systemic%20lupus%20erythematosus>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/55464009>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "SLE"^^xsd:string,
+        rdfs:label "Systemic lupus erythematosus"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Systemic%20lupus%20erythematosus>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Corneal%20conditions>
+
+    Annotations: 
+        rdfs:label "Corneal conditions"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/15250008>
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Corneal%20conditions>
+    
+    
+Individual: Malnutrition
+
+    Annotations: 
+        rdfs:label "Malnutrition"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Undernutrition"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/238107002>
+    
+    Types: 
+        Malnutrition
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Adrenal%20dysfunction>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/30171000>,
+        rdfs:label "Adrenal dysfunction"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Adrenal%20dysfunction>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Irritable%20bowel%20syndrome>
+
+    Annotations: 
+        rdfs:label "Irritable bowel syndrome"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "IBS"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/10743008>
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Irritable%20bowel%20syndrome>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Atrial%20fibrillation>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/49436004>,
+        rdfs:label "Atrial fibrillation"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Atrial%20fibrillation>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Personality%20disorders>
+
+    Annotations: 
+        rdfs:label "Personality disorders"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/33449004>
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Personality%20disorders>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Sleep%20apnoea>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Sleep apnea"^^xsd:string,
+        rdfs:label "Sleep apnoea"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/73430006>,
+        rdfs:label "Sleep apnoea "^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Sleep%20apnoea>
+    
+    
+Individual: Pre-eclampsia
+
+    Annotations: 
+        rdfs:label "Pre-eclampsia"^^xsd:string
+    
+    Types: 
+        Pre-eclampsia
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Ocular%20hypertension>
+
+    Annotations: 
+        rdfs:label "Ocular hypertension"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/4210003>
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Ocular%20hypertension>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Mental%20health%20and%20behavioural%20conditions>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/74732009>,
+        rdfs:label "Mental health and behavioural conditions"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Mental%20health%20and%20behavioural%20conditions>
+    
+    
+Individual: Headaches
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Cephalgia"^^xsd:string,
+        rdfs:label "Headaches"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/25064002>
+    
+    Types: 
+        Headaches
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Conduct%20disorder>
+
+    Annotations: 
+        rdfs:label "Conduct disorder"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/430909002>
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Conduct%20disorder>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Pulmonary%20embolism>
+
+    Annotations: 
+        rdfs:label "Pulmonary embolism"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/59282003>
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Pulmonary%20embolism>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Upper%20gastrointestinal%20bleeding>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Upper GI haemorrhage"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "UGIB"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Upper GI hemorrhage"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Upper GI bleeding"^^xsd:string,
+        rdfs:label "Upper gastrointestinal bleeding"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/37372002>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Upper gastrointestinal haemorrhage"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Upper%20gastrointestinal%20bleeding>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Inflammatory%20bowel%20disease>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/24526004>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "IBD"^^xsd:string,
+        rdfs:label "Inflammatory bowel disease"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Inflammatory%20bowel%20disease>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Cystic%20fibrosis>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "CF"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Mucoviscidosis"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/190905008>,
+        rdfs:label "Cystic fibrosis"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Fibrocystic disease"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Cystic%20fibrosis>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Transient%20ischaemic%20attack>
+
+    Annotations: 
+        rdfs:label "Transient ischaemic attack"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/266257000>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Transient ischemic attack"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Transient%20ischaemic%20attack>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Rheumatoid%20arthritis>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/69896004>,
+        rdfs:label "Rheumatoid arthritis"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Rheumatoid%20arthritis>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Respiratory%20infections>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/275498002>,
+        rdfs:label "Respiratory infections"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Respiratory%20infections>
+    
+    
+Individual: Thrombosis
+
+    Annotations: 
+        rdfs:label "Thrombosis"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/439127006>
+    
+    Types: 
+        Thrombosis
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Feverish%20illness>
+
+    Annotations: 
+        rdfs:label "Feverish illness"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Feverish%20illness>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Ear%20and%20hearing%20conditions>
+
+    Annotations: 
+        rdfs:label "Ear and hearing conditions"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/118236001>
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Ear%20and%20hearing%20conditions>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Postnatal%20depression>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Postpartum depression"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/58703003>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Post-partum depression"^^xsd:string,
+        rdfs:label "Postnatal depression"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Post-natal depression"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Postnatal%20depression>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Blood%20conditions>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Haematological disorders"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Haematological conditions"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/362970003>,
+        rdfs:label "Blood conditions"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Blood%20conditions>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Head%20injuries>
+
+    Annotations: 
+        rdfs:label "Head injuries"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Head injury"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/82271004>
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Head%20injuries>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Blood%20and%20immune%20system%20conditions>
+
+    Annotations: 
+        rdfs:label "Blood and immune system conditions"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Blood%20and%20immune%20system%20conditions>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Aortic%20aneurysms>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/67362008>,
+        rdfs:label "Aortic aneurysms"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Aortic%20aneurysms>
+    
+    
+Individual: Addiction
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/32709003>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Addictive behaviour"^^xsd:string,
+        rdfs:label "Addiction"^^xsd:string
+    
+    Types: 
+        Addiction
+    
+    
+Individual: Autism
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Autism spectrum"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Autistic spectrum disorder"^^xsd:string,
+        rdfs:label "Autism"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/408856003>
+    
+    Types: 
+        Autism
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Type%202%20diabetes>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Non-insulin dependent diabetes"^^xsd:string,
+        rdfs:label "Type 2 diabetes"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Diabetes mellitus type 2"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/44054006>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "T2DM"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Type%202%20diabetes>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Refractive%20errors>
+
+    Annotations: 
+        rdfs:label "Refractive errors"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/39021009>
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Refractive%20errors>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Pulmonary%20fibrosis>
+
+    Annotations: 
+        rdfs:label "Pulmonary fibrosis"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Pulmonary fibroses"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Cirrhosis of lung"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Fibrosis of lung"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/51615001>
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Pulmonary%20fibrosis>
+    
+    
+Individual: Osteoporosis
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/64859006>,
+        rdfs:label "Osteoporosis"^^xsd:string
+    
+    Types: 
+        Osteoporosis
+    
+    
+Individual: Myopia
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/57190000>,
+        rdfs:label "Myopia"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Eye%20conditions>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Chronic%20obstructive%20pulmonary%20disease>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/13645005>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "COPD"^^xsd:string,
+        rdfs:label "Chronic obstructive pulmonary disease"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Chronic%20obstructive%20pulmonary%20disease>
+    
+    
+Individual: Obesity
+
+    Annotations: 
+        rdfs:label "Obesity"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/414916001>
+    
+    Types: 
+        Obesity
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Urinary%20incontinence>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/165232002>,
+        rdfs:label "Urinary incontinence"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Bladder incontinence"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Urinary%20incontinence>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Hip%20conditions>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/118935006>,
+        rdfs:label "Hip conditions"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Hip%20conditions>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Unstable%20angina>
+
+    Annotations: 
+        rdfs:label "Unstable angina"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Angina at rest"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/4557003>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Preinfarction syndrome"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Myocardial preinfarction syndrome"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Unstable%20angina>
+    
+    
+Individual: Hypertension
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "High blood pressure"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/38341003>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Hypertensive disorder"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "HBP"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Hyperpiesis"^^xsd:string,
+        rdfs:label "Hypertension"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Hyperpiesia"^^xsd:string
+    
+    Types: 
+        Hypertension
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Diabetes%20and%20other%20endocrinal,%20nutritional%20and%20metabolic%20conditions>
+
+    Annotations: 
+        rdfs:label "Diabetes and other endocrinal, nutritional and metabolic conditions"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Diabetes%20and%20other%20endocrinal,%20nutritional%20and%20metabolic%20conditions>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Vaginal%20conditions>
+
+    Annotations: 
+        rdfs:label "Vaginal conditions"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/25658005>
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Vaginal%20conditions>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Endometrial%20cancers>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Endometiral neoplasm"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Uterine cancer"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Neoplasm of endometrium"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/123844007>,
+        rdfs:label "Endometrial cancers"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Womb cancer"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Endometrial%20cancers>
+    
+    
+Individual: Psychosis
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Psychotic disorder"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/69322001>,
+        rdfs:label "Psychosis "^^xsd:string
+    
+    Types: 
+        Psychosis
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Genetic%20conditions>
+
+    Annotations: 
+        rdfs:label "Genetic conditions"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Genetic%20conditions>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Digestive%20tract%20conditions>
+
+    Annotations: 
+        rdfs:label "Digestive tract conditions"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/84410009>
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Digestive%20tract%20conditions>
+    
+    
+Individual: Dementia
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/52448006>,
+        rdfs:label "Dementia"^^xsd:string
+    
+    Types: 
+        Dementia
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Oesophageal%20cancer>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Esophageal cancer"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/363402007>,
+        rdfs:label "Oesophageal cancer"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Cancer of the oesophagus"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Esophageal neoplasms"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Malignant tumor of esophagus"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Oesophageal%20cancer>
+    
+    
+Individual: Cancer
+
+    Annotations: 
+        rdfs:label "Cancer"^^xsd:string
+    
+    Types: 
+        Cancer
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Venous%20thromboembolism>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/429098002>,
+        rdfs:label "Venous thromboembolism"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Thromboembolism of vein"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "VTE"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Venous%20thromboembolism>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Urological%20conditions>
+
+    Annotations: 
+        rdfs:label "Urological conditions"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Urological%20conditions>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Heart%20rhythm%20conditions>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/698247007>,
+        rdfs:label "Heart rhythm conditions"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Heart%20rhythm%20conditions>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Lipid%20disorders>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/48286001>,
+        rdfs:label "Lipid disorders"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Lipid%20disorders>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Liver%20conditions>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/235856003>,
+        rdfs:label "Liver conditions"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Liver%20conditions>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Heavy%20menstrual%20bleeding>
+
+    Annotations: 
+        rdfs:label "Heavy menstrual bleeding"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Menorrhagia"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Heavy periods"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Hypermenorrhea"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Hypermenorrhoea"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/386692008>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Heavy menstrual flow"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Heavy%20menstrual%20bleeding>
+    
+    
+Individual: Infections
+
+    Annotations: 
+        rdfs:label "Infections"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/40733004>
+    
+    Types: 
+        Infections
+    
+    
+Individual: Diarrhoea
+
+    Annotations: 
+        rdfs:label "Diarrhoea"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Diarrhea"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/62315008>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Loose bowel motions"^^xsd:string
+    
+    Types: 
+        Diarrhoea
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Learning%20disabilities>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Learning disability"^^xsd:string,
+        rdfs:label "Learning disabilities"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Learning%20disabilities>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Macular%20degeneration>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "ARMD"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Age related macular degeneration"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "AMD"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Age-related macular degeneration"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/267718000>,
+        rdfs:label "Macular degeneration"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Macular%20degeneration>
+    
+    
+Individual: Asthma
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/195967001>,
+        rdfs:label "Asthma"^^xsd:string
+    
+    Types: 
+        Asthma
+    
+    
+Individual: Mesothelioma
+
+    Annotations: 
+        rdfs:label "Mesothelioma"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/115232000>
+    
+    Types: 
+        Mesothelioma
+    
+    
+Individual: Anaphylaxis
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Allergic shock"^^xsd:string,
+        rdfs:label "Anaphylaxis"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Anaphylactic shock"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/39579001>
+    
+    Types: 
+        Anaphylaxis
+    
+    
+Individual: Depression
+
+    Annotations: 
+        rdfs:label "Depression"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/35489007>
+    
+    Types: 
+        Depression
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Colorectal%20cancer>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Colorectal neoplasms"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/363508008>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Malignant tumor of intestine"^^xsd:string,
+        rdfs:label "Colorectal cancer"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Colorectal%20cancer>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Low%20back%20pain>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/161891005>,
+        rdfs:label "Low back pain"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Low%20back%20pain>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Parkinson's%20disease>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Hypokinetic rigid syndrome"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Shaking palsy"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/49049000>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Primary parkinsonism"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Paralysis agitans"^^xsd:string,
+        rdfs:label "Parkinson's disease"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Parkinson's%20disease>
+    
+    
+Individual: Arthritis
+
+    Annotations: 
+        rdfs:label "Arthritis"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/3723001>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Joint inflammation"^^xsd:string
+    
+    Types: 
+        Arthritis
+    
+    
+Individual: Cataracts
+
+    Annotations: 
+        rdfs:label "Cataracts"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/128306009>
+    
+    Types: 
+        Cataracts
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Bladder%20cancer>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/399326009>,
+        rdfs:label "Bladder cancer"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Malignant tumour of urinary bladder"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Urinary bladder neoplasms"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Bladder%20cancer>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Fertility,%20pregnancy%20and%20childbirth>
+
+    Annotations: 
+        rdfs:label "Fertility, pregnancy and childbirth"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Fertility,%20pregnancy%20and%20childbirth>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Thyroid%20disorders>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/4304000>,
+        rdfs:label "Thyroid disorders"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Thyroid%20disorders>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Attention%20deficit%20disorder>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Attention deficit hyperactivity disorder"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/406506008>,
+        rdfs:label "Attention deficit disorder"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "ADHD"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Attention%20deficit%20disorder>
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Failure%20to%20thrive>
+
+    Annotations: 
+        rdfs:label "Failure to thrive"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/432788009>
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Failure%20to%20thrive>
+    
+    
+Individual: Eczema
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Dermatitis eczema"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/43116000>,
+        rdfs:label "Eczema"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Atopic eczema"^^xsd:string
+    
+    Types: 
+        Eczema
+    
+    
+Individual: Synovitis
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/416209007>,
+        rdfs:label "Synovitis"^^xsd:string
+    
+    Types: 
+        Synovitis
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Peripheral%20arterial%20disease>
+
+    Annotations: 
+        rdfs:label "Peripheral arterial disease"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "PAD"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Peripheral vascular disease"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/399957001>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Peripheral artery disease"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "PVD"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Peripheral%20arterial%20disease>
+    
+    
+Individual: Self-harm
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Self-injury"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/58214004>,
+        rdfs:label "Self-harm"^^xsd:string
+    
+    Types: 
+        Self-harm
+    
+    
+Individual: <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Neonatal%20jaundice>
+
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Jaundice in babies"^^xsd:string,
+        rdfs:label "Neonatal jaundice"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Neonatal hyperbilirubinemia"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://bioportal.bioontology.org/ontologies/SNOMEDCT/281610001>,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Neonatal hyperbilirubinaemia"^^xsd:string,
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Jaundice in newborns"^^xsd:string
+    
+    Types: 
+        <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Neonatal%20jaundice>
+    
+    
