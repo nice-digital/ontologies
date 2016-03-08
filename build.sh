@@ -3,7 +3,7 @@ set -xe
 
 base=`pwd`
 
-git submodule update --remote
+#git submodule update --remote
 cd $base/ld-utilities/
 ./build.sh
 cd $base/ns
