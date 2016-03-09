@@ -66,6 +66,7 @@ Class: <http://ld.nice.org.uk/ns/qualitystandard/lifestylecondition#Diet%20and%2
 Class: <http://ld.nice.org.uk/ns/qualitystandard/lifestylecondition#Domestic%20violence%20and%20abuse>
 
     Annotations: 
+        rdfs:label "Domestic violence and abuse"^^xsd:string,
         <http://www.w3.org/2004/02/skos/core#prefLabel> "Domestic violence and abuse"
     
     SubClassOf: 
@@ -143,6 +144,7 @@ Individual: <http://ld.nice.org.uk/ns/qualitystandard/lifestylecondition#Diet%20
 Individual: <http://ld.nice.org.uk/ns/qualitystandard/lifestylecondition#Domestic%20violence%20and%20abuse>
 
     Annotations: 
+        rdfs:label "Domestic violence and abuse"^^xsd:string,
         <http://www.w3.org/2004/02/skos/core#prefLabel> "Domestic violence and abuse"
     
     Types: 
