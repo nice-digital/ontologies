@@ -17,14 +17,6 @@ AnnotationProperty: <http://www.w3.org/2004/02/skos/core#prefLabel>
     
 AnnotationProperty: rdfs:label
 
-    Annotations: 
-        <http://www.w3.org/2004/02/skos/core#prefLabel> "Housing",
-        rdfs:label "Housing"
-    
-    Annotations: 
-        rdfs:label "Housing",
-        <http://www.w3.org/2004/02/skos/core#prefLabel> "Housing"
-    
     
 AnnotationProperty: rdfs:comment
 
@@ -53,7 +45,6 @@ Class: LifestyleCondition
 Class: <http://ld.nice.org.uk/ns/qualitystandard/lifestylecondition#Domestic%20violence%20and%20abuse>
 
     Annotations: 
-        rdfs:label "Domestic violence and abuse"^^xsd:string,
         <http://www.w3.org/2004/02/skos/core#prefLabel> "Domestic violence and abuse"
     
     SubClassOf: 
@@ -67,7 +58,6 @@ Class: <http://ld.nice.org.uk/ns/qualitystandard/lifestylecondition#Physical%20a
         <http://www.w3.org/2004/02/skos/core#prefLabel> "Physical activity",
         <http://www.w3.org/2004/02/skos/core#altLabel> "Lack of exercise"^^xsd:string,
         <http://www.w3.org/2004/02/skos/core#altLabel> "Physical inactivity"^^xsd:string,
-        rdfs:label "Physical activity"^^xsd:string,
         <http://www.w3.org/2004/02/skos/core#altLabel> "Physical exercise"^^xsd:string
     
     SubClassOf: 
@@ -77,9 +67,8 @@ Class: <http://ld.nice.org.uk/ns/qualitystandard/lifestylecondition#Physical%20a
 Class: Smoking
 
     Annotations: 
-        <http://www.w3.org/2004/02/skos/core#prefLabel> "Smoking",
         <http://www.w3.org/2004/02/skos/core#altLabel> "Tobacco use"^^xsd:string,
-        rdfs:label "Smoking"^^xsd:string
+        <http://www.w3.org/2004/02/skos/core#prefLabel> "Smoking"
     
     SubClassOf: 
         LifestyleCondition
@@ -87,6 +76,10 @@ Class: Smoking
     
 Class: Housing
 
+    Annotations: 
+        rdfs:label "Housing",
+        <http://www.w3.org/2004/02/skos/core#prefLabel> "Housing"
+    
     SubClassOf: 
         LifestyleCondition
     
@@ -99,7 +92,6 @@ Class: <http://ld.nice.org.uk/ns/qualitystandard/lifestylecondition#Alcohol%20ab
         <http://www.w3.org/2004/02/skos/core#altLabel> "Alcohol dependency"^^xsd:string,
         <http://www.w3.org/2004/02/skos/core#altLabel> "Harmful drinking"^^xsd:string,
         <http://www.w3.org/2004/02/skos/core#altLabel> "Problem drinking"^^xsd:string,
-        rdfs:label "Alcohol abuse"^^xsd:string,
         <http://www.w3.org/2004/02/skos/core#prefLabel> "Alcohol abuse"
     
     SubClassOf: 
@@ -110,7 +102,6 @@ Class: <http://ld.nice.org.uk/ns/qualitystandard/lifestylecondition#Diet%20and%2
 
     Annotations: 
         <http://www.w3.org/2004/02/skos/core#altLabel> "Poor diet",
-        rdfs:label "Diet and nutrition"^^xsd:string,
         <http://www.w3.org/2004/02/skos/core#altLabel> "Poor eating habits",
         <http://www.w3.org/2004/02/skos/core#prefLabel> "Diet and nutrition"
     
@@ -121,7 +112,6 @@ Class: <http://ld.nice.org.uk/ns/qualitystandard/lifestylecondition#Diet%20and%2
 Class: <http://ld.nice.org.uk/ns/qualitystandard/lifestylecondition#Drug%20misuse>
 
     Annotations: 
-        rdfs:label "Drug misuse"^^xsd:string,
         <http://www.w3.org/2004/02/skos/core#altLabel> "Drug dependency"^^xsd:string,
         <http://www.w3.org/2004/02/skos/core#altLabel> "Drug addiction"^^xsd:string,
         <http://www.w3.org/2004/02/skos/core#prefLabel> "Drug misuse",
@@ -135,7 +125,6 @@ Individual: <http://ld.nice.org.uk/ns/qualitystandard/lifestylecondition#Diet%20
 
     Annotations: 
         <http://www.w3.org/2004/02/skos/core#altLabel> "Poor diet",
-        rdfs:label "Diet and nutrition"^^xsd:string,
         <http://www.w3.org/2004/02/skos/core#altLabel> "Poor eating habits",
         <http://www.w3.org/2004/02/skos/core#prefLabel> "Diet and nutrition"
     
@@ -146,7 +135,6 @@ Individual: <http://ld.nice.org.uk/ns/qualitystandard/lifestylecondition#Diet%20
 Individual: <http://ld.nice.org.uk/ns/qualitystandard/lifestylecondition#Drug%20misuse>
 
     Annotations: 
-        rdfs:label "Drug misuse"^^xsd:string,
         <http://www.w3.org/2004/02/skos/core#altLabel> "Drug dependency"^^xsd:string,
         <http://www.w3.org/2004/02/skos/core#altLabel> "Drug addiction"^^xsd:string,
         <http://www.w3.org/2004/02/skos/core#prefLabel> "Drug misuse",
@@ -159,7 +147,6 @@ Individual: <http://ld.nice.org.uk/ns/qualitystandard/lifestylecondition#Drug%20
 Individual: <http://ld.nice.org.uk/ns/qualitystandard/lifestylecondition#Domestic%20violence%20and%20abuse>
 
     Annotations: 
-        rdfs:label "Domestic violence and abuse"^^xsd:string,
         <http://www.w3.org/2004/02/skos/core#prefLabel> "Domestic violence and abuse"
     
     Types: 
@@ -173,7 +160,6 @@ Individual: <http://ld.nice.org.uk/ns/qualitystandard/lifestylecondition#Physica
         <http://www.w3.org/2004/02/skos/core#prefLabel> "Physical activity",
         <http://www.w3.org/2004/02/skos/core#altLabel> "Lack of exercise"^^xsd:string,
         <http://www.w3.org/2004/02/skos/core#altLabel> "Physical inactivity"^^xsd:string,
-        rdfs:label "Physical activity"^^xsd:string,
         <http://www.w3.org/2004/02/skos/core#altLabel> "Physical exercise"^^xsd:string
     
     Types: 
@@ -183,9 +169,8 @@ Individual: <http://ld.nice.org.uk/ns/qualitystandard/lifestylecondition#Physica
 Individual: Smoking
 
     Annotations: 
-        <http://www.w3.org/2004/02/skos/core#prefLabel> "Smoking",
         <http://www.w3.org/2004/02/skos/core#altLabel> "Tobacco use"^^xsd:string,
-        rdfs:label "Smoking"^^xsd:string
+        <http://www.w3.org/2004/02/skos/core#prefLabel> "Smoking"
     
     Types: 
         Smoking
@@ -193,6 +178,10 @@ Individual: Smoking
     
 Individual: Housing
 
+    Annotations: 
+        rdfs:label "Housing",
+        <http://www.w3.org/2004/02/skos/core#prefLabel> "Housing"
+    
     Types: 
         Housing
     
@@ -205,7 +194,6 @@ Individual: <http://ld.nice.org.uk/ns/qualitystandard/lifestylecondition#Alcohol
         <http://www.w3.org/2004/02/skos/core#altLabel> "Alcohol dependency"^^xsd:string,
         <http://www.w3.org/2004/02/skos/core#altLabel> "Harmful drinking"^^xsd:string,
         <http://www.w3.org/2004/02/skos/core#altLabel> "Problem drinking"^^xsd:string,
-        rdfs:label "Alcohol abuse"^^xsd:string,
         <http://www.w3.org/2004/02/skos/core#prefLabel> "Alcohol abuse"
     
     Types: 
