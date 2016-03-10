@@ -17,6 +17,14 @@ AnnotationProperty: <http://www.w3.org/2004/02/skos/core#prefLabel>
     
 AnnotationProperty: rdfs:label
 
+    Annotations: 
+        <http://www.w3.org/2004/02/skos/core#prefLabel> "Housing",
+        rdfs:label "Housing"
+    
+    Annotations: 
+        rdfs:label "Housing",
+        <http://www.w3.org/2004/02/skos/core#prefLabel> "Housing"
+    
     
 AnnotationProperty: rdfs:comment
 
@@ -101,10 +109,10 @@ Class: <http://ld.nice.org.uk/ns/qualitystandard/lifestylecondition#Alcohol%20ab
 Class: <http://ld.nice.org.uk/ns/qualitystandard/lifestylecondition#Diet%20and%20nutrition>
 
     Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Poor diet",
         rdfs:label "Diet and nutrition"^^xsd:string,
-        <http://www.w3.org/2004/02/skos/core#prefLabel> "Diet and nutrition",
         <http://www.w3.org/2004/02/skos/core#altLabel> "Poor eating habits",
-        <http://www.w3.org/2004/02/skos/core#altLabel> "Poor diet"
+        <http://www.w3.org/2004/02/skos/core#prefLabel> "Diet and nutrition"
     
     SubClassOf: 
         LifestyleCondition
@@ -126,10 +134,10 @@ Class: <http://ld.nice.org.uk/ns/qualitystandard/lifestylecondition#Drug%20misus
 Individual: <http://ld.nice.org.uk/ns/qualitystandard/lifestylecondition#Diet%20and%20nutrition>
 
     Annotations: 
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Poor diet",
         rdfs:label "Diet and nutrition"^^xsd:string,
-        <http://www.w3.org/2004/02/skos/core#prefLabel> "Diet and nutrition",
         <http://www.w3.org/2004/02/skos/core#altLabel> "Poor eating habits",
-        <http://www.w3.org/2004/02/skos/core#altLabel> "Poor diet"
+        <http://www.w3.org/2004/02/skos/core#prefLabel> "Diet and nutrition"
     
     Types: 
         <http://ld.nice.org.uk/ns/qualitystandard/lifestylecondition#Diet%20and%20nutrition>
