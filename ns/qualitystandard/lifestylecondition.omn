@@ -52,16 +52,6 @@ Class: <http://ld.nice.org.uk/ns/qualitystandard/lifestylecondition#Domestic%20v
         LifestyleCondition
     
     
-Class: Test
-
-    Annotations: 
-        <http://www.w3.org/2004/02/skos/core#prefLabel> "Test"^^xsd:string,
-        rdfs:label "Test"^^xsd:string
-    
-    SubClassOf: 
-        LifestyleCondition
-    
-    
 Class: <http://ld.nice.org.uk/ns/qualitystandard/lifestylecondition#Physical%20activity>
 
     Annotations: 
@@ -170,16 +160,6 @@ Individual: <http://ld.nice.org.uk/ns/qualitystandard/lifestylecondition#Domesti
     
     Types: 
         <http://ld.nice.org.uk/ns/qualitystandard/lifestylecondition#Domestic%20violence%20and%20abuse>
-    
-    
-Individual: Test
-
-    Annotations: 
-        <http://www.w3.org/2004/02/skos/core#prefLabel> "Test"^^xsd:string,
-        rdfs:label "Test"^^xsd:string
-    
-    Types: 
-        Test
     
     
 Individual: <http://ld.nice.org.uk/ns/qualitystandard/lifestylecondition#Physical%20activity>
