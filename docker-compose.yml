@@ -1,0 +1,6 @@
+schema:
+  image: "${IMAGE_NAME}:${IMAGE_VERSION}"
+  expose:
+    - 80
+  ports:
+    - "20002:80"
