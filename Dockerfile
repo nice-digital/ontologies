@@ -27,4 +27,5 @@ CMD ln -sf /dev/stdout /var/log/nginx/access.log &&\
     nginx
 # Expose ports.
 EXPOSE 80
+EXPOSE 8083
 EXPOSE 443
