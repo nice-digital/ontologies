@@ -8,11 +8,6 @@ cd $base/ld-utilities/
 ./build.sh
 cd $base/ns
 
-for OWL in ./{,**/}*.omn
-do
-	  mono $base/ld-utilities/src/omn2ttl/omn2ttl/bin/Release/omn2ttl.exe --uri $OWL
-done
-
 for TTL in $base/ns/{,**/}*.ttl
 do
 		ld=${TTL%.*}
