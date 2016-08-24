@@ -1,0 +1,243 @@
+@prefix : <http://ld.nice.org.uk/ns/qualitystandard#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://ld.nice.org.uk/ns/qualitystandard> a owl:Ontology ;
+	owl:imports <http://ld.nice.org.uk/ns/qualitystandard/setting> , <http://ld.nice.org.uk/ns/qualitystandard/agegroup> , <http://ld.nice.org.uk/ns/qualitystandard/factorsaffectinghealthandwellbeing> , <http://ld.nice.org.uk/ns/qualitystandard/servicearea> , <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease> , <http://www.w3.org/2004/02/skos/core> .
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+
+xsd:date a rdfs:Datatype .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://ld.nice.org.uk/ns/qualitystandard#has
+
+:has a owl:ObjectProperty ;
+	rdfs:label "has"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "is annotated with"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard#hasAgeGroup
+
+:hasAgeGroup a owl:ObjectProperty ;
+	rdfs:subPropertyOf :has ;
+	rdfs:range <http://ld.nice.org.uk/ns/qualitystandard/agegroup#AgeGroup> ;
+	rdfs:label "has age group"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "is annotated with age"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "is annotated with age group"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard#hasConditionOrDisease
+
+:hasConditionOrDisease a owl:ObjectProperty ;
+	rdfs:subPropertyOf :has ;
+	rdfs:range <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#ConditionOrDisease> ;
+	rdfs:label "has condition or disease"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "is annotated with condition or disease"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard#hasFactorAffectingHealthAndWellbeing
+
+:hasFactorAffectingHealthAndWellbeing a owl:ObjectProperty ;
+	rdfs:subPropertyOf :has ;
+	rdfs:range <http://ld.nice.org.uk/ns/qualitystandard/factorsaffectinghealthandwellbeing#FactorAffectingHealthAndWellbeing> ;
+	rdfs:label "has factor affecting health and wellbeing"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "is annotated with factor affecting health and wellbeing"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard#hasServiceArea
+
+:hasServiceArea a owl:ObjectProperty ;
+	rdfs:subPropertyOf :has ;
+	rdfs:range <http://ld.nice.org.uk/ns/qualitystandard/servicearea#ServiceArea> ;
+	rdfs:label "has service area"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "is annotated with service area"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard#hasSetting
+
+:hasSetting a owl:ObjectProperty ;
+	rdfs:subPropertyOf :has ;
+	rdfs:range <http://ld.nice.org.uk/ns/qualitystandard/setting#Setting> ;
+	rdfs:label "has setting"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "is annotated with setting"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://ld.nice.org.uk/ns/qualitystandard#abstract
+
+:abstract a owl:DatatypeProperty ;
+	rdfs:range xsd:string ;
+	rdfs:label "abstract"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "has statement text"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard#changedPriorityOn
+
+:changedPriorityOn a owl:DatatypeProperty ;
+	rdfs:range xsd:date ;
+	rdfs:label "Changed priority date"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "changed priority on"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard#content
+
+:content a owl:DatatypeProperty ;
+	rdfs:range xsd:string .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard#hasPositionalId
+
+:hasPositionalId a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:range xsd:string ;
+	rdfs:label "PositionalId"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "has positional ID"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard#isNationalPriority
+
+:isNationalPriority a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:range xsd:boolean ;
+	rdfs:label "National priority"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "is national priority"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard#qsidentifier
+
+:qsidentifier a owl:DatatypeProperty ;
+	rdfs:range xsd:integer .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard#stidentifier
+
+:stidentifier a owl:DatatypeProperty ;
+	rdfs:range xsd:integer .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard#title
+
+:title a owl:DatatypeProperty ;
+	rdfs:range xsd:string ;
+	rdfs:label "title"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "has standard number and statement number"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard#wasFirstIssuedOn
+
+:wasFirstIssuedOn a owl:DatatypeProperty ;
+	rdfs:range xsd:date ;
+	rdfs:label "First issued"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "was first issued on"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://ld.nice.org.uk/ns/qualitystandard#QualityStatement
+
+:QualityStatement a owl:Class ;
+	rdfs:subClassOf _:genid1 .
+
+_:genid1 a owl:Restriction ;
+	owl:onProperty :hasAgeGroup ;
+	owl:someValuesFrom <http://ld.nice.org.uk/ns/qualitystandard/agegroup#AgeGroup> .
+
+:QualityStatement rdfs:subClassOf _:genid2 .
+
+_:genid2 a owl:Restriction ;
+	owl:onProperty :hasConditionOrDisease ;
+	owl:someValuesFrom <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#ConditionOrDisease> .
+
+:QualityStatement rdfs:subClassOf _:genid3 .
+
+_:genid3 a owl:Restriction ;
+	owl:onProperty :hasFactorAffectingHealthAndWellbeing ;
+	owl:someValuesFrom <http://ld.nice.org.uk/ns/qualitystandard/factorsaffectinghealthandwellbeing#FactorAffectingHealthAndWellbeing> .
+
+:QualityStatement rdfs:subClassOf _:genid4 .
+
+_:genid4 a owl:Restriction ;
+	owl:onProperty :hasServiceArea ;
+	owl:someValuesFrom <http://ld.nice.org.uk/ns/qualitystandard/servicearea#ServiceArea> .
+
+:QualityStatement rdfs:subClassOf _:genid5 .
+
+_:genid5 a owl:Restriction ;
+	owl:onProperty :hasSetting ;
+	owl:someValuesFrom <http://ld.nice.org.uk/ns/qualitystandard/setting#Setting> .
+
+:QualityStatement rdfs:subClassOf _:genid6 .
+
+_:genid6 a owl:Restriction ;
+	owl:onProperty :abstract ;
+	owl:someValuesFrom xsd:string .
+
+:QualityStatement rdfs:subClassOf _:genid7 .
+
+_:genid7 a owl:Restriction ;
+	owl:onProperty :changedPriorityOn ;
+	owl:someValuesFrom xsd:date .
+
+:QualityStatement rdfs:subClassOf _:genid8 .
+
+_:genid8 a owl:Restriction ;
+	owl:onProperty :content ;
+	owl:someValuesFrom xsd:string .
+
+:QualityStatement rdfs:subClassOf _:genid9 .
+
+_:genid9 a owl:Restriction ;
+	owl:onProperty :hasPositionalId ;
+	owl:someValuesFrom xsd:string .
+
+:QualityStatement rdfs:subClassOf _:genid10 .
+
+_:genid10 a owl:Restriction ;
+	owl:onProperty :isNationalPriority ;
+	owl:someValuesFrom xsd:boolean .
+
+:QualityStatement rdfs:subClassOf _:genid11 .
+
+_:genid11 a owl:Restriction ;
+	owl:onProperty :qsidentifier ;
+	owl:someValuesFrom xsd:integer .
+
+:QualityStatement rdfs:subClassOf _:genid12 .
+
+_:genid12 a owl:Restriction ;
+	owl:onProperty :stidentifier ;
+	owl:someValuesFrom xsd:integer .
+
+:QualityStatement rdfs:subClassOf _:genid13 .
+
+_:genid13 a owl:Restriction ;
+	owl:onProperty :title ;
+	owl:someValuesFrom xsd:string .
+
+:QualityStatement rdfs:subClassOf _:genid14 .
+
+_:genid14 a owl:Restriction ;
+	owl:onProperty :wasFirstIssuedOn ;
+	owl:someValuesFrom xsd:date .
+
+:QualityStatement rdfs:comment "A NICE Quality statement is a clear, measurable and concise statement to describe ‘enhanced practice’, which is both aspirational and achievable." .
+# 
+# Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi
