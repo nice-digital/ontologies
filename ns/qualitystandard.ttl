@@ -96,8 +96,8 @@ xsd:date a rdfs:Datatype .
 
 :changedPriorityOn a owl:DatatypeProperty ;
 	rdfs:range xsd:date ;
-	rdfs:label "Changed priority date"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "changed priority on"@en .
+	rdfs:label "Priority changed"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Priority changed on"@en .
 # 
 # http://ld.nice.org.uk/ns/qualitystandard#content
 
