@@ -29,47 +29,46 @@ xsd:date a rdfs:Datatype .
 # #################################################################
 # 
 # 
-# http://ld.nice.org.uk/ns/qualitystandard#has
+# http://ld.nice.org.uk/ns/qualitystandard#appliesTo
 
-:has a owl:ObjectProperty ;
-	rdfs:label "has"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "is annotated with"@en .
+:appliesTo a owl:ObjectProperty ;
+	rdfs:label "applies to"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "applies to"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard#hasAgeGroup
+# http://ld.nice.org.uk/ns/qualitystandard#appliesToAgeGroup
 
-:hasAgeGroup a owl:ObjectProperty ;
-	rdfs:subPropertyOf :has ;
-	rdfs:label "has age group"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "is annotated with age"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "is annotated with age group"@en .
+:appliesToAgeGroup a owl:ObjectProperty ;
+	rdfs:subPropertyOf :appliesTo ;
+	rdfs:label "Age group"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "applies to age group"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard#hasConditionOrDisease
+# http://ld.nice.org.uk/ns/qualitystandard#appliesToConditionOrDisease
 
-:hasConditionOrDisease a owl:ObjectProperty ;
-	rdfs:subPropertyOf :has ;
-	rdfs:label "has condition or disease"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "is annotated with condition or disease"@en .
+:appliesToConditionOrDisease a owl:ObjectProperty ;
+	rdfs:subPropertyOf :appliesTo ;
+	rdfs:label "Condition or disease"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "applies to condition or disease"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard#hasFactorAffectingHealthAndWellbeing
+# http://ld.nice.org.uk/ns/qualitystandard#appliesToFactorAffectingHealthAndWellbeing
 
-:hasFactorAffectingHealthAndWellbeing a owl:ObjectProperty ;
-	rdfs:subPropertyOf :has ;
-	rdfs:label "has factor affecting health and wellbeing"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "is annotated with factor affecting health and wellbeing"@en .
+:appliesToFactorAffectingHealthAndWellbeing a owl:ObjectProperty ;
+	rdfs:subPropertyOf :appliesTo ;
+	rdfs:label "Lifestyle condition"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "applies to factor affecting health and wellbeing"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard#hasServiceArea
+# http://ld.nice.org.uk/ns/qualitystandard#appliesToServiceArea
 
-:hasServiceArea a owl:ObjectProperty ;
-	rdfs:subPropertyOf :has ;
-	rdfs:label "has service area"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "is annotated with service area"@en .
+:appliesToServiceArea a owl:ObjectProperty ;
+	rdfs:subPropertyOf :appliesTo ;
+	rdfs:label "Service area"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "applies to service area"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard#hasSetting
+# http://ld.nice.org.uk/ns/qualitystandard#appliesToSetting
 
-:hasSetting a owl:ObjectProperty ;
-	rdfs:subPropertyOf :has ;
-	rdfs:label "has setting"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "is annotated with setting"@en .
+:appliesToSetting a owl:ObjectProperty ;
+	rdfs:subPropertyOf :appliesTo ;
+	rdfs:label "Setting"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "applies to setting"@en .
 # 
 # 
 # 
