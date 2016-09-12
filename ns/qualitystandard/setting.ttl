@@ -4,73 +4,72 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://ld.nice.org.uk/ns/qualitystandard/setting> .
 
-<http://ld.nice.org.uk/ns/qualitystandard/setting> a owl:Ontology ;
-	owl:imports <http://www.w3.org/2004/02/skos/core> .
-# 
-# 
-# #################################################################
-# #
-# #    Classes
-# #
-# #################################################################
-# 
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/setting#CareHome
+<http://ld.nice.org.uk/ns/qualitystandard/setting> rdf:type owl:Ontology ;
+                                                    owl:imports <http://www.w3.org/2004/02/skos/core> .
 
-:CareHome a owl:Class ;
-	rdfs:subClassOf :Setting ;
-	rdfs:label "Care home"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Nursing home"@en , "Rest home"@en ;
-	<http://www.w3.org/2004/02/skos/core#definition> "To include all homes (both residential care and nursing  homes) that offer accommodation and personal care and support for  adults or children who may not be able to live independently."@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Care home"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/setting#Community
+#################################################################
+#    Classes
+#################################################################
 
-:Community a owl:Class ;
-	rdfs:subClassOf :Setting ;
-	rdfs:label "Community"@en ;
-	<http://www.w3.org/2004/02/skos/core#definition> "To include schools, workplaces, in the home, supported living."@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Community"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/setting#Hospice
+###  http://ld.nice.org.uk/ns/qualitystandard/setting#ad41399f_826e_427f_840a_2cb36ee22d92
+:ad41399f_826e_427f_840a_2cb36ee22d92 rdf:type owl:Class ;
+                                      rdfs:subClassOf :6f40063c_702a_4101_ab21_516b74a38519 ;
+                                      rdfs:label "Hospice"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "To include inpatient and day hospices."@en ;
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Hospice"@en .
 
-:Hospice a owl:Class ;
-	rdfs:subClassOf :Setting ;
-	rdfs:label "Hospice"@en ;
-	<http://www.w3.org/2004/02/skos/core#definition> "To include inpatient and day hospices."@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Hospice"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/setting#Hospital
 
-:Hospital a owl:Class ;
-	rdfs:subClassOf :Setting ;
-	rdfs:label "Hospital"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Inpatient"@en , "Ward"@en ;
-	<http://www.w3.org/2004/02/skos/core#definition> "To include acute, community and mental health hospitals providing inpatient services."@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Hospital"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/setting#OutpatientClinic
+###  http://ld.nice.org.uk/ns/qualitystandard/setting#e517e9af_3c12_4f8b_a320_9323dfdf2510
+:e517e9af_3c12_4f8b_a320_9323dfdf2510 rdf:type owl:Class ;
+                                      rdfs:subClassOf :6f40063c_702a_4101_ab21_516b74a38519 ;
+                                      rdfs:label "Community"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "To include schools, workplaces, in the home, supported living."@en ;
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Community"@en .
 
-:OutpatientClinic a owl:Class ;
-	rdfs:subClassOf :Setting ;
-	rdfs:label "Outpatient clinic"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Outpatient department"@en ;
-	<http://www.w3.org/2004/02/skos/core#definition> "To include outpatient clinics providing specialist secondary medical and mental health outpatient services that may or may not be attached to hospital."@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Outpatient clinic"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/setting#PrimaryCareSetting
 
-:PrimaryCareSetting a owl:Class ;
-	rdfs:subClassOf :Setting ;
-	rdfs:label "Primary care setting"@en ;
-	<http://www.w3.org/2004/02/skos/core#definition> "To include GP practices, dental surgeries, optometrists, community pharmacies."@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Primary care setting"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/setting#Setting
+###  http://ld.nice.org.uk/ns/qualitystandard/setting#f023a36e_2b46_40ae_b775_241126ab76bd
+:f023a36e_2b46_40ae_b775_241126ab76bd rdf:type owl:Class ;
+                                      rdfs:subClassOf :6f40063c_702a_4101_ab21_516b74a38519 ;
+                                      rdfs:label "Care home"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#altLabel> "Nursing home"@en ,
+                                                                                     "Rest home"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "To include all homes (both residential care and nursing  homes) that offer accommodation and personal care and support for  adults or children who may not be able to live independently."@en ;
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Care home"@en .
 
-:Setting a owl:Class ;
-	rdfs:label "Setting"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Setting"@en .
-# 
-# Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi
+
+###  http://ld.nice.org.uk/ns/qualitystandard/setting#16764614_b99f_401e_b95c_d9721dd20825
+:16764614_b99f_401e_b95c_d9721dd20825 rdf:type owl:Class ;
+                                      rdfs:subClassOf :6f40063c_702a_4101_ab21_516b74a38519 ;
+                                      rdfs:label "Outpatient clinic"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#altLabel> "Outpatient department"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "To include outpatient clinics providing specialist secondary medical and mental health outpatient services that may or may not be attached to hospital."@en ;
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Outpatient clinic"@en .
+
+
+###  http://ld.nice.org.uk/ns/qualitystandard/setting#6f40063c_702a_4101_ab21_516b74a38519
+:6f40063c_702a_4101_ab21_516b74a38519 rdf:type owl:Class ;
+                                      rdfs:label "Setting"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Setting"@en .
+
+
+###  http://ld.nice.org.uk/ns/qualitystandard/setting#6369f927_a7b7_42ba_bf68_39482e32d7ab
+:6369f927_a7b7_42ba_bf68_39482e32d7ab rdf:type owl:Class ;
+                                      rdfs:subClassOf :6f40063c_702a_4101_ab21_516b74a38519 ;
+                                      rdfs:label "Hospital"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#altLabel> "Inpatient"@en ,
+                                                                                     "Ward"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "To include acute, community and mental health hospitals providing inpatient services."@en ;
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Hospital"@en .
+
+
+###  http://ld.nice.org.uk/ns/qualitystandard/setting#80c545e4_a13c_4373_a530_18f0239ce548
+:80c545e4_a13c_4373_a530_18f0239ce548 rdf:type owl:Class ;
+                                      rdfs:subClassOf :6f40063c_702a_4101_ab21_516b74a38519 ;
+                                      rdfs:label "Primary care setting"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "To include GP practices, dental surgeries, optometrists, community pharmacies."@en ;
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Primary care setting"@en .
+
+
+###  Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi

@@ -4,109 +4,120 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://ld.nice.org.uk/ns/qualitystandard/agegroup> .
 
-<http://ld.nice.org.uk/ns/qualitystandard/agegroup> a owl:Ontology ;
-	owl:imports <http://www.w3.org/2004/02/skos/core> .
-# 
-# 
-# #################################################################
-# #
-# #    Classes
-# #
-# #################################################################
-# 
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/agegroup#Adults
+<http://ld.nice.org.uk/ns/qualitystandard/agegroup> rdf:type owl:Ontology ;
+                                                     owl:imports <http://www.w3.org/2004/02/skos/core> .
 
-:Adults a owl:Class ;
-	rdfs:subClassOf :AllAgeGroups ;
-	rdfs:label "Adults"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Adult"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Adults"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/agegroup#Adults18-24Years
+#################################################################
+#    Classes
+#################################################################
 
-:Adults18-24Years a owl:Class ;
-	rdfs:subClassOf :Adults ;
-	rdfs:label "Adults 18-24 years"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Adult 18-24 years"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Adults 18-24 years"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/agegroup#Adults25-64Years
+###  http://ld.nice.org.uk/ns/qualitystandard/agegroup#aa4da4d7_b934_4d03_b556_f7b97381953f
+:aa4da4d7_b934_4d03_b556_f7b97381953f rdf:type owl:Class ;
+                                      rdfs:subClassOf :011cdd3d_2911_4676_93b4_5af484c359c0 ;
+                                      rdfs:label "All age groups"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "All age groups"@en .
 
-:Adults25-64Years a owl:Class ;
-	rdfs:subClassOf :Adults ;
-	rdfs:label "Adults 25-64 years"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Adult 25-64 years"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Adults 25-64 years"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/agegroup#Adults65PlusYears
 
-:Adults65PlusYears a owl:Class ;
-	rdfs:subClassOf :Adults ;
-	rdfs:label "Adults 65+ years"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Adult 65+ years"@en , "Elderly"@en , "Old adult"@en , "Old people"@en , "Old person"@en , "Older adults"@en , "Older people"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Adults 65+ years"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/agegroup#AgeGroup
+###  http://ld.nice.org.uk/ns/qualitystandard/agegroup#c4347520_adf4_4ddb_9926_8f6c3132525e
+:c4347520_adf4_4ddb_9926_8f6c3132525e rdf:type owl:Class ;
+                                      rdfs:subClassOf :d3326f46_c734_4ab7_9e41_923256bd7d0b ;
+                                      rdfs:label "Adults 18-24 years"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#altLabel> "Adult 18-24 years"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Adults 18-24 years"@en .
 
-:AgeGroup a owl:Class ;
-	rdfs:label "Age group"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Age group"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/agegroup#AllAgeGroups
 
-:AllAgeGroups a owl:Class ;
-	rdfs:subClassOf :AgeGroup ;
-	rdfs:label "All age groups"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "All age groups"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/agegroup#Babies0-1Year
+###  http://ld.nice.org.uk/ns/qualitystandard/agegroup#c7935d78_d1ad_47f3_98a6_f0af04956b97
+:c7935d78_d1ad_47f3_98a6_f0af04956b97 rdf:type owl:Class ;
+                                      rdfs:subClassOf :d3326f46_c734_4ab7_9e41_923256bd7d0b ;
+                                      rdfs:label "Adults 25-64 years"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#altLabel> "Adult 25-64 years"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Adults 25-64 years"@en .
 
-:Babies0-1Year a owl:Class ;
-	rdfs:subClassOf :Children ;
-	rdfs:label "Babies 0-1 year"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Baby 0-1 year"@en , "Infant"@en , "Infants"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Babies 0-1 year"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/agegroup#Babies1Month-1Year
 
-:Babies1Month-1Year a owl:Class ;
-	rdfs:subClassOf :Babies0-1Year ;
-	rdfs:label "Babies 1 month-1 year"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Baby 1 month-1 year"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Babies 1 month-1 year"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/agegroup#Children
+###  http://ld.nice.org.uk/ns/qualitystandard/agegroup#d3326f46_c734_4ab7_9e41_923256bd7d0b
+:d3326f46_c734_4ab7_9e41_923256bd7d0b rdf:type owl:Class ;
+                                      rdfs:subClassOf :aa4da4d7_b934_4d03_b556_f7b97381953f ;
+                                      rdfs:label "Adults"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#altLabel> "Adult"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Adults"@en .
 
-:Children a owl:Class ;
-	rdfs:subClassOf :AllAgeGroups ;
-	rdfs:label "Children"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Child"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Children"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/agegroup#Children1-15Years
 
-:Children1-15Years a owl:Class ;
-	rdfs:subClassOf :Children ;
-	rdfs:label "Children 1-15 years"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Child 1-15 years"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Children 1-15 years"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/agegroup#Neonates0-28Days
+###  http://ld.nice.org.uk/ns/qualitystandard/agegroup#d9698e00_3dd4_4273_96df_9f1be216cb89
+:d9698e00_3dd4_4273_96df_9f1be216cb89 rdf:type owl:Class ;
+                                      rdfs:subClassOf :298765b2_34e6_4f0b_ba25_f0fa84e2a25e ;
+                                      rdfs:label "Neonates 0-28 days"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#altLabel> "Neonate 0-28 days"@en ,
+                                                                                     "Newborn"@en ,
+                                                                                     "Newborn babies"@en ,
+                                                                                     "Newborn baby"@en ,
+                                                                                     "Newborns"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Neonates 0-28 days"@en .
 
-:Neonates0-28Days a owl:Class ;
-	rdfs:subClassOf :Babies0-1Year ;
-	rdfs:label "Neonates 0-28 days"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Neonate 0-28 days"@en , "Newborn"@en , "Newborn babies"@en , "Newborn baby"@en , "Newborns"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Neonates 0-28 days"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/agegroup#YoungPeople16-17Years
 
-:YoungPeople16-17Years a owl:Class ;
-	rdfs:subClassOf :AllAgeGroups ;
-	rdfs:label "Young people 16-17 years"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Adolescent"@en , "Adolescents"@en , "Young person 16-17 years"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Young people 16-17 years"@en .
-# 
-# Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi
+###  http://ld.nice.org.uk/ns/qualitystandard/agegroup#011cdd3d_2911_4676_93b4_5af484c359c0
+:011cdd3d_2911_4676_93b4_5af484c359c0 rdf:type owl:Class ;
+                                      rdfs:label "Age group"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Age group"@en .
+
+
+###  http://ld.nice.org.uk/ns/qualitystandard/agegroup#1b926ed3_9f9c_406d_8cc0_68e439172fea
+:1b926ed3_9f9c_406d_8cc0_68e439172fea rdf:type owl:Class ;
+                                      rdfs:subClassOf :298765b2_34e6_4f0b_ba25_f0fa84e2a25e ;
+                                      rdfs:label "Babies 1 month-1 year"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#altLabel> "Baby 1 month-1 year"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Babies 1 month-1 year"@en .
+
+
+###  http://ld.nice.org.uk/ns/qualitystandard/agegroup#298765b2_34e6_4f0b_ba25_f0fa84e2a25e
+:298765b2_34e6_4f0b_ba25_f0fa84e2a25e rdf:type owl:Class ;
+                                      rdfs:subClassOf :35a5e24c_4e78_40ff_8bef_202ce406e25a ;
+                                      rdfs:label "Babies 0-1 year"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#altLabel> "Baby 0-1 year"@en ,
+                                                                                     "Infant"@en ,
+                                                                                     "Infants"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Babies 0-1 year"@en .
+
+
+###  http://ld.nice.org.uk/ns/qualitystandard/agegroup#35a5e24c_4e78_40ff_8bef_202ce406e25a
+:35a5e24c_4e78_40ff_8bef_202ce406e25a rdf:type owl:Class ;
+                                      rdfs:subClassOf :aa4da4d7_b934_4d03_b556_f7b97381953f ;
+                                      rdfs:label "Children"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#altLabel> "Child"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Children"@en .
+
+
+###  http://ld.nice.org.uk/ns/qualitystandard/agegroup#5d69430f_dace_4c7e_bc70_70b02cd3d965
+:5d69430f_dace_4c7e_bc70_70b02cd3d965 rdf:type owl:Class ;
+                                      rdfs:subClassOf :35a5e24c_4e78_40ff_8bef_202ce406e25a ;
+                                      rdfs:label "Children 1-15 years"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#altLabel> "Child 1-15 years"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Children 1-15 years"@en .
+
+
+###  http://ld.nice.org.uk/ns/qualitystandard/agegroup#7cd6067c_4af1_411e_ba3c_39abac7633c8
+:7cd6067c_4af1_411e_ba3c_39abac7633c8 rdf:type owl:Class ;
+                                      rdfs:subClassOf :d3326f46_c734_4ab7_9e41_923256bd7d0b ;
+                                      rdfs:label "Adults 65+ years"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#altLabel> "Adult 65+ years"@en ,
+                                                                                     "Elderly"@en ,
+                                                                                     "Old adult"@en ,
+                                                                                     "Old people"@en ,
+                                                                                     "Old person"@en ,
+                                                                                     "Older adults"@en ,
+                                                                                     "Older people"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Adults 65+ years"@en .
+
+
+###  http://ld.nice.org.uk/ns/qualitystandard/agegroup#8ab983e9_49b7_467c_ab9b_f6c181294fa8
+:8ab983e9_49b7_467c_ab9b_f6c181294fa8 rdf:type owl:Class ;
+                                      rdfs:subClassOf :aa4da4d7_b934_4d03_b556_f7b97381953f ;
+                                      rdfs:label "Young people 16-17 years"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#altLabel> "Adolescent"@en ,
+                                                                                     "Adolescents"@en ,
+                                                                                     "Young person 16-17 years"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Young people 16-17 years"@en .
+
+
+###  Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi
