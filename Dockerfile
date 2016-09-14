@@ -13,9 +13,11 @@ WORKDIR /etc/nginx
 
 RUN rm -rf /usr/share/nginx/html/*
 ADD ns /usr/share/nginx/html/ns
+ADD ns /usr/share/nginx/html/ontologies
 RUN rm -f /etc/nginx/mime.types &&\
     chown -R nginx:nginx /usr/share/nginx/html &&\
-    chown nginx:nginx /usr/share/nginx/html/ns/*.*
+    chown nginx:nginx /usr/share/nginx/html/ns/*.* &&\
+    chown nginx:nginx /usr/share/nginx/html/ontologies/*.*
 
 COPY nginx.conf /etc/nginx/
 COPY default.conf /etc/nginx/conf.d/
