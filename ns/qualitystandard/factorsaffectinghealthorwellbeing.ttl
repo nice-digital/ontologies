@@ -1,0 +1,88 @@
+@prefix : <http://ld.nice.org.uk/ns/qualitystandard/factorsaffectinghealthorwellbeing#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://ld.nice.org.uk/ns/qualitystandard/factorsaffectinghealthorwellbeing> .
+
+<http://ld.nice.org.uk/ns/qualitystandard/factorsaffectinghealthorwellbeing> rdf:type owl:Ontology ;
+                                                                              owl:imports <http://www.w3.org/2004/02/skos/core> .
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://ld.nice.org.uk/ns/qualitystandard/factorsaffectinghealthorwellbeing/b849a104_4a46_4d52_ae42_1d77bde406bb
+<http://ld.nice.org.uk/ns/qualitystandard/factorsaffectinghealthorwellbeing/b849a104_4a46_4d52_ae42_1d77bde406bb> rdf:type owl:Class ;
+                                                                                                                  rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/factorsaffectinghealthorwellbeing/ffb060f5_2fc7_4d52_afd6_dd9751a7aa8c> ;
+                                                                                                                  rdfs:label "Domestic violence and abuse"@en ;
+                                                                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Domestic violence and abuse"@en .
+
+
+###  http://ld.nice.org.uk/ns/qualitystandard/factorsaffectinghealthorwellbeing/db547896_03c6_484c_b307_85004bf7d123
+<http://ld.nice.org.uk/ns/qualitystandard/factorsaffectinghealthorwellbeing/db547896_03c6_484c_b307_85004bf7d123> rdf:type owl:Class ;
+                                                                                                                  rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/factorsaffectinghealthorwellbeing/ffb060f5_2fc7_4d52_afd6_dd9751a7aa8c> ;
+                                                                                                                  rdfs:label "Diet and nutrition"@en ;
+                                                                                                                  <http://www.w3.org/2004/02/skos/core#altLabel> "Poor diet"@en ,
+                                                                                                                                                                 "Poor eating habit"@en ,
+                                                                                                                                                                 "Poor eating habits"@en ;
+                                                                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Diet and nutrition"@en .
+
+
+###  http://ld.nice.org.uk/ns/qualitystandard/factorsaffectinghealthorwellbeing/f2aadd9d_0496_4d01_9233_c9478703d5aa
+<http://ld.nice.org.uk/ns/qualitystandard/factorsaffectinghealthorwellbeing/f2aadd9d_0496_4d01_9233_c9478703d5aa> rdf:type owl:Class ;
+                                                                                                                  rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/factorsaffectinghealthorwellbeing/ffb060f5_2fc7_4d52_afd6_dd9751a7aa8c> ;
+                                                                                                                  rdfs:label "Alcohol abuse"@en ;
+                                                                                                                  <http://www.w3.org/2004/02/skos/core#altLabel> "Alcohol dependency"@en ,
+                                                                                                                                                                 "Alcohol misuse"@en ,
+                                                                                                                                                                 "Alcoholism"@en ,
+                                                                                                                                                                 "Harmful drinking"@en ,
+                                                                                                                                                                 "Problem drinking"@en ;
+                                                                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Alcohol abuse"@en .
+
+
+###  http://ld.nice.org.uk/ns/qualitystandard/factorsaffectinghealthorwellbeing/ffb060f5_2fc7_4d52_afd6_dd9751a7aa8c
+<http://ld.nice.org.uk/ns/qualitystandard/factorsaffectinghealthorwellbeing/ffb060f5_2fc7_4d52_afd6_dd9751a7aa8c> rdf:type owl:Class ;
+                                                                                                                  rdfs:label "Factors affecting health or wellbeing"@en ;
+                                                                                                                  <http://www.w3.org/2004/02/skos/core#altLabel> "Factor affecting health or wellbeing"@en ;
+                                                                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Factors affecting health or wellbeing"@en .
+
+
+###  http://ld.nice.org.uk/ns/qualitystandard/factorsaffectinghealthorwellbeing/0e2c62a3_82b4_421c_b86b_0fafd2564269
+<http://ld.nice.org.uk/ns/qualitystandard/factorsaffectinghealthorwellbeing/0e2c62a3_82b4_421c_b86b_0fafd2564269> rdf:type owl:Class ;
+                                                                                                                  rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/factorsaffectinghealthorwellbeing/ffb060f5_2fc7_4d52_afd6_dd9751a7aa8c> ;
+                                                                                                                  rdfs:label "Smoking"@en ;
+                                                                                                                  <http://www.w3.org/2004/02/skos/core#altLabel> "Tobacco use"@en ;
+                                                                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Smoking"@en .
+
+
+###  http://ld.nice.org.uk/ns/qualitystandard/factorsaffectinghealthorwellbeing/1267c9c0_2d25_4580_a507_882bdee125cd
+<http://ld.nice.org.uk/ns/qualitystandard/factorsaffectinghealthorwellbeing/1267c9c0_2d25_4580_a507_882bdee125cd> rdf:type owl:Class ;
+                                                                                                                  rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/factorsaffectinghealthorwellbeing/ffb060f5_2fc7_4d52_afd6_dd9751a7aa8c> ;
+                                                                                                                  rdfs:label "Physical activity"@en ;
+                                                                                                                  <http://www.w3.org/2004/02/skos/core#altLabel> "Lack of exercise"@en ,
+                                                                                                                                                                 "Lack of physical exercise"@en ,
+                                                                                                                                                                 "Physical exercise"@en ,
+                                                                                                                                                                 "Physical inactivity"@en ;
+                                                                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Physical activity"@en .
+
+
+###  http://ld.nice.org.uk/ns/qualitystandard/factorsaffectinghealthorwellbeing/49e234f9_9063_4901_af3d_6cc226b39689
+<http://ld.nice.org.uk/ns/qualitystandard/factorsaffectinghealthorwellbeing/49e234f9_9063_4901_af3d_6cc226b39689> rdf:type owl:Class ;
+                                                                                                                  rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/factorsaffectinghealthorwellbeing/ffb060f5_2fc7_4d52_afd6_dd9751a7aa8c> ;
+                                                                                                                  rdfs:label "Housing"@en ;
+                                                                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Housing"@en .
+
+
+###  http://ld.nice.org.uk/ns/qualitystandard/factorsaffectinghealthorwellbeing/97307ebc_206b_4e6e_8beb_36f1fc06fb27
+<http://ld.nice.org.uk/ns/qualitystandard/factorsaffectinghealthorwellbeing/97307ebc_206b_4e6e_8beb_36f1fc06fb27> rdf:type owl:Class ;
+                                                                                                                  rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/factorsaffectinghealthorwellbeing/ffb060f5_2fc7_4d52_afd6_dd9751a7aa8c> ;
+                                                                                                                  rdfs:label "Drug misuse"@en ;
+                                                                                                                  <http://www.w3.org/2004/02/skos/core#altLabel> "Drug abuse"@en ,
+                                                                                                                                                                 "Drug addiction"@en ,
+                                                                                                                                                                 "Drug dependency"@en ;
+                                                                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Drug misuse"@en .
+
+
+###  Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi
