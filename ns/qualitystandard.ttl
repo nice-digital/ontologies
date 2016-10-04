@@ -49,12 +49,12 @@ xsd:date a rdfs:Datatype .
 	rdfs:label "Condition or disease"@en ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "applies to condition or disease"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard#appliesToFactorAffectingHealthAndWellbeing
+# http://ld.nice.org.uk/ns/qualitystandard#appliesToFactorsAffectingHealthOrWellbeing
 
-:appliesToFactorAffectingHealthAndWellbeing a owl:ObjectProperty ;
+:appliesToFactorsAffectingHealthOrWellbeing a owl:ObjectProperty ;
 	rdfs:subPropertyOf :appliesTo ;
-	rdfs:label "Factors affecting health and wellbeing"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "applies to factor affecting health and wellbeing"@en .
+	rdfs:label "Factors affecting health or wellbeing"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "applies to factor affecting health or wellbeing"@en .
 # 
 # http://ld.nice.org.uk/ns/qualitystandard#appliesToServiceArea
 
