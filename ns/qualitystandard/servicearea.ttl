@@ -1,4 +1,4 @@
-@prefix : <http://ld.nice.org.uk/ns/qualitystandard/servicearea#> .
+@prefix : <http://ld.nice.org.uk/ns/qualitystandard/servicearea/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -16,118 +16,118 @@
 # #################################################################
 # 
 # 
-# http://ld.nice.org.uk/ns/qualitystandard/servicearea#CommunityHealthCare
+# http://ld.nice.org.uk/ns/qualitystandard/servicearea/bbb23f62_29f6_46ce_a328_8b66a91d4720
 
-:CommunityHealthCare a owl:Class ;
-	rdfs:subClassOf :ServiceArea ;
-	rdfs:label "Community health care"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Community health service"@en , "Community health services"@en ;
-	<http://www.w3.org/2004/02/skos/core#definition> "Health care services delivered outside a hospital and within communities but not formingHealth care services delivered outside a hospital and within communities but not forming part of contacted NHS primary care services. Includes: district nurses, health visitors, school nursing, community specialist services, hospital at home, and home-based rehabilitation and community physiotherapy."@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Community health care"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/servicearea#CriticalCare
-
-:CriticalCare a owl:Class ;
-	rdfs:subClassOf :ServiceArea ;
-	rdfs:label "Critical care"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Intensive care"@en ;
-	<http://www.w3.org/2004/02/skos/core#definition> "Care provided through facilities that specialise in treating critically ill children or adults in high dependency and intensive care units."@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Critical care"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/servicearea#EndOfLifeCare
-
-:EndOfLifeCare a owl:Class ;
-	rdfs:subClassOf :ServiceArea ;
-	rdfs:label "End of life care"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "End of life service"@en , "End of life services"@en , "Palliative care"@en ;
-	<http://www.w3.org/2004/02/skos/core#definition> "To include palliative and supportive care in any care setting."@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "End of life care"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/servicearea#MaternityCare
-
-:MaternityCare a owl:Class ;
-	rdfs:subClassOf :ServiceArea ;
+:bbb23f62_29f6_46ce_a328_8b66a91d4720 a owl:Class ;
+	rdfs:subClassOf :d3244a53_4e38_4b6e_a694_dc6122259f97 ;
 	rdfs:label "Maternity care"@en ;
 	<http://www.w3.org/2004/02/skos/core#altLabel> "Maternity service"@en , "Maternity services"@en ;
 	<http://www.w3.org/2004/02/skos/core#definition> "To include midwifery services, antenatal, postnatal and intrapartum care."@en ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Maternity care"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard/servicearea#MedicinesManagement
+# http://ld.nice.org.uk/ns/qualitystandard/servicearea/d268a5ea_a86b_4f4a_abc6_553e0acb8b69
 
-:MedicinesManagement a owl:Class ;
-	rdfs:subClassOf :ServiceArea ;
+:d268a5ea_a86b_4f4a_abc6_553e0acb8b69 a owl:Class ;
+	rdfs:subClassOf :d3244a53_4e38_4b6e_a694_dc6122259f97 ;
 	rdfs:label "Medicines management"@en ;
 	<http://www.w3.org/2004/02/skos/core#altLabel> "Management of medicine"@en , "Management of medicines"@en , "Medicine management"@en , "Prescribing"@en ;
 	<http://www.w3.org/2004/02/skos/core#definition> "To include prescribing, supply and review of medicines and the education and continuing support of those providing these services and for people taking medicines. This includes homecare, medicines information, medicines adherence, medicines optimisation and formulary management."@en ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Medicines management"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard/servicearea#MentalHealthCare
+# http://ld.nice.org.uk/ns/qualitystandard/servicearea/d3244a53_4e38_4b6e_a694_dc6122259f97
 
-:MentalHealthCare a owl:Class ;
-	rdfs:subClassOf :ServiceArea ;
-	rdfs:label "Mental health care"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Mental health service"@en , "Mental health services"@en ;
-	<http://www.w3.org/2004/02/skos/core#definition> "To include community based mental health services, crisis resolution and home treatment services, day psychiatric hospitals and crisis houses, inpatient psychiatric facilities, mental health assertive outreach teams, forensic mental health services, perinatal psychiatric services, mental health helplines,  liaison psychiatry services, recovery colleges, child and adolescent mental health services, recovery-focused mental health services, drug and alcohol services, dementia services and learning disabilities services."@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Mental health care"@en .
+:d3244a53_4e38_4b6e_a694_dc6122259f97 a owl:Class ;
+	rdfs:label "Service Area"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Service area"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard/servicearea#PrimaryCare
+# http://ld.nice.org.uk/ns/qualitystandard/servicearea/e53596b7_92a1_4875_a356_613149031491
 
-:PrimaryCare a owl:Class ;
-	rdfs:subClassOf :ServiceArea ;
-	rdfs:label "Primary care"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "GP service"@en , "GP services"@en ;
-	<http://www.w3.org/2004/02/skos/core#definition> "To include primary medical, dental, eye health and pharmacy services."@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Primary care"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/servicearea#PublicHealth
-
-:PublicHealth a owl:Class ;
-	rdfs:subClassOf :ServiceArea ;
+:e53596b7_92a1_4875_a356_613149031491 a owl:Class ;
+	rdfs:subClassOf :d3244a53_4e38_4b6e_a694_dc6122259f97 ;
 	rdfs:label "Public health"@en ;
 	<http://www.w3.org/2004/02/skos/core#altLabel> "Public health service"@en , "Public health services"@en ;
 	<http://www.w3.org/2004/02/skos/core#definition> "Organized measures to prevent disease, promote health, and prolong life among the population as a whole, rather than for individual patients or diseases. Typically measures will address inequalities, education, housing, employment, family/community, lifestyle issues, and surveillance/monitoring for specific diseases and risk factors, including environmental hazards."@en ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Public health"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard/servicearea#SecondaryMedicalCare
+# http://ld.nice.org.uk/ns/qualitystandard/servicearea/04f2ccf4_c577_41c2_94e8_64e9a0d61a2c
 
-:SecondaryMedicalCare a owl:Class ;
-	rdfs:subClassOf :ServiceArea ;
+:04f2ccf4_c577_41c2_94e8_64e9a0d61a2c a owl:Class ;
+	rdfs:subClassOf :d3244a53_4e38_4b6e_a694_dc6122259f97 ;
+	rdfs:label "Mental health care"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Mental health service"@en , "Mental health services"@en ;
+	<http://www.w3.org/2004/02/skos/core#definition> "To include community based mental health services, crisis resolution and home treatment services, day psychiatric hospitals and crisis houses, inpatient psychiatric facilities, mental health assertive outreach teams, forensic mental health services, perinatal psychiatric services, mental health helplines,  liaison psychiatry services, recovery colleges, child and adolescent mental health services, recovery-focused mental health services, drug and alcohol services, dementia services and learning disabilities services."@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Mental health care"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/servicearea/41def0db_ac59_4e68_a61b_ad1183bced27
+
+:41def0db_ac59_4e68_a61b_ad1183bced27 a owl:Class ;
+	rdfs:subClassOf :d3244a53_4e38_4b6e_a694_dc6122259f97 ;
+	rdfs:label "Community health care"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Community health service"@en , "Community health services"@en ;
+	<http://www.w3.org/2004/02/skos/core#definition> "Health care services delivered outside a hospital and within communities but not formingHealth care services delivered outside a hospital and within communities but not forming part of contacted NHS primary care services. Includes: district nurses, health visitors, school nursing, community specialist services, hospital at home, and home-based rehabilitation and community physiotherapy."@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Community health care"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/servicearea/488b1a36_ab26_4752_bc2e_1f988aae2da5
+
+:488b1a36_ab26_4752_bc2e_1f988aae2da5 a owl:Class ;
+	rdfs:subClassOf :d3244a53_4e38_4b6e_a694_dc6122259f97 ;
 	rdfs:label "Secondary medical care"@en ;
 	<http://www.w3.org/2004/02/skos/core#altLabel> "Secondary medical service"@en , "Secondary medical services"@en ;
 	<http://www.w3.org/2004/02/skos/core#definition> "To cover all specialist secondary medical care, excluding critical, urgent and emergency, maternity care and surgical care."@en ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Secondary medical care"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard/servicearea#ServiceArea
+# http://ld.nice.org.uk/ns/qualitystandard/servicearea/582539e8_e154_44a9_9ecb_5b5acd717098
 
-:ServiceArea a owl:Class ;
-	rdfs:label "Service Area"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Service Area"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/servicearea#SocialCare
-
-:SocialCare a owl:Class ;
-	rdfs:subClassOf :ServiceArea ;
+:582539e8_e154_44a9_9ecb_5b5acd717098 a owl:Class ;
+	rdfs:subClassOf :d3244a53_4e38_4b6e_a694_dc6122259f97 ;
 	rdfs:label "Social care"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Social service"@en , "Social services"@en ;
+	rdfs:seeAlso "Social service"@en , "Social services"@en ;
 	<http://www.w3.org/2004/02/skos/core#definition> "The provision of social work, personal care and practical support services for adults and children in need or at risk due to illness, disability, old age or poverty. This may include home/domiciliary care or day care, housing options with levels of care support attached, residential nursing home care, specialist non-medical  transport services, information and advisory services and support for informal carers, delivered by local authorities, third sector and commercial organisations."@en ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Social care"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard/servicearea#SurgicalCare
+# http://ld.nice.org.uk/ns/qualitystandard/servicearea/734b5085_c648_4c46_8ff2_8836f6e0f437
 
-:SurgicalCare a owl:Class ;
-	rdfs:subClassOf :ServiceArea ;
+:734b5085_c648_4c46_8ff2_8836f6e0f437 a owl:Class ;
+	rdfs:subClassOf :d3244a53_4e38_4b6e_a694_dc6122259f97 ;
+	rdfs:label "Primary care"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "GP service"@en , "GP services"@en ;
+	<http://www.w3.org/2004/02/skos/core#definition> "To include primary medical, dental, eye health and pharmacy services."@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Primary care"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/servicearea/81bc76de_3bdd_48bc_ac3c_3381f45875a4
+
+:81bc76de_3bdd_48bc_ac3c_3381f45875a4 a owl:Class ;
+	rdfs:subClassOf :d3244a53_4e38_4b6e_a694_dc6122259f97 ;
+	rdfs:label "Critical care"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Intensive care"@en ;
+	<http://www.w3.org/2004/02/skos/core#definition> "Care provided through facilities that specialise in treating critically ill children or adults in high dependency and intensive care units."@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Critical care"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/servicearea/90ea138f_206f_4b1e_973b_edc32f1370df
+
+:90ea138f_206f_4b1e_973b_edc32f1370df a owl:Class ;
+	rdfs:subClassOf :d3244a53_4e38_4b6e_a694_dc6122259f97 ;
 	rdfs:label "Surgical care"@en ;
 	<http://www.w3.org/2004/02/skos/core#altLabel> "Surgery"@en , "Surgical service"@en , "Surgical services"@en ;
 	<http://www.w3.org/2004/02/skos/core#definition> "To include pre and post-operative care, as well as surgery."@en ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Surgical care"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard/servicearea#UrgentAndEmergencyCare
+# http://ld.nice.org.uk/ns/qualitystandard/servicearea/914560b5_e644_43d5_830c_fd19399583ae
 
-:UrgentAndEmergencyCare a owl:Class ;
-	rdfs:subClassOf :ServiceArea ;
+:914560b5_e644_43d5_830c_fd19399583ae a owl:Class ;
+	rdfs:subClassOf :d3244a53_4e38_4b6e_a694_dc6122259f97 ;
 	rdfs:label "Urgent and emergency care"@en ;
 	<http://www.w3.org/2004/02/skos/core#altLabel> "A&E"@en , "Accident and emergency"@en , "Ambulance service"@en , "Ambulance services"@en , "Casualty"@en , "Emergency medicine"@en , "Urgent and emergency service"@en , "Urgent and emergency services"@en ;
 	<http://www.w3.org/2004/02/skos/core#definition> "Services providing care to adults and children with unplanned, urgent care needs, to include emergency ambulance services, accident and emergency departments, 999 emergency service and care provided at urgent care centres such as walk in and minor injuries units."@en ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Urgent and emergency care"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/servicearea/99bd325b_806b_42f3_a3dc_49876510317a
+
+:99bd325b_806b_42f3_a3dc_49876510317a a owl:Class ;
+	rdfs:subClassOf :d3244a53_4e38_4b6e_a694_dc6122259f97 ;
+	rdfs:label "End of life care"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "End of life service"@en , "End of life services"@en , "Palliative care"@en ;
+	<http://www.w3.org/2004/02/skos/core#definition> "To include palliative and supportive care in any care setting."@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "End of life care"@en .
 # 
 # Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi

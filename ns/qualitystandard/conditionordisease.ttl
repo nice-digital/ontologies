@@ -1,4 +1,4 @@
-@prefix : <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#> .
+@prefix : <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -16,1605 +16,1530 @@
 # #################################################################
 # 
 # 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Acne
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/a2b68ef7_8106_4cde_b200_64e3c2574f85
 
-:Acne a owl:Class ;
-	rdfs:subClassOf :SkinConditions ;
-	rdfs:label "Acne"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Acne vulgaris"@en , "Common acne"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Acne"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#AcuteCoronarySyndromes
-
-:AcuteCoronarySyndromes a owl:Class ;
-	rdfs:subClassOf :CardiovascularConditions ;
-	rdfs:label "Acute coronary syndromes"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "ACS"@en , "Acute coronary syndrome"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Acute coronary syndromes"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#AcuteKidneyInjury
-
-:AcuteKidneyInjury a owl:Class ;
-	rdfs:subClassOf :KidneyConditions ;
-	rdfs:label "Acute kidney injury"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Acute kidney injury"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#AcuteMyocardialInfarction
-
-:AcuteMyocardialInfarction a owl:Class ;
-	rdfs:subClassOf :AcuteCoronarySyndromes ;
-	rdfs:label "Acute myocardial infarction"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Heart attack"@en , "MI"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Acute myocardial infarction"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Addiction
-
-:Addiction a owl:Class ;
-	rdfs:subClassOf :MentalHealthAndBehaviouralConditions ;
-	rdfs:label "Addiction"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Addictive behaviour"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Addiction"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#AdrenalDysfunction
-
-:AdrenalDysfunction a owl:Class ;
-	rdfs:subClassOf :DiabetesAndOtherEndocrinalNutritionalAndMetabolicConditions ;
-	rdfs:label "Adrenal dysfunction"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Adrenal dysfunction"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#AlcoholUseDisorders
-
-:AlcoholUseDisorders a owl:Class ;
-	rdfs:subClassOf :MentalHealthAndBehaviouralConditions ;
-	rdfs:label "Alcohol-use disorders"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Alcohol-use disorder"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Alcohol-use disorders"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#AlcoholUseLiverDisorders
-
-:AlcoholUseLiverDisorders a owl:Class ;
-	rdfs:subClassOf :LiverConditions ;
-	rdfs:label "Alcohol-use liver disorders"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Alcohol-use liver disorder"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Alcohol-use liver disorders"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Allergies
-
-:Allergies a owl:Class ;
-	rdfs:subClassOf :BloodAndImmuneSystemConditions ;
-	rdfs:label "Allergies"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Allergic condition"@en , "Allergy"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Allergies"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#AnalDisorders
-
-:AnalDisorders a owl:Class ;
-	rdfs:subClassOf :DigestiveTractConditions ;
-	rdfs:label "Anal disorders"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Anal disorder"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Anal disorders"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Anaphylaxis
-
-:Anaphylaxis a owl:Class ;
-	rdfs:subClassOf :BloodAndImmuneSystemConditions ;
-	rdfs:label "Anaphylaxis"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Allergic shock"@en , "Anaphylactic shock"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Anaphylaxis"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Angina
-
-:Angina a owl:Class ;
-	rdfs:subClassOf :CardiovascularConditions ;
-	rdfs:label "Angina"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Angina pectoris"@en , "Anginal syndrome"@en , "Stenocardia"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Angina"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Anxiety
-
-:Anxiety a owl:Class ;
-	rdfs:subClassOf :MentalHealthAndBehaviouralConditions ;
-	rdfs:label "Anxiety"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Generalised anxiety disorder"@en , "Generalized anxiety disorder"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Anxiety"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#AorticAneurysms
-
-:AorticAneurysms a owl:Class ;
-	rdfs:subClassOf :CardiovascularConditions ;
-	rdfs:label "Aortic aneurysms"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Aortic aneurysm"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Aortic aneurysms"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Arthritis
-
-:Arthritis a owl:Class ;
-	rdfs:subClassOf :MusculoskeletalConditions ;
-	rdfs:label "Arthritis"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Joint inflammation"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Arthritis"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Asthma
-
-:Asthma a owl:Class ;
-	rdfs:subClassOf :RespiratoryConditions ;
-	rdfs:label "Asthma"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Asthma"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Astigmatism
-
-:Astigmatism a owl:Class ;
-	rdfs:subClassOf :RefractiveErrors ;
-	rdfs:label "Astigmatism"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Astigmatism"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#AtrialFibrillation
-
-:AtrialFibrillation a owl:Class ;
-	rdfs:subClassOf :HeartRhythmConditions ;
-	rdfs:label "Atrial fibrillation"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Atrial fibrillation"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#AttentionDeficitDisorder
-
-:AttentionDeficitDisorder a owl:Class ;
-	rdfs:subClassOf :MentalHealthAndBehaviouralConditions ;
-	rdfs:label "Attention deficit disorder"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "ADHD"@en , "Attention deficit hyperactivity disorder"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Attention deficit disorder"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Autism
-
-:Autism a owl:Class ;
-	rdfs:subClassOf :MentalHealthAndBehaviouralConditions ;
-	rdfs:label "Autism"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Autism spectrum"@en , "Autistic spectrum disorder"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Autism"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#BarrettsOesophagus
-
-:BarrettsOesophagus a owl:Class ;
-	rdfs:subClassOf :DigestiveTractConditions ;
-	rdfs:label "Barrett's oesophagus"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Barrett esophagus"@en , "Barrett oesophagus"@en , "Barrett syndrome"@en , "Barrett's esophagus"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Barrett's oesophagus"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#BipolarDisorder
-
-:BipolarDisorder a owl:Class ;
-	rdfs:subClassOf :MentalHealthAndBehaviouralConditions ;
-	rdfs:label "Bipolar disorder"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Bipolar disorder"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#BladderCancer
-
-:BladderCancer a owl:Class ;
-	rdfs:subClassOf :Cancer , :UrologicalConditions ;
-	rdfs:label "Bladder cancer"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Malignant tumor of urinary bladder"@en , "Malignant tumour of urinary bladder"@en , "Urinary bladder neoplasm"@en , "Urinary bladder neoplasms"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Bladder cancer"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#BloodAndBoneMarrowCancers
-
-:BloodAndBoneMarrowCancers a owl:Class ;
-	rdfs:subClassOf :BloodAndImmuneSystemConditions , :Cancer ;
-	rdfs:label "Blood and bone marrow cancers"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Blood and bone marrow cancer"@en , "Haematological cancer"@en , "Haematological cancers"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Blood and bone marrow cancers"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#BloodAndImmuneSystemConditions
-
-:BloodAndImmuneSystemConditions a owl:Class ;
-	rdfs:subClassOf :ConditionOrDisease ;
-	rdfs:label "Blood and immune system conditions"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Blood and immune system condition"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Blood and immune system conditions"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#BloodConditions
-
-:BloodConditions a owl:Class ;
-	rdfs:subClassOf :BloodAndImmuneSystemConditions ;
-	rdfs:label "Blood conditions"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Blood condition"@en , "Haematological condition"@en , "Haematological conditions"@en , "Haematological disorder"@en , "Haematological disorders"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Blood conditions"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#BrainCancers
-
-:BrainCancers a owl:Class ;
-	rdfs:subClassOf :Cancer , :NeurologicalConditions ;
-	rdfs:label "Brain cancers"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Brain cancer"@en , "Brain tumor"@en , "Brain tumors"@en , "Brain tumour"@en , "Brain tumours"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Brain cancers"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#BreastCancer
-
-:BreastCancer a owl:Class ;
-	rdfs:subClassOf :Cancer ;
-	rdfs:label "Breast cancer"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Breast cancers"@en , "Breast neoplasm"@en , "Breast neoplasms"@en , "Malignant tumor of breast"@en , "Malignant tumour of breast"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Breast cancer"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Cancer
-
-:Cancer a owl:Class ;
-	rdfs:subClassOf :ConditionOrDisease ;
-	rdfs:label "Cancer"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Cancers"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Cancer"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#CardiovascularConditions
-
-:CardiovascularConditions a owl:Class ;
-	rdfs:subClassOf :ConditionOrDisease ;
-	rdfs:label "Cardiovascular conditions"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "CVD"@en , "Cardiovascular condition"@en , "Cardiovascular disease"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Cardiovascular conditions"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Cataracts
-
-:Cataracts a owl:Class ;
-	rdfs:subClassOf :EyeConditions ;
-	rdfs:label "Cataracts"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Cataract"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Cataracts"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#CerebralPalsy
-
-:CerebralPalsy a owl:Class ;
-	rdfs:subClassOf :NeurologicalConditions ;
-	rdfs:label "Cerebral palsy"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Cerebral palsy"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#CervicalCancer
-
-:CervicalCancer a owl:Class ;
-	rdfs:subClassOf :Cancer , :GynaecologicalConditions ;
-	rdfs:label "Cervical cancer"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Cancer of the cervix"@en , "Cervical cancers"@en , "Cervical neoplasm"@en , "Cervical neoplasms"@en , "Uterine cervical neoplasm"@en , "Uterine cervical neoplasms"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Cervical cancer"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Childbirth
-
-:Childbirth a owl:Class ;
-	rdfs:subClassOf :FertilityPregnancyAndChildbirth ;
-	rdfs:label "Childbirth"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Intrapartum"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Childbirth"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Cholecystitis
-
-:Cholecystitis a owl:Class ;
-	rdfs:subClassOf :DigestiveTractConditions ;
-	rdfs:label "Cholecystitis"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Inflammation of gallbladder"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Cholecystitis"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#ChronicKidneyDisease
-
-:ChronicKidneyDisease a owl:Class ;
-	rdfs:subClassOf :KidneyConditions ;
-	rdfs:label "Chronic kidney disease"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "CKD"@en , "Chronic renal disease"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Chornic kidney disease"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#ChronicLiverDisease
-
-:ChronicLiverDisease a owl:Class ;
-	rdfs:subClassOf :LiverConditions ;
-	rdfs:label "Chronic liver disease"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Chronic liver disease"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#ChronicObstructivePulmonaryDisease
-
-:ChronicObstructivePulmonaryDisease a owl:Class ;
-	rdfs:subClassOf :RespiratoryConditions ;
-	rdfs:label "Chronic obstructive pulmonary disease"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "COPD"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Chronic obstructive pulmonary disease"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#CoeliacDisease
-
-:CoeliacDisease a owl:Class ;
-	rdfs:subClassOf :BloodAndImmuneSystemConditions , :DigestiveTractConditions ;
-	rdfs:label "Coeliac disease"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Celiac disease"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Coeliac disease"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#ColorectalCancer
-
-:ColorectalCancer a owl:Class ;
-	rdfs:subClassOf :Cancer , :DigestiveTractConditions ;
-	rdfs:label "Colorectal cancer"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Colorectal cancers"@en , "Colorectal neoplasm"@en , "Colorectal neoplasms"@en , "Malignant tumor of intestine"@en , "Malignant tumour of intestine"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Colorectal cancer"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#ComplicationsOfCancer
-
-:ComplicationsOfCancer a owl:Class ;
-	rdfs:subClassOf :Cancer ;
-	rdfs:label "Complications of cancer"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Complication of cancer"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Complications of cancer"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#ConditionOrDisease
-
-:ConditionOrDisease a owl:Class ;
-	rdfs:label "Condition or disease"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Condition or disease"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#ConductDisorder
-
-:ConductDisorder a owl:Class ;
-	rdfs:subClassOf :MentalHealthAndBehaviouralConditions ;
-	rdfs:label "Conduct disorder"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Conduct disorder"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Constipation
-
-:Constipation a owl:Class ;
-	rdfs:subClassOf :DigestiveTractConditions ;
-	rdfs:label "Constipation"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Costiveness"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Constipation"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#CornealConditions
-
-:CornealConditions a owl:Class ;
-	rdfs:subClassOf :EyeConditions ;
-	rdfs:label "Corneal conditions"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Corneal condition"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Corneal conditions"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#CranialAneurysms
-
-:CranialAneurysms a owl:Class ;
-	rdfs:subClassOf :CardiovascularConditions ;
-	rdfs:label "Cranial aneurysms"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Brain aneurysm"@en , "Brain aneurysms"@en , "Cranial aneurysm"@en , "Intracranial aneurysm"@en , "Intracranial aneurysms"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Cranial aneurysms"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#CysticFibrosis
-
-:CysticFibrosis a owl:Class ;
-	rdfs:subClassOf :GeneticConditions , :RespiratoryConditions ;
-	rdfs:label "Cystic fibrosis"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "CF"@en , "Fibrocystic disease"@en , "Mucoviscidosis"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Cystic fibrosis"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#DeepVeinThrombosis
-
-:DeepVeinThrombosis a owl:Class ;
-	rdfs:subClassOf :Thrombosis ;
-	rdfs:label "Deep vein thrombosis"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "DVT"@en , "Deep venous thrombosis"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Deep vein thrombosis"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Delirium
-
-:Delirium a owl:Class ;
-	rdfs:subClassOf :MentalHealthAndBehaviouralConditions , :NeurologicalConditions ;
-	rdfs:label "Delirium"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Acute confusional state"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Delirium"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Dementia
-
-:Dementia a owl:Class ;
-	rdfs:subClassOf :MentalHealthAndBehaviouralConditions , :NeurologicalConditions ;
-	rdfs:label "Dementia"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Dementia"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Depression
-
-:Depression a owl:Class ;
-	rdfs:subClassOf :MentalHealthAndBehaviouralConditions ;
-	rdfs:label "Depression"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Depression"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Diabetes
-
-:Diabetes a owl:Class ;
-	rdfs:subClassOf :DiabetesAndOtherEndocrinalNutritionalAndMetabolicConditions ;
-	rdfs:label "Diabetes"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Diabetes mellitus"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Diabetes"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#DiabetesAndOtherEndocrinalNutritionalAndMetabolicConditions
-
-:DiabetesAndOtherEndocrinalNutritionalAndMetabolicConditions a owl:Class ;
-	rdfs:subClassOf :ConditionOrDisease ;
-	rdfs:label "Diabetes and other endocrinal, nutritional and metabolic conditions"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Diabetes and other endocrinal, nutritional and metabolic condition"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Diabetes and other endocrinal, nutritional and metabolic conditions"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#DiabeticFoot
-
-:DiabeticFoot a owl:Class ;
-	rdfs:subClassOf :SkinConditions ;
-	rdfs:label "Diabetic foot"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Diabetic foot"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Diarrhoea
-
-:Diarrhoea a owl:Class ;
-	rdfs:subClassOf :DigestiveTractConditions ;
-	rdfs:label "Diarrhoea"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Diarrhea"@en , "Loose bowel motions"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Diarrhoea"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#DigestiveTractConditions
-
-:DigestiveTractConditions a owl:Class ;
-	rdfs:subClassOf :ConditionOrDisease ;
-	rdfs:label "Digestive tract conditions"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Digestive tract condition"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Digestive tract conditions"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#DiverticularDisease
-
-:DiverticularDisease a owl:Class ;
-	rdfs:subClassOf :DigestiveTractConditions ;
-	rdfs:label "Diverticular disease"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Diverticular disease"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Dyspepsia
-
-:Dyspepsia a owl:Class ;
-	rdfs:subClassOf :DigestiveTractConditions ;
-	rdfs:label "Dyspepsia"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Indigestion"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Dyspepsia"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#EarAndHearingConditions
-
-:EarAndHearingConditions a owl:Class ;
-	rdfs:subClassOf :EarNoseAndThroatConditions ;
-	rdfs:label "Ear and hearing conditions"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Ear and hearing condition"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Ear and hearing conditions"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#EarNoseAndThroatConditions
-
-:EarNoseAndThroatConditions a owl:Class ;
-	rdfs:subClassOf :ConditionOrDisease ;
-	rdfs:label "Ear, nose and throat conditions"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Ear, nose and throat condition"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Ear, nose and throat conditions"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#EatingDisorders
-
-:EatingDisorders a owl:Class ;
-	rdfs:subClassOf :MentalHealthAndBehaviouralConditions ;
-	rdfs:label "Eating disorders"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Eating disorder"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Eating disorders"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Eczema
-
-:Eczema a owl:Class ;
-	rdfs:subClassOf :SkinConditions ;
-	rdfs:label "Eczema"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Atopic eczema"@en , "Dermatitis eczema"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Eczema"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Embolism
-
-:Embolism a owl:Class ;
-	rdfs:subClassOf :CardiovascularConditions ;
-	rdfs:label "Embolism"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Embolism"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#EndometrialCancers
-
-:EndometrialCancers a owl:Class ;
-	rdfs:subClassOf :Cancer , :GynaecologicalConditions ;
-	rdfs:label "Endometrial cancers"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Endometrial cancer"@en , "Endometrial neoplasm"@en , "Endometrial neoplasms"@en , "Neoplasm of endometrium"@en , "Neoplasms of endometrium"@en , "Uterine cancer"@en , "Womb cancer"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Endometrial cancers"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Endometriosis
-
-:Endometriosis a owl:Class ;
-	rdfs:subClassOf :GynaecologicalConditions ;
-	rdfs:label "Endometriosis"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Endometriosis"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Epilepsy
-
-:Epilepsy a owl:Class ;
-	rdfs:subClassOf :NeurologicalConditions ;
-	rdfs:label "Epilepsy"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Epileptic attack"@en , "Epileptic convulsion"@en , "Epileptic convulsions"@en , "Epileptic disorder"@en , "Epileptic fit"@en , "Epileptic seizure"@en , "Seizure disorder"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Epilepsy"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#EyeConditions
-
-:EyeConditions a owl:Class ;
-	rdfs:subClassOf :ConditionOrDisease ;
-	rdfs:label "Eye conditions"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Eye condition"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Eye conditions"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#FaecalIncontinence
-
-:FaecalIncontinence a owl:Class ;
-	rdfs:subClassOf :DigestiveTractConditions , :NeurologicalConditions ;
-	rdfs:label "Faecal incontinence"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Bowel incontinence"@en , "Fecal incontinence"@en , "Incontinence of feces"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Faecal incontinence"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#FailureToThrive
-
-:FailureToThrive a owl:Class ;
-	rdfs:subClassOf :DiabetesAndOtherEndocrinalNutritionalAndMetabolicConditions ;
-	rdfs:label "Failure to thrive"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Failure to thrive"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Falls
-
-:Falls a owl:Class ;
-	rdfs:subClassOf :InjuriesAccidentsAndWounds ;
-	rdfs:label "Falls"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Fall"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Falls"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#FamilialHypercholesterolaemia
-
-:FamilialHypercholesterolaemia a owl:Class ;
-	rdfs:subClassOf :GeneticConditions , :LipidDisorders ;
-	rdfs:label "Familial hypercholesterolaemia"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "FH"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Familial hypercholesterolaemia"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Fertility
-
-:Fertility a owl:Class ;
-	rdfs:subClassOf :FertilityPregnancyAndChildbirth ;
-	rdfs:label "Fertility"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Ability to conceive"@en , "Infertility"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Fertility"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#FertilityPregnancyAndChildbirth
-
-:FertilityPregnancyAndChildbirth a owl:Class ;
-	rdfs:subClassOf :ConditionOrDisease ;
-	rdfs:label "Fertility, pregnancy and childbirth"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Fertility, pregnancy and childbirth"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#FeverishIllness
-
-:FeverishIllness a owl:Class ;
-	rdfs:subClassOf :Infections ;
-	rdfs:label "Feverish illness"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Feverish illness"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Fibroids
-
-:Fibroids a owl:Class ;
-	rdfs:subClassOf :GynaecologicalConditions ;
-	rdfs:label "Fibroids"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Fibroleiomyoma"@en , "Fibromyoma"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Fibroids"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Fractures
-
-:Fractures a owl:Class ;
-	rdfs:subClassOf :MusculoskeletalConditions ;
-	rdfs:label "Fractures"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Bone fracture"@en , "Bone fractures"@en , "Broken bone"@en , "Broken bones"@en , "Fracture"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Fractures"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Gallstones
-
-:Gallstones a owl:Class ;
-	rdfs:subClassOf :DigestiveTractConditions ;
-	rdfs:label "Gallstones"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Cholelithiasis"@en , "Gallstone"@en , "Gallstone disease"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Gallstones"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#GastroOesophagealReflux
-
-:GastroOesophagealReflux a owl:Class ;
-	rdfs:subClassOf :DigestiveTractConditions ;
-	rdfs:label "Gastro-oesophageal reflux"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "GORD"@en , "Gastro-esophaegeal reflux"@en , "Gastro-esophaegeal reflux disease"@en , "Gastro-oesophageal reflux disease"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Gastro-oesophageal reflux"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#GeneticConditions
-
-:GeneticConditions a owl:Class ;
-	rdfs:subClassOf :ConditionOrDisease ;
-	rdfs:label "Genetic conditions"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Genetic condition"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Genetic conditions"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Glaucoma
-
-:Glaucoma a owl:Class ;
-	rdfs:subClassOf :EyeConditions ;
-	rdfs:label "Glaucoma"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Glaucoma"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#GynaecologicalConditions
-
-:GynaecologicalConditions a owl:Class ;
-	rdfs:subClassOf :ConditionOrDisease ;
-	rdfs:label "Gynaecological conditions"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Gynaecological condition"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Gynaecological conditions"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#HIVandAIDS
-
-:HIVandAIDS a owl:Class ;
-	rdfs:subClassOf :Infections ;
-	rdfs:label "HIV and AIDS"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Acquired immune deficiency syndrome"@en , "Acquired immunodeficiency syndrome"@en , "Human immunodeficiency virus"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "HIV and AIDS"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Haemorrhoids
-
-:Haemorrhoids a owl:Class ;
-	rdfs:subClassOf :DigestiveTractConditions ;
-	rdfs:label "Haemorrhoids"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Hemorrhoids"@en , "Piles"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Haemorrhoids"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#HeadAndNeckCancers
-
-:HeadAndNeckCancers a owl:Class ;
-	rdfs:subClassOf :Cancer ;
-	rdfs:label "Head and neck cancers"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Head and neck cancer"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Head and neck cancers"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#HeadInjuries
-
-:HeadInjuries a owl:Class ;
-	rdfs:subClassOf :InjuriesAccidentsAndWounds ;
-	rdfs:label "Head injuries"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Head injury"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Head injuries"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Headaches
-
-:Headaches a owl:Class ;
-	rdfs:subClassOf :NeurologicalConditions ;
-	rdfs:label "Headaches"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Cephalgia"@en , "Headache"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Headaches"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#HealthcareAssociatedInfections
-
-:HealthcareAssociatedInfections a owl:Class ;
-	rdfs:subClassOf :Infections ;
-	rdfs:label "Healthcare-associated infections"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "HCAI"@en , "Healthcare-associated infection"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Healthcare-associated infections"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#HeartFailure
-
-:HeartFailure a owl:Class ;
-	rdfs:subClassOf :CardiovascularConditions ;
-	rdfs:label "Heart failure"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Cardiac failure"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Heart failure"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#HeartRhythmConditions
-
-:HeartRhythmConditions a owl:Class ;
-	rdfs:subClassOf :CardiovascularConditions ;
-	rdfs:label "Heart rhythm conditions"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Heart rhythm condition"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Heart rhythm conditions"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#HeavyMenstrualBleeding
-
-:HeavyMenstrualBleeding a owl:Class ;
-	rdfs:subClassOf :GynaecologicalConditions ;
-	rdfs:label "Heavy menstrual bleeding"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Heavy menstrual flow"@en , "Heavy period"@en , "Heavy periods"@en , "Hypermenorrhea"@en , "Hypermenorrhoea"@en , "Menorrhagia"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Heavy menstrual bleeding"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Hepatitis
-
-:Hepatitis a owl:Class ;
-	rdfs:subClassOf :Infections , :LiverConditions ;
-	rdfs:label "Hepatitis"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "VH"@en , "Viral hepatitis"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Hepatitis"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Hernia
-
-:Hernia a owl:Class ;
-	rdfs:subClassOf :DigestiveTractConditions ;
-	rdfs:label "Hernia"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Hernia"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#HipConditions
-
-:HipConditions a owl:Class ;
-	rdfs:subClassOf :MusculoskeletalConditions ;
-	rdfs:label "Hip conditions"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Hip condition"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Hip conditions"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Hypertension
-
-:Hypertension a owl:Class ;
-	rdfs:subClassOf :CardiovascularConditions ;
-	rdfs:label "Hypertension"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "HBP"@en , "High blood pressure"@en , "Hyperpiesia"@en , "Hyperpiesis"@en , "Hypertensive disorder"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Hypertension"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Infections
-
-:Infections a owl:Class ;
-	rdfs:subClassOf :ConditionOrDisease ;
-	rdfs:label "Infections"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Infection"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Infections"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#InflammatoryBowelDisease
-
-:InflammatoryBowelDisease a owl:Class ;
-	rdfs:subClassOf :DigestiveTractConditions ;
-	rdfs:label "Inflammatory bowel disease"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "IBD"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Inflammatory bowel disease"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Influenza
-
-:Influenza a owl:Class ;
-	rdfs:subClassOf :Infections ;
-	rdfs:label "Influenza"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Flu"@en , "Seasonal flu"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Influenza"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#InjuriesAccidentsAndWounds
-
-:InjuriesAccidentsAndWounds a owl:Class ;
-	rdfs:subClassOf :ConditionOrDisease ;
-	rdfs:label "Injuries, accidents and wounds"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Injury, accident and wound"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Injuries, accidents and wounds"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#IrritableBowelSyndrome
-
-:IrritableBowelSyndrome a owl:Class ;
-	rdfs:subClassOf :DigestiveTractConditions ;
-	rdfs:label "Irritable bowel syndrome"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "IBS"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Irritable bowel syndrome"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Jaundice
-
-:Jaundice a owl:Class ;
-	rdfs:subClassOf :DiabetesAndOtherEndocrinalNutritionalAndMetabolicConditions ;
-	rdfs:label "Jaundice"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Hyperbilirubinaemia"@en , "Hyperbilirubinemia"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Jaundice"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#KidneyConditions
-
-:KidneyConditions a owl:Class ;
-	rdfs:subClassOf :ConditionOrDisease ;
-	rdfs:label "Kidney conditions"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Kidney condition"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Kidney conditions"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#KneeConditions
-
-:KneeConditions a owl:Class ;
-	rdfs:subClassOf :MusculoskeletalConditions ;
-	rdfs:label "Knee conditions"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Knee condition"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Knee conditions"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#LearningDisabilities
-
-:LearningDisabilities a owl:Class ;
-	rdfs:subClassOf :MentalHealthAndBehaviouralConditions ;
-	rdfs:label "Learning disabilities"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Learning disability"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Learning disabilities"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Leukemia
-
-:Leukemia a owl:Class ;
-	rdfs:subClassOf :BloodAndBoneMarrowCancers ;
-	rdfs:label "Leukemia"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Leukaemia"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Leukemia"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#LipidDisorders
-
-:LipidDisorders a owl:Class ;
-	rdfs:subClassOf :CardiovascularConditions , :DiabetesAndOtherEndocrinalNutritionalAndMetabolicConditions ;
-	rdfs:label "Lipid disorders"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Lipid disorder"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Lipid disorders"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#LiverCancers
-
-:LiverCancers a owl:Class ;
-	rdfs:subClassOf :Cancer , :LiverConditions ;
-	rdfs:label "Liver cancers"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Liver cancer"@en , "Liver neoplasm"@en , "Liver neoplasms"@en , "Malignant neoplasm of liver"@en , "Malignant tumor of liver"@en , "Malignant tumour of liver"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Liver cancers"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#LiverConditions
-
-:LiverConditions a owl:Class ;
-	rdfs:subClassOf :ConditionOrDisease ;
-	rdfs:label "Liver conditions"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Liver condition"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Liver conditions"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#LowBackPain
-
-:LowBackPain a owl:Class ;
-	rdfs:subClassOf :MusculoskeletalConditions ;
-	rdfs:label "Low back pain"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Low back pain"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#LowerGastrointestinalLesions
-
-:LowerGastrointestinalLesions a owl:Class ;
-	rdfs:subClassOf :DigestiveTractConditions ;
-	rdfs:label "Lower gastrointestinal lesions"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Lower gastrointestinal lesion"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Lower gastrointestinal lesions"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#LowerUrinaryTractSymptoms
-
-:LowerUrinaryTractSymptoms a owl:Class ;
-	rdfs:subClassOf :UrologicalConditions ;
-	rdfs:label "Lower urinary tract symptoms"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Lower urinary tract symptom"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Lower urinary tract symptoms"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#LungCancer
-
-:LungCancer a owl:Class ;
-	rdfs:subClassOf :Cancer , :RespiratoryConditions ;
-	rdfs:label "Lung cancer"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Lung neoplasm"@en , "Lung neoplasms"@en , "Malignant tumor of lung"@en , "Malignant tumour of lung"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Lung cancer"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Lymphoedema
-
-:Lymphoedema a owl:Class ;
-	rdfs:subClassOf :BloodAndImmuneSystemConditions ;
-	rdfs:label "Lymphoedema"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Lymphatic edema"@en , "Lymphatic oedema"@en , "Lymphedema"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Lymphoedema"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Lymphoma
-
-:Lymphoma a owl:Class ;
-	rdfs:subClassOf :BloodAndBoneMarrowCancers ;
-	rdfs:label "Lymphoma"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Hodgkin disease"@en , "Hodgkin's disease"@en , "Hodgkin's lymphoma"@en , "Non-Hodgkin lymphoma"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Lymphoma"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#MacularDegeneration
-
-:MacularDegeneration a owl:Class ;
-	rdfs:subClassOf :EyeConditions ;
-	rdfs:label "Macular degeneration"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "AMD"@en , "ARMD"@en , "Age related macular degeneration"@en , "Age-related macular degeneration"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Macular degeneration"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#MacularOedema
-
-:MacularOedema a owl:Class ;
-	rdfs:subClassOf :MacularDegeneration ;
-	rdfs:label "Macular oedema"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Macular edema"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Macular oedema"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Malnutrition
-
-:Malnutrition a owl:Class ;
-	rdfs:subClassOf :DiabetesAndOtherEndocrinalNutritionalAndMetabolicConditions ;
-	rdfs:label "Malnutrition"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Undernutrition"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Malnutrition"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#MaxillofacialConditions
-
-:MaxillofacialConditions a owl:Class ;
-	rdfs:subClassOf :MusculoskeletalConditions ;
-	rdfs:label "Maxillofacial conditions"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Maxillofacial condition"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Maxillofacial conditions"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#MeningitisAndMeningococcalSepticaemia
-
-:MeningitisAndMeningococcalSepticaemia a owl:Class ;
-	rdfs:subClassOf :Infections ;
-	rdfs:label "Meningitis and meningococcal septicaemia"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Meningitis and meningococcal septicaemia"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Menopause
-
-:Menopause a owl:Class ;
-	rdfs:subClassOf :GynaecologicalConditions ;
-	rdfs:label "Menopause"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Menopause"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#MentalHealthAndBehaviouralConditions
-
-:MentalHealthAndBehaviouralConditions a owl:Class ;
-	rdfs:subClassOf :ConditionOrDisease ;
-	rdfs:label "Mental health and behavioural conditions"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Mental health and behavioural condition"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Mental health and behavioural conditions"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Mesothelioma
-
-:Mesothelioma a owl:Class ;
-	rdfs:subClassOf :RespiratoryConditions ;
-	rdfs:label "Mesothelioma"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Mesothelioma"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Metastases
-
-:Metastases a owl:Class ;
-	rdfs:subClassOf :Cancer ;
-	rdfs:label "Metastases"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Metastasis"@en , "Metastatic cancer"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Metastases"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#MetastaticSpinalCordCompression
-
-:MetastaticSpinalCordCompression a owl:Class ;
-	rdfs:subClassOf :NeurologicalConditions ;
-	rdfs:label "Metastatic spinal cord compression"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Metastatic spinal cord compression"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Miscarriage
-
-:Miscarriage a owl:Class ;
-	rdfs:subClassOf :FertilityPregnancyAndChildbirth ;
-	rdfs:label "Miscarriage"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Spontaneous abortion"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Miscarriage"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#MotorNeuroneDisease
-
-:MotorNeuroneDisease a owl:Class ;
-	rdfs:subClassOf :NeurologicalConditions ;
-	rdfs:label "Motor neurone disease"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "ALS"@en , "Amyotrophic lateral sclerosis"@en , "Charcot disease"@en , "Lou Gehrig's disease"@en , "MND"@en , "Motor neuron disease"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Motor neurone disease"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#MultipleMyeloma
-
-:MultipleMyeloma a owl:Class ;
-	rdfs:subClassOf :BloodAndBoneMarrowCancers ;
-	rdfs:label "Multiple myeloma"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Myeloma"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Multiple myeloma"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#MultipleSclerosis
-
-:MultipleSclerosis a owl:Class ;
-	rdfs:subClassOf :NeurologicalConditions ;
-	rdfs:label "Multiple sclerosis"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "MS"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Multiple sclerosis"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#MusculoskeletalConditions
-
-:MusculoskeletalConditions a owl:Class ;
-	rdfs:subClassOf :ConditionOrDisease ;
-	rdfs:label "Musculoskeletal conditions"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Musculoskeletal condition"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Musculoskeletal conditions"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Myopia
-
-:Myopia a owl:Class ;
-	rdfs:subClassOf :RefractiveErrors ;
-	rdfs:label "Myopia"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Myopia"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#NSTEMI
-
-:NSTEMI a owl:Class ;
-	rdfs:subClassOf :AcuteMyocardialInfarction ;
-	rdfs:label "NSTEMI"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Acute non-ST segment elevation MI"@en , "Acute non-ST segment elevation myocardial infarction"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "NSTEMI"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#NasalConditions
-
-:NasalConditions a owl:Class ;
-	rdfs:subClassOf :EarNoseAndThroatConditions ;
-	rdfs:label "Nasal conditions"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Nasal condition"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Nasal conditions"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#NeonatalInfections
-
-:NeonatalInfections a owl:Class ;
-	rdfs:subClassOf :Infections ;
-	rdfs:label "Neonatal infections"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Early-onset neonatal infection"@en , "Neonatal infection"@en , "Neonatal sepsis"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Neonatal infections"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#NeonatalJaundice
-
-:NeonatalJaundice a owl:Class ;
-	rdfs:subClassOf :Jaundice ;
-	rdfs:label "Neonatal jaundice"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Jaundice in babies"@en , "Jaundice in newborns"@en , "Neonatal hyperbilirubinaemia"@en , "Neonatal hyperbilirubinemia"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Neonatal jaundice"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#NeurologicalConditions
-
-:NeurologicalConditions a owl:Class ;
-	rdfs:subClassOf :ConditionOrDisease ;
-	rdfs:label "Neurological conditions"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Neurological condition"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Neurological conditions"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#NeuropathicPain
-
-:NeuropathicPain a owl:Class ;
-	rdfs:subClassOf :NeurologicalConditions ;
-	rdfs:label "Neuropathic pain"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Neuropathic pain"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Obesity
-
-:Obesity a owl:Class ;
-	rdfs:subClassOf :DiabetesAndOtherEndocrinalNutritionalAndMetabolicConditions ;
-	rdfs:label "Obesity"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Obesity"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#OcularHypertension
-
-:OcularHypertension a owl:Class ;
-	rdfs:subClassOf :EyeConditions ;
-	rdfs:label "Ocular hypertension"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Ocular hypertension"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#OesophagealCancer
-
-:OesophagealCancer a owl:Class ;
-	rdfs:subClassOf :DigestiveTractConditions , :HeadAndNeckCancers ;
-	rdfs:label "Oesophageal cancer"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Cancer of the esophagus"@en , "Cancer of the oesophagus"@en , "Esophageal cancer"@en , "Esophageal neoplasm"@en , "Esophageal neoplasms"@en , "Malignant tumor of esophagus"@en , "Malignant tumor of oesophagus"@en , "Malignant tumour of esophagus"@en , "Malignant tumour of oesophagus"@en , "Oesophageal neoplasm"@en , "Oesophageal neoplasms"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Oesophageal cancer"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#OralAndDentalHealth
-
-:OralAndDentalHealth a owl:Class ;
-	rdfs:subClassOf :ConditionOrDisease ;
-	rdfs:label "Oral and dental health"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Oral and dental health"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#OralCancer
-
-:OralCancer a owl:Class ;
-	rdfs:subClassOf :HeadAndNeckCancers ;
-	rdfs:label "Oral cancer"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Malignant neoplasm of oral cavity"@en , "Malignant neoplasms of oral cavity"@en , "Malignant tumor of oral cavity"@en , "Malignant tumour of oral cavity"@en , "Mouth cancer"@en , "Mouth cancers"@en , "Mouth neoplasm"@en , "Mouth neoplasms"@en , "Oral cancers"@en , "Oral cavity cancers"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Oral cancer"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Osteoarthritis
-
-:Osteoarthritis a owl:Class ;
-	rdfs:subClassOf :Arthritis ;
-	rdfs:label "Osteoarthritis"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Osteoarthritis"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Osteoporosis
-
-:Osteoporosis a owl:Class ;
-	rdfs:subClassOf :DiabetesAndOtherEndocrinalNutritionalAndMetabolicConditions , :MusculoskeletalConditions ;
-	rdfs:label "Osteoporosis"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Osteoporosis"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#OvarianCancer
-
-:OvarianCancer a owl:Class ;
-	rdfs:subClassOf :Cancer , :GynaecologicalConditions ;
-	rdfs:label "Ovarian cancer"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Extra-ovarian serous carcinoma"@en , "Malignant tumor of ovary"@en , "Malignant tumour of ovary"@en , "Ovarian neoplasm"@en , "Ovarian neoplasms"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Ovarian cancer"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#PancreaticCancer
-
-:PancreaticCancer a owl:Class ;
-	rdfs:subClassOf :Cancer , :DigestiveTractConditions ;
-	rdfs:label "Pancreatic cancer"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Malignant tumor of pancreatic duct"@en , "Malignant tumour of pancreatic duct"@en , "Pancreatic neoplasm"@en , "Pancreatic neoplasms"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Pancreatic cancer"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Pancreatitis
-
-:Pancreatitis a owl:Class ;
-	rdfs:subClassOf :DigestiveTractConditions ;
-	rdfs:label "Pancreatitis"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Inflammation of the pancreas"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Pancreatitis"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#ParkinsonsDisease
-
-:ParkinsonsDisease a owl:Class ;
-	rdfs:subClassOf :NeurologicalConditions ;
-	rdfs:label "Parkinson's disease"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Hypokinetic rigid syndrome"@en , "Paralysis agitans"@en , "Primary parkinsonism"@en , "Shaking palsy"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Parkinson's disease"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#PenileCancer
-
-:PenileCancer a owl:Class ;
-	rdfs:subClassOf :Cancer ;
-	rdfs:label "Penile cancer"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Cancer of the penis"@en , "Malignant tumor of the penis"@en , "Malignant tumour of the penis"@en , "Penile neoplasm"@en , "Penile neoplasms"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Penile cancer"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#PeripheralArterialDisease
-
-:PeripheralArterialDisease a owl:Class ;
-	rdfs:subClassOf :CardiovascularConditions ;
-	rdfs:label "Peripheral arterial disease"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "PAD"@en , "PVD"@en , "Peripheral artery disease"@en , "Peripheral vascular disease"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Peripheral arterial disease"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#PersonalityDisorders
-
-:PersonalityDisorders a owl:Class ;
-	rdfs:subClassOf :MentalHealthAndBehaviouralConditions ;
-	rdfs:label "Personality disorders"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Personality disorder"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Personality disorders"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#PostnatalConditions
-
-:PostnatalConditions a owl:Class ;
-	rdfs:subClassOf :FertilityPregnancyAndChildbirth ;
-	rdfs:label "Postnatal conditions"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Post-natal condition"@en , "Post-natal conditions"@en , "Post-partum condition"@en , "Post-partum conditions"@en , "Postnatal condition"@en , "Postpartum condition"@en , "Postpartum conditions"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Postnatal conditions"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#PostnatalDepression
-
-:PostnatalDepression a owl:Class ;
-	rdfs:subClassOf :Depression , :PostnatalConditions ;
-	rdfs:label "Postnatal depression"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Post-natal depression"@en , "Post-partum depression"@en , "Postpartum depression"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Postnatal depression"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#PreEclampsia
-
-:PreEclampsia a owl:Class ;
-	rdfs:subClassOf :Pregnancy ;
-	rdfs:label "Pre-eclampsia"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Pre-eclampsia"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Pregnancy
-
-:Pregnancy a owl:Class ;
-	rdfs:subClassOf :FertilityPregnancyAndChildbirth ;
-	rdfs:label "Pregnancy"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Pregnancy"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Presbyopia
-
-:Presbyopia a owl:Class ;
-	rdfs:subClassOf :RefractiveErrors ;
-	rdfs:label "Presbyopia"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Presbyopia"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#PressureUlcers
-
-:PressureUlcers a owl:Class ;
-	rdfs:subClassOf :SkinConditions ;
-	rdfs:label "Pressure ulcers"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Bed sore"@en , "Bedsore"@en , "Pressure sore"@en , "Pressure ulcer"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Pressure ulcers"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#ProstateCancer
-
-:ProstateCancer a owl:Class ;
-	rdfs:subClassOf :Cancer , :UrologicalConditions ;
-	rdfs:label "Prostate cancer"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Malignant tumor of prostate"@en , "Malignant tumour of prostate"@en , "Prostatic neoplasm"@en , "Prostatic neoplasms"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Prostate cancer"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Psoriasis
-
-:Psoriasis a owl:Class ;
-	rdfs:subClassOf :SkinConditions ;
-	rdfs:label "Psoriasis"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Palmoplantaris pustulosis"@en , "Pustulosis Palmaris et Plantaris"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Psoriasis"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Psychosis
-
-:Psychosis a owl:Class ;
-	rdfs:subClassOf :MentalHealthAndBehaviouralConditions ;
-	rdfs:label "Psychosis"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Psychotic disorder"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Psychosis"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#PulmonaryEmbolism
-
-:PulmonaryEmbolism a owl:Class ;
-	rdfs:subClassOf :Embolism ;
-	rdfs:label "Pulmonary embolism"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Pulmonary embolism"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#PulmonaryFibrosis
-
-:PulmonaryFibrosis a owl:Class ;
-	rdfs:subClassOf :RespiratoryConditions ;
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/a2b68ef7_8106_4cde_b200_64e3c2574f85> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/84fe1ba3_0b82_47df_a248_e979e2e8660c> ;
 	rdfs:label "Pulmonary fibrosis"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Cirrhosis of lung"@en , "Fibrosis of lung"@en , "Pulmonary fibroses"@en ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Pulmonary fibrosis"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#RefractiveErrors
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/a4644b24_0937_4cc1_82d3_7df40152ea5b
 
-:RefractiveErrors a owl:Class ;
-	rdfs:subClassOf :EyeConditions ;
-	rdfs:label "Refractive errors"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Refractive error"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Refractive errors"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#RenalCancer
-
-:RenalCancer a owl:Class ;
-	rdfs:subClassOf :Cancer , :KidneyConditions , :UrologicalConditions ;
-	rdfs:label "Renal cancer"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Kidney cancer"@en , "Kidney neoplasm"@en , "Kidney neoplasms"@en , "Malignant tumor of kidney"@en , "Malignant tumour of kidney"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Renal cancer"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#RenalStones
-
-:RenalStones a owl:Class ;
-	rdfs:subClassOf :KidneyConditions ;
-	rdfs:label "Renal stones"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Kidney stone"@en , "Kidney stones"@en , "Renal stone"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Renal stones"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#RespiratoryConditions
-
-:RespiratoryConditions a owl:Class ;
-	rdfs:subClassOf :ConditionOrDisease ;
-	rdfs:label "Respiratory conditions"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Respiratory condition"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Respiratory conditions"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#RespiratoryInfections
-
-:RespiratoryInfections a owl:Class ;
-	rdfs:subClassOf :RespiratoryConditions ;
-	rdfs:label "Respiratory infections"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Respiratory infection"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Respiratory infections"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#RetinalVeinOcclusion
-
-:RetinalVeinOcclusion a owl:Class ;
-	rdfs:subClassOf :EyeConditions ;
-	rdfs:label "Retinal vein occlusion"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Retinal vein occlusion"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#RheumatoidArthritis
-
-:RheumatoidArthritis a owl:Class ;
-	rdfs:subClassOf :Arthritis ;
-	rdfs:label "Rheumatoid arthritis"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Rheumatoid arthritis"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#STEMI
-
-:STEMI a owl:Class ;
-	rdfs:subClassOf :AcuteMyocardialInfarction ;
-	rdfs:label "STEMI"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "ST segment elevation MI"@en , "ST segment elevation myocardial infarction"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "STEMI"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Sarcoma
-
-:Sarcoma a owl:Class ;
-	rdfs:subClassOf :Cancer ;
-	rdfs:label "Sarcoma"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Adenosarcoma"@en , "Bone cancer"@en , "Carcinosarcoma"@en , "Chondrosarcoma"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Sarcoma"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Schizophrenia
-
-:Schizophrenia a owl:Class ;
-	rdfs:subClassOf :MentalHealthAndBehaviouralConditions ;
-	rdfs:label "Schizophrenia"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Schizophrenia"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#SelfHarm
-
-:SelfHarm a owl:Class ;
-	rdfs:subClassOf :MentalHealthAndBehaviouralConditions ;
-	rdfs:label "Self-harm"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Self-injury"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Self-harm"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#SexuallyTransmittedInfections
-
-:SexuallyTransmittedInfections a owl:Class ;
-	rdfs:subClassOf :Infections ;
-	rdfs:label "Sexually transmitted infections"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "STI"@en , "STIs"@en , "Sexually  transmitted infectious disease"@en , "Sexually transmitted infection"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Sexually transmitted infections"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#SickleCellDisease
-
-:SickleCellDisease a owl:Class ;
-	rdfs:subClassOf :BloodAndImmuneSystemConditions , :GeneticConditions ;
-	rdfs:label "Sickle cell disease"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Hb SS disease"@en , "Sickle cell anaemia"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Sickle cell disease"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#SkinCancer
-
-:SkinCancer a owl:Class ;
-	rdfs:subClassOf :Cancer , :SkinConditions ;
-	rdfs:label "Skin cancer"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Malignant neoplasm of skin"@en , "Melanoma"@en , "Skin neoplasm"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Skin cancer"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#SkinConditions
-
-:SkinConditions a owl:Class ;
-	rdfs:subClassOf :ConditionOrDisease ;
-	rdfs:label "Skin conditions"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Skin condition"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Skin conditions"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#SleepApnoea
-
-:SleepApnoea a owl:Class ;
-	rdfs:subClassOf :EarNoseAndThroatConditions , :RespiratoryConditions ;
-	rdfs:label "Sleep apnoea"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Sleep apnea"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Sleep apnoea"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Snoring
-
-:Snoring a owl:Class ;
-	rdfs:subClassOf :EarNoseAndThroatConditions , :RespiratoryConditions ;
-	rdfs:label "Snoring"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Snoring"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Spasticity
-
-:Spasticity a owl:Class ;
-	rdfs:subClassOf :NeurologicalConditions ;
-	rdfs:label "Spasticity"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Spasticity"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#SpinalConditions
-
-:SpinalConditions a owl:Class ;
-	rdfs:subClassOf :MusculoskeletalConditions ;
-	rdfs:label "Spinal conditions"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Spinal condition"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Spinal conditions"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#StableAngina
-
-:StableAngina a owl:Class ;
-	rdfs:subClassOf :Angina ;
-	rdfs:label "Stable angina"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Stable angina"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#StomachCancer
-
-:StomachCancer a owl:Class ;
-	rdfs:subClassOf :Cancer , :DigestiveTractConditions ;
-	rdfs:label "Stomach cancer"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Malignant tumor of stomach"@en , "Malignant tumour of stomach"@en , "Stomach neoplasm"@en , "Stomach neoplasms"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Stomach cancer"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Stroke
-
-:Stroke a owl:Class ;
-	rdfs:subClassOf :CardiovascularConditions ;
-	rdfs:label "Stroke"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "CVA"@en , "Cerebrovascular accident"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Stroke"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#StructuralHeartDefects
-
-:StructuralHeartDefects a owl:Class ;
-	rdfs:subClassOf :CardiovascularConditions ;
-	rdfs:label "Structural heart defects"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Structural heart defect"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Structural heart defects"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Synovitis
-
-:Synovitis a owl:Class ;
-	rdfs:subClassOf :MusculoskeletalConditions ;
-	rdfs:label "Synovitis"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Synovitis"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#SystemicLupusErythematosus
-
-:SystemicLupusErythematosus a owl:Class ;
-	rdfs:subClassOf :BloodAndImmuneSystemConditions ;
-	rdfs:label "Systemic lupus eythematosus"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "SLE"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Systemic lupus erythematosus"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#TesticularCancer
-
-:TesticularCancer a owl:Class ;
-	rdfs:subClassOf :Cancer ;
-	rdfs:label "Testicular cancer"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Cancer of  the testes"@en , "Cancer of the testis"@en , "Testicular neoplasm"@en , "Testicular neoplasms"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Testicular cancer"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Thrombosis
-
-:Thrombosis a owl:Class ;
-	rdfs:subClassOf :CardiovascularConditions ;
-	rdfs:label "Thrombosis"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Thrombosis"@en .
-# 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#ThyroidDisorders
-
-:ThyroidDisorders a owl:Class ;
-	rdfs:subClassOf :DiabetesAndOtherEndocrinalNutritionalAndMetabolicConditions ;
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/a4644b24_0937_4cc1_82d3_7df40152ea5b> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/4c4ce234_8ff7_4ed9_a82f_cf392218e2f6> ;
 	rdfs:label "Thyroid disorders"@en ;
 	<http://www.w3.org/2004/02/skos/core#altLabel> "Thyroid disorder"@en ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Thyroid disorders"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#TonsilConditions
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/aa5a367b_eaab_43ce_a4bf_791a37d064ec
 
-:TonsilConditions a owl:Class ;
-	rdfs:subClassOf :EarNoseAndThroatConditions ;
-	rdfs:label "Tonsil conditions"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Tonsil condition"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Tonsil conditions"@en .
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/aa5a367b_eaab_43ce_a4bf_791a37d064ec> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/2a0cdfb6_4fd2_4acd_9ffe_eff1e62a8e6e> ;
+	rdfs:label "Fertility"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Fertility"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#TransientIschaemicAttack
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/ab643f08_8e44_4f67_baa6_6bb9490707e5
 
-:TransientIschaemicAttack a owl:Class ;
-	rdfs:subClassOf :CardiovascularConditions ;
-	rdfs:label "Transient ischaemic attack"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Transient ischemic attack"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Transient ischaemic attack"@en .
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/ab643f08_8e44_4f67_baa6_6bb9490707e5> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/181960d3_70de_4d17_9b72_8d022c46e512> ;
+	rdfs:label "Diverticular disease"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Diverticular disease"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#TransientLossOfConsciousness
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/ac8b1510_e6f5_4e31_8e66_5c0f85f877a5
 
-:TransientLossOfConsciousness a owl:Class ;
-	rdfs:subClassOf :NeurologicalConditions ;
-	rdfs:label "Transient loss of consciousness"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Anoxic seizure"@en , "Syncope"@en , "Temporary loss of consciousness"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Transient loss of consciousness"@en .
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/ac8b1510_e6f5_4e31_8e66_5c0f85f877a5> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/00f5c590_e9fe_4922_99e7_03eea6451020> ;
+	rdfs:label "Knee conditions"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Knee condition"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Knee conditions"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Trauma
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/acb63872_2066_431b_b70a_6c718006f572
 
-:Trauma a owl:Class ;
-	rdfs:subClassOf :InjuriesAccidentsAndWounds ;
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/acb63872_2066_431b_b70a_6c718006f572> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/3a3ca279_ad11_4382_abf4_93435b33113f> ;
+	rdfs:label "Skin conditions"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Skin condition"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Skin conditions"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/ad42fb28_cebe_4488_93b9_d777b0b8789b
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/ad42fb28_cebe_4488_93b9_d777b0b8789b> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/3d180641_5f6a_4c1c_96be_08e35aed71e6> ;
+	rdfs:label "Motor neurone disease"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Motor neurone disease"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/ae78a9e1_6de1_4764_9b28_0df2757c0e2c
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/ae78a9e1_6de1_4764_9b28_0df2757c0e2c> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/181960d3_70de_4d17_9b72_8d022c46e512> ;
+	rdfs:label "Hernia"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Hernia"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/af9e7b05_ece6_48a7_a2b1_56001eedd3aa
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/af9e7b05_ece6_48a7_a2b1_56001eedd3aa> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/3d180641_5f6a_4c1c_96be_08e35aed71e6> ;
+	rdfs:label "Multiple sclerosis"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "MS"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Multiple sclerosis"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/b0330a3c_a570_4a96_ac9f_8ef57524b1c2
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/b0330a3c_a570_4a96_ac9f_8ef57524b1c2> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/14abd949_ba13_4814_9033_5ee0a81d7726> ;
+	rdfs:label "Psychosis"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Psychotic disorder"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Psychosis"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/b2260dae_c2bc_40e0_85bb_2b4bc1fa500d
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/b2260dae_c2bc_40e0_85bb_2b4bc1fa500d> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f6d80782_5b23_4c16_8178_87c1a560bf92> ;
+	rdfs:label "Complications of cancer"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Complication of cancer"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Complications of cancer"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/b229a38b_5fae_4952_bb36_d59512494dd5
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/b229a38b_5fae_4952_bb36_d59512494dd5> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/8d36e0b3_1b26_433c_83b2_51bc7188a407> ;
+	rdfs:label "Lymphoma"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Hodgkin disease"@en , "Hodgkin's disease"@en , "Hodgkin's lymphoma"@en , "Non-Hodgkin lymphoma"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Lymphoma"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/b418f1e8_967b_49c2_a2bc_57d000b553d8
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/b418f1e8_967b_49c2_a2bc_57d000b553d8> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f7909378_85c0_49f3_bc0e_4f34ed0adb06> , <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/84fe1ba3_0b82_47df_a248_e979e2e8660c> ;
+	rdfs:label "Tuberculosis"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Tuberculosis"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/b4a488ef_56f9_4e43_806a_8b1c2e147029
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/b4a488ef_56f9_4e43_806a_8b1c2e147029> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f6d80782_5b23_4c16_8178_87c1a560bf92> , <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/181960d3_70de_4d17_9b72_8d022c46e512> ;
+	rdfs:label "Colorectal cancer"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Colorectal cancer"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/b57c66c4_c4d5_4cb2_8b74_223997773a74
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/b57c66c4_c4d5_4cb2_8b74_223997773a74> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/2a0cdfb6_4fd2_4acd_9ffe_eff1e62a8e6e> ;
+	rdfs:label "Childbirth"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Intrapartum"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Childbirth"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/b7c7910f_d324_43c0_8dda_ae36052090cc
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/b7c7910f_d324_43c0_8dda_ae36052090cc> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/14abd949_ba13_4814_9033_5ee0a81d7726> ;
+	rdfs:label "Bipolar disorder"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Bipolar disorder"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/b87cff0b_7fba_4bf2_9581_07f35e54195a
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/b87cff0b_7fba_4bf2_9581_07f35e54195a> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f6d80782_5b23_4c16_8178_87c1a560bf92> , <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/3d180641_5f6a_4c1c_96be_08e35aed71e6> ;
+	rdfs:label "Brain cancers"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Brain cancer"@en , "Brain tumor"@en , "Brain tumors"@en , "Brain tumour"@en , "Brain tumours"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Brain cancers"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/bb061895_57f2_42bc_8439_b4b4fa26e938
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/bb061895_57f2_42bc_8439_b4b4fa26e938> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/181960d3_70de_4d17_9b72_8d022c46e512> ;
+	rdfs:label "Irritable bowel syndrome"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "IBS"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Irritable bowel syndrome"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/c09a2af2_306f_430c_9256_acf4ce4417da
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/c09a2af2_306f_430c_9256_acf4ce4417da> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/1029b304_ee0f_47ba_8e4e_63a2a2f637de> ;
+	rdfs:label "Nasal conditions"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Nasal condition"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Nasal conditions"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/c2294101_10ef_48f9_826f_192b7ae30c9d
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/c2294101_10ef_48f9_826f_192b7ae30c9d> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/181960d3_70de_4d17_9b72_8d022c46e512> , <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/3d180641_5f6a_4c1c_96be_08e35aed71e6> ;
+	rdfs:label "Faecal incontinence"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Faecal incontinence"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/c229a916_5d05_4c83_a8af_a580ee4620e5
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/c229a916_5d05_4c83_a8af_a580ee4620e5> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/0e0d828f_31f3_4bef_9a4e_3ba8de1103df> ;
+	rdfs:label "Atrial fibrillation"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Atrial fibrillation"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/c3772be3_aa8a_4f5f_bb9c_1aaced2a3899
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/c3772be3_aa8a_4f5f_bb9c_1aaced2a3899> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/c9e8923f_c736_4424_9c29_a11da306e3b5> , <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f6d80782_5b23_4c16_8178_87c1a560bf92> ;
+	rdfs:label "Cervical cancer"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Cancer of the cervix"@en , "Cervical cancers"@en , "Cervical neoplasm"@en , "Cervical neoplasms"@en , "Uterine cervical neoplasm"@en , "Uterine cervical neoplasms"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Cervical cancer"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/c47ec94f_15e3_4bcc_8f31_7b631d3d321b
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/c47ec94f_15e3_4bcc_8f31_7b631d3d321b> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/14d4c5bc_d705_4998_9520_15a98c5b274c> ;
+	rdfs:label "Blood conditions"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Blood condition"@en , "Haematological condition"@en , "Haematological conditions"@en , "Haematological disorder"@en , "Haematological disorders"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Blood conditions"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/c6e9a071_d41c_4165_b624_fcc2552ec15a
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/c6e9a071_d41c_4165_b624_fcc2552ec15a> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/181960d3_70de_4d17_9b72_8d022c46e512> ;
+	rdfs:label "Vomiting"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Emesis"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Vomiting"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/c94ce1b6_755b_4d41_9f82_1ade00dc8fa4
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/c94ce1b6_755b_4d41_9f82_1ade00dc8fa4> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/0cdc57db_bca8_4e71_83bb_4489370049e3> , <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/9f2c2aca_8091_4296_861a_3f736e625abb> ;
+	rdfs:label "Postnatal depression"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Postnatal depression"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/c9e8923f_c736_4424_9c29_a11da306e3b5
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/c9e8923f_c736_4424_9c29_a11da306e3b5> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/3a3ca279_ad11_4382_abf4_93435b33113f> ;
+	rdfs:label "Gynaecological conditions"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Gynaecological condition"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Gynaecological conditions"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/ca4058f9_c1be_42ec_a9ab_708383a4027b
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/ca4058f9_c1be_42ec_a9ab_708383a4027b> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/3d180641_5f6a_4c1c_96be_08e35aed71e6> ;
+	rdfs:label "Headaches"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Headaches"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/cbe8d088_6e19_45ea_9bc8_5a3a62a841fc
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/cbe8d088_6e19_45ea_9bc8_5a3a62a841fc> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f6d80782_5b23_4c16_8178_87c1a560bf92> , <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/84fe1ba3_0b82_47df_a248_e979e2e8660c> ;
+	rdfs:label "Lung cancer"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Lung cancer"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/ccebc6dc_4125_4296_bbe7_18268131101b
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/ccebc6dc_4125_4296_bbe7_18268131101b> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/378d3779_f11d_4e1f_b211_6e77a1d88195> ;
+	rdfs:label "STEMI"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "STEMI"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/cd63a393_facd_49c1_8ee4_02bfc8d68aeb
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/cd63a393_facd_49c1_8ee4_02bfc8d68aeb> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f6d80782_5b23_4c16_8178_87c1a560bf92> , <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/139ffbf6_2e12_4ac2_935f_9645c58b42ee> ;
+	rdfs:label "Bladder cancer"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Malignant tumor of urinary bladder"@en , "Malignant tumour of urinary bladder"@en , "Urinary bladder neoplasm"@en , "Urinary bladder neoplasms"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Bladder cancer"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/cf53c306_7b18_4ee5_a11d_9d6b528e9fd5
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/cf53c306_7b18_4ee5_a11d_9d6b528e9fd5> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/acb63872_2066_431b_b70a_6c718006f572> , <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f6d80782_5b23_4c16_8178_87c1a560bf92> ;
+	rdfs:label "Skin cancer"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Skin cancer"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/d0f01f1a_a66e_4e8a_9246_4ede488e65a3
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/d0f01f1a_a66e_4e8a_9246_4ede488e65a3> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/2a0cdfb6_4fd2_4acd_9ffe_eff1e62a8e6e> ;
+	rdfs:label "Pregnancy"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Pregnancy"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/d146aa1b_94cb_44b9_b298_cb58a4754bf6
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/d146aa1b_94cb_44b9_b298_cb58a4754bf6> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/4c4ce234_8ff7_4ed9_a82f_cf392218e2f6> ;
+	rdfs:label "Obesity"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Obesity"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/d31dc523_a202_4939_ac1a_c6e46d71deb8
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/d31dc523_a202_4939_ac1a_c6e46d71deb8> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/181960d3_70de_4d17_9b72_8d022c46e512> ;
+	rdfs:label "Gallstones"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Gallstones"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/d3ffb779_cdc9_40d0_8a49_278759e61638
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/d3ffb779_cdc9_40d0_8a49_278759e61638> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/acb63872_2066_431b_b70a_6c718006f572> ;
+	rdfs:label "Psoriasis"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Psoriasis"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/d49f3ec4_5982_46fa_8205_7cd95af9377d
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/d49f3ec4_5982_46fa_8205_7cd95af9377d> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f6d80782_5b23_4c16_8178_87c1a560bf92> , <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/181960d3_70de_4d17_9b72_8d022c46e512> ;
+	rdfs:label "Pancreatic cancer"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Pancreatic cancer"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/d5a8e74c_e20e_48be_aa09_51d2063b1efc
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/d5a8e74c_e20e_48be_aa09_51d2063b1efc> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/181960d3_70de_4d17_9b72_8d022c46e512> ;
+	rdfs:label "Cholecystitis"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Inflammation of gallbladder"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Cholecystitis"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/d8988212_fc80_4cf5_9d0a_b40a520746dc
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/d8988212_fc80_4cf5_9d0a_b40a520746dc> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f415a82a_d85c_435b_99a1_238cec96c709> ;
 	rdfs:label "Trauma"@en ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Trauma"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Tuberculosis
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/d8f580b2_71ad_48e9_a32c_fe117037053f
 
-:Tuberculosis a owl:Class ;
-	rdfs:subClassOf :Infections , :RespiratoryConditions ;
-	rdfs:label "Tuberculosis"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Consumption"@en , "Phthisis"@en , "TB"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Tuberculosis"@en .
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/d8f580b2_71ad_48e9_a32c_fe117037053f> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/14abd949_ba13_4814_9033_5ee0a81d7726> ;
+	rdfs:label "Anxiety"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Anxiety"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Type1Diabetes
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/dadadec0_1eae_4304_a223_287d3befd237
 
-:Type1Diabetes a owl:Class ;
-	rdfs:subClassOf :Diabetes ;
-	rdfs:label "Type 1 diabetes"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Diabetes mellitus type 1"@en , "Insulin-dependent diabetes"@en , "T1DM"@en , "Type 1 diabetes mellitus"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Type 1 diabetes"@en .
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/dadadec0_1eae_4304_a223_287d3befd237> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f8143836_5188_455d_9b03_9f055d4450b3> ;
+	rdfs:label "Angina"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Angina"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Type2Diabetes
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/dc744e20_828e_4309_98e8_942432ff4102
 
-:Type2Diabetes a owl:Class ;
-	rdfs:subClassOf :Diabetes ;
-	rdfs:label "Type 2 diabetes"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Diabetes mellitus type 2"@en , "Non-insulin dependent diabetes"@en , "T2DM"@en , "Type 2 diabetes mellitus"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Type 2 diabetes"@en .
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/dc744e20_828e_4309_98e8_942432ff4102> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/3c65672b_a974_48ee_9bfd_b2c087f971f1> ;
+	rdfs:label "Oral cancer"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Oral cancer"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#UnstableAngina
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/dc89614f_805f_484b_a7f8_a34c4b531d53
 
-:UnstableAngina a owl:Class ;
-	rdfs:subClassOf :Angina ;
-	rdfs:label "Unstable angina"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Angina at rest"@en , "Myocardial preinfarction syndrome"@en , "Preinfarction syndrome"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Unstable angina"@en .
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/dc89614f_805f_484b_a7f8_a34c4b531d53> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f8143836_5188_455d_9b03_9f055d4450b3> , <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/4c4ce234_8ff7_4ed9_a82f_cf392218e2f6> ;
+	rdfs:label "Lipid disorders"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Lipid disorder"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Lipid disorders"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#UpperAirwaysTractCancers
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/dcaab0f9_ec40_4327_a89d_b8510ef80f5c
 
-:UpperAirwaysTractCancers a owl:Class ;
-	rdfs:subClassOf :Cancer ;
-	rdfs:label "Upper airways tract cancers"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Upper airways tract cancer"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Upper airways tract cancers"@en .
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/dcaab0f9_ec40_4327_a89d_b8510ef80f5c> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/6e49b2b8_936a_4ff4_9642_4bfdba73107f> ;
+	rdfs:label "Renal stones"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Renal stones"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#UpperGastrointestinalBleeding
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/dcdc755d_509e_43a8_ad36_ab48185c7930
 
-:UpperGastrointestinalBleeding a owl:Class ;
-	rdfs:subClassOf :DigestiveTractConditions ;
-	rdfs:label "Upper gastrointestinal bleeding"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "UGIB"@en , "Upper GI bleeding"@en , "Upper GI haemorrhage"@en , "Upper GI hemorrhage"@en , "Upper gastrointestinal haemorrhage"@en , "Upper gastrointestinal hemorrhage"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Upper gastrointestinal bleeding"@en .
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/dcdc755d_509e_43a8_ad36_ab48185c7930> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/181960d3_70de_4d17_9b72_8d022c46e512> ;
+	rdfs:label "Anal disorders"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Anal disorder"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Anal disorders"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#UrinaryIncontinence
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/ddc0ac67_504f_4c6c_b053_178e6bd0b535
 
-:UrinaryIncontinence a owl:Class ;
-	rdfs:subClassOf :NeurologicalConditions , :UrologicalConditions ;
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/ddc0ac67_504f_4c6c_b053_178e6bd0b535> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f8143836_5188_455d_9b03_9f055d4450b3> ;
+	rdfs:label "Cranial aneurysms"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Cranial aneurysms"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/de59d797_218f_4237_bf5d_a8c16393516b
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/de59d797_218f_4237_bf5d_a8c16393516b> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f7909378_85c0_49f3_bc0e_4f34ed0adb06> , <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/139ffbf6_2e12_4ac2_935f_9645c58b42ee> ;
+	rdfs:label "Urinary tract infection"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Urinary tract infection"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/e364afc3_e04c_4fa9_9d86_dc0c44a170fc
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/e364afc3_e04c_4fa9_9d86_dc0c44a170fc> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/181960d3_70de_4d17_9b72_8d022c46e512> ;
+	rdfs:label "Constipation"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Costiveness"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Constipation"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/e49ce1a1_c118_481c_b18b_e0bba3c31649
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/e49ce1a1_c118_481c_b18b_e0bba3c31649> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/25f7747a_9d42_4025_8b49_8170e64c7c45> ;
+	rdfs:label "Myopia"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Myopia"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/e5fb1ffb_ba9f_416b_843a_4c72fcd18dd6
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/e5fb1ffb_ba9f_416b_843a_4c72fcd18dd6> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/00f5c590_e9fe_4922_99e7_03eea6451020> ;
+	rdfs:label "Spinal conditions"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Spinal condition"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Spinal conditions"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/e7ae1489_efd5_4dc1_8662_b7861dff4152
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/e7ae1489_efd5_4dc1_8662_b7861dff4152> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f6d80782_5b23_4c16_8178_87c1a560bf92> , <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/139ffbf6_2e12_4ac2_935f_9645c58b42ee> ;
+	rdfs:label "Prostate cancer"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Prostate cancer"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/e822015b_533f_402e_b77b_04a19d07d0f5
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/e822015b_533f_402e_b77b_04a19d07d0f5> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/c9e8923f_c736_4424_9c29_a11da306e3b5> ;
+	rdfs:label "Fibroids"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Fibroids"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/e946c7ec_0ab1_4467_bf4e_b50243f2a5e7
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/e946c7ec_0ab1_4467_bf4e_b50243f2a5e7> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/acb63872_2066_431b_b70a_6c718006f572> ;
+	rdfs:label "Eczema"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Eczema"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/ebe50c0a_5f1c_44b8_a534_8a53ec63f3be
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/ebe50c0a_5f1c_44b8_a534_8a53ec63f3be> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/7fc4bf74_c7c8_4434_b944_24b21ae0ebff> ;
+	rdfs:label "Alcohol-use liver disorders"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Alcohol-use liver disorder"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Alcohol-use liver disorders"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/ec2c5ae3_37fb_46e8_9962_5d2f45f63efc
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/ec2c5ae3_37fb_46e8_9962_5d2f45f63efc> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/181960d3_70de_4d17_9b72_8d022c46e512> ;
+	rdfs:label "Gastro-oesophageal reflux"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Gastro-oesophageal reflux"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/ee6882ab_98e9_4c55_9035_1778909a41b8
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/ee6882ab_98e9_4c55_9035_1778909a41b8> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/d0f01f1a_a66e_4e8a_9246_4ede488e65a3> ;
+	rdfs:label "Pre-eclampsia"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Pre-eclampsia"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/eed47f8c_519b_4861_ad86_bada75ba86fa
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/eed47f8c_519b_4861_ad86_bada75ba86fa> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/c9e8923f_c736_4424_9c29_a11da306e3b5> , <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f6d80782_5b23_4c16_8178_87c1a560bf92> ;
+	rdfs:label "Ovarian cancer"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Ovarian cancer"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f0f0dedf_768f_4ae4_85ff_2fcb9c21a443
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f0f0dedf_768f_4ae4_85ff_2fcb9c21a443> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/1029b304_ee0f_47ba_8e4e_63a2a2f637de> , <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/84fe1ba3_0b82_47df_a248_e979e2e8660c> ;
+	rdfs:label "Sleep apnoea"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Sleep apnea"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Sleep apnoea"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f415a82a_d85c_435b_99a1_238cec96c709
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f415a82a_d85c_435b_99a1_238cec96c709> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/3a3ca279_ad11_4382_abf4_93435b33113f> ;
+	rdfs:label "Injuries, accidents and wounds"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Injury, accident and wound"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Injuries, accidents and wounds"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f5145ff4_e67b_43db_9fee_171a30679cb7
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f5145ff4_e67b_43db_9fee_171a30679cb7> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/14abd949_ba13_4814_9033_5ee0a81d7726> ;
+	rdfs:label "Attention deficit disorder"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Attention deficit disorder"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f6d80782_5b23_4c16_8178_87c1a560bf92
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f6d80782_5b23_4c16_8178_87c1a560bf92> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/3a3ca279_ad11_4382_abf4_93435b33113f> ;
+	rdfs:label "Cancer"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Cancers"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Cancer"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f7909378_85c0_49f3_bc0e_4f34ed0adb06
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f7909378_85c0_49f3_bc0e_4f34ed0adb06> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/3a3ca279_ad11_4382_abf4_93435b33113f> ;
+	rdfs:label "Infections"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Infection"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Infections"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f7f1d8de_1a0c_43d7_81a3_69460c467bfe
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f7f1d8de_1a0c_43d7_81a3_69460c467bfe> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/14abd949_ba13_4814_9033_5ee0a81d7726> ;
+	rdfs:label "Self-harm"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Self-injury"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Self-harm"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f8143836_5188_455d_9b03_9f055d4450b3
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f8143836_5188_455d_9b03_9f055d4450b3> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/3a3ca279_ad11_4382_abf4_93435b33113f> ;
+	rdfs:label "Cardiovascular conditions"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "CVD"@en , "Cardiovascular condition"@en , "Cardiovascular disease"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Cardiovascular conditions"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f81a8047_2087_4ee4_b8fd_f7805de469eb
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f81a8047_2087_4ee4_b8fd_f7805de469eb> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/4c4ce234_8ff7_4ed9_a82f_cf392218e2f6> ;
+	rdfs:label "Jaundice"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Jaundice"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/fb1de536_8e41_4a9c_b9d8_f2ea3f7a7cca
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/fb1de536_8e41_4a9c_b9d8_f2ea3f7a7cca> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/84fe1ba3_0b82_47df_a248_e979e2e8660c> ;
+	rdfs:label "Chronic obstructive pulmonary disease"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "COPD"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Chronic obstructive pulmonary disease"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/fc142a19_4a9d_4490_bcda_d0b539ea7e11
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/fc142a19_4a9d_4490_bcda_d0b539ea7e11> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/139ffbf6_2e12_4ac2_935f_9645c58b42ee> , <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/3d180641_5f6a_4c1c_96be_08e35aed71e6> ;
 	rdfs:label "Urinary incontinence"@en ;
 	<http://www.w3.org/2004/02/skos/core#altLabel> "Bladder incontinence"@en ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Urinary incontinence"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#UrinaryTractInfection
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/fe3cf820_e393_4d61_a462_b9cf95ac5915
 
-:UrinaryTractInfection a owl:Class ;
-	rdfs:subClassOf :Infections , :UrologicalConditions ;
-	rdfs:label "Urinary tract infection"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "UTI"@en , "Urinary tract infectious disease"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Urinary tract infection"@en .
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/fe3cf820_e393_4d61_a462_b9cf95ac5915> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/861e8f3d_aabd_4060_b43d_5d491ab6b33d> ;
+	rdfs:label "Ocular hypertension"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Ocular hypertension"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#UrologicalConditions
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/0a31ecfd_2fb3_495c_95f5_51728ab6f189
 
-:UrologicalConditions a owl:Class ;
-	rdfs:subClassOf :ConditionOrDisease ;
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/0a31ecfd_2fb3_495c_95f5_51728ab6f189> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/14d4c5bc_d705_4998_9520_15a98c5b274c> , <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/181960d3_70de_4d17_9b72_8d022c46e512> ;
+	rdfs:label "Coeliac disease"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Celiac disease"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Coeliac disease"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/0cdc57db_bca8_4e71_83bb_4489370049e3
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/0cdc57db_bca8_4e71_83bb_4489370049e3> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/14abd949_ba13_4814_9033_5ee0a81d7726> ;
+	rdfs:label "Depression"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Depression"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/0d129c1e_e997_4c7b_a43e_932e2c790f3c
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/0d129c1e_e997_4c7b_a43e_932e2c790f3c> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/99e4e4a0_3d6d_4329_984b_d021583993b4> ;
+	rdfs:label "Venous thromboembolism"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Venous thromboembolism"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/0e0d828f_31f3_4bef_9a4e_3ba8de1103df
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/0e0d828f_31f3_4bef_9a4e_3ba8de1103df> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f8143836_5188_455d_9b03_9f055d4450b3> ;
+	rdfs:label "Heart rhythm conditions"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Heart rhythm conditions"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/0fff667a_b1ce_402c_a9d1_0186e470cd59
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/0fff667a_b1ce_402c_a9d1_0186e470cd59> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/4c4ce234_8ff7_4ed9_a82f_cf392218e2f6> ;
+	rdfs:label "Adrenal dysfunction"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Adrenal dysfunction"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/00f5c590_e9fe_4922_99e7_03eea6451020
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/00f5c590_e9fe_4922_99e7_03eea6451020> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/3a3ca279_ad11_4382_abf4_93435b33113f> ;
+	rdfs:label "Musculoskeletal conditions"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Musculoskeletal condition"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Musculoskeletal conditions"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/00417a67_624c_41b0_9a73_a1216a30ae9c
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/00417a67_624c_41b0_9a73_a1216a30ae9c> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/1029b304_ee0f_47ba_8e4e_63a2a2f637de> , <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/84fe1ba3_0b82_47df_a248_e979e2e8660c> ;
+	rdfs:label "Snoring"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Snoring"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/01368400_f3a4_424b_955d_8dc2b1aeebfb
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/01368400_f3a4_424b_955d_8dc2b1aeebfb> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/99e4e4a0_3d6d_4329_984b_d021583993b4> ;
+	rdfs:label "Deep vein thrombosis"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Deep vein thrombosis"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/02732b69_06b2_4f83_9e8b_2e29d0a42d0c
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/02732b69_06b2_4f83_9e8b_2e29d0a42d0c> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f6d80782_5b23_4c16_8178_87c1a560bf92> , <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/7fc4bf74_c7c8_4434_b944_24b21ae0ebff> ;
+	rdfs:label "Liver cancers"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Liver cancers"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/031bc6e6_e8a9_4e81_94a5_bfed953943f8
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/031bc6e6_e8a9_4e81_94a5_bfed953943f8> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/8dfea302_087e_41e1_8bfc_7d9505464c66> ;
+	rdfs:label "Pulmonary embolism"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Pulmonary embolism"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/05de0633_57a9_4aea_b029_db282967e683
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/05de0633_57a9_4aea_b029_db282967e683> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f8143836_5188_455d_9b03_9f055d4450b3> ;
+	rdfs:label "Varicose veins"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Varicose veins"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/064ec0f4_ff95_48f6_8ff7_c56eadee539a
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/064ec0f4_ff95_48f6_8ff7_c56eadee539a> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f7909378_85c0_49f3_bc0e_4f34ed0adb06> ;
+	rdfs:label "Influenza"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Influenza"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/09347170_d5e8_458b_afff_65f258dc5f72
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/09347170_d5e8_458b_afff_65f258dc5f72> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/8d36e0b3_1b26_433c_83b2_51bc7188a407> ;
+	rdfs:label "Multiple myeloma"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Multiple myeloma"@en , "Myeloma"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/1a11dc2e_5fa1_4529_93b6_a511dfc00490
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/1a11dc2e_5fa1_4529_93b6_a511dfc00490> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/378d3779_f11d_4e1f_b211_6e77a1d88195> ;
+	rdfs:label "NSTEMI"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "NSTEMI"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/1aa8c5e3_a8ed_4682_b1b9_6f7584639508
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/1aa8c5e3_a8ed_4682_b1b9_6f7584639508> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/181960d3_70de_4d17_9b72_8d022c46e512> , <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/3c65672b_a974_48ee_9bfd_b2c087f971f1> ;
+	rdfs:label "Oesophageal cancer"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Oesophageal cancer"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/1d746fde_a80b_45e1_961f_bf0c1d6852f4
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/1d746fde_a80b_45e1_961f_bf0c1d6852f4> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/3d180641_5f6a_4c1c_96be_08e35aed71e6> ;
+	rdfs:label "Spasticity"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Spasticity"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/1ec0cbae_e5ad_4ff5_a978_ea2e213dc350
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/1ec0cbae_e5ad_4ff5_a978_ea2e213dc350> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f6d80782_5b23_4c16_8178_87c1a560bf92> ;
+	rdfs:label "Testicular cancer"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Testicular cancer"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/1029b304_ee0f_47ba_8e4e_63a2a2f637de
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/1029b304_ee0f_47ba_8e4e_63a2a2f637de> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/3a3ca279_ad11_4382_abf4_93435b33113f> ;
+	rdfs:label "Ear, nose and throat conditions"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Ear, nose and throat condition"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Ear, nose and throat conditions"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/1057c137_77d7_4b37_9495_5853eeffec95
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/1057c137_77d7_4b37_9495_5853eeffec95> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/4c4ce234_8ff7_4ed9_a82f_cf392218e2f6> ;
+	rdfs:label "Failure to thrive"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Failure to thrive"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/12ec7c89_7393_43c3_ab96_123c22e41a69
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/12ec7c89_7393_43c3_ab96_123c22e41a69> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/25f7747a_9d42_4025_8b49_8170e64c7c45> ;
+	rdfs:label "Astigmatism"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Astigmatism"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/130ae3c3_b332_46f2_a160_26d9bb1a216b
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/130ae3c3_b332_46f2_a160_26d9bb1a216b> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f7909378_85c0_49f3_bc0e_4f34ed0adb06> ;
+	rdfs:label "Meningitis and meningococcal septicaemia"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Meningitis and meningococcal septicaemia"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/139ffbf6_2e12_4ac2_935f_9645c58b42ee
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/139ffbf6_2e12_4ac2_935f_9645c58b42ee> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/3a3ca279_ad11_4382_abf4_93435b33113f> ;
 	rdfs:label "Urological conditions"@en ;
 	<http://www.w3.org/2004/02/skos/core#altLabel> "Urological condition"@en ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Urological conditions"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#UterineProlapse
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/14abd949_ba13_4814_9033_5ee0a81d7726
 
-:UterineProlapse a owl:Class ;
-	rdfs:subClassOf :GynaecologicalConditions ;
-	rdfs:label "Uterine prolapse"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Prolapsed uterus"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Uterine prolapse"@en .
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/14abd949_ba13_4814_9033_5ee0a81d7726> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/3a3ca279_ad11_4382_abf4_93435b33113f> ;
+	rdfs:label "Mental health and behavioural conditions"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Mental health and behavioural condition"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Mental health and behavioural conditions"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#VaginalConditions
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/14d4c5bc_d705_4998_9520_15a98c5b274c
 
-:VaginalConditions a owl:Class ;
-	rdfs:subClassOf :GynaecologicalConditions ;
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/14d4c5bc_d705_4998_9520_15a98c5b274c> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/3a3ca279_ad11_4382_abf4_93435b33113f> ;
+	rdfs:label "Blood and immune system conditions"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Blood and immune system condition"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Blood and immune system conditions"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/14eb4bad_02d5_4dff_9077_f473f5b1e8a0
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/14eb4bad_02d5_4dff_9077_f473f5b1e8a0> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/1029b304_ee0f_47ba_8e4e_63a2a2f637de> ;
+	rdfs:label "Ear and hearing conditions"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Ear and hearing condition"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Ear and hearing conditions"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/15a4bb3a_8415_4ddd_bdd7_8d313613a1e0
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/15a4bb3a_8415_4ddd_bdd7_8d313613a1e0> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/181960d3_70de_4d17_9b72_8d022c46e512> ;
+	rdfs:label "Barrett's oesophagus"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Barrett's oesophagus"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/158812e8_acbd_4c1c_ab40_c30ffba0a51a
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/158812e8_acbd_4c1c_ab40_c30ffba0a51a> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/00f5c590_e9fe_4922_99e7_03eea6451020> ;
+	rdfs:label "Synovitis"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Synovitis"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/17bf330b_c61c_4b1b_8ed8_af4a3d9c36f7
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/17bf330b_c61c_4b1b_8ed8_af4a3d9c36f7> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f6d80782_5b23_4c16_8178_87c1a560bf92> , <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/181960d3_70de_4d17_9b72_8d022c46e512> ;
+	rdfs:label "Stomach cancer"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Stomach cancer"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/18081b9c_65d4_426f_8c06_18f732e35f88
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/18081b9c_65d4_426f_8c06_18f732e35f88> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f6d80782_5b23_4c16_8178_87c1a560bf92> ;
+	rdfs:label "Breast cancer"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Breast cancers"@en , "Breast neoplasm"@en , "Breast neoplasms"@en , "Malignant tumor of breast"@en , "Malignant tumour of breast"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Breast cancer"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/181960d3_70de_4d17_9b72_8d022c46e512
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/181960d3_70de_4d17_9b72_8d022c46e512> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/3a3ca279_ad11_4382_abf4_93435b33113f> ;
+	rdfs:label "Digestive tract conditions"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Digestive tract condition"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Digestive tract conditions"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/1944e6c7_8cb2_4aa3_8448_7c4544248f66
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/1944e6c7_8cb2_4aa3_8448_7c4544248f66> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/181960d3_70de_4d17_9b72_8d022c46e512> ;
+	rdfs:label "Haemorrhoids"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Haemorrhoids"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/2a0cdfb6_4fd2_4acd_9ffe_eff1e62a8e6e
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/2a0cdfb6_4fd2_4acd_9ffe_eff1e62a8e6e> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/3a3ca279_ad11_4382_abf4_93435b33113f> ;
+	rdfs:label "Fertility, pregnancy and childbirth"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Fertility, pregnancy and childbirth"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/2e6d1a2b_f9f4_4183_9a92_0aaf824a7d54
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/2e6d1a2b_f9f4_4183_9a92_0aaf824a7d54> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/14d4c5bc_d705_4998_9520_15a98c5b274c> ;
+	rdfs:label "Anaphylaxis"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Allergic shock"@en , "Anaphylactic shock"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Anaphylaxis"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/2f4ac8c8_09ee_4621_baf7_e2011bad75cc
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/2f4ac8c8_09ee_4621_baf7_e2011bad75cc> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f6d80782_5b23_4c16_8178_87c1a560bf92> ;
+	rdfs:label "Penile cancer"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Penile cancer"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/2003b6e1_56c0_4cc5_a258_92cfb9a52325
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/2003b6e1_56c0_4cc5_a258_92cfb9a52325> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/4c4ce234_8ff7_4ed9_a82f_cf392218e2f6> ;
+	rdfs:label "Diabetes"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Diabetes mellitus"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Diabetes"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/22ce125a_03e9_480b_9eed_751b48db0709
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/22ce125a_03e9_480b_9eed_751b48db0709> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/84fe1ba3_0b82_47df_a248_e979e2e8660c> , <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/95cc22a4_8cc9_4568_a573_72077df57045> ;
+	rdfs:label "Cystic fibrosis"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Cystic fibrosis"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/240cd7c4_eb19_47e1_afba_91ab279883c4
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/240cd7c4_eb19_47e1_afba_91ab279883c4> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/00f5c590_e9fe_4922_99e7_03eea6451020> , <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/4c4ce234_8ff7_4ed9_a82f_cf392218e2f6> ;
+	rdfs:label "Osteoporosis"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Osteoporosis"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/247c074b_8be2_4c14_93a8_7136111bae9b
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/247c074b_8be2_4c14_93a8_7136111bae9b> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/7ece1bfb_eb11_4f8d_9cfe_5d251aee7f0c> ;
+	rdfs:label "Rheumatoid arthritis"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Rheumatoid arthritis"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/25f7747a_9d42_4025_8b49_8170e64c7c45
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/25f7747a_9d42_4025_8b49_8170e64c7c45> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/861e8f3d_aabd_4060_b43d_5d491ab6b33d> ;
+	rdfs:label "Refractive errors"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Refractive error"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Refractive errors"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/26467e66_0e7c_4078_a1ad_95e9a0ee61f6
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/26467e66_0e7c_4078_a1ad_95e9a0ee61f6> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/6e49b2b8_936a_4ff4_9642_4bfdba73107f> ;
+	rdfs:label "Acute kidney injury"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Acute kidney injury"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/265850be_460b_4ed6_846a_635de5783df8
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/265850be_460b_4ed6_846a_635de5783df8> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/c9e8923f_c736_4424_9c29_a11da306e3b5> ;
+	rdfs:label "Heavy menstrual bleeding"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Heavy menstrual bleeding"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/274c7b24_3c28_481c_aec1_2e56b4568490
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/274c7b24_3c28_481c_aec1_2e56b4568490> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/00f5c590_e9fe_4922_99e7_03eea6451020> ;
+	rdfs:label "Low back pain"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Low back pain"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/279b2071_7d87_431a_b209_31e0694d17b7
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/279b2071_7d87_431a_b209_31e0694d17b7> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f415a82a_d85c_435b_99a1_238cec96c709> ;
+	rdfs:label "Head injuries"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Head injury"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Head injuries"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/3a3ca279_ad11_4382_abf4_93435b33113f
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/3a3ca279_ad11_4382_abf4_93435b33113f> a owl:Class ;
+	rdfs:label "Condition or disease"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Condition or disease"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/3b3beab5_1ceb_4fcf_abd9_7dcc90fd2854
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/3b3beab5_1ceb_4fcf_abd9_7dcc90fd2854> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/3d180641_5f6a_4c1c_96be_08e35aed71e6> ;
+	rdfs:label "Parkinson's disease"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Parkinson's disease"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/3c65672b_a974_48ee_9bfd_b2c087f971f1
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/3c65672b_a974_48ee_9bfd_b2c087f971f1> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f6d80782_5b23_4c16_8178_87c1a560bf92> ;
+	rdfs:label "Head and neck cancers"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Head and neck cancer"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Head and neck cancers"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/3cd451f8_0e36_4884_a15d_e79d90d83bf3
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/3cd451f8_0e36_4884_a15d_e79d90d83bf3> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/3d180641_5f6a_4c1c_96be_08e35aed71e6> ;
+	rdfs:label "Transient loss of consciousness"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Transient loss of consciousness"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/3ce5282b_9426_4c73_8bf4_8a04bcefccc5
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/3ce5282b_9426_4c73_8bf4_8a04bcefccc5> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/2003b6e1_56c0_4cc5_a258_92cfb9a52325> ;
+	rdfs:label "Type 1 diabetes"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Type 1 diabetes"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/3cf6660d_2d03_4102_9932_59200adf9fea
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/3cf6660d_2d03_4102_9932_59200adf9fea> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/acb63872_2066_431b_b70a_6c718006f572> ;
+	rdfs:label "Diabetic foot"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Diabetic foot"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/3d180641_5f6a_4c1c_96be_08e35aed71e6
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/3d180641_5f6a_4c1c_96be_08e35aed71e6> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/3a3ca279_ad11_4382_abf4_93435b33113f> ;
+	rdfs:label "Neurological conditions"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Neurological condition"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Neurological conditions"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/3f0e0e52_ed9f_490f_80e7_6f2c1eb01090
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/3f0e0e52_ed9f_490f_80e7_6f2c1eb01090> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/14abd949_ba13_4814_9033_5ee0a81d7726> ;
+	rdfs:label "Personality disorders"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Personality disorder"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Personality disorders"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/3ff44ba5_0685_48b4_b97e_30be59d8eb00
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/3ff44ba5_0685_48b4_b97e_30be59d8eb00> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f8143836_5188_455d_9b03_9f055d4450b3> ;
+	rdfs:label "Aortic aneurysms"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Aortic aneurysms"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/30584955_d754_4f25_ad95_b3c891bad1bd
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/30584955_d754_4f25_ad95_b3c891bad1bd> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f7909378_85c0_49f3_bc0e_4f34ed0adb06> ;
+	rdfs:label "Neonatal infections"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Neonatal infections"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/3245dd99_93cf_4ca4_8809_09b6a53b9bd7
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/3245dd99_93cf_4ca4_8809_09b6a53b9bd7> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f8143836_5188_455d_9b03_9f055d4450b3> ;
+	rdfs:label "Heart failure"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Heart failure"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/3475dbff_21f2_42f3_8cf2_105cf4e9c1e4
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/3475dbff_21f2_42f3_8cf2_105cf4e9c1e4> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/00f5c590_e9fe_4922_99e7_03eea6451020> ;
+	rdfs:label "Fractures"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Fractures"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/35c3d47f_891e_457b_bb5b_784ed303436e
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/35c3d47f_891e_457b_bb5b_784ed303436e> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/00f5c590_e9fe_4922_99e7_03eea6451020> ;
+	rdfs:label "Hip conditions"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Hip condition"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Hip conditions"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/36b49f66_bb35_4b1a_981c_5c477756f25e
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/36b49f66_bb35_4b1a_981c_5c477756f25e> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/181960d3_70de_4d17_9b72_8d022c46e512> ;
+	rdfs:label "Diarrhoea"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Diarrhoea"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/378d3779_f11d_4e1f_b211_6e77a1d88195
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/378d3779_f11d_4e1f_b211_6e77a1d88195> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/9e2120c2_223a_49bd_adc8_b0597e2da9ec> ;
+	rdfs:label "Acute myocardial infarction"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Acute myocardial infarction"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/38663c02_7f78_4138_bd89_4dc6aabc625d
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/38663c02_7f78_4138_bd89_4dc6aabc625d> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/14d4c5bc_d705_4998_9520_15a98c5b274c> ;
+	rdfs:label "Systemic lupus eythematosus"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "SLE"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Systemic lupus eythematosus"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/4a70adc7_7266_4b15_ae59_774e544098fc
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/4a70adc7_7266_4b15_ae59_774e544098fc> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f6d80782_5b23_4c16_8178_87c1a560bf92> ;
+	rdfs:label "Sarcoma"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Sarcoma"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/4c4ce234_8ff7_4ed9_a82f_cf392218e2f6
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/4c4ce234_8ff7_4ed9_a82f_cf392218e2f6> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/3a3ca279_ad11_4382_abf4_93435b33113f> ;
+	rdfs:label "Diabetes and other endocrinal, nutritional and metabolic conditions"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Diabetes and other endocrinal, nutritional and metabolic condition"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Diabetes and other endocinal, nutritional and metabolic conditions"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/4c56d1b4_25b1_47aa_b1db_ba2cf57b1998
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/4c56d1b4_25b1_47aa_b1db_ba2cf57b1998> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/acb63872_2066_431b_b70a_6c718006f572> ;
+	rdfs:label "Pressure ulcers"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Pressure ulcers"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/4c59d5a6_c2fb_4707_b79f_0f9903402eec
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/4c59d5a6_c2fb_4707_b79f_0f9903402eec> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/6e49b2b8_936a_4ff4_9642_4bfdba73107f> ;
+	rdfs:label "Chronic kidney disease"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Chronic kidney disease"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/4c5eb889_5dbe_448c_9fb4_e377eae6fd72
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/4c5eb889_5dbe_448c_9fb4_e377eae6fd72> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/c9e8923f_c736_4424_9c29_a11da306e3b5> ;
+	rdfs:label "Menopause"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Menopause"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/4d3e2b68_c50b_4b9a_81e0_714d4056aa84
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/4d3e2b68_c50b_4b9a_81e0_714d4056aa84> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/c9e8923f_c736_4424_9c29_a11da306e3b5> ;
+	rdfs:label "Endometriosis"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Endometriosis"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/4111277e_2160_4748_a6fc_23c5a82765a3
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/4111277e_2160_4748_a6fc_23c5a82765a3> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/181960d3_70de_4d17_9b72_8d022c46e512> ;
+	rdfs:label "Inflammatory bowel disease"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "IBD"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Inflammatory bowel disease"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/423beafb_86ba_4f64_9b1f_4732444316e7
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/423beafb_86ba_4f64_9b1f_4732444316e7> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/8d36e0b3_1b26_433c_83b2_51bc7188a407> ;
+	rdfs:label "Leukemia"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Leukaemia"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Leukemia"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/43682612_0209_42f9_a3d4_0922eecd3c62
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/43682612_0209_42f9_a3d4_0922eecd3c62> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/181960d3_70de_4d17_9b72_8d022c46e512> ;
+	rdfs:label "Pancreatitis"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Inflammation of the pancreas"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Pancreatitis"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/47aec5a1_8719_4a68_abb6_67f08a68dbc9
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/47aec5a1_8719_4a68_abb6_67f08a68dbc9> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/84fe1ba3_0b82_47df_a248_e979e2e8660c> ;
+	rdfs:label "Mesothelioma"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Mesothelioma"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/47d5c91c_f4d3_4825_99c3_c377c188c8ca
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/47d5c91c_f4d3_4825_99c3_c377c188c8ca> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/1029b304_ee0f_47ba_8e4e_63a2a2f637de> ;
+	rdfs:label "Tonsil conditions"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Tonsil condition"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Tonsil conditions"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/48ac8821_3609_4a98_a363_0c4c70f34bd0
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/48ac8821_3609_4a98_a363_0c4c70f34bd0> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/4c4ce234_8ff7_4ed9_a82f_cf392218e2f6> ;
+	rdfs:label "Malnutrition"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Undernutrition"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Malnutrition"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/49004876_1a32_4e5a_91d3_826607130912
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/49004876_1a32_4e5a_91d3_826607130912> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/14abd949_ba13_4814_9033_5ee0a81d7726> , <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/3d180641_5f6a_4c1c_96be_08e35aed71e6> ;
+	rdfs:label "Dementia"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Dementia"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/498b9152_f68e_4b51_8e6c_93019ccf4b1d
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/498b9152_f68e_4b51_8e6c_93019ccf4b1d> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/3d180641_5f6a_4c1c_96be_08e35aed71e6> ;
+	rdfs:label "Metastatic spinal cord compression"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Metastatic spinal cord compression"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/5c169bbd_8480_4c22_aa05_f70a999e3766
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/5c169bbd_8480_4c22_aa05_f70a999e3766> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/14abd949_ba13_4814_9033_5ee0a81d7726> ;
+	rdfs:label "Conduct disorder"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Conduct disorder"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/5c3015e3_0f71_405f_aa04_3701df7d737b
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/5c3015e3_0f71_405f_aa04_3701df7d737b> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/84fe1ba3_0b82_47df_a248_e979e2e8660c> ;
+	rdfs:label "Respiratory infections"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Respiratory infection"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Respiratory infections"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/5cdb3afc_0de1_4b12_878f_419019e8f8d7
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/5cdb3afc_0de1_4b12_878f_419019e8f8d7> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/14d4c5bc_d705_4998_9520_15a98c5b274c> , <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/95cc22a4_8cc9_4568_a573_72077df57045> ;
+	rdfs:label "Sickle cell disease"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Hb SS disease"@en , "Sickle cell anaemia"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Sickle cell disease"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/5cf20ea3_998c_48ad_899e_24b4025f61b1
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/5cf20ea3_998c_48ad_899e_24b4025f61b1> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f6d80782_5b23_4c16_8178_87c1a560bf92> , <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/139ffbf6_2e12_4ac2_935f_9645c58b42ee> , <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/6e49b2b8_936a_4ff4_9642_4bfdba73107f> ;
+	rdfs:label "Renal cancer"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Renal cancer"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/52be11c9_5309_4dd6_9b23_f9b1b370d48a
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/52be11c9_5309_4dd6_9b23_f9b1b370d48a> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/acb63872_2066_431b_b70a_6c718006f572> ;
+	rdfs:label "Acne"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Acne"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/52d91a54_68d4_4bf7_9fac_2f8fcb0d1b41
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/52d91a54_68d4_4bf7_9fac_2f8fcb0d1b41> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/861e8f3d_aabd_4060_b43d_5d491ab6b33d> ;
+	rdfs:label "Cataracts"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Cataract"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Cataracts"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/53704b22_a8f8_4778_a600_7460298db83d
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/53704b22_a8f8_4778_a600_7460298db83d> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f7909378_85c0_49f3_bc0e_4f34ed0adb06> ;
+	rdfs:label "HIV and AIDS"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "HIV and AIDS"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/572d46bf_492e_4012_ac4a_d558938d611c
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/572d46bf_492e_4012_ac4a_d558938d611c> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f7909378_85c0_49f3_bc0e_4f34ed0adb06> ;
+	rdfs:label "Feverish illness"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Feverish illness"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/57551d51_2e5e_40d5_9605_a85b78716560
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/57551d51_2e5e_40d5_9605_a85b78716560> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/14d4c5bc_d705_4998_9520_15a98c5b274c> ;
+	rdfs:label "Allergies"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Allergic condition"@en , "Allergy"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Allergies"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/5811b929_0522_4583_bca6_258a3c9c7328
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/5811b929_0522_4583_bca6_258a3c9c7328> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/00f5c590_e9fe_4922_99e7_03eea6451020> ;
+	rdfs:label "Maxillofacial conditions"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Maxillofacial condition"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Maxillofacial conditions"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/6aace69b_8261_452b_a14a_d9dce8c98c5f
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/6aace69b_8261_452b_a14a_d9dce8c98c5f> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/181960d3_70de_4d17_9b72_8d022c46e512> ;
+	rdfs:label "Upper gastrointestinal bleeding"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Upper gastrointestinal bleeding"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/6c8164a4_275d_43e0_8c8e_a015b80d56dc
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/6c8164a4_275d_43e0_8c8e_a015b80d56dc> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f6d80782_5b23_4c16_8178_87c1a560bf92> ;
+	rdfs:label "Metastases"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Metastases"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/6c9232db_90aa_4818_b300_ffe7374595a7
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/6c9232db_90aa_4818_b300_ffe7374595a7> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/c9e8923f_c736_4424_9c29_a11da306e3b5> , <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f6d80782_5b23_4c16_8178_87c1a560bf92> ;
+	rdfs:label "Endometrial cancers"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Endometrial cancers"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/6e49b2b8_936a_4ff4_9642_4bfdba73107f
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/6e49b2b8_936a_4ff4_9642_4bfdba73107f> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/3a3ca279_ad11_4382_abf4_93435b33113f> ;
+	rdfs:label "Kidney conditions"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Kidney condition"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Kidney conditions"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/6e807365_df8d_4f97_8c43_c3d84b1eeebb
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/6e807365_df8d_4f97_8c43_c3d84b1eeebb> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/14abd949_ba13_4814_9033_5ee0a81d7726> ;
+	rdfs:label "Addiction"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Addictive behaviour"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Addiction"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/61f54231_2695_41db_a006_6dcc598f9532
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/61f54231_2695_41db_a006_6dcc598f9532> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/3a3ca279_ad11_4382_abf4_93435b33113f> ;
+	rdfs:label "Oral and dental health"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Oral and dental health"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/61210bcd_b527_45e9_8a19_2a3fe479a975
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/61210bcd_b527_45e9_8a19_2a3fe479a975> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/861e8f3d_aabd_4060_b43d_5d491ab6b33d> ;
+	rdfs:label "Glaucoma"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Glaucoma"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/62c1fa4b_7663_4ec9_adc9_e69a591b56d5
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/62c1fa4b_7663_4ec9_adc9_e69a591b56d5> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/7fc4bf74_c7c8_4434_b944_24b21ae0ebff> ;
+	rdfs:label "Chronic liver disease"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Chronic liver disease"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/66ed0b10_0b80_4fa5_95e8_32e4fe81d718
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/66ed0b10_0b80_4fa5_95e8_32e4fe81d718> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/861e8f3d_aabd_4060_b43d_5d491ab6b33d> ;
+	rdfs:label "Retinal vein occlusion"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Retinal vein occlusion"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/696a6c99_b308_4e9e_a459_b12e0225c299
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/696a6c99_b308_4e9e_a459_b12e0225c299> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f8143836_5188_455d_9b03_9f055d4450b3> ;
+	rdfs:label "Transient ischaemic attack"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Transient ischemic attack"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Transient ischaemic attack"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/7bc264bf_2a6b_4261_ad83_69b3fb4f092d
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/7bc264bf_2a6b_4261_ad83_69b3fb4f092d> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/25f7747a_9d42_4025_8b49_8170e64c7c45> ;
+	rdfs:label "Presbyopia"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Presbyopia"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/7caa7c3e_72ea_4d23_9d0f_d4b569b79800
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/7caa7c3e_72ea_4d23_9d0f_d4b569b79800> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f8143836_5188_455d_9b03_9f055d4450b3> ;
+	rdfs:label "Structural heart defects"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Structural heart defect"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Structural heart defects"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/7d7fdd1e_056d_4f9c_bb87_004838462b5e
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/7d7fdd1e_056d_4f9c_bb87_004838462b5e> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/14abd949_ba13_4814_9033_5ee0a81d7726> ;
+	rdfs:label "Autism"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Autism"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/7ece1bfb_eb11_4f8d_9cfe_5d251aee7f0c
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/7ece1bfb_eb11_4f8d_9cfe_5d251aee7f0c> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/00f5c590_e9fe_4922_99e7_03eea6451020> ;
+	rdfs:label "Arthritis"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Joint inflammation"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Arthritis"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/7fc4bf74_c7c8_4434_b944_24b21ae0ebff
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/7fc4bf74_c7c8_4434_b944_24b21ae0ebff> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/3a3ca279_ad11_4382_abf4_93435b33113f> ;
+	rdfs:label "Liver conditions"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Liver condition"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Liver conditions"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/71b7adfa_0cb3_4785_a223_aff842152241
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/71b7adfa_0cb3_4785_a223_aff842152241> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/861e8f3d_aabd_4060_b43d_5d491ab6b33d> ;
+	rdfs:label "Macular degeneration"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Macular degeneration"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/713c35ab_1348_4328_a9e5_fa5fdb3c5548
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/713c35ab_1348_4328_a9e5_fa5fdb3c5548> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/3d180641_5f6a_4c1c_96be_08e35aed71e6> ;
+	rdfs:label "Epilepsy"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Epilepsy"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/744f31ec_f742_4634_b58e_0999069b93d6
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/744f31ec_f742_4634_b58e_0999069b93d6> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/181960d3_70de_4d17_9b72_8d022c46e512> ;
+	rdfs:label "Dyspepsia"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Indigestion"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Dyspepsia"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/75dd3a5f_ca93_48c8_9191_04757be47737
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/75dd3a5f_ca93_48c8_9191_04757be47737> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/14abd949_ba13_4814_9033_5ee0a81d7726> ;
+	rdfs:label "Alcohol-use disorders"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Alcohol-use disorder"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Alcohol-use disorders"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/8aab63eb_baaf_43cb_ace7_d8a3eea1509f
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/8aab63eb_baaf_43cb_ace7_d8a3eea1509f> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/dadadec0_1eae_4304_a223_287d3befd237> ;
+	rdfs:label "Stable angina"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Stable angina"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/8ad3c273_8c77_48b9_8ada_3db50fc4f409
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/8ad3c273_8c77_48b9_8ada_3db50fc4f409> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/71b7adfa_0cb3_4785_a223_aff842152241> ;
+	rdfs:label "Macular oedema"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Macular edema"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Macular oedema"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/8be90806_3177_4f64_9ca2_2c37ccbf35fb
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/8be90806_3177_4f64_9ca2_2c37ccbf35fb> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f7909378_85c0_49f3_bc0e_4f34ed0adb06> ;
+	rdfs:label "Healthcare-associated infections"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Healthcare-associated infections"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/8d36e0b3_1b26_433c_83b2_51bc7188a407
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/8d36e0b3_1b26_433c_83b2_51bc7188a407> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f6d80782_5b23_4c16_8178_87c1a560bf92> , <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/14d4c5bc_d705_4998_9520_15a98c5b274c> ;
+	rdfs:label "Blood and bone marrow cancers"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Blood and bone marrow cancer"@en , "Haematological cancer"@en , "Haematological cancers"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Blood and bone marrow cancers"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/8df98f5d_f180_47d7_be8b_7f17095e0f96
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/8df98f5d_f180_47d7_be8b_7f17095e0f96> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/14abd949_ba13_4814_9033_5ee0a81d7726> , <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/3d180641_5f6a_4c1c_96be_08e35aed71e6> ;
+	rdfs:label "Delirium"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Acute confusional state"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Delirium"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/8dfea302_087e_41e1_8bfc_7d9505464c66
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/8dfea302_087e_41e1_8bfc_7d9505464c66> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f8143836_5188_455d_9b03_9f055d4450b3> ;
+	rdfs:label "Embolism"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Embolism"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/8fe789ed_6301_40c4_9ca4_5f4e70338e39
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/8fe789ed_6301_40c4_9ca4_5f4e70338e39> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/861e8f3d_aabd_4060_b43d_5d491ab6b33d> ;
+	rdfs:label "Corneal conditions"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Corneal condition"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Corneal conditions"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/80f6f51c_fbc7_4e2d_a021_824bf2a16d5a
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/80f6f51c_fbc7_4e2d_a021_824bf2a16d5a> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/3d180641_5f6a_4c1c_96be_08e35aed71e6> ;
+	rdfs:label "Neuropathic pain"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Neuropathic pain"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/81e8b368_6052_47d7_b23b_8b9930bb5996
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/81e8b368_6052_47d7_b23b_8b9930bb5996> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f6d80782_5b23_4c16_8178_87c1a560bf92> ;
+	rdfs:label "Upper airways tract cancers"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Upper airways tract cancer"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Upper airways tract cancers"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/8189e6da_5a19_4401_9bac_87b2d6845039
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/8189e6da_5a19_4401_9bac_87b2d6845039> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/14abd949_ba13_4814_9033_5ee0a81d7726> ;
+	rdfs:label "Schizophrenia"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Schizophrenia"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/8213f9aa_5c59_4d25_aae6_b69e85282fdf
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/8213f9aa_5c59_4d25_aae6_b69e85282fdf> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/2003b6e1_56c0_4cc5_a258_92cfb9a52325> ;
+	rdfs:label "Type 2 diabetes"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Type 2 diabetes"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/83bb589d_0f9d_471e_b343_768eb719bb73
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/83bb589d_0f9d_471e_b343_768eb719bb73> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/dc89614f_805f_484b_a7f8_a34c4b531d53> , <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/95cc22a4_8cc9_4568_a573_72077df57045> ;
+	rdfs:label "Familial hypercholesterolaemia"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "FH"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Familial hypercholesterolaemia"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/834cfd2c_5d39_4b06_bfaa_ef1fbc5fcbdd
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/834cfd2c_5d39_4b06_bfaa_ef1fbc5fcbdd> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/14d4c5bc_d705_4998_9520_15a98c5b274c> ;
+	rdfs:label "Lymphoedema"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Lymphatic edema"@en , "Lymphatic oedema"@en , "Lymphedema"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Lymphoedema"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/8352d81b_a47d_43e1_b06f_aa7c44e73eb4
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/8352d81b_a47d_43e1_b06f_aa7c44e73eb4> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/dadadec0_1eae_4304_a223_287d3befd237> ;
+	rdfs:label "Unstable angina"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Unstable angina"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/84fe1ba3_0b82_47df_a248_e979e2e8660c
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/84fe1ba3_0b82_47df_a248_e979e2e8660c> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/3a3ca279_ad11_4382_abf4_93435b33113f> ;
+	rdfs:label "Respiratory conditions"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Respiratory condition"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Respiratory conditions"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/861e8f3d_aabd_4060_b43d_5d491ab6b33d
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/861e8f3d_aabd_4060_b43d_5d491ab6b33d> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/3a3ca279_ad11_4382_abf4_93435b33113f> ;
+	rdfs:label "Eye conditions"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Eye condition"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Eye conditions"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/87aa1b5b_b5ea_4dd5_8775_e474f28d1107
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/87aa1b5b_b5ea_4dd5_8775_e474f28d1107> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/139ffbf6_2e12_4ac2_935f_9645c58b42ee> ;
+	rdfs:label "Lower urinary tract symptoms"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Lower urinary tract symptom"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Lower urinary tract symptoms"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/875fe5a9_e419_489a_9967_74c2cd32a12d
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/875fe5a9_e419_489a_9967_74c2cd32a12d> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/3d180641_5f6a_4c1c_96be_08e35aed71e6> ;
+	rdfs:label "Cerebral palsy"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Cerebral palsy"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/89198dbb_ce0c_4c0b_b5ef_7af9a2c90d37
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/89198dbb_ce0c_4c0b_b5ef_7af9a2c90d37> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/c9e8923f_c736_4424_9c29_a11da306e3b5> ;
 	rdfs:label "Vaginal conditions"@en ;
 	<http://www.w3.org/2004/02/skos/core#altLabel> "Vaginal condition"@en ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Vaginal conditions"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#VaricoseVeins
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/9cfad844_8753_44c5_aef8_7f19bb8086f6
 
-:VaricoseVeins a owl:Class ;
-	rdfs:subClassOf :CardiovascularConditions ;
-	rdfs:label "Varicose veins"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Varicose vein"@en , "Venous varices"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Varicose veins"@en .
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/9cfad844_8753_44c5_aef8_7f19bb8086f6> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f7909378_85c0_49f3_bc0e_4f34ed0adb06> ;
+	rdfs:label "Sexually transmitted infections"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Sexually transmitted infections"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#VenousThromboembolism
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/9e2120c2_223a_49bd_adc8_b0597e2da9ec
 
-:VenousThromboembolism a owl:Class ;
-	rdfs:subClassOf :Thrombosis ;
-	rdfs:label "Venous thromboembolism"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Thromboembolism of vein"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "VTE"@en , "Venous thromboembolism"@en .
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/9e2120c2_223a_49bd_adc8_b0597e2da9ec> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f8143836_5188_455d_9b03_9f055d4450b3> ;
+	rdfs:label "Acute coronary syndromes"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Acute coronary syndromes"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease#Vomiting
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/9f2c2aca_8091_4296_861a_3f736e625abb
 
-:Vomiting a owl:Class ;
-	rdfs:subClassOf :DigestiveTractConditions ;
-	rdfs:label "Vomiting"@en ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Emesis"@en ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Vomiting"@en .
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/9f2c2aca_8091_4296_861a_3f736e625abb> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/2a0cdfb6_4fd2_4acd_9ffe_eff1e62a8e6e> ;
+	rdfs:label "Postnatal conditions"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Postnatal conditions"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/9fcfe90f_27e8_4535_b375_e38f33499e13
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/9fcfe90f_27e8_4535_b375_e38f33499e13> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/7ece1bfb_eb11_4f8d_9cfe_5d251aee7f0c> ;
+	rdfs:label "Osteoarthritis"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Osteoarthritis"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/90e0f844_54da_4d12_a279_e4edcdf9bc8b
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/90e0f844_54da_4d12_a279_e4edcdf9bc8b> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/14abd949_ba13_4814_9033_5ee0a81d7726> ;
+	rdfs:label "Eating disorders"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Eating disorder"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Eating disorders"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/901cadab_b55d_4dcd_8e33_91572c03f425
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/901cadab_b55d_4dcd_8e33_91572c03f425> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f8143836_5188_455d_9b03_9f055d4450b3> ;
+	rdfs:label "Peripheral arterial disease"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Peripheral arterial disease"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/90239053_da9b_4ed6_8c8b_3a56eb043376
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/90239053_da9b_4ed6_8c8b_3a56eb043376> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f81a8047_2087_4ee4_b8fd_f7805de469eb> ;
+	rdfs:label "Neonatal jaundice"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Neonatal jaundice"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/928e287f_40fa_4fc6_8b2e_89dff1809c79
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/928e287f_40fa_4fc6_8b2e_89dff1809c79> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/2a0cdfb6_4fd2_4acd_9ffe_eff1e62a8e6e> ;
+	rdfs:label "Miscarriage"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Spontaneous abortion"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Miscarriage"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/94e0ff92_849f_4532_8134_634ce896ca33
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/94e0ff92_849f_4532_8134_634ce896ca33> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/c9e8923f_c736_4424_9c29_a11da306e3b5> ;
+	rdfs:label "Uterine prolapse"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Prolapsed uterus"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Uterine prolapse"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/945e1dcc_ed7c_401f_81eb_9b119281b78c
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/945e1dcc_ed7c_401f_81eb_9b119281b78c> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/84fe1ba3_0b82_47df_a248_e979e2e8660c> ;
+	rdfs:label "Asthma"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Asthma"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/95cc22a4_8cc9_4568_a573_72077df57045
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/95cc22a4_8cc9_4568_a573_72077df57045> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/3a3ca279_ad11_4382_abf4_93435b33113f> ;
+	rdfs:label "Genetic conditions"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Genetic condition"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Genetic conditions"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/96d9f06f_1fd9_4457_91ab_72a3b0efa22e
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/96d9f06f_1fd9_4457_91ab_72a3b0efa22e> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f8143836_5188_455d_9b03_9f055d4450b3> ;
+	rdfs:label "Stroke"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Stroke"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/9693494b_ad16_4d8a_846c_1da9a7474f47
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/9693494b_ad16_4d8a_846c_1da9a7474f47> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f8143836_5188_455d_9b03_9f055d4450b3> ;
+	rdfs:label "Hypertension"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Hypertension"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/97c45442_02c2_456f_98fe_5ef1c8f0d93c
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/97c45442_02c2_456f_98fe_5ef1c8f0d93c> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/14abd949_ba13_4814_9033_5ee0a81d7726> ;
+	rdfs:label "Learning disabilities"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Learning disability"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Learning disabilities"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/971e8e99_3571_425b_bc2d_187a833048e3
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/971e8e99_3571_425b_bc2d_187a833048e3> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/181960d3_70de_4d17_9b72_8d022c46e512> ;
+	rdfs:label "Lower gastrointestinal lesions"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Lower gastrointestinal lesion"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Lower gastrointestinal lesions"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/9784cb2d_bbc4_4c81_82f3_c68c37d722d4
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/9784cb2d_bbc4_4c81_82f3_c68c37d722d4> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f415a82a_d85c_435b_99a1_238cec96c709> ;
+	rdfs:label "Falls"@en ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Fall"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Falls"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/99e4e4a0_3d6d_4329_984b_d021583993b4
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/99e4e4a0_3d6d_4329_984b_d021583993b4> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f8143836_5188_455d_9b03_9f055d4450b3> ;
+	rdfs:label "Thrombosis"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Thrombosis"@en .
+# 
+# http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/99f3ed7f_5b0e_4a82_9a0e_e99b1a446002
+
+<http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/99f3ed7f_5b0e_4a82_9a0e_e99b1a446002> a owl:Class ;
+	rdfs:subClassOf <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/f7909378_85c0_49f3_bc0e_4f34ed0adb06> , <http://ld.nice.org.uk/ns/qualitystandard/conditionordisease/7fc4bf74_c7c8_4434_b944_24b21ae0ebff> ;
+	rdfs:label "Hepatitis"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Hepatitis"@en .
 # 
 # Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi
