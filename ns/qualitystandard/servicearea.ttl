@@ -37,7 +37,7 @@
 # http://ld.nice.org.uk/ns/qualitystandard/servicearea/d3244a53_4e38_4b6e_a694_dc6122259f97
 
 :d3244a53_4e38_4b6e_a694_dc6122259f97 a owl:Class ;
-	rdfs:label "Service Area"@en ;
+	rdfs:label "Service area"@en ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Service area"@en .
 # 
 # http://ld.nice.org.uk/ns/qualitystandard/servicearea/e53596b7_92a1_4875_a356_613149031491
