@@ -1,11 +1,11 @@
-@prefix : <http://ld.nice.org.uk/ns/qualitystandard#> .
+@prefix : <http://nice.org.uk/ontologies/qualitystandard/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://ld.nice.org.uk/ns/qualitystandard> a owl:Ontology ;
+<http://nice.org.uk/ontologies/qualitystandard> a owl:Ontology ;
 	owl:imports <http://www.w3.org/2004/02/skos/core> .
 # 
 # 
@@ -29,57 +29,57 @@ xsd:date a rdfs:Datatype .
 # #################################################################
 # 
 # 
-# http://ld.nice.org.uk/ns/qualitystandard#appliesTo
+# http://nice.org.uk/ontologies/qualitystandard#appliesTo
 
-:appliesTo a owl:ObjectProperty ;
+<http://nice.org.uk/ontologies/qualitystandard#appliesTo> a owl:ObjectProperty ;
 	rdfs:label "applies to"@en ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "applies to"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard#appliesToAgeGroup
+# http://nice.org.uk/ontologies/qualitystandard#appliesToAgeGroup
 
-:appliesToAgeGroup a owl:ObjectProperty ;
-	rdfs:subPropertyOf :appliesTo ;
+<http://nice.org.uk/ontologies/qualitystandard#appliesToAgeGroup> a owl:ObjectProperty ;
+	rdfs:subPropertyOf <http://nice.org.uk/ontologies/qualitystandard#appliesTo> ;
 	rdfs:label "Age group"@en ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "applies to age group"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard#appliesToConditionOrDisease
+# http://nice.org.uk/ontologies/qualitystandard#appliesToConditionOrDisease
 
-:appliesToConditionOrDisease a owl:ObjectProperty ;
-	rdfs:subPropertyOf :appliesTo ;
+<http://nice.org.uk/ontologies/qualitystandard#appliesToConditionOrDisease> a owl:ObjectProperty ;
+	rdfs:subPropertyOf <http://nice.org.uk/ontologies/qualitystandard#appliesTo> ;
 	rdfs:label "Condition or disease"@en ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "applies to condition or disease"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard#appliesToFactorsAffectingHealthOrWellbeing
+# http://nice.org.uk/ontologies/qualitystandard#appliesToFactorsAffectingHealthOrWellbeing
 
-:appliesToFactorsAffectingHealthOrWellbeing a owl:ObjectProperty ;
-	rdfs:subPropertyOf :appliesTo ;
+<http://nice.org.uk/ontologies/qualitystandard#appliesToFactorsAffectingHealthOrWellbeing> a owl:ObjectProperty ;
+	rdfs:subPropertyOf <http://nice.org.uk/ontologies/qualitystandard#appliesTo> ;
 	rdfs:label "Factors affecting health or wellbeing"@en ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "applies to factor affecting health or wellbeing"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard#appliesToServiceArea
+# http://nice.org.uk/ontologies/qualitystandard#appliesToServiceArea
 
-:appliesToServiceArea a owl:ObjectProperty ;
-	rdfs:subPropertyOf :appliesTo ;
+<http://nice.org.uk/ontologies/qualitystandard#appliesToServiceArea> a owl:ObjectProperty ;
+	rdfs:subPropertyOf <http://nice.org.uk/ontologies/qualitystandard#appliesTo> ;
 	rdfs:label "Service area"@en ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "applies to service area"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard#appliesToSetting
+# http://nice.org.uk/ontologies/qualitystandard#appliesToSetting
 
-:appliesToSetting a owl:ObjectProperty ;
-	rdfs:subPropertyOf :appliesTo ;
+<http://nice.org.uk/ontologies/qualitystandard#appliesToSetting> a owl:ObjectProperty ;
+	rdfs:subPropertyOf <http://nice.org.uk/ontologies/qualitystandard#appliesTo> ;
 	rdfs:label "Setting"@en ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "applies to setting"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard#isReplacedBy
+# http://nice.org.uk/ontologies/qualitystandard#isReplacedBy
 
-:isReplacedBy a owl:ObjectProperty ;
-	owl:inverseOf :replaces ;
+<http://nice.org.uk/ontologies/qualitystandard#isReplacedBy> a owl:ObjectProperty ;
+	owl:inverseOf <http://nice.org.uk/ontologies/qualitystandard#replaces> ;
 	rdfs:label "is replaced by"@en ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "is replaced by"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard#replaces
+# http://nice.org.uk/ontologies/qualitystandard#replaces
 
-:replaces a owl:ObjectProperty ;
+<http://nice.org.uk/ontologies/qualitystandard#replaces> a owl:ObjectProperty ;
 	rdfs:label "replaces"@en ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "replaces"@en .
 # 
@@ -92,94 +92,94 @@ xsd:date a rdfs:Datatype .
 # #################################################################
 # 
 # 
-# http://ld.nice.org.uk/ns/qualitystandard#abstract
+# http://nice.org.uk/ontologies/qualitystandard#abstract
 
-:abstract a owl:DatatypeProperty ;
+<http://nice.org.uk/ontologies/qualitystandard#abstract> a owl:DatatypeProperty ;
 	rdfs:range xsd:string ;
 	rdfs:label "abstract"@en ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "has statement text"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard#changedPriorityOn
+# http://nice.org.uk/ontologies/qualitystandard#changedPriorityOn
 
-:changedPriorityOn a owl:DatatypeProperty ;
+<http://nice.org.uk/ontologies/qualitystandard#changedPriorityOn> a owl:DatatypeProperty ;
 	rdfs:range xsd:date ;
 	rdfs:label "Priority changed"@en ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Priority changed on"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard#content
+# http://nice.org.uk/ontologies/qualitystandard#content
 
-:content a owl:DatatypeProperty ;
+<http://nice.org.uk/ontologies/qualitystandard#content> a owl:DatatypeProperty ;
 	rdfs:range xsd:string .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard#hasPositionalId
+# http://nice.org.uk/ontologies/qualitystandard#hasPositionalId
 
-:hasPositionalId a owl:DatatypeProperty , owl:FunctionalProperty ;
+<http://nice.org.uk/ontologies/qualitystandard#hasPositionalId> a owl:DatatypeProperty , owl:FunctionalProperty ;
 	rdfs:range xsd:string ;
 	rdfs:label "PositionalId"@en ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "has positional ID"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard#isDiscoverable
+# http://nice.org.uk/ontologies/qualitystandard#isDiscoverable
 
-:isDiscoverable a owl:DatatypeProperty ;
+<http://nice.org.uk/ontologies/qualitystandard#isDiscoverable> a owl:DatatypeProperty ;
 	rdfs:range xsd:boolean ;
 	rdfs:label "is discoverable"@en ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "is discoverable"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard#isNationalPriority
+# http://nice.org.uk/ontologies/qualitystandard#isNationalPriority
 
-:isNationalPriority a owl:DatatypeProperty ;
+<http://nice.org.uk/ontologies/qualitystandard#isNationalPriority> a owl:DatatypeProperty ;
 	rdfs:range xsd:boolean ;
 	rdfs:label "National priority"@en ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "is national priority"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard#isReplaced
+# http://nice.org.uk/ontologies/qualitystandard#isReplaced
 
-:isReplaced a owl:DatatypeProperty ;
+<http://nice.org.uk/ontologies/qualitystandard#isReplaced> a owl:DatatypeProperty ;
 	rdfs:range xsd:boolean ;
 	rdfs:label "is replaced"@en ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "is replaced"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard#isWithdrawn
+# http://nice.org.uk/ontologies/qualitystandard#isWithdrawn
 
-:isWithdrawn a owl:DatatypeProperty ;
+<http://nice.org.uk/ontologies/qualitystandard#isWithdrawn> a owl:DatatypeProperty ;
 	rdfs:range xsd:boolean ;
 	rdfs:label "is withdrawn"@en ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "is withdrawn"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard#qsidentifier
+# http://nice.org.uk/ontologies/qualitystandard#qsidentifier
 
-:qsidentifier a owl:DatatypeProperty ;
+<http://nice.org.uk/ontologies/qualitystandard#qsidentifier> a owl:DatatypeProperty ;
 	rdfs:range xsd:integer .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard#replacedOn
+# http://nice.org.uk/ontologies/qualitystandard#replacedOn
 
-:replacedOn a owl:DatatypeProperty ;
+<http://nice.org.uk/ontologies/qualitystandard#replacedOn> a owl:DatatypeProperty ;
 	rdfs:range xsd:date ;
 	rdfs:label "replaced date"@en ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "replaced on"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard#stidentifier
+# http://nice.org.uk/ontologies/qualitystandard#stidentifier
 
-:stidentifier a owl:DatatypeProperty ;
+<http://nice.org.uk/ontologies/qualitystandard#stidentifier> a owl:DatatypeProperty ;
 	rdfs:range xsd:integer .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard#title
+# http://nice.org.uk/ontologies/qualitystandard#title
 
-:title a owl:DatatypeProperty ;
+<http://nice.org.uk/ontologies/qualitystandard#title> a owl:DatatypeProperty ;
 	rdfs:range xsd:string ;
 	rdfs:label "title"@en ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "has standard number and statement number"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard#wasFirstIssuedOn
+# http://nice.org.uk/ontologies/qualitystandard#wasFirstIssuedOn
 
-:wasFirstIssuedOn a owl:DatatypeProperty ;
+<http://nice.org.uk/ontologies/qualitystandard#wasFirstIssuedOn> a owl:DatatypeProperty ;
 	rdfs:range xsd:date ;
 	rdfs:label "First issued"@en ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "was first issued on"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard#withdrawnOn
+# http://nice.org.uk/ontologies/qualitystandard#withdrawnOn
 
-:withdrawnOn a owl:DatatypeProperty ;
+<http://nice.org.uk/ontologies/qualitystandard#withdrawnOn> a owl:DatatypeProperty ;
 	rdfs:range xsd:date ;
 	rdfs:label "withdrawn date"@en ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "withdrawn on"@en .
@@ -193,63 +193,63 @@ xsd:date a rdfs:Datatype .
 # #################################################################
 # 
 # 
-# http://ld.nice.org.uk/ns/qualitystandard#QualityStatement
+# http://nice.org.uk/ontologies/qualitystandard#QualityStatement
 
-:QualityStatement a owl:Class ;
+<http://nice.org.uk/ontologies/qualitystandard#QualityStatement> a owl:Class ;
 	rdfs:subClassOf _:genid1 .
 
 _:genid1 a owl:Restriction ;
-	owl:onProperty :abstract ;
+	owl:onProperty <http://nice.org.uk/ontologies/qualitystandard#abstract> ;
 	owl:someValuesFrom xsd:string .
 
-:QualityStatement rdfs:subClassOf _:genid2 .
+<http://nice.org.uk/ontologies/qualitystandard#QualityStatement> rdfs:subClassOf _:genid2 .
 
 _:genid2 a owl:Restriction ;
-	owl:onProperty :changedPriorityOn ;
+	owl:onProperty <http://nice.org.uk/ontologies/qualitystandard#changedPriorityOn> ;
 	owl:someValuesFrom xsd:date .
 
-:QualityStatement rdfs:subClassOf _:genid3 .
+<http://nice.org.uk/ontologies/qualitystandard#QualityStatement> rdfs:subClassOf _:genid3 .
 
 _:genid3 a owl:Restriction ;
-	owl:onProperty :content ;
+	owl:onProperty <http://nice.org.uk/ontologies/qualitystandard#content> ;
 	owl:someValuesFrom xsd:string .
 
-:QualityStatement rdfs:subClassOf _:genid4 .
+<http://nice.org.uk/ontologies/qualitystandard#QualityStatement> rdfs:subClassOf _:genid4 .
 
 _:genid4 a owl:Restriction ;
-	owl:onProperty :hasPositionalId ;
+	owl:onProperty <http://nice.org.uk/ontologies/qualitystandard#hasPositionalId> ;
 	owl:someValuesFrom xsd:string .
 
-:QualityStatement rdfs:subClassOf _:genid5 .
+<http://nice.org.uk/ontologies/qualitystandard#QualityStatement> rdfs:subClassOf _:genid5 .
 
 _:genid5 a owl:Restriction ;
-	owl:onProperty :isNationalPriority ;
+	owl:onProperty <http://nice.org.uk/ontologies/qualitystandard#isNationalPriority> ;
 	owl:someValuesFrom xsd:boolean .
 
-:QualityStatement rdfs:subClassOf _:genid6 .
+<http://nice.org.uk/ontologies/qualitystandard#QualityStatement> rdfs:subClassOf _:genid6 .
 
 _:genid6 a owl:Restriction ;
-	owl:onProperty :qsidentifier ;
+	owl:onProperty <http://nice.org.uk/ontologies/qualitystandard#qsidentifier> ;
 	owl:someValuesFrom xsd:integer .
 
-:QualityStatement rdfs:subClassOf _:genid7 .
+<http://nice.org.uk/ontologies/qualitystandard#QualityStatement> rdfs:subClassOf _:genid7 .
 
 _:genid7 a owl:Restriction ;
-	owl:onProperty :stidentifier ;
+	owl:onProperty <http://nice.org.uk/ontologies/qualitystandard#stidentifier> ;
 	owl:someValuesFrom xsd:integer .
 
-:QualityStatement rdfs:subClassOf _:genid8 .
+<http://nice.org.uk/ontologies/qualitystandard#QualityStatement> rdfs:subClassOf _:genid8 .
 
 _:genid8 a owl:Restriction ;
-	owl:onProperty :title ;
+	owl:onProperty <http://nice.org.uk/ontologies/qualitystandard#title> ;
 	owl:someValuesFrom xsd:string .
 
-:QualityStatement rdfs:subClassOf _:genid9 .
+<http://nice.org.uk/ontologies/qualitystandard#QualityStatement> rdfs:subClassOf _:genid9 .
 
 _:genid9 a owl:Restriction ;
-	owl:onProperty :wasFirstIssuedOn ;
+	owl:onProperty <http://nice.org.uk/ontologies/qualitystandard#wasFirstIssuedOn> ;
 	owl:someValuesFrom xsd:date .
 
-:QualityStatement rdfs:comment "A NICE Quality statement is a clear, measurable and concise statement to describe ‘enhanced practice’, which is both aspirational and achievable." .
+<http://nice.org.uk/ontologies/qualitystandard#QualityStatement> rdfs:comment "A NICE Quality statement is a clear, measurable and concise statement to describe ‘enhanced practice’, which is both aspirational and achievable." .
 # 
 # Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi
