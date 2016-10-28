@@ -34,6 +34,7 @@ ns/*.html
 /ns/compilation.jsonld
 
 # Local build shrapnel
+contentlayer/ns/
 ns/qualitystandard/*.html
 ns/qualitystandard/*.jsonld
 ns/qualitystandard.jsonld
