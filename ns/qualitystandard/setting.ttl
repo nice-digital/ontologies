@@ -1,11 +1,11 @@
-@prefix : <http://ld.nice.org.uk/ns/qualitystandard/setting/> .
+@prefix : <https://nice.org.uk/ontologies/setting/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://ld.nice.org.uk/ns/qualitystandard/setting> a owl:Ontology ;
+<https://nice.org.uk/ontologies/setting> a owl:Ontology ;
 	owl:imports <http://www.w3.org/2004/02/skos/core> .
 # 
 # 
@@ -16,7 +16,7 @@
 # #################################################################
 # 
 # 
-# http://ld.nice.org.uk/ns/qualitystandard/setting/ad41399f_826e_427f_840a_2cb36ee22d92
+# https://nice.org.uk/ontologies/setting/ad41399f_826e_427f_840a_2cb36ee22d92
 
 :ad41399f_826e_427f_840a_2cb36ee22d92 a owl:Class ;
 	rdfs:subClassOf :6f40063c_702a_4101_ab21_516b74a38519 ;
@@ -24,7 +24,7 @@
 	<http://www.w3.org/2004/02/skos/core#definition> "To include inpatient and day hospices."@en ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Hospice"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard/setting/e517e9af_3c12_4f8b_a320_9323dfdf2510
+# https://nice.org.uk/ontologies/setting/e517e9af_3c12_4f8b_a320_9323dfdf2510
 
 :e517e9af_3c12_4f8b_a320_9323dfdf2510 a owl:Class ;
 	rdfs:subClassOf :6f40063c_702a_4101_ab21_516b74a38519 ;
@@ -32,7 +32,7 @@
 	<http://www.w3.org/2004/02/skos/core#definition> "To include schools, workplaces, in the home, supported living."@en ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Community"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard/setting/f023a36e_2b46_40ae_b775_241126ab76bd
+# https://nice.org.uk/ontologies/setting/f023a36e_2b46_40ae_b775_241126ab76bd
 
 :f023a36e_2b46_40ae_b775_241126ab76bd a owl:Class ;
 	rdfs:subClassOf :6f40063c_702a_4101_ab21_516b74a38519 ;
@@ -41,7 +41,7 @@
 	<http://www.w3.org/2004/02/skos/core#definition> "To include all homes (both residential care and nursing  homes) that offer accommodation and personal care and support for  adults or children who may not be able to live independently."@en ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Care home"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard/setting/16764614_b99f_401e_b95c_d9721dd20825
+# https://nice.org.uk/ontologies/setting/16764614_b99f_401e_b95c_d9721dd20825
 
 :16764614_b99f_401e_b95c_d9721dd20825 a owl:Class ;
 	rdfs:subClassOf :6f40063c_702a_4101_ab21_516b74a38519 ;
@@ -50,13 +50,13 @@
 	<http://www.w3.org/2004/02/skos/core#definition> "To include outpatient clinics providing specialist secondary medical and mental health outpatient services that may or may not be attached to hospital."@en ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Outpatient clinic"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard/setting/6f40063c_702a_4101_ab21_516b74a38519
+# https://nice.org.uk/ontologies/setting/6f40063c_702a_4101_ab21_516b74a38519
 
 :6f40063c_702a_4101_ab21_516b74a38519 a owl:Class ;
 	rdfs:label "Setting"@en ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Setting"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard/setting/6369f927_a7b7_42ba_bf68_39482e32d7ab
+# https://nice.org.uk/ontologies/setting/6369f927_a7b7_42ba_bf68_39482e32d7ab
 
 :6369f927_a7b7_42ba_bf68_39482e32d7ab a owl:Class ;
 	rdfs:subClassOf :6f40063c_702a_4101_ab21_516b74a38519 ;
@@ -65,7 +65,7 @@
 	<http://www.w3.org/2004/02/skos/core#definition> "To include acute, community and mental health hospitals providing inpatient services."@en ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Hospital"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard/setting/80c545e4_a13c_4373_a530_18f0239ce548
+# https://nice.org.uk/ontologies/setting/80c545e4_a13c_4373_a530_18f0239ce548
 
 :80c545e4_a13c_4373_a530_18f0239ce548 a owl:Class ;
 	rdfs:subClassOf :6f40063c_702a_4101_ab21_516b74a38519 ;

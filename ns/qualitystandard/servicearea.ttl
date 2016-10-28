@@ -1,11 +1,11 @@
-@prefix : <http://ld.nice.org.uk/ns/qualitystandard/servicearea/> .
+@prefix : <https://nice.org.uk/ontologies/servicearea/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://ld.nice.org.uk/ns/qualitystandard/servicearea> a owl:Ontology ;
+<https://nice.org.uk/ontologies/servicearea> a owl:Ontology ;
 	owl:imports <http://www.w3.org/2004/02/skos/core> .
 # 
 # 
@@ -16,7 +16,7 @@
 # #################################################################
 # 
 # 
-# http://ld.nice.org.uk/ns/qualitystandard/servicearea/bbb23f62_29f6_46ce_a328_8b66a91d4720
+# https://nice.org.uk/ontologies/servicearea/bbb23f62_29f6_46ce_a328_8b66a91d4720
 
 :bbb23f62_29f6_46ce_a328_8b66a91d4720 a owl:Class ;
 	rdfs:subClassOf :d3244a53_4e38_4b6e_a694_dc6122259f97 ;
@@ -25,7 +25,7 @@
 	<http://www.w3.org/2004/02/skos/core#definition> "To include midwifery services, antenatal, postnatal and intrapartum care."@en ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Maternity care"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard/servicearea/d268a5ea_a86b_4f4a_abc6_553e0acb8b69
+# https://nice.org.uk/ontologies/servicearea/d268a5ea_a86b_4f4a_abc6_553e0acb8b69
 
 :d268a5ea_a86b_4f4a_abc6_553e0acb8b69 a owl:Class ;
 	rdfs:subClassOf :d3244a53_4e38_4b6e_a694_dc6122259f97 ;
@@ -34,13 +34,13 @@
 	<http://www.w3.org/2004/02/skos/core#definition> "To include prescribing, supply and review of medicines and the education and continuing support of those providing these services and for people taking medicines. This includes homecare, medicines information, medicines adherence, medicines optimisation and formulary management."@en ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Medicines management"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard/servicearea/d3244a53_4e38_4b6e_a694_dc6122259f97
+# https://nice.org.uk/ontologies/servicearea/d3244a53_4e38_4b6e_a694_dc6122259f97
 
 :d3244a53_4e38_4b6e_a694_dc6122259f97 a owl:Class ;
 	rdfs:label "Service area"@en ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Service area"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard/servicearea/e53596b7_92a1_4875_a356_613149031491
+# https://nice.org.uk/ontologies/servicearea/e53596b7_92a1_4875_a356_613149031491
 
 :e53596b7_92a1_4875_a356_613149031491 a owl:Class ;
 	rdfs:subClassOf :d3244a53_4e38_4b6e_a694_dc6122259f97 ;
@@ -49,7 +49,7 @@
 	<http://www.w3.org/2004/02/skos/core#definition> "Organized measures to prevent disease, promote health, and prolong life among the population as a whole, rather than for individual patients or diseases. Typically measures will address inequalities, education, housing, employment, family/community, lifestyle issues, and surveillance/monitoring for specific diseases and risk factors, including environmental hazards."@en ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Public health"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard/servicearea/04f2ccf4_c577_41c2_94e8_64e9a0d61a2c
+# https://nice.org.uk/ontologies/servicearea/04f2ccf4_c577_41c2_94e8_64e9a0d61a2c
 
 :04f2ccf4_c577_41c2_94e8_64e9a0d61a2c a owl:Class ;
 	rdfs:subClassOf :d3244a53_4e38_4b6e_a694_dc6122259f97 ;
@@ -58,7 +58,7 @@
 	<http://www.w3.org/2004/02/skos/core#definition> "To include community based mental health services, crisis resolution and home treatment services, day psychiatric hospitals and crisis houses, inpatient psychiatric facilities, mental health assertive outreach teams, forensic mental health services, perinatal psychiatric services, mental health helplines,  liaison psychiatry services, recovery colleges, child and adolescent mental health services, recovery-focused mental health services, drug and alcohol services, dementia services and learning disabilities services."@en ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Mental health care"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard/servicearea/41def0db_ac59_4e68_a61b_ad1183bced27
+# https://nice.org.uk/ontologies/servicearea/41def0db_ac59_4e68_a61b_ad1183bced27
 
 :41def0db_ac59_4e68_a61b_ad1183bced27 a owl:Class ;
 	rdfs:subClassOf :d3244a53_4e38_4b6e_a694_dc6122259f97 ;
@@ -67,7 +67,7 @@
 	<http://www.w3.org/2004/02/skos/core#definition> "Health care services delivered outside a hospital and within communities but not formingHealth care services delivered outside a hospital and within communities but not forming part of contacted NHS primary care services. Includes: district nurses, health visitors, school nursing, community specialist services, hospital at home, and home-based rehabilitation and community physiotherapy."@en ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Community health care"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard/servicearea/488b1a36_ab26_4752_bc2e_1f988aae2da5
+# https://nice.org.uk/ontologies/servicearea/488b1a36_ab26_4752_bc2e_1f988aae2da5
 
 :488b1a36_ab26_4752_bc2e_1f988aae2da5 a owl:Class ;
 	rdfs:subClassOf :d3244a53_4e38_4b6e_a694_dc6122259f97 ;
@@ -76,7 +76,7 @@
 	<http://www.w3.org/2004/02/skos/core#definition> "To cover all specialist secondary medical care, excluding critical, urgent and emergency, maternity care and surgical care."@en ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Secondary medical care"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard/servicearea/582539e8_e154_44a9_9ecb_5b5acd717098
+# https://nice.org.uk/ontologies/servicearea/582539e8_e154_44a9_9ecb_5b5acd717098
 
 :582539e8_e154_44a9_9ecb_5b5acd717098 a owl:Class ;
 	rdfs:subClassOf :d3244a53_4e38_4b6e_a694_dc6122259f97 ;
@@ -85,7 +85,7 @@
 	<http://www.w3.org/2004/02/skos/core#definition> "The provision of social work, personal care and practical support services for adults and children in need or at risk due to illness, disability, old age or poverty. This may include home/domiciliary care or day care, housing options with levels of care support attached, residential nursing home care, specialist non-medical  transport services, information and advisory services and support for informal carers, delivered by local authorities, third sector and commercial organisations."@en ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Social care"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard/servicearea/734b5085_c648_4c46_8ff2_8836f6e0f437
+# https://nice.org.uk/ontologies/servicearea/734b5085_c648_4c46_8ff2_8836f6e0f437
 
 :734b5085_c648_4c46_8ff2_8836f6e0f437 a owl:Class ;
 	rdfs:subClassOf :d3244a53_4e38_4b6e_a694_dc6122259f97 ;
@@ -94,7 +94,7 @@
 	<http://www.w3.org/2004/02/skos/core#definition> "To include primary medical, dental, eye health and pharmacy services."@en ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Primary care"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard/servicearea/81bc76de_3bdd_48bc_ac3c_3381f45875a4
+# https://nice.org.uk/ontologies/servicearea/81bc76de_3bdd_48bc_ac3c_3381f45875a4
 
 :81bc76de_3bdd_48bc_ac3c_3381f45875a4 a owl:Class ;
 	rdfs:subClassOf :d3244a53_4e38_4b6e_a694_dc6122259f97 ;
@@ -103,7 +103,7 @@
 	<http://www.w3.org/2004/02/skos/core#definition> "Care provided through facilities that specialise in treating critically ill children or adults in high dependency and intensive care units."@en ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Critical care"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard/servicearea/90ea138f_206f_4b1e_973b_edc32f1370df
+# https://nice.org.uk/ontologies/servicearea/90ea138f_206f_4b1e_973b_edc32f1370df
 
 :90ea138f_206f_4b1e_973b_edc32f1370df a owl:Class ;
 	rdfs:subClassOf :d3244a53_4e38_4b6e_a694_dc6122259f97 ;
@@ -112,7 +112,7 @@
 	<http://www.w3.org/2004/02/skos/core#definition> "To include pre and post-operative care, as well as surgery."@en ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Surgical care"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard/servicearea/914560b5_e644_43d5_830c_fd19399583ae
+# https://nice.org.uk/ontologies/servicearea/914560b5_e644_43d5_830c_fd19399583ae
 
 :914560b5_e644_43d5_830c_fd19399583ae a owl:Class ;
 	rdfs:subClassOf :d3244a53_4e38_4b6e_a694_dc6122259f97 ;
@@ -121,7 +121,7 @@
 	<http://www.w3.org/2004/02/skos/core#definition> "Services providing care to adults and children with unplanned, urgent care needs, to include emergency ambulance services, accident and emergency departments, 999 emergency service and care provided at urgent care centres such as walk in and minor injuries units."@en ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Urgent and emergency care"@en .
 # 
-# http://ld.nice.org.uk/ns/qualitystandard/servicearea/99bd325b_806b_42f3_a3dc_49876510317a
+# https://nice.org.uk/ontologies/servicearea/99bd325b_806b_42f3_a3dc_49876510317a
 
 :99bd325b_806b_42f3_a3dc_49876510317a a owl:Class ;
 	rdfs:subClassOf :d3244a53_4e38_4b6e_a694_dc6122259f97 ;
