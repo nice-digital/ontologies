@@ -30,6 +30,5 @@ node_modules
 # Protege shrapnel
 ns/*.xml
 ns/*.html
-ns/*.ttl
 /ns/qualitystandard/catalog-v001.xml
 /ns/compilation.jsonld
