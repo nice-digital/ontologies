@@ -32,3 +32,8 @@ ns/*.xml
 ns/*.html
 /ns/qualitystandard/catalog-v001.xml
 /ns/compilation.jsonld
+
+# Local build shrapnel
+ns/qualitystandard/*.html
+ns/qualitystandard/*.jsonld
+ns/qualitystandard.jsonld
