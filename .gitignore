@@ -38,4 +38,3 @@ contentlayer/ns/
 ns/qualitystandard/*.html
 ns/qualitystandard/*.jsonld
 ns/qualitystandard.jsonld
-ns/bnf.ttl
