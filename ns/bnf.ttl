@@ -1,0 +1,1992 @@
+@prefix : <http://ld.nice.org.uk/ns/bnf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://ld.nice.org.uk/ns/bnf> .
+
+<http://ld.nice.org.uk/ns/bnf> rdf:type owl:Ontology .
+
+
+#################################################################
+#
+#    Annotation properties
+#
+#################################################################
+
+
+###  http://www.w3.org/2000/01/rdf-schema#label
+
+rdfs:label rdf:type owl:AnnotationProperty .
+
+
+
+
+
+#################################################################
+#
+#    Datatypes
+#
+#################################################################
+
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral
+
+rdf:PlainLiteral rdf:type rdfs:Datatype .
+
+
+
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasCaution
+
+:hasCaution rdf:type owl:ObjectProperty ;
+            
+            rdfs:range <http://ld.nice.org.uk/ns/bnf/Caution> .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasCautionsGroup
+
+:hasCautionsGroup rdf:type owl:ObjectProperty ;
+                  
+                  rdfs:range :CautionsGroup ;
+                  
+                  owl:inverseOf :isCautionsGroupOf .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasClassification
+
+:hasClassification rdf:type owl:ObjectProperty ;
+                   
+                   rdfs:domain :Drug ;
+                   
+                   owl:inverseOf :isClassificationOf ;
+                   
+                   rdfs:range <http://ld.nice.org.uk/ns/bnf/Classification> .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasClinicalMedicalDeviceInformationGroup
+
+:hasClinicalMedicalDeviceInformationGroup rdf:type owl:ObjectProperty ;
+                                          
+                                          rdfs:range :ClinicalMedicalDeviceInformationGroup ;
+                                          
+                                          owl:inverseOf :isClinicalMedicalDeviceInformationGroupOf .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasClinicalMedicinalProductInformation
+
+:hasClinicalMedicinalProductInformation rdf:type owl:ObjectProperty ;
+                                        
+                                        rdfs:range :ClinicalMedicinalProductInformation ;
+                                        
+                                        owl:inverseOf :isClinicalMedicinalProductInformationOf .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasConstituentDrug
+
+:hasConstituentDrug rdf:type owl:ObjectProperty ;
+                    
+                    rdfs:range :Drug .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasContraindication
+
+:hasContraindication rdf:type owl:ObjectProperty ;
+                     
+                     rdfs:range <http://ld.nice.org.uk/ns/bnf/Contraindication> .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasContraindicationsGroup
+
+:hasContraindicationsGroup rdf:type owl:ObjectProperty ;
+                           
+                           rdfs:range :ContraindicationsGroup ;
+                           
+                           owl:inverseOf :isContraindicationsGroupOf .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasDomainOfEffect
+
+:hasDomainOfEffect rdf:type owl:ObjectProperty ;
+                   
+                   rdfs:domain :Drug ;
+                   
+                   rdfs:range <http://ld.nice.org.uk/ns/bnf/DomainOfEffect> .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasDosage
+
+:hasDosage rdf:type owl:ObjectProperty ;
+           
+           rdfs:range :Dosage .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasFrequency
+
+:hasFrequency rdf:type owl:ObjectProperty ;
+              
+              rdfs:range :Frequency .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasFundingDecision
+
+:hasFundingDecision rdf:type owl:ObjectProperty ;
+                    
+                    rdfs:range :FundingDecision ;
+                    
+                    owl:inverseOf :isFundingDecisionOf .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasFundingIdentifier
+
+:hasFundingIdentifier rdf:type owl:ObjectProperty ;
+                      
+                      rdfs:range <http://ld.nice.org.uk/ns/bnf/FundingIdentifier> .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasIndication
+
+:hasIndication rdf:type owl:ObjectProperty ;
+               
+               rdfs:range <http://ld.nice.org.uk/ns/bnf/Indication> .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasIndicationsAndDose
+
+:hasIndicationsAndDose rdf:type owl:ObjectProperty ;
+                       
+                       rdfs:range :IndicationsAndDose .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasInteraction
+
+:hasInteraction rdf:type owl:ObjectProperty ;
+                
+                rdfs:range :Interaction .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasInteractionList
+
+:hasInteractionList rdf:type owl:ObjectProperty ;
+                    
+                    rdfs:range :InteractionList ;
+                    
+                    owl:inverseOf :isInteractionListOf .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasLink
+
+:hasLink rdf:type owl:ObjectProperty ;
+         
+         owl:inverseOf :isLinkedFrom .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasMedicinalForm
+
+:hasMedicinalForm rdf:type owl:ObjectProperty ;
+                  
+                  rdfs:range :MedicinalForm ;
+                  
+                  owl:inverseOf :isMedicinalFormOf .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasMedicinalProduct
+
+:hasMedicinalProduct rdf:type owl:ObjectProperty ;
+                     
+                     rdfs:range :MedicinalProduct .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasPack
+
+:hasPack rdf:type owl:ObjectProperty ;
+         
+         rdfs:range :Pack .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasPatientGroup
+
+:hasPatientGroup rdf:type owl:ObjectProperty ;
+                 
+                 rdfs:range <http://ld.nice.org.uk/ns/bnf/PatientGroup> .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasPrescribingInformationSection
+
+:hasPrescribingInformationSection rdf:type owl:ObjectProperty ;
+                                  
+                                  rdfs:range :PrescribingInformationSection ;
+                                  
+                                  owl:inverseOf :isPrescribingInformationSectionOf ;
+                                  
+                                  rdfs:subPropertyOf owl:topObjectProperty .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasPrimaryClassification
+
+:hasPrimaryClassification rdf:type owl:ObjectProperty ;
+                          
+                          rdfs:domain :Drug ;
+                          
+                          rdfs:subPropertyOf :hasClassification ;
+                          
+                          rdfs:range <http://ld.nice.org.uk/ns/bnf/Classification> .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasPrimaryDomainOfEffect
+
+:hasPrimaryDomainOfEffect rdf:type owl:ObjectProperty ;
+                          
+                          rdfs:domain :Drug ;
+                          
+                          rdfs:subPropertyOf :hasDomainOfEffect ;
+                          
+                          rdfs:range <http://ld.nice.org.uk/ns/bnf/DomainOfEffect> .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasRoute
+
+:hasRoute rdf:type owl:ObjectProperty ;
+          
+          rdfs:range <http://ld.nice.org.uk/ns/bnf/Route> .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasSecondaryClassification
+
+:hasSecondaryClassification rdf:type owl:ObjectProperty ;
+                            
+                            rdfs:domain :Drug ;
+                            
+                            rdfs:subPropertyOf :hasClassification ;
+                            
+                            rdfs:range <http://ld.nice.org.uk/ns/bnf/Classification> .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasSecondaryDomainOfEffect
+
+:hasSecondaryDomainOfEffect rdf:type owl:ObjectProperty ;
+                            
+                            rdfs:domain :Drug ;
+                            
+                            rdfs:subPropertyOf :hasDomainOfEffect ;
+                            
+                            rdfs:range <http://ld.nice.org.uk/ns/bnf/DomainOfEffect> .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasSideEffect
+
+:hasSideEffect rdf:type owl:ObjectProperty ;
+               
+               owl:inverseOf :isSideEffectOf ;
+               
+               rdfs:range <http://ld.nice.org.uk/ns/bnf/SideEffect> .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasSideEffectsGroup
+
+:hasSideEffectsGroup rdf:type owl:ObjectProperty ;
+                     
+                     rdfs:range :SideEffectsGroup ;
+                     
+                     owl:inverseOf :isSideEffectsGroupOf .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasSpecificity
+
+:hasSpecificity rdf:type owl:ObjectProperty ;
+                
+                owl:inverseOf :isSpecificityOf ;
+                
+                rdfs:range <http://ld.nice.org.uk/ns/bnf/Specificity> .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasSubject
+
+:hasSubject rdf:type owl:ObjectProperty ;
+            
+            rdfs:range :PrescribingInformation ;
+            
+            rdfs:domain :PrescribingInformationSection ;
+            
+            owl:inverseOf :isSubjectOf .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasTreatmentSummary
+
+:hasTreatmentSummary rdf:type owl:ObjectProperty ;
+                     
+                     rdfs:range :TreatmentSummary .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#inheritsFromClass
+
+:inheritsFromClass rdf:type owl:ObjectProperty ;
+                   
+                   rdfs:domain :Drug ;
+                   
+                   rdfs:range :DrugClass ;
+                   
+                   owl:inverseOf :isInheritedClassOf .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#interactsWith
+
+:interactsWith rdf:type owl:ObjectProperty ,
+                        owl:SymmetricProperty .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#isCautionOf
+
+:isCautionOf rdf:type owl:ObjectProperty ;
+             
+             owl:inverseOf :hasCaution .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#isCautionsGroupOf
+
+:isCautionsGroupOf rdf:type owl:ObjectProperty .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#isClassificationOf
+
+:isClassificationOf rdf:type owl:ObjectProperty .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#isClinicalMedicalDeviceInformationGroupOf
+
+:isClinicalMedicalDeviceInformationGroupOf rdf:type owl:ObjectProperty .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#isClinicalMedicinalProductInformationOf
+
+:isClinicalMedicinalProductInformationOf rdf:type owl:ObjectProperty .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#isConstituentDrugOf
+
+:isConstituentDrugOf rdf:type owl:ObjectProperty ;
+                     
+                     owl:inverseOf :hasConstituentDrug .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#isContraindicationOf
+
+:isContraindicationOf rdf:type owl:ObjectProperty ;
+                      
+                      owl:inverseOf :hasContraindication .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#isContraindicationsGroupOf
+
+:isContraindicationsGroupOf rdf:type owl:ObjectProperty .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#isDomainOfEffectOf
+
+:isDomainOfEffectOf rdf:type owl:ObjectProperty ;
+                    
+                    owl:inverseOf :hasDomainOfEffect .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#isDosageOf
+
+:isDosageOf rdf:type owl:ObjectProperty ;
+            
+            owl:inverseOf :hasDosage .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#isFrequencyOf
+
+:isFrequencyOf rdf:type owl:ObjectProperty ;
+               
+               owl:inverseOf :hasFrequency .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#isFundingDecisionOf
+
+:isFundingDecisionOf rdf:type owl:ObjectProperty .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#isFundingIdentifierOf
+
+:isFundingIdentifierOf rdf:type owl:ObjectProperty ;
+                       
+                       owl:inverseOf :hasFundingIdentifier .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#isIndicationOf
+
+:isIndicationOf rdf:type owl:ObjectProperty ;
+                
+                owl:inverseOf :hasIndication .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#isIndicationsAndDoseOf
+
+:isIndicationsAndDoseOf rdf:type owl:ObjectProperty ;
+                        
+                        owl:inverseOf :hasIndicationsAndDose .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#isInheritedClassOf
+
+:isInheritedClassOf rdf:type owl:ObjectProperty .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#isInteractionListOf
+
+:isInteractionListOf rdf:type owl:ObjectProperty .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#isInteractionOf
+
+:isInteractionOf rdf:type owl:ObjectProperty ;
+                 
+                 owl:inverseOf :hasInteraction .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#isLinkedFrom
+
+:isLinkedFrom rdf:type owl:ObjectProperty .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#isMedicinalFormOf
+
+:isMedicinalFormOf rdf:type owl:ObjectProperty .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#isMedicinalProductOf
+
+:isMedicinalProductOf rdf:type owl:ObjectProperty ;
+                      
+                      owl:inverseOf :hasMedicinalProduct .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#isPackOf
+
+:isPackOf rdf:type owl:ObjectProperty ;
+          
+          owl:inverseOf :hasPack .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#isPatientGroupOf
+
+:isPatientGroupOf rdf:type owl:ObjectProperty ;
+                  
+                  owl:inverseOf :hasPatientGroup .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#isPrescribingInformationSectionOf
+
+:isPrescribingInformationSectionOf rdf:type owl:ObjectProperty .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#isPrimaryClassificationOf
+
+:isPrimaryClassificationOf rdf:type owl:ObjectProperty ;
+                           
+                           owl:inverseOf :hasPrimaryClassification ;
+                           
+                           rdfs:subPropertyOf :isClassificationOf .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#isPrimaryDomainOfEffectOf
+
+:isPrimaryDomainOfEffectOf rdf:type owl:ObjectProperty ;
+                           
+                           owl:inverseOf :hasPrimaryDomainOfEffect ;
+                           
+                           rdfs:subPropertyOf :isDomainOfEffectOf .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#isRouteOf
+
+:isRouteOf rdf:type owl:ObjectProperty ;
+           
+           owl:inverseOf :hasRoute .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#isSecondaryClassificationOf
+
+:isSecondaryClassificationOf rdf:type owl:ObjectProperty ;
+                             
+                             owl:inverseOf :hasSecondaryClassification ;
+                             
+                             rdfs:subPropertyOf :isClassificationOf .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#isSecondaryDomainOfEffectOf
+
+:isSecondaryDomainOfEffectOf rdf:type owl:ObjectProperty ;
+                             
+                             owl:inverseOf :hasSecondaryDomainOfEffect ;
+                             
+                             rdfs:subPropertyOf :isDomainOfEffectOf .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#isSideEffectOf
+
+:isSideEffectOf rdf:type owl:ObjectProperty .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#isSideEffectsGroupOf
+
+:isSideEffectsGroupOf rdf:type owl:ObjectProperty .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#isSpecificityOf
+
+:isSpecificityOf rdf:type owl:ObjectProperty .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#isSubjectOf
+
+:isSubjectOf rdf:type owl:ObjectProperty .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#isTreatmentSummaryOf
+
+:isTreatmentSummaryOf rdf:type owl:ObjectProperty ;
+                      
+                      owl:inverseOf :hasTreatmentSummary .
+
+
+
+###  http://www.w3.org/2002/07/owl#topObjectProperty
+
+owl:topObjectProperty rdf:type owl:ObjectProperty .
+
+
+
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasAcbs
+
+:hasAcbs rdf:type owl:DatatypeProperty .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasAmpid
+
+:hasAmpid rdf:type owl:DatatypeProperty .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasBlackTriangle
+
+:hasBlackTriangle rdf:type owl:DatatypeProperty .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasBorderlineSubstancePrep
+
+:hasBorderlineSubstancePrep rdf:type owl:DatatypeProperty .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasCarbohydrateConstituents
+
+:hasCarbohydrateConstituents rdf:type owl:DatatypeProperty .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasCarbohydrateGrams
+
+:hasCarbohydrateGrams rdf:type owl:DatatypeProperty .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasCategory
+
+:hasCategory rdf:type owl:DatatypeProperty .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasCautionaryAdvisoryLabel
+
+:hasCautionaryAdvisoryLabel rdf:type owl:DatatypeProperty .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasComplicanceStandards
+
+:hasComplicanceStandards rdf:type owl:DatatypeProperty .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasControlledDrug
+
+:hasControlledDrug rdf:type owl:DatatypeProperty .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasDetails
+
+:hasDetails rdf:type owl:DatatypeProperty .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasDeviceDescription
+
+:hasDeviceDescription rdf:type owl:DatatypeProperty .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasDitaContent
+
+:hasDitaContent rdf:type owl:DatatypeProperty .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasDrugTariffPrice
+
+:hasDrugTariffPrice rdf:type owl:DatatypeProperty .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasDrugTarrif
+
+:hasDrugTarrif rdf:type owl:DatatypeProperty .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasElectrolytes
+
+:hasElectrolytes rdf:type owl:DatatypeProperty .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasEnergyKcal
+
+:hasEnergyKcal rdf:type owl:DatatypeProperty .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasEnergyKj
+
+:hasEnergyKj rdf:type owl:DatatypeProperty .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasExcipients
+
+:hasExcipients rdf:type owl:DatatypeProperty .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasFatConstituents
+
+:hasFatConstituents rdf:type owl:DatatypeProperty .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasFatGrams
+
+:hasFatGrams rdf:type owl:DatatypeProperty .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasFibreGrams
+
+:hasFibreGrams rdf:type owl:DatatypeProperty .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasFormulation
+
+:hasFormulation rdf:type owl:DatatypeProperty .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasImportance
+
+:hasImportance rdf:type owl:DatatypeProperty .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasIntroductoryNote
+
+:hasIntroductoryNote rdf:type owl:DatatypeProperty .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasLabelNumber
+
+:hasLabelNumber rdf:type owl:DatatypeProperty .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasLegalCategory
+
+:hasLegalCategory rdf:type owl:DatatypeProperty .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasManufacturer
+
+:hasManufacturer rdf:type owl:DatatypeProperty .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasMedicinalProductTitle
+
+:hasMedicinalProductTitle rdf:type owl:DatatypeProperty .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasNhsIndicative
+
+:hasNhsIndicative rdf:type owl:DatatypeProperty .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasNhsIndicativePrice
+
+:hasNhsIndicativePrice rdf:type owl:DatatypeProperty .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasPackSize
+
+:hasPackSize rdf:type owl:DatatypeProperty .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasPresentation
+
+:hasPresentation rdf:type owl:DatatypeProperty .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasPriceText
+
+:hasPriceText rdf:type owl:DatatypeProperty .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasProteinConstituents
+
+:hasProteinConstituents rdf:type owl:DatatypeProperty .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasProteinGrams
+
+:hasProteinGrams rdf:type owl:DatatypeProperty .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasSpecialCharacteristics
+
+:hasSpecialCharacteristics rdf:type owl:DatatypeProperty .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasStrengthOfActiveIngredient
+
+:hasStrengthOfActiveIngredient rdf:type owl:DatatypeProperty .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasSynonyms
+
+:hasSynonyms rdf:type owl:DatatypeProperty .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasTextContent
+
+:hasTextContent rdf:type owl:DatatypeProperty .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasTitle
+
+:hasTitle rdf:type owl:DatatypeProperty .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasUnitOfMeasure
+
+:hasUnitOfMeasure rdf:type owl:DatatypeProperty .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#hasVtmid
+
+:hasVtmid rdf:type owl:DatatypeProperty ;
+          
+          rdfs:domain :Drug .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://ld.nice.org.uk/ns/bnf#About
+
+:About rdf:type owl:Class .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#AdditionalMonitoring
+
+:AdditionalMonitoring rdf:type owl:Class ;
+                      
+                      rdfs:label "Additional monitoring" ;
+                      
+                      rdfs:subClassOf :PrescribingInformationSection .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#AdditionalMonitoringInBreastFeeding
+
+:AdditionalMonitoringInBreastFeeding rdf:type owl:Class ;
+                                     
+                                     rdfs:subClassOf :AdditionalMonitoring .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#AdditionalMonitoringInHepaticImpairment
+
+:AdditionalMonitoringInHepaticImpairment rdf:type owl:Class ;
+                                         
+                                         rdfs:subClassOf :AdditionalMonitoring .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#AdditionalMonitoringInPregnancy
+
+:AdditionalMonitoringInPregnancy rdf:type owl:Class ;
+                                 
+                                 rdfs:subClassOf :AdditionalMonitoring .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#AdditionalMonitoringInRenalImpairment
+
+:AdditionalMonitoringInRenalImpairment rdf:type owl:Class ;
+                                       
+                                       rdfs:subClassOf :AdditionalMonitoring .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#Advice
+
+:Advice rdf:type owl:Class ;
+        
+        rdfs:subClassOf :PrescribingInformationSection .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#AdviceAroundDrivingAndOtherTasks
+
+:AdviceAroundDrivingAndOtherTasks rdf:type owl:Class ;
+                                  
+                                  rdfs:label "Advice around driving and other tasks" ;
+                                  
+                                  rdfs:subClassOf :Advice .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#AdviceAroundMissedDoses
+
+:AdviceAroundMissedDoses rdf:type owl:Class ;
+                         
+                         rdfs:label "Advice around missed doses" ;
+                         
+                         rdfs:subClassOf :Advice .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#AdviceForDentalPractitioners
+
+:AdviceForDentalPractitioners rdf:type owl:Class ;
+                              
+                              rdfs:label "Advice for dental practitioners" ;
+                              
+                              rdfs:subClassOf :Advice .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#AllergyAndCrossSensitivity
+
+:AllergyAndCrossSensitivity rdf:type owl:Class ;
+                            
+                            rdfs:label "Allergy and cross sensitivity" ;
+                            
+                            rdfs:subClassOf :PrescribingInformation .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#AllergyAndCrossSensitivityContraindications
+
+:AllergyAndCrossSensitivityContraindications rdf:type owl:Class ;
+                                             
+                                             rdfs:label "Contra-indications" ;
+                                             
+                                             rdfs:subClassOf :PrescribingInformationSection .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#AllergyAndCrossSensitivityCrossSensitivity
+
+:AllergyAndCrossSensitivityCrossSensitivity rdf:type owl:Class ;
+                                            
+                                            rdfs:label "Cross sensitivity" ;
+                                            
+                                            rdfs:subClassOf :PrescribingInformationSection .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#BorderlineSubstance
+
+:BorderlineSubstance rdf:type owl:Class .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#BreastFeeding
+
+:BreastFeeding rdf:type owl:Class ;
+               
+               rdfs:label "Breast feeding" ;
+               
+               rdfs:subClassOf :PrescribingInformation .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#Cautions
+
+:Cautions rdf:type owl:Class ;
+          
+          rdfs:label "Cautions" ;
+          
+          rdfs:subClassOf :PrescribingInformation .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#CautionsGroup
+
+:CautionsGroup rdf:type owl:Class .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#CautionsWithIndications
+
+:CautionsWithIndications rdf:type owl:Class ;
+                         
+                         rdfs:subClassOf :CautionsGroup .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#CautionsWithRoutes
+
+:CautionsWithRoutes rdf:type owl:Class ;
+                    
+                    rdfs:subClassOf :CautionsGroup .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#ClinicalMedicalDeviceInformationGroup
+
+:ClinicalMedicalDeviceInformationGroup rdf:type owl:Class .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#ClinicalMedicinalProductInformation
+
+:ClinicalMedicinalProductInformation rdf:type owl:Class .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#ComparativeInformation
+
+:ComparativeInformation rdf:type owl:Class ;
+                        
+                        rdfs:subClassOf :TreatmentSummary .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#ConceptionAndContraception
+
+:ConceptionAndContraception rdf:type owl:Class ;
+                            
+                            rdfs:label "Conception and contraception" ;
+                            
+                            rdfs:subClassOf :PrescribingInformation .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#ConceptionAndContraceptionWarning
+
+:ConceptionAndContraceptionWarning rdf:type owl:Class ;
+                                   
+                                   rdfs:label "Conception and contraception warning" ;
+                                   
+                                   rdfs:subClassOf :PrescribingInformationSection .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#ConstituentDrug
+
+:ConstituentDrug rdf:type owl:Class ;
+                 
+                 rdfs:subClassOf :Drug .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#ContraIndications
+
+:ContraIndications rdf:type owl:Class ;
+                   
+                   rdfs:label "Contra-indications" ;
+                   
+                   rdfs:subClassOf :PrescribingInformation .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#ContraindicationWithIndications
+
+:ContraindicationWithIndications rdf:type owl:Class ;
+                                 
+                                 rdfs:subClassOf :ContraindicationsGroup .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#ContraindicationWithRoutes
+
+:ContraindicationWithRoutes rdf:type owl:Class ;
+                            
+                            rdfs:subClassOf :ContraindicationsGroup .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#ContraindicationsGroup
+
+:ContraindicationsGroup rdf:type owl:Class .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#ContraindicationsRenalImpairment
+
+:ContraindicationsRenalImpairment rdf:type owl:Class ;
+                                  
+                                  rdfs:label "Contra-indications" ;
+                                  
+                                  rdfs:subClassOf :PrescribingInformationSection .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#DentalPractitionersFormulary
+
+:DentalPractitionersFormulary rdf:type owl:Class .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#DentalPractitionersFormularyInformation
+
+:DentalPractitionersFormularyInformation rdf:type owl:Class ;
+                                         
+                                         rdfs:label "Dental practitioners formulary information" ;
+                                         
+                                         rdfs:subClassOf :PrescribingInformationSection .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#DirectionForAdministration
+
+:DirectionForAdministration rdf:type owl:Class ;
+                            
+                            rdfs:label "Direction for administration" ;
+                            
+                            rdfs:subClassOf :PrescribingInformationSection .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#DirectionsForAdministration
+
+:DirectionsForAdministration rdf:type owl:Class ;
+                             
+                             rdfs:label "Directions for administration" ;
+                             
+                             rdfs:subClassOf :PrescribingInformation .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#Dosage
+
+:Dosage rdf:type owl:Class .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#DoseAdjustment
+
+:DoseAdjustment rdf:type owl:Class ;
+                
+                rdfs:label "Dose adjustment" ;
+                
+                owl:equivalentClass :DoseAdjustments ;
+                
+                rdfs:subClassOf :PrescribingInformationSection .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#DoseAdjustments
+
+:DoseAdjustments rdf:type owl:Class ;
+                 
+                 rdfs:label "Dose adjustments" ;
+                 
+                 rdfs:subClassOf :PrescribingInformationSection .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#DoseEquivalence
+
+:DoseEquivalence rdf:type owl:Class ;
+                 
+                 rdfs:label "Dose equivalence" ;
+                 
+                 rdfs:subClassOf :PrescribingInformationSection .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#Drug
+
+:Drug rdf:type owl:Class .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#DrugAction
+
+:DrugAction rdf:type owl:Class ;
+            
+            rdfs:label "Drug action" ;
+            
+            rdfs:subClassOf :PrescribingInformationSection .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#DrugActions
+
+:DrugActions rdf:type owl:Class ;
+             
+             rdfs:label "Drug actions" ;
+             
+             rdfs:subClassOf :PrescribingInformation .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#DrugClass
+
+:DrugClass rdf:type owl:Class .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#EffectOnLaboratoryTest
+
+:EffectOnLaboratoryTest rdf:type owl:Class ;
+                        
+                        rdfs:label "Effect on laboratory test" ;
+                        
+                        rdfs:subClassOf :PrescribingInformationSection .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#EffectsOnLaboratoryTests
+
+:EffectsOnLaboratoryTests rdf:type owl:Class ;
+                          
+                          rdfs:label "Effects on laboratory tests" ;
+                          
+                          rdfs:subClassOf :PrescribingInformation .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#ExceptionToLegalCategory
+
+:ExceptionToLegalCategory rdf:type owl:Class ;
+                          
+                          rdfs:label "Exception to legal category" ;
+                          
+                          rdfs:subClassOf :PrescribingInformationSection .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#ExceptionsToLegalCategory
+
+:ExceptionsToLegalCategory rdf:type owl:Class ;
+                           
+                           rdfs:label "Exceptions to legal category" ;
+                           
+                           rdfs:subClassOf :PrescribingInformation .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#ExtremesOfBodyWeight
+
+:ExtremesOfBodyWeight rdf:type owl:Class ;
+                      
+                      rdfs:label "Extremes of body weight" ;
+                      
+                      rdfs:subClassOf :PrescribingInformationSection .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#Frequency
+
+:Frequency rdf:type owl:Class .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#FundingDecision
+
+:FundingDecision rdf:type owl:Class .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#GeneralCautions
+
+:GeneralCautions rdf:type owl:Class ;
+                 
+                 rdfs:subClassOf :CautionsGroup .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#GeneralContraindications
+
+:GeneralContraindications rdf:type owl:Class ;
+                          
+                          rdfs:subClassOf :ContraindicationsGroup .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#GeneralInformation
+
+:GeneralInformation rdf:type owl:Class ;
+                    
+                    rdfs:label "General information" ;
+                    
+                    rdfs:subClassOf :PrescribingInformationSection .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#GeneralPatientAdvice
+
+:GeneralPatientAdvice rdf:type owl:Class ;
+                      
+                      rdfs:label "General patient advice" ;
+                      
+                      rdfs:subClassOf :PrescribingInformationSection .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#GeneralSideEffects
+
+:GeneralSideEffects rdf:type owl:Class ;
+                    
+                    rdfs:subClassOf :SideEffectGroup .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#Guidance
+
+:Guidance rdf:type owl:Class .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#HandlingAndStorage
+
+:HandlingAndStorage rdf:type owl:Class ;
+                    
+                    rdfs:label "Handling and storage" ;
+                    
+                    rdfs:subClassOf :PrescribingInformationSection .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#HandlingAndStorageInformation
+
+:HandlingAndStorageInformation rdf:type owl:Class ;
+                               
+                               rdfs:label "Handling and storage information" ;
+                               
+                               rdfs:subClassOf :PrescribingInformation .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#HepaticImpairment
+
+:HepaticImpairment rdf:type owl:Class ;
+                   
+                   rdfs:label "Hepatic impairment" ;
+                   
+                   rdfs:subClassOf :PrescribingInformation .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#ImportantAdvice
+
+:ImportantAdvice rdf:type owl:Class ;
+                 
+                 rdfs:label "Important advice" ;
+                 
+                 rdfs:subClassOf :PrescribingInformationSection .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#ImportantSafetyInformation
+
+:ImportantSafetyInformation rdf:type owl:Class ;
+                            
+                            rdfs:label "Important safety information" ;
+                            
+                            rdfs:subClassOf :PrescribingInformationSection .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#ImportantSafetyInformations
+
+:ImportantSafetyInformations rdf:type owl:Class ;
+                             
+                             rdfs:label "Important safety information" ;
+                             
+                             rdfs:subClassOf :PrescribingInformation .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#IndicationAndDosageInformation
+
+:IndicationAndDosageInformation rdf:type owl:Class ;
+                                
+                                rdfs:label "Indication and dosage information" ;
+                                
+                                rdfs:subClassOf :PrescribingInformation .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#IndicationsAndDose
+
+:IndicationsAndDose rdf:type owl:Class .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#IndicationsAndDoseSection
+
+:IndicationsAndDoseSection rdf:type owl:Class ;
+                           
+                           rdfs:label "Indications and dose section" ;
+                           
+                           rdfs:subClassOf :PrescribingInformationSection .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#Interaction
+
+:Interaction rdf:type owl:Class .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#InteractionList
+
+:InteractionList rdf:type owl:Class .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#InteractionStatement
+
+:InteractionStatement rdf:type owl:Class ;
+                      
+                      rdfs:label "Interaction statement" ;
+                      
+                      rdfs:subClassOf :PrescribingInformationSection .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#Interactions
+
+:Interactions rdf:type owl:Class ;
+              
+              rdfs:label "Interactions" ;
+              
+              rdfs:subClassOf :PrescribingInformation .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#LessSuitableForPrescribing
+
+:LessSuitableForPrescribing rdf:type owl:Class ;
+                            
+                            rdfs:label "Less suitable for prescribing" ;
+                            
+                            rdfs:subClassOf :PrescribingInformationSection .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#LessSuitableForPrescribings
+
+:LessSuitableForPrescribings rdf:type owl:Class ;
+                             
+                             rdfs:label "Less suitable for prescribing" ;
+                             
+                             rdfs:subClassOf :PrescribingInformation .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#LicensingVariationStatement
+
+:LicensingVariationStatement rdf:type owl:Class ;
+                             
+                             rdfs:label "Licensing variation statement" ;
+                             
+                             rdfs:subClassOf :PrescribingInformationSection .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#ManagementOfConditions
+
+:ManagementOfConditions rdf:type owl:Class ;
+                        
+                        rdfs:subClassOf :TreatmentSummary .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#MedicalDeviceType
+
+:MedicalDeviceType rdf:type owl:Class .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#MedicalEmergenciesBodySystems
+
+:MedicalEmergenciesBodySystems rdf:type owl:Class ;
+                               
+                               rdfs:subClassOf :TreatmentSummary .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#MedicinalForm
+
+:MedicinalForm rdf:type owl:Class .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#MedicinalFormInformation
+
+:MedicinalFormInformation rdf:type owl:Class ;
+                          
+                          rdfs:label "Medicinal form information" ;
+                          
+                          rdfs:subClassOf :PrescribingInformation .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#MedicinalProduct
+
+:MedicinalProduct rdf:type owl:Class .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#MonitoringOfPatientParameters
+
+:MonitoringOfPatientParameters rdf:type owl:Class ;
+                               
+                               rdfs:label "Monitoring of patient parameters" ;
+                               
+                               rdfs:subClassOf :PrescribingInformationSection .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#MonitoringRequirement
+
+:MonitoringRequirement rdf:type owl:Class ;
+                       
+                       rdfs:label "Monitoring requirement" ;
+                       
+                       rdfs:subClassOf :PrescribingInformationSection .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#MonitoringRequirements
+
+:MonitoringRequirements rdf:type owl:Class ;
+                        
+                        rdfs:label "Monitoring requirements" ;
+                        
+                        rdfs:subClassOf :PrescribingInformation .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#NationalFunding
+
+:NationalFunding rdf:type owl:Class ;
+                 
+                 rdfs:label "National funding" ;
+                 
+                 rdfs:subClassOf :PrescribingInformation .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#NiceTechnologyAppraisals
+
+:NiceTechnologyAppraisals rdf:type owl:Class ;
+                          
+                          rdfs:subClassOf :FundingDecision .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#NonNHS
+
+:NonNHS rdf:type owl:Class ;
+        
+        rdfs:subClassOf :FundingDecision .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#Pack
+
+:Pack rdf:type owl:Class .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#PatientAdvice
+
+:PatientAdvice rdf:type owl:Class ;
+               
+               rdfs:label "Patient advice" ;
+               
+               rdfs:subClassOf :PrescribingInformationSection .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#PatientAdviceInConceptionAndContraception
+
+:PatientAdviceInConceptionAndContraception rdf:type owl:Class ;
+                                           
+                                           rdfs:subClassOf :PatientAdvice .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#PatientAdviceInPregnancy
+
+:PatientAdviceInPregnancy rdf:type owl:Class ;
+                          
+                          rdfs:subClassOf :PatientAdvice .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#PatientAndCarerAdvice
+
+:PatientAndCarerAdvice rdf:type owl:Class ;
+                       
+                       rdfs:label "Patient and carer advice" ;
+                       
+                       rdfs:subClassOf :PrescribingInformation .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#PatientMonitoringProgrammes
+
+:PatientMonitoringProgrammes rdf:type owl:Class ;
+                             
+                             rdfs:label "Patient monitoring programmes" ;
+                             
+                             rdfs:subClassOf :PrescribingInformationSection .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#PatientResources
+
+:PatientResources rdf:type owl:Class ;
+                  
+                  rdfs:label "Patient resources" ;
+                  
+                  rdfs:subClassOf :PrescribingInformationSection .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#Pharmacokinetics
+
+:Pharmacokinetics rdf:type owl:Class ;
+                  
+                  rdfs:label "Pharmacokinetics" ;
+                  
+                  rdfs:subClassOf :PrescribingInformationSection .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#Potency
+
+:Potency rdf:type owl:Class ;
+         
+         rdfs:label "Potency" ;
+         
+         rdfs:subClassOf :PrescribingInformationSection .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#PreTreatmentScreening
+
+:PreTreatmentScreening rdf:type owl:Class ;
+                       
+                       rdfs:label "Pre-treatment screening" ;
+                       
+                       rdfs:subClassOf :PrescribingInformationSection .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#PreTreatmentScreeningInformation
+
+:PreTreatmentScreeningInformation rdf:type owl:Class ;
+                                  
+                                  rdfs:label "Pre-treatment screening information" ;
+                                  
+                                  rdfs:subClassOf :PrescribingInformation .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#Pregnancy
+
+:Pregnancy rdf:type owl:Class ;
+           
+           rdfs:label "Pregnancy" ;
+           
+           rdfs:subClassOf :PrescribingInformation .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#PrescribingAndDispensingInformation
+
+:PrescribingAndDispensingInformation rdf:type owl:Class ;
+                                     
+                                     rdfs:label "Prescribing and dispensing information" ;
+                                     
+                                     rdfs:subClassOf :PrescribingInformationSection .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#PrescribingAndDispensingInformations
+
+:PrescribingAndDispensingInformations rdf:type owl:Class ;
+                                      
+                                      rdfs:label "Prescribing and dispensing information" ;
+                                      
+                                      rdfs:subClassOf :PrescribingInformation .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#PrescribingInformation
+
+:PrescribingInformation rdf:type owl:Class .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#PrescribingInformationSection
+
+:PrescribingInformationSection rdf:type owl:Class .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#ProfessionSpecificInformation
+
+:ProfessionSpecificInformation rdf:type owl:Class ;
+                               
+                               rdfs:label "Profession specific information" ;
+                               
+                               rdfs:subClassOf :PrescribingInformation .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#RenalImpairment
+
+:RenalImpairment rdf:type owl:Class ;
+                 
+                 rdfs:label "Renal impairment" ;
+                 
+                 rdfs:subClassOf :PrescribingInformation .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#SideEffectAdvice
+
+:SideEffectAdvice rdf:type owl:Class ;
+                  
+                  rdfs:label "Side-effects, further information" ;
+                  
+                  rdfs:subClassOf :PrescribingInformationSection .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#SideEffectGroup
+
+:SideEffectGroup rdf:type owl:Class .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#SideEffects
+
+:SideEffects rdf:type owl:Class ;
+             
+             rdfs:label "Side-effects" ;
+             
+             rdfs:subClassOf :PrescribingInformation .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#SideEffectsGroup
+
+:SideEffectsGroup rdf:type owl:Class .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#SideEffectsOverdosageInformation
+
+:SideEffectsOverdosageInformation rdf:type owl:Class ;
+                                  
+                                  rdfs:label "Overdose" ;
+                                  
+                                  rdfs:subClassOf :PrescribingInformationSection .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#SideEffectsWithIndications
+
+:SideEffectsWithIndications rdf:type owl:Class ;
+                            
+                            rdfs:subClassOf :SideEffectGroup .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#SideEffectsWithRoutes
+
+:SideEffectsWithRoutes rdf:type owl:Class ;
+                       
+                       rdfs:subClassOf :SideEffectGroup .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#SmcDecisions
+
+:SmcDecisions rdf:type owl:Class ;
+              
+              rdfs:subClassOf :FundingDecision .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#TheraputicDrugMonitoring
+
+:TheraputicDrugMonitoring rdf:type owl:Class ;
+                          
+                          rdfs:label "Theraputic drug monitoring" ;
+                          
+                          rdfs:subClassOf :PrescribingInformationSection .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#TreatmentCessation
+
+:TreatmentCessation rdf:type owl:Class ;
+                    
+                    rdfs:label "Treatment cessation" ;
+                    
+                    rdfs:subClassOf :PrescribingInformationSection .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#TreatmentCessationInformation
+
+:TreatmentCessationInformation rdf:type owl:Class ;
+                               
+                               rdfs:label "Treatment cessation information" ;
+                               
+                               rdfs:subClassOf :PrescribingInformation .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#TreatmentOfBodySystems
+
+:TreatmentOfBodySystems rdf:type owl:Class ;
+                        
+                        rdfs:subClassOf :TreatmentSummary .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#TreatmentSummary
+
+:TreatmentSummary rdf:type owl:Class .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#UnlicencedUsageInformation
+
+:UnlicencedUsageInformation rdf:type owl:Class ;
+                            
+                            rdfs:label "Unlicensed usage information" ;
+                            
+                            rdfs:subClassOf :PrescribingInformation .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf#UnlicencedUse
+
+:UnlicencedUse rdf:type owl:Class ;
+               
+               rdfs:label "Unlicensed use" ;
+               
+               rdfs:subClassOf :PrescribingInformationSection .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf/Caution
+
+<http://ld.nice.org.uk/ns/bnf/Caution> rdf:type owl:Class .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf/Classification
+
+<http://ld.nice.org.uk/ns/bnf/Classification> rdf:type owl:Class .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf/Contraindication
+
+<http://ld.nice.org.uk/ns/bnf/Contraindication> rdf:type owl:Class .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf/DomainOfEffect
+
+<http://ld.nice.org.uk/ns/bnf/DomainOfEffect> rdf:type owl:Class .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf/FundingIdentifier
+
+<http://ld.nice.org.uk/ns/bnf/FundingIdentifier> rdf:type owl:Class .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf/Indication
+
+<http://ld.nice.org.uk/ns/bnf/Indication> rdf:type owl:Class .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf/PatientGroup
+
+<http://ld.nice.org.uk/ns/bnf/PatientGroup> rdf:type owl:Class .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf/Route
+
+<http://ld.nice.org.uk/ns/bnf/Route> rdf:type owl:Class .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf/SideEffect
+
+<http://ld.nice.org.uk/ns/bnf/SideEffect> rdf:type owl:Class .
+
+
+
+###  http://ld.nice.org.uk/ns/bnf/Specificity
+
+<http://ld.nice.org.uk/ns/bnf/Specificity> rdf:type owl:Class .
+
+
+
+
+###  Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net
+
