@@ -8,7 +8,7 @@ cd $base/ld-utilities/
 ./build.sh
 cd $base/ns
 
-for TTL in $base/ns/{,**/}*.ttl
+for TTL in $base/ns/*.ttl
 do
 		ld=${TTL%.*}
 		prefix=${ld##*/}
