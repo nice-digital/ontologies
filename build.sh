@@ -5,8 +5,6 @@ base=`pwd`
 
 #git submodule update --remote
 cd $base/ld-utilities/
-./build.sh
-mkdir $base/ns
 cd $base/ns
 
 for TTL in $base/ns/*.ttl

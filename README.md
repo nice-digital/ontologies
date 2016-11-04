@@ -1,10 +1,27 @@
-[![Build Status](http://drone.labs.nice.org.uk/api/badge/github.com/nhsevidence/ontologies/status.svg?branch=master)](http://drone.notnice.org.uk/github.com/nhsevidence/ontologies)
-
-Repository and very basic build system / server for NICE ontologies. We will add more functionality as required. Currently it supports:
-
-* Build time conversion from OWL Manchester Syntax syntax to Turtle
-* Serving of converted ontology files
-
-Assumes we will use the prefix http://nice.org.uk/ns/. .omn files placed in the ns folder will be validated and converted to Turtle. If this process is successful, then the nice/ontologies container is updated on [dockerhub](https://registry.hub.docker.com/u/nice/ontologies/).
 
 
+Repository for NICE ontologies. Currently served as TTL / Jsonld files by NGINX
+
+## Setup
+This git repo uses submodules so please clone down this repo using:
+```
+git clone --recursive https://github.com/nhsevidence/ontologies
+```
+or if already cloned:
+```
+cd $REPO_DIR
+git submodule update --init --recursive
+```
+
+## Requirements
+* docker
+
+## Building
+```
+docker build -t ontologies .
+```
+
+## Running as a container:
+```
+docker run --name ontologies -d ontologies 
+```
