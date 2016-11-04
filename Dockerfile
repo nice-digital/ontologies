@@ -7,8 +7,6 @@ ADD . /ontologies/
 
 # Get tools from submodules and generate json.ld files from ttl
 RUN cd /ontologies && \
-    apk add --update git &&\
-	git submodule update --init --recursive &&\
     ./build.sh && \
     rm -rf ontologies
 
