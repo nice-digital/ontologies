@@ -17,8 +17,8 @@ VOLUME ["/etc/nginx/certs", "/etc/nginx/conf.d", "/var/log/nginx"]
 
 
 RUN rm -rf /usr/share/nginx/html/*
+ADD ns/. /usr/share/nginx/html/ontologies
 
-ADD . /usr/share/nginx/html/ontologies
 RUN rm -f /etc/nginx/mime.types &&\
     chown -R nginx:nginx /usr/share/nginx/html &&\
     chown nginx:nginx /usr/share/nginx/html/ontologies/*.*
