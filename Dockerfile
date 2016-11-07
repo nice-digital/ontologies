@@ -7,8 +7,7 @@ ADD . /ontologies/
 
 # Get tools from submodules and generate json.ld files from ttl
 RUN cd /ontologies && \
-    ./build.sh && \
-    rm -rf ontologies
+    ./build.sh
 
 # Install Nginx.
 RUN apk add --update nginx && rm -rf /var/cache/apk/*
@@ -16,14 +15,16 @@ RUN apk add --update nginx && rm -rf /var/cache/apk/*
 # Define mountable directories.
 VOLUME ["/etc/nginx/certs", "/etc/nginx/conf.d", "/var/log/nginx"]
 
-# Define working directory.
-WORKDIR /etc/nginx
 
 RUN rm -rf /usr/share/nginx/html/*
-ADD ns /usr/share/nginx/html/ns
+
+ADD . /usr/share/nginx/html/ontologies
 RUN rm -f /etc/nginx/mime.types &&\
     chown -R nginx:nginx /usr/share/nginx/html &&\
-    chown nginx:nginx /usr/share/nginx/html/ns/*.*
+    chown nginx:nginx /usr/share/nginx/html/ontologies/*.*
+
+# Define working directory.
+WORKDIR /etc/nginx
 
 COPY nginx.conf /etc/nginx/
 COPY default.conf /etc/nginx/conf.d/
