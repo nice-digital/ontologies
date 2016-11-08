@@ -15,9 +15,8 @@ RUN apk add --update nginx && rm -rf /var/cache/apk/*
 # Define mountable directories.
 VOLUME ["/etc/nginx/certs", "/etc/nginx/conf.d", "/var/log/nginx"]
 
-
-RUN rm -rf /usr/share/nginx/html/*
-ADD ns/. /usr/share/nginx/html/ontologies
+RUN mkdir -p /usr/share/nginx/html/ontologies && \
+    cp /ontologies/ns/* /usr/share/nginx/html/ontologies
 
 RUN rm -f /etc/nginx/mime.types &&\
     chown -R nginx:nginx /usr/share/nginx/html &&\
