@@ -1,0 +1,180 @@
+{
+  "@context": {
+    "agegroup:ConceptScheme": {
+      "@id": "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+    },
+    "agegroup:contributor": {
+      "@id": "http://purl.org/dc/terms/contributor"
+    },
+    "agegroup:description": {
+      "@id": "http://purl.org/dc/terms/description"
+    },
+    "agegroup:prefLabel": {
+      "@id": "http://www.w3.org/2004/02/skos/core#prefLabel"
+    },
+    "agegroup:comment": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "agegroup:historyNote": {
+      "@id": "http://www.w3.org/2004/02/skos/core#historyNote"
+    },
+    "agegroup:aa4da4d7_b934_4d03_b556_f7b97381953f": {
+      "@id": "https://nice.org.uk/ontologies/agegroup/aa4da4d7_b934_4d03_b556_f7b97381953f"
+    },
+    "agegroup:exactMatch": {
+      "@id": "http://www.w3.org/2004/02/skos/core#exactMatch",
+      "@type": "@id"
+    },
+    "agegroup:8ab983e9_49b7_467c_ab9b_f6c181294fa8": {
+      "@id": "https://nice.org.uk/ontologies/agegroup/8ab983e9_49b7_467c_ab9b_f6c181294fa8"
+    },
+    "agegroup:Concept": {
+      "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    "agegroup:semanticRelation": {
+      "@id": "http://www.w3.org/2004/02/skos/core#semanticRelation",
+      "@type": "@id"
+    },
+    "agegroup:mappingRelation": {
+      "@id": "http://www.w3.org/2004/02/skos/core#mappingRelation",
+      "@type": "@id"
+    },
+    "agegroup:topConceptOf": {
+      "@id": "http://www.w3.org/2004/02/skos/core#topConceptOf",
+      "@type": "@id"
+    },
+    "agegroup:narrowMatch": {
+      "@id": "http://www.w3.org/2004/02/skos/core#narrowMatch",
+      "@type": "@id"
+    },
+    "agegroup:seeAlso": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    "agegroup:broaderTransitive": {
+      "@id": "http://www.w3.org/2004/02/skos/core#broaderTransitive",
+      "@type": "@id"
+    },
+    "agegroup:example": {
+      "@id": "http://www.w3.org/2004/02/skos/core#example"
+    },
+    "agegroup:title": {
+      "@id": "http://purl.org/dc/terms/title"
+    },
+    "agegroup:scopeNote": {
+      "@id": "http://www.w3.org/2004/02/skos/core#scopeNote"
+    },
+    "agegroup:label": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "agegroup:c4347520_adf4_4ddb_9926_8f6c3132525e": {
+      "@id": "https://nice.org.uk/ontologies/agegroup/c4347520_adf4_4ddb_9926_8f6c3132525e"
+    },
+    "agegroup:related": {
+      "@id": "http://www.w3.org/2004/02/skos/core#related",
+      "@type": "@id"
+    },
+    "agegroup:List": {
+      "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#List"
+    },
+    "agegroup:5d69430f_dace_4c7e_bc70_70b02cd3d965": {
+      "@id": "https://nice.org.uk/ontologies/agegroup/5d69430f_dace_4c7e_bc70_70b02cd3d965"
+    },
+    "agegroup:broader": {
+      "@id": "http://www.w3.org/2004/02/skos/core#broader",
+      "@type": "@id"
+    },
+    "agegroup:member": {
+      "@id": "http://www.w3.org/2004/02/skos/core#member",
+      "@type": "@id"
+    },
+    "agegroup:OrderedCollection": {
+      "@id": "http://www.w3.org/2004/02/skos/core#OrderedCollection"
+    },
+    "agegroup:hasTopConcept": {
+      "@id": "http://www.w3.org/2004/02/skos/core#hasTopConcept",
+      "@type": "@id"
+    },
+    "agegroup:298765b2_34e6_4f0b_ba25_f0fa84e2a25e": {
+      "@id": "https://nice.org.uk/ontologies/agegroup/298765b2_34e6_4f0b_ba25_f0fa84e2a25e"
+    },
+    "agegroup:Collection": {
+      "@id": "http://www.w3.org/2004/02/skos/core#Collection"
+    },
+    "agegroup:7cd6067c_4af1_411e_ba3c_39abac7633c8": {
+      "@id": "https://nice.org.uk/ontologies/agegroup/7cd6067c_4af1_411e_ba3c_39abac7633c8"
+    },
+    "agegroup:broadMatch": {
+      "@id": "http://www.w3.org/2004/02/skos/core#broadMatch",
+      "@type": "@id"
+    },
+    "agegroup:c7935d78_d1ad_47f3_98a6_f0af04956b97": {
+      "@id": "https://nice.org.uk/ontologies/agegroup/c7935d78_d1ad_47f3_98a6_f0af04956b97"
+    },
+    "agegroup:isDefinedBy": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "agegroup:1b926ed3_9f9c_406d_8cc0_68e439172fea": {
+      "@id": "https://nice.org.uk/ontologies/agegroup/1b926ed3_9f9c_406d_8cc0_68e439172fea"
+    },
+    "agegroup:inScheme": {
+      "@id": "http://www.w3.org/2004/02/skos/core#inScheme",
+      "@type": "@id"
+    },
+    "agegroup:narrower": {
+      "@id": "http://www.w3.org/2004/02/skos/core#narrower",
+      "@type": "@id"
+    },
+    "agegroup:d3326f46_c734_4ab7_9e41_923256bd7d0b": {
+      "@id": "https://nice.org.uk/ontologies/agegroup/d3326f46_c734_4ab7_9e41_923256bd7d0b"
+    },
+    "agegroup:definition": {
+      "@id": "http://www.w3.org/2004/02/skos/core#definition"
+    },
+    "agegroup:memberList": {
+      "@id": "http://www.w3.org/2004/02/skos/core#memberList",
+      "@type": "@id"
+    },
+    "agegroup:d9698e00_3dd4_4273_96df_9f1be216cb89": {
+      "@id": "https://nice.org.uk/ontologies/agegroup/d9698e00_3dd4_4273_96df_9f1be216cb89"
+    },
+    "agegroup:note": {
+      "@id": "http://www.w3.org/2004/02/skos/core#note"
+    },
+    "agegroup:35a5e24c_4e78_40ff_8bef_202ce406e25a": {
+      "@id": "https://nice.org.uk/ontologies/agegroup/35a5e24c_4e78_40ff_8bef_202ce406e25a"
+    },
+    "agegroup:011cdd3d_2911_4676_93b4_5af484c359c0": {
+      "@id": "https://nice.org.uk/ontologies/agegroup/011cdd3d_2911_4676_93b4_5af484c359c0"
+    },
+    "agegroup:notation": {
+      "@id": "http://www.w3.org/2004/02/skos/core#notation"
+    },
+    "agegroup:changeNote": {
+      "@id": "http://www.w3.org/2004/02/skos/core#changeNote"
+    },
+    "agegroup:altLabel": {
+      "@id": "http://www.w3.org/2004/02/skos/core#altLabel"
+    },
+    "agegroup:closeMatch": {
+      "@id": "http://www.w3.org/2004/02/skos/core#closeMatch",
+      "@type": "@id"
+    },
+    "agegroup:narrowerTransitive": {
+      "@id": "http://www.w3.org/2004/02/skos/core#narrowerTransitive",
+      "@type": "@id"
+    },
+    "agegroup:creator": {
+      "@id": "http://purl.org/dc/terms/creator"
+    },
+    "agegroup:hiddenLabel": {
+      "@id": "http://www.w3.org/2004/02/skos/core#hiddenLabel"
+    },
+    "agegroup:editorialNote": {
+      "@id": "http://www.w3.org/2004/02/skos/core#editorialNote"
+    },
+    "agegroup:relatedMatch": {
+      "@id": "http://www.w3.org/2004/02/skos/core#relatedMatch",
+      "@type": "@id"
+    }
+  }
+}

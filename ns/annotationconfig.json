@@ -2,34 +2,34 @@
   "basettluri": "http://schema/ontologies/",
   "baseontologyuri": "https://nice.org.uk/ontologies/",
   "coreontology": { "prefix": "qualitystandard",
-    "ontology": "qualitystandard#",
+    "ontology": "qualitystandard/",
     "ttl": "qualitystandard.ttl"
   },
   "childontologies": [
     { "prefix": "setting",
       "ontology": "setting/",
       "ttl": "setting.ttl",
-      "corereference": "appliesToSetting"
+      "corereference": "62496684_7027_4f37_bd0e_264c9ff727fd"
     },
     { "prefix": "agegroup",
       "ontology": "agegroup/",
       "ttl": "agegroup.ttl",
-      "corereference": "appliesToAgeGroup"
+      "corereference": "4e7a368e_eae6_411a_8167_97127b490f99"
     },
     { "prefix": "servicearea",
       "ontology": "servicearea/",
       "ttl": "servicearea.ttl",
-      "corereference": "appliesToServiceArea"
+      "corereference": "7ae8413a_2811_4a09_a655_eff8d276ec87"
     },
     { "prefix": "healthwellbeing",
       "ontology": "factorsaffectinghealthorwellbeing/",
       "ttl": "factorsaffectinghealthorwellbeing.ttl",
-      "corereference": "appliesToFactorsAffectingHealthOrWellbeing"
+      "corereference": "18aa6468_de94_4f9f_bd7a_0075fba942a5"
     },
     { "prefix": "condition",
       "ontology": "conditionordisease/",
       "ttl": "conditionordisease.ttl",
-      "corereference": "appliesToConditionOrDisease"
+      "corereference": "28745bc0_6538_46ee_8b71_f0cf107563d9"
     }
   ]
  }

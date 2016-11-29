@@ -1,0 +1,235 @@
+{
+  "@context": {
+    "qualitystandard:altLabel": {
+      "@id": "http://www.w3.org/2004/02/skos/core#altLabel"
+    },
+    "qualitystandard:3bd8cd91_f350_406c_aaa5_68381ccf7050": {
+      "@id": "https://nice.org.uk/ontologies/qualitystandard/3bd8cd91_f350_406c_aaa5_68381ccf7050",
+      "@type": "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "qualitystandard:752ae46a_5261_41d9_9fa8_5d051932e9e7": {
+      "@id": "https://nice.org.uk/ontologies/qualitystandard/752ae46a_5261_41d9_9fa8_5d051932e9e7",
+      "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "qualitystandard:related": {
+      "@id": "http://www.w3.org/2004/02/skos/core#related",
+      "@type": "@id"
+    },
+    "qualitystandard:semanticRelation": {
+      "@id": "http://www.w3.org/2004/02/skos/core#semanticRelation",
+      "@type": "@id"
+    },
+    "qualitystandard:693a50d5_304a_4e97_97f3_8f047429ae85": {
+      "@id": "https://nice.org.uk/ontologies/qualitystandard/693a50d5_304a_4e97_97f3_8f047429ae85",
+      "@type": "@id"
+    },
+    "qualitystandard:28745bc0_6538_46ee_8b71_f0cf107563d9": {
+      "@id": "https://nice.org.uk/ontologies/qualitystandard/28745bc0_6538_46ee_8b71_f0cf107563d9",
+      "@type": "@id"
+    },
+    "qualitystandard:18aa6468_de94_4f9f_bd7a_0075fba942a5": {
+      "@id": "https://nice.org.uk/ontologies/qualitystandard/18aa6468_de94_4f9f_bd7a_0075fba942a5",
+      "@type": "@id"
+    },
+    "qualitystandard:notation": {
+      "@id": "http://www.w3.org/2004/02/skos/core#notation"
+    },
+    "qualitystandard:relatedMatch": {
+      "@id": "http://www.w3.org/2004/02/skos/core#relatedMatch",
+      "@type": "@id"
+    },
+    "qualitystandard:definition": {
+      "@id": "http://www.w3.org/2004/02/skos/core#definition"
+    },
+    "qualitystandard:closeMatch": {
+      "@id": "http://www.w3.org/2004/02/skos/core#closeMatch",
+      "@type": "@id"
+    },
+    "qualitystandard:hasTopConcept": {
+      "@id": "http://www.w3.org/2004/02/skos/core#hasTopConcept",
+      "@type": "@id"
+    },
+    "qualitystandard:List": {
+      "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#List"
+    },
+    "qualitystandard:scopeNote": {
+      "@id": "http://www.w3.org/2004/02/skos/core#scopeNote"
+    },
+    "qualitystandard:title": {
+      "@id": "http://purl.org/dc/terms/title"
+    },
+    "qualitystandard:1efaaa6a_c81a_4bd6_b598_c626b21c71fd": {
+      "@id": "https://nice.org.uk/ontologies/qualitystandard/1efaaa6a_c81a_4bd6_b598_c626b21c71fd",
+      "@type": "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "qualitystandard:ConceptScheme": {
+      "@id": "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+    },
+    "qualitystandard:note": {
+      "@id": "http://www.w3.org/2004/02/skos/core#note"
+    },
+    "qualitystandard:hiddenLabel": {
+      "@id": "http://www.w3.org/2004/02/skos/core#hiddenLabel"
+    },
+    "qualitystandard:comment": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "qualitystandard:narrowerTransitive": {
+      "@id": "http://www.w3.org/2004/02/skos/core#narrowerTransitive",
+      "@type": "@id"
+    },
+    "qualitystandard:description": {
+      "@id": "http://purl.org/dc/terms/description"
+    },
+    "qualitystandard:narrower": {
+      "@id": "http://www.w3.org/2004/02/skos/core#narrower",
+      "@type": "@id"
+    },
+    "qualitystandard:broadMatch": {
+      "@id": "http://www.w3.org/2004/02/skos/core#broadMatch",
+      "@type": "@id"
+    },
+    "qualitystandard:d828e6c0_40e0_4699_9ec2_d7accf601bc8": {
+      "@id": "https://nice.org.uk/ontologies/qualitystandard/d828e6c0_40e0_4699_9ec2_d7accf601bc8",
+      "@type": "@id"
+    },
+    "qualitystandard:inScheme": {
+      "@id": "http://www.w3.org/2004/02/skos/core#inScheme",
+      "@type": "@id"
+    },
+    "qualitystandard:2a41e426_8990_4c18_a4f3_7f82e42e3d3c": {
+      "@id": "https://nice.org.uk/ontologies/qualitystandard/2a41e426_8990_4c18_a4f3_7f82e42e3d3c",
+      "@type": "@id"
+    },
+    "qualitystandard:f5de4b93_9a34_43a1_a952_af443273d878": {
+      "@id": "https://nice.org.uk/ontologies/qualitystandard/f5de4b93_9a34_43a1_a952_af443273d878",
+      "@type": "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "qualitystandard:isDefinedBy": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "qualitystandard:memberList": {
+      "@id": "http://www.w3.org/2004/02/skos/core#memberList",
+      "@type": "@id"
+    },
+    "qualitystandard:topConceptOf": {
+      "@id": "http://www.w3.org/2004/02/skos/core#topConceptOf",
+      "@type": "@id"
+    },
+    "qualitystandard:narrowMatch": {
+      "@id": "http://www.w3.org/2004/02/skos/core#narrowMatch",
+      "@type": "@id"
+    },
+    "qualitystandard:contributor": {
+      "@id": "http://purl.org/dc/terms/contributor"
+    },
+    "qualitystandard:84efb231_0424_461e_9598_1ef5272a597a": {
+      "@id": "https://nice.org.uk/ontologies/qualitystandard/84efb231_0424_461e_9598_1ef5272a597a",
+      "@type": "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "qualitystandard:7ae8413a_2811_4a09_a655_eff8d276ec87": {
+      "@id": "https://nice.org.uk/ontologies/qualitystandard/7ae8413a_2811_4a09_a655_eff8d276ec87",
+      "@type": "@id"
+    },
+    "qualitystandard:label": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "qualitystandard:4d97ae32_1a1b_499b_9bc6_5c22be877d38": {
+      "@id": "https://nice.org.uk/ontologies/qualitystandard/4d97ae32_1a1b_499b_9bc6_5c22be877d38",
+      "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "qualitystandard:editorialNote": {
+      "@id": "http://www.w3.org/2004/02/skos/core#editorialNote"
+    },
+    "qualitystandard:seeAlso": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    "qualitystandard:3ff270e4_655a_4884_b186_e033f58759de": {
+      "@id": "https://nice.org.uk/ontologies/qualitystandard/3ff270e4_655a_4884_b186_e033f58759de",
+      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "qualitystandard:0886da59_2c5f_4124_9f46_6be4537a4099": {
+      "@id": "https://nice.org.uk/ontologies/qualitystandard/0886da59_2c5f_4124_9f46_6be4537a4099",
+      "@type": "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "qualitystandard:fe971a84_b884_49e5_8b53_13aa7d70bca6": {
+      "@id": "https://nice.org.uk/ontologies/qualitystandard/fe971a84_b884_49e5_8b53_13aa7d70bca6",
+      "@type": "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "qualitystandard:c2cb17d6_238e_437d_af64_1b6f1003bc36": {
+      "@id": "https://nice.org.uk/ontologies/qualitystandard/c2cb17d6_238e_437d_af64_1b6f1003bc36",
+      "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "qualitystandard:broaderTransitive": {
+      "@id": "http://www.w3.org/2004/02/skos/core#broaderTransitive",
+      "@type": "@id"
+    },
+    "qualitystandard:b298401f_14e4_4b25_a5bd_048acc1a6dab": {
+      "@id": "https://nice.org.uk/ontologies/qualitystandard/b298401f_14e4_4b25_a5bd_048acc1a6dab",
+      "@type": "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "qualitystandard:Collection": {
+      "@id": "http://www.w3.org/2004/02/skos/core#Collection"
+    },
+    "qualitystandard:OrderedCollection": {
+      "@id": "http://www.w3.org/2004/02/skos/core#OrderedCollection"
+    },
+    "qualitystandard:example": {
+      "@id": "http://www.w3.org/2004/02/skos/core#example"
+    },
+    "qualitystandard:creator": {
+      "@id": "http://purl.org/dc/terms/creator"
+    },
+    "qualitystandard:4e7a368e_eae6_411a_8167_97127b490f99": {
+      "@id": "https://nice.org.uk/ontologies/qualitystandard/4e7a368e_eae6_411a_8167_97127b490f99",
+      "@type": "@id"
+    },
+    "qualitystandard:e2e723f0_bcb2_4497_8118_11d5469b8d10": {
+      "@id": "https://nice.org.uk/ontologies/qualitystandard/e2e723f0_bcb2_4497_8118_11d5469b8d10",
+      "@type": "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "qualitystandard:Concept": {
+      "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    "qualitystandard:bc8e0db0_5d8a_4100_98f6_774ac0eb1758": {
+      "@id": "https://nice.org.uk/ontologies/qualitystandard/bc8e0db0_5d8a_4100_98f6_774ac0eb1758",
+      "@type": "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "qualitystandard:historyNote": {
+      "@id": "http://www.w3.org/2004/02/skos/core#historyNote"
+    },
+    "qualitystandard:changeNote": {
+      "@id": "http://www.w3.org/2004/02/skos/core#changeNote"
+    },
+    "qualitystandard:prefLabel": {
+      "@id": "http://www.w3.org/2004/02/skos/core#prefLabel"
+    },
+    "qualitystandard:member": {
+      "@id": "http://www.w3.org/2004/02/skos/core#member",
+      "@type": "@id"
+    },
+    "qualitystandard:62496684_7027_4f37_bd0e_264c9ff727fd": {
+      "@id": "https://nice.org.uk/ontologies/qualitystandard/62496684_7027_4f37_bd0e_264c9ff727fd",
+      "@type": "@id"
+    },
+    "qualitystandard:9fcb3758_a4d3_49d7_ab10_6591243caa67": {
+      "@id": "https://nice.org.uk/ontologies/qualitystandard/9fcb3758_a4d3_49d7_ab10_6591243caa67",
+      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "qualitystandard:mappingRelation": {
+      "@id": "http://www.w3.org/2004/02/skos/core#mappingRelation",
+      "@type": "@id"
+    },
+    "qualitystandard:e29accb1_afde_4130_bb06_2d2c7bf990db": {
+      "@id": "https://nice.org.uk/ontologies/qualitystandard/e29accb1_afde_4130_bb06_2d2c7bf990db"
+    },
+    "qualitystandard:broader": {
+      "@id": "http://www.w3.org/2004/02/skos/core#broader",
+      "@type": "@id"
+    },
+    "qualitystandard:exactMatch": {
+      "@id": "http://www.w3.org/2004/02/skos/core#exactMatch",
+      "@type": "@id"
+    }
+  }
+}

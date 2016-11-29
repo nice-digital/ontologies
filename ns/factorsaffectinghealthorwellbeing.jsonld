@@ -1,0 +1,168 @@
+{
+  "@context": {
+    "factorsaffectinghealthorwellbeing:List": {
+      "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#List"
+    },
+    "factorsaffectinghealthorwellbeing:prefLabel": {
+      "@id": "http://www.w3.org/2004/02/skos/core#prefLabel"
+    },
+    "factorsaffectinghealthorwellbeing:ffb060f5_2fc7_4d52_afd6_dd9751a7aa8c": {
+      "@id": "https://nice.org.uk/ontologies/factorsaffectinghealthorwellbeing/ffb060f5_2fc7_4d52_afd6_dd9751a7aa8c"
+    },
+    "factorsaffectinghealthorwellbeing:memberList": {
+      "@id": "http://www.w3.org/2004/02/skos/core#memberList",
+      "@type": "@id"
+    },
+    "factorsaffectinghealthorwellbeing:hiddenLabel": {
+      "@id": "http://www.w3.org/2004/02/skos/core#hiddenLabel"
+    },
+    "factorsaffectinghealthorwellbeing:topConceptOf": {
+      "@id": "http://www.w3.org/2004/02/skos/core#topConceptOf",
+      "@type": "@id"
+    },
+    "factorsaffectinghealthorwellbeing:inScheme": {
+      "@id": "http://www.w3.org/2004/02/skos/core#inScheme",
+      "@type": "@id"
+    },
+    "factorsaffectinghealthorwellbeing:editorialNote": {
+      "@id": "http://www.w3.org/2004/02/skos/core#editorialNote"
+    },
+    "factorsaffectinghealthorwellbeing:97307ebc_206b_4e6e_8beb_36f1fc06fb27": {
+      "@id": "https://nice.org.uk/ontologies/factorsaffectinghealthorwellbeing/97307ebc_206b_4e6e_8beb_36f1fc06fb27"
+    },
+    "factorsaffectinghealthorwellbeing:scopeNote": {
+      "@id": "http://www.w3.org/2004/02/skos/core#scopeNote"
+    },
+    "factorsaffectinghealthorwellbeing:title": {
+      "@id": "http://purl.org/dc/terms/title"
+    },
+    "factorsaffectinghealthorwellbeing:OrderedCollection": {
+      "@id": "http://www.w3.org/2004/02/skos/core#OrderedCollection"
+    },
+    "factorsaffectinghealthorwellbeing:db547896_03c6_484c_b307_85004bf7d123": {
+      "@id": "https://nice.org.uk/ontologies/factorsaffectinghealthorwellbeing/db547896_03c6_484c_b307_85004bf7d123"
+    },
+    "factorsaffectinghealthorwellbeing:49e234f9_9063_4901_af3d_6cc226b39689": {
+      "@id": "https://nice.org.uk/ontologies/factorsaffectinghealthorwellbeing/49e234f9_9063_4901_af3d_6cc226b39689"
+    },
+    "factorsaffectinghealthorwellbeing:broaderTransitive": {
+      "@id": "http://www.w3.org/2004/02/skos/core#broaderTransitive",
+      "@type": "@id"
+    },
+    "factorsaffectinghealthorwellbeing:description": {
+      "@id": "http://purl.org/dc/terms/description"
+    },
+    "factorsaffectinghealthorwellbeing:f2aadd9d_0496_4d01_9233_c9478703d5aa": {
+      "@id": "https://nice.org.uk/ontologies/factorsaffectinghealthorwellbeing/f2aadd9d_0496_4d01_9233_c9478703d5aa"
+    },
+    "factorsaffectinghealthorwellbeing:narrowerTransitive": {
+      "@id": "http://www.w3.org/2004/02/skos/core#narrowerTransitive",
+      "@type": "@id"
+    },
+    "factorsaffectinghealthorwellbeing:changeNote": {
+      "@id": "http://www.w3.org/2004/02/skos/core#changeNote"
+    },
+    "factorsaffectinghealthorwellbeing:broader": {
+      "@id": "http://www.w3.org/2004/02/skos/core#broader",
+      "@type": "@id"
+    },
+    "factorsaffectinghealthorwellbeing:definition": {
+      "@id": "http://www.w3.org/2004/02/skos/core#definition"
+    },
+    "factorsaffectinghealthorwellbeing:b849a104_4a46_4d52_ae42_1d77bde406bb": {
+      "@id": "https://nice.org.uk/ontologies/factorsaffectinghealthorwellbeing/b849a104_4a46_4d52_ae42_1d77bde406bb"
+    },
+    "factorsaffectinghealthorwellbeing:mappingRelation": {
+      "@id": "http://www.w3.org/2004/02/skos/core#mappingRelation",
+      "@type": "@id"
+    },
+    "factorsaffectinghealthorwellbeing:ConceptScheme": {
+      "@id": "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+    },
+    "factorsaffectinghealthorwellbeing:closeMatch": {
+      "@id": "http://www.w3.org/2004/02/skos/core#closeMatch",
+      "@type": "@id"
+    },
+    "factorsaffectinghealthorwellbeing:label": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "factorsaffectinghealthorwellbeing:creator": {
+      "@id": "http://purl.org/dc/terms/creator"
+    },
+    "factorsaffectinghealthorwellbeing:broadMatch": {
+      "@id": "http://www.w3.org/2004/02/skos/core#broadMatch",
+      "@type": "@id"
+    },
+    "factorsaffectinghealthorwellbeing:example": {
+      "@id": "http://www.w3.org/2004/02/skos/core#example"
+    },
+    "factorsaffectinghealthorwellbeing:notation": {
+      "@id": "http://www.w3.org/2004/02/skos/core#notation"
+    },
+    "factorsaffectinghealthorwellbeing:Concept": {
+      "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    "factorsaffectinghealthorwellbeing:contributor": {
+      "@id": "http://purl.org/dc/terms/contributor"
+    },
+    "factorsaffectinghealthorwellbeing:related": {
+      "@id": "http://www.w3.org/2004/02/skos/core#related",
+      "@type": "@id"
+    },
+    "factorsaffectinghealthorwellbeing:narrowMatch": {
+      "@id": "http://www.w3.org/2004/02/skos/core#narrowMatch",
+      "@type": "@id"
+    },
+    "factorsaffectinghealthorwellbeing:relatedMatch": {
+      "@id": "http://www.w3.org/2004/02/skos/core#relatedMatch",
+      "@type": "@id"
+    },
+    "factorsaffectinghealthorwellbeing:altLabel": {
+      "@id": "http://www.w3.org/2004/02/skos/core#altLabel"
+    },
+    "factorsaffectinghealthorwellbeing:0e2c62a3_82b4_421c_b86b_0fafd2564269": {
+      "@id": "https://nice.org.uk/ontologies/factorsaffectinghealthorwellbeing/0e2c62a3_82b4_421c_b86b_0fafd2564269"
+    },
+    "factorsaffectinghealthorwellbeing:comment": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "factorsaffectinghealthorwellbeing:hasTopConcept": {
+      "@id": "http://www.w3.org/2004/02/skos/core#hasTopConcept",
+      "@type": "@id"
+    },
+    "factorsaffectinghealthorwellbeing:note": {
+      "@id": "http://www.w3.org/2004/02/skos/core#note"
+    },
+    "factorsaffectinghealthorwellbeing:exactMatch": {
+      "@id": "http://www.w3.org/2004/02/skos/core#exactMatch",
+      "@type": "@id"
+    },
+    "factorsaffectinghealthorwellbeing:1267c9c0_2d25_4580_a507_882bdee125cd": {
+      "@id": "https://nice.org.uk/ontologies/factorsaffectinghealthorwellbeing/1267c9c0_2d25_4580_a507_882bdee125cd"
+    },
+    "factorsaffectinghealthorwellbeing:Collection": {
+      "@id": "http://www.w3.org/2004/02/skos/core#Collection"
+    },
+    "factorsaffectinghealthorwellbeing:historyNote": {
+      "@id": "http://www.w3.org/2004/02/skos/core#historyNote"
+    },
+    "factorsaffectinghealthorwellbeing:narrower": {
+      "@id": "http://www.w3.org/2004/02/skos/core#narrower",
+      "@type": "@id"
+    },
+    "factorsaffectinghealthorwellbeing:semanticRelation": {
+      "@id": "http://www.w3.org/2004/02/skos/core#semanticRelation",
+      "@type": "@id"
+    },
+    "factorsaffectinghealthorwellbeing:isDefinedBy": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "factorsaffectinghealthorwellbeing:seeAlso": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    "factorsaffectinghealthorwellbeing:member": {
+      "@id": "http://www.w3.org/2004/02/skos/core#member",
+      "@type": "@id"
+    }
+  }
+}

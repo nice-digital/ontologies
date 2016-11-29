@@ -1,369 +1,369 @@
 {
-  "@context" : {
-    "cnt:ContentAsXML" : {
-      "@id" : "http://www.w3.org/2011/content#ContentAsXML"
+  "@context": {
+    "cnt:ContentAsXML": {
+      "@id": "http://www.w3.org/2011/content#ContentAsXML"
     },
-    "cnt:relation" : {
-      "@id" : "http://purl.org/dc/elements/1.1/relation"
+    "cnt:relation": {
+      "@id": "http://purl.org/dc/elements/1.1/relation"
     },
-    "cnt:MediaType" : {
-      "@id" : "http://purl.org/dc/terms/MediaType"
+    "cnt:MediaType": {
+      "@id": "http://purl.org/dc/terms/MediaType"
     },
-    "cnt:rights" : {
-      "@id" : "http://purl.org/dc/terms/rights",
-      "@type" : "@id"
+    "cnt:rights": {
+      "@id": "http://purl.org/dc/terms/rights",
+      "@type": "@id"
     },
-    "cnt:created" : {
-      "@id" : "http://purl.org/dc/terms/created",
-      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    "cnt:created": {
+      "@id": "http://purl.org/dc/terms/created",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
     },
-    "cnt:bytes" : {
-      "@id" : "http://www.w3.org/2011/content#bytes",
-      "@type" : "http://www.w3.org/2001/XMLSchema#base64Binary"
+    "cnt:bytes": {
+      "@id": "http://www.w3.org/2011/content#bytes",
+      "@type": "http://www.w3.org/2001/XMLSchema#base64Binary"
     },
-    "cnt:issued" : {
-      "@id" : "http://purl.org/dc/terms/issued",
-      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    "cnt:issued": {
+      "@id": "http://purl.org/dc/terms/issued",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
     },
-    "cnt:accessRights" : {
-      "@id" : "http://purl.org/dc/terms/accessRights",
-      "@type" : "@id"
+    "cnt:accessRights": {
+      "@id": "http://purl.org/dc/terms/accessRights",
+      "@type": "@id"
     },
-    "cnt:requires" : {
-      "@id" : "http://purl.org/dc/terms/requires"
+    "cnt:requires": {
+      "@id": "http://purl.org/dc/terms/requires"
     },
-    "cnt:PeriodOfTime" : {
-      "@id" : "http://purl.org/dc/terms/PeriodOfTime"
+    "cnt:PeriodOfTime": {
+      "@id": "http://purl.org/dc/terms/PeriodOfTime"
     },
-    "cnt:Frequency" : {
-      "@id" : "http://purl.org/dc/terms/Frequency"
+    "cnt:Frequency": {
+      "@id": "http://purl.org/dc/terms/Frequency"
     },
-    "cnt:replaces" : {
-      "@id" : "http://purl.org/dc/terms/replaces"
+    "cnt:replaces": {
+      "@id": "http://purl.org/dc/terms/replaces"
     },
-    "cnt:declaredEncoding" : {
-      "@id" : "http://www.w3.org/2011/content#declaredEncoding",
-      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    "cnt:declaredEncoding": {
+      "@id": "http://www.w3.org/2011/content#declaredEncoding",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
     },
-    "cnt:leadingMisc" : {
-      "@id" : "http://www.w3.org/2011/content#leadingMisc",
-      "@type" : "@id"
+    "cnt:leadingMisc": {
+      "@id": "http://www.w3.org/2011/content#leadingMisc",
+      "@type": "@id"
     },
-    "cnt:dateSubmitted" : {
-      "@id" : "http://purl.org/dc/terms/dateSubmitted",
-      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    "cnt:dateSubmitted": {
+      "@id": "http://purl.org/dc/terms/dateSubmitted",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
     },
-    "cnt:type" : {
-      "@id" : "http://purl.org/dc/terms/type",
-      "@type" : "@id"
+    "cnt:type": {
+      "@id": "http://purl.org/dc/terms/type",
+      "@type": "@id"
     },
-    "cnt:tableOfContents" : {
-      "@id" : "http://purl.org/dc/terms/tableOfContents"
+    "cnt:tableOfContents": {
+      "@id": "http://purl.org/dc/terms/tableOfContents"
     },
-    "cnt:VocabularyEncodingScheme" : {
-      "@id" : "http://purl.org/dc/dcam/VocabularyEncodingScheme"
+    "cnt:VocabularyEncodingScheme": {
+      "@id": "http://purl.org/dc/dcam/VocabularyEncodingScheme"
     },
-    "cnt:isVersionOf" : {
-      "@id" : "http://purl.org/dc/terms/isVersionOf"
+    "cnt:isVersionOf": {
+      "@id": "http://purl.org/dc/terms/isVersionOf"
     },
-    "cnt:format" : {
-      "@id" : "http://purl.org/dc/terms/format",
-      "@type" : "@id"
+    "cnt:format": {
+      "@id": "http://purl.org/dc/terms/format",
+      "@type": "@id"
     },
-    "cnt:coverage" : {
-      "@id" : "http://purl.org/dc/terms/coverage",
-      "@type" : "@id"
+    "cnt:coverage": {
+      "@id": "http://purl.org/dc/terms/coverage",
+      "@type": "@id"
     },
-    "cnt:title" : {
-      "@id" : "http://purl.org/dc/terms/title",
-      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    "cnt:title": {
+      "@id": "http://purl.org/dc/terms/title",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
     },
-    "cnt:seeAlso" : {
-      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    "cnt:seeAlso": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#seeAlso"
     },
-    "cnt:spatial" : {
-      "@id" : "http://purl.org/dc/terms/spatial",
-      "@type" : "@id"
+    "cnt:spatial": {
+      "@id": "http://purl.org/dc/terms/spatial",
+      "@type": "@id"
     },
-    "cnt:available" : {
-      "@id" : "http://purl.org/dc/terms/available",
-      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    "cnt:available": {
+      "@id": "http://purl.org/dc/terms/available",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
     },
-    "cnt:mediator" : {
-      "@id" : "http://purl.org/dc/terms/mediator",
-      "@type" : "@id"
+    "cnt:mediator": {
+      "@id": "http://purl.org/dc/terms/mediator",
+      "@type": "@id"
     },
-    "cnt:isReplacedBy" : {
-      "@id" : "http://purl.org/dc/terms/isReplacedBy"
+    "cnt:isReplacedBy": {
+      "@id": "http://purl.org/dc/terms/isReplacedBy"
     },
-    "cnt:chars" : {
-      "@id" : "http://www.w3.org/2011/content#chars",
-      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    "cnt:chars": {
+      "@id": "http://www.w3.org/2011/content#chars",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
     },
-    "cnt:source" : {
-      "@id" : "http://purl.org/dc/elements/1.1/source"
+    "cnt:source": {
+      "@id": "http://purl.org/dc/elements/1.1/source"
     },
-    "cnt:Collection" : {
-      "@id" : "http://purl.org/dc/dcmitype/Collection"
+    "cnt:Collection": {
+      "@id": "http://purl.org/dc/dcmitype/Collection"
     },
-    "cnt:contributor" : {
-      "@id" : "http://purl.org/dc/terms/contributor",
-      "@type" : "@id"
+    "cnt:contributor": {
+      "@id": "http://purl.org/dc/terms/contributor",
+      "@type": "@id"
     },
-    "cnt:DoctypeDecl" : {
-      "@id" : "http://www.w3.org/2011/content#DoctypeDecl"
+    "cnt:DoctypeDecl": {
+      "@id": "http://www.w3.org/2011/content#DoctypeDecl"
     },
-    "cnt:ProvenanceStatement" : {
-      "@id" : "http://purl.org/dc/terms/ProvenanceStatement"
+    "cnt:ProvenanceStatement": {
+      "@id": "http://purl.org/dc/terms/ProvenanceStatement"
     },
-    "cnt:accrualPeriodicity" : {
-      "@id" : "http://purl.org/dc/terms/accrualPeriodicity",
-      "@type" : "@id"
+    "cnt:accrualPeriodicity": {
+      "@id": "http://purl.org/dc/terms/accrualPeriodicity",
+      "@type": "@id"
     },
-    "cnt:Class" : {
-      "@id" : "http://www.w3.org/2000/01/rdf-schema#Class"
+    "cnt:Class": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#Class"
     },
-    "cnt:MediaTypeOrExtent" : {
-      "@id" : "http://purl.org/dc/terms/MediaTypeOrExtent"
+    "cnt:MediaTypeOrExtent": {
+      "@id": "http://purl.org/dc/terms/MediaTypeOrExtent"
     },
-    "cnt:LicenseDocument" : {
-      "@id" : "http://purl.org/dc/terms/LicenseDocument"
+    "cnt:LicenseDocument": {
+      "@id": "http://purl.org/dc/terms/LicenseDocument"
     },
-    "cnt:AgentClass" : {
-      "@id" : "http://purl.org/dc/terms/AgentClass"
+    "cnt:AgentClass": {
+      "@id": "http://purl.org/dc/terms/AgentClass"
     },
-    "cnt:hasVersion" : {
-      "@id" : "http://purl.org/dc/terms/hasVersion"
+    "cnt:hasVersion": {
+      "@id": "http://purl.org/dc/terms/hasVersion"
     },
-    "cnt:Policy" : {
-      "@id" : "http://purl.org/dc/terms/Policy"
+    "cnt:Policy": {
+      "@id": "http://purl.org/dc/terms/Policy"
     },
-    "cnt:alternative" : {
-      "@id" : "http://purl.org/dc/terms/alternative",
-      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    "cnt:alternative": {
+      "@id": "http://purl.org/dc/terms/alternative",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
     },
-    "cnt:doctypeName" : {
-      "@id" : "http://www.w3.org/2011/content#doctypeName",
-      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    "cnt:doctypeName": {
+      "@id": "http://www.w3.org/2011/content#doctypeName",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
     },
-    "cnt:accrualMethod" : {
-      "@id" : "http://purl.org/dc/terms/accrualMethod",
-      "@type" : "@id"
+    "cnt:accrualMethod": {
+      "@id": "http://purl.org/dc/terms/accrualMethod",
+      "@type": "@id"
     },
-    "cnt:rest" : {
-      "@id" : "http://www.w3.org/2011/content#rest",
-      "@type" : "@id"
+    "cnt:rest": {
+      "@id": "http://www.w3.org/2011/content#rest",
+      "@type": "@id"
     },
-    "cnt:hasPart" : {
-      "@id" : "http://purl.org/dc/terms/hasPart"
+    "cnt:hasPart": {
+      "@id": "http://purl.org/dc/terms/hasPart"
     },
-    "cnt:label" : {
-      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    "cnt:label": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#label"
     },
-    "cnt:ContentAsText" : {
-      "@id" : "http://www.w3.org/2011/content#ContentAsText"
+    "cnt:ContentAsText": {
+      "@id": "http://www.w3.org/2011/content#ContentAsText"
     },
-    "cnt:comment" : {
-      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    "cnt:comment": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#comment"
     },
-    "cnt:version" : {
-      "@id" : "http://www.w3.org/2011/content#version",
-      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    "cnt:version": {
+      "@id": "http://www.w3.org/2011/content#version",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
     },
-    "cnt:educationLevel" : {
-      "@id" : "http://purl.org/dc/terms/educationLevel",
-      "@type" : "@id"
+    "cnt:educationLevel": {
+      "@id": "http://purl.org/dc/terms/educationLevel",
+      "@type": "@id"
     },
-    "cnt:LocationPeriodOrJurisdiction" : {
-      "@id" : "http://purl.org/dc/terms/LocationPeriodOrJurisdiction"
+    "cnt:LocationPeriodOrJurisdiction": {
+      "@id": "http://purl.org/dc/terms/LocationPeriodOrJurisdiction"
     },
-    "cnt:valid" : {
-      "@id" : "http://purl.org/dc/terms/valid",
-      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    "cnt:valid": {
+      "@id": "http://purl.org/dc/terms/valid",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
     },
-    "cnt:Location" : {
-      "@id" : "http://purl.org/dc/terms/Location"
+    "cnt:Location": {
+      "@id": "http://purl.org/dc/terms/Location"
     },
-    "cnt:isDefinedBy" : {
-      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    "cnt:isDefinedBy": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
     },
-    "cnt:BibliographicResource" : {
-      "@id" : "http://purl.org/dc/terms/BibliographicResource"
+    "cnt:BibliographicResource": {
+      "@id": "http://purl.org/dc/terms/BibliographicResource"
     },
-    "cnt:dateCopyrighted" : {
-      "@id" : "http://purl.org/dc/terms/dateCopyrighted",
-      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    "cnt:dateCopyrighted": {
+      "@id": "http://purl.org/dc/terms/dateCopyrighted",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
     },
-    "cnt:MethodOfAccrual" : {
-      "@id" : "http://purl.org/dc/terms/MethodOfAccrual"
+    "cnt:MethodOfAccrual": {
+      "@id": "http://purl.org/dc/terms/MethodOfAccrual"
     },
-    "cnt:isReferencedBy" : {
-      "@id" : "http://purl.org/dc/terms/isReferencedBy"
+    "cnt:isReferencedBy": {
+      "@id": "http://purl.org/dc/terms/isReferencedBy"
     },
-    "cnt:publicId" : {
-      "@id" : "http://www.w3.org/2011/content#publicId",
-      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    "cnt:publicId": {
+      "@id": "http://www.w3.org/2011/content#publicId",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
     },
-    "cnt:Agent" : {
-      "@id" : "http://purl.org/dc/terms/Agent"
+    "cnt:Agent": {
+      "@id": "http://purl.org/dc/terms/Agent"
     },
-    "cnt:isFormatOf" : {
-      "@id" : "http://purl.org/dc/terms/isFormatOf"
+    "cnt:isFormatOf": {
+      "@id": "http://purl.org/dc/terms/isFormatOf"
     },
-    "cnt:Jurisdiction" : {
-      "@id" : "http://purl.org/dc/terms/Jurisdiction"
+    "cnt:Jurisdiction": {
+      "@id": "http://purl.org/dc/terms/Jurisdiction"
     },
-    "cnt:ContentAsBase64" : {
-      "@id" : "http://www.w3.org/2011/content#ContentAsBase64"
+    "cnt:ContentAsBase64": {
+      "@id": "http://www.w3.org/2011/content#ContentAsBase64"
     },
-    "cnt:versionInfo" : {
-      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    "cnt:versionInfo": {
+      "@id": "http://www.w3.org/2002/07/owl#versionInfo"
     },
-    "cnt:characterEncoding" : {
-      "@id" : "http://www.w3.org/2011/content#characterEncoding",
-      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    "cnt:characterEncoding": {
+      "@id": "http://www.w3.org/2011/content#characterEncoding",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
     },
-    "cnt:audience" : {
-      "@id" : "http://purl.org/dc/terms/audience",
-      "@type" : "@id"
+    "cnt:audience": {
+      "@id": "http://purl.org/dc/terms/audience",
+      "@type": "@id"
     },
-    "cnt:identifier" : {
-      "@id" : "http://purl.org/dc/terms/identifier",
-      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    "cnt:identifier": {
+      "@id": "http://purl.org/dc/terms/identifier",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
     },
-    "cnt:Content" : {
-      "@id" : "http://www.w3.org/2011/content#Content"
+    "cnt:Content": {
+      "@id": "http://www.w3.org/2011/content#Content"
     },
-    "cnt:internalSubset" : {
-      "@id" : "http://www.w3.org/2011/content#internalSubset",
-      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    "cnt:internalSubset": {
+      "@id": "http://www.w3.org/2011/content#internalSubset",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
     },
-    "cnt:dtDecl" : {
-      "@id" : "http://www.w3.org/2011/content#dtDecl",
-      "@type" : "@id"
+    "cnt:dtDecl": {
+      "@id": "http://www.w3.org/2011/content#dtDecl",
+      "@type": "@id"
     },
-    "cnt:SizeOrDuration" : {
-      "@id" : "http://purl.org/dc/terms/SizeOrDuration"
+    "cnt:SizeOrDuration": {
+      "@id": "http://purl.org/dc/terms/SizeOrDuration"
     },
-    "cnt:bibliographicCitation" : {
-      "@id" : "http://purl.org/dc/terms/bibliographicCitation",
-      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    "cnt:bibliographicCitation": {
+      "@id": "http://purl.org/dc/terms/bibliographicCitation",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
     },
-    "cnt:modified" : {
-      "@id" : "http://purl.org/dc/terms/modified",
-      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    "cnt:modified": {
+      "@id": "http://purl.org/dc/terms/modified",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
     },
-    "cnt:provenance" : {
-      "@id" : "http://purl.org/dc/terms/provenance",
-      "@type" : "@id"
+    "cnt:provenance": {
+      "@id": "http://purl.org/dc/terms/provenance",
+      "@type": "@id"
     },
-    "cnt:references" : {
-      "@id" : "http://purl.org/dc/terms/references"
+    "cnt:references": {
+      "@id": "http://purl.org/dc/terms/references"
     },
-    "cnt:LinguisticSystem" : {
-      "@id" : "http://purl.org/dc/terms/LinguisticSystem"
+    "cnt:LinguisticSystem": {
+      "@id": "http://purl.org/dc/terms/LinguisticSystem"
     },
-    "cnt:note" : {
-      "@id" : "http://www.w3.org/2004/02/skos/core#note"
+    "cnt:note": {
+      "@id": "http://www.w3.org/2004/02/skos/core#note"
     },
-    "cnt:accrualPolicy" : {
-      "@id" : "http://purl.org/dc/terms/accrualPolicy",
-      "@type" : "@id"
+    "cnt:accrualPolicy": {
+      "@id": "http://purl.org/dc/terms/accrualPolicy",
+      "@type": "@id"
     },
-    "cnt:instructionalMethod" : {
-      "@id" : "http://purl.org/dc/terms/instructionalMethod",
-      "@type" : "@id"
+    "cnt:instructionalMethod": {
+      "@id": "http://purl.org/dc/terms/instructionalMethod",
+      "@type": "@id"
     },
-    "cnt:FileFormat" : {
-      "@id" : "http://purl.org/dc/terms/FileFormat"
+    "cnt:FileFormat": {
+      "@id": "http://purl.org/dc/terms/FileFormat"
     },
-    "cnt:isRequiredBy" : {
-      "@id" : "http://purl.org/dc/terms/isRequiredBy"
+    "cnt:isRequiredBy": {
+      "@id": "http://purl.org/dc/terms/isRequiredBy"
     },
-    "cnt:abstract" : {
-      "@id" : "http://purl.org/dc/terms/abstract"
+    "cnt:abstract": {
+      "@id": "http://purl.org/dc/terms/abstract"
     },
-    "cnt:isPartOf" : {
-      "@id" : "http://purl.org/dc/terms/isPartOf"
+    "cnt:isPartOf": {
+      "@id": "http://purl.org/dc/terms/isPartOf"
     },
-    "cnt:license" : {
-      "@id" : "http://purl.org/dc/terms/license",
-      "@type" : "@id"
+    "cnt:license": {
+      "@id": "http://purl.org/dc/terms/license",
+      "@type": "@id"
     },
-    "cnt:hasFormat" : {
-      "@id" : "http://purl.org/dc/terms/hasFormat"
+    "cnt:hasFormat": {
+      "@id": "http://purl.org/dc/terms/hasFormat"
     },
-    "cnt:RightsStatement" : {
-      "@id" : "http://purl.org/dc/terms/RightsStatement"
+    "cnt:RightsStatement": {
+      "@id": "http://purl.org/dc/terms/RightsStatement"
     },
-    "cnt:PhysicalMedium" : {
-      "@id" : "http://purl.org/dc/terms/PhysicalMedium"
+    "cnt:PhysicalMedium": {
+      "@id": "http://purl.org/dc/terms/PhysicalMedium"
     },
-    "cnt:standalone" : {
-      "@id" : "http://www.w3.org/2011/content#standalone",
-      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    "cnt:standalone": {
+      "@id": "http://www.w3.org/2011/content#standalone",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
     },
-    "cnt:conformsTo" : {
-      "@id" : "http://purl.org/dc/terms/conformsTo",
-      "@type" : "@id"
+    "cnt:conformsTo": {
+      "@id": "http://purl.org/dc/terms/conformsTo",
+      "@type": "@id"
     },
-    "cnt:publisher" : {
-      "@id" : "http://purl.org/dc/terms/publisher",
-      "@type" : "@id"
+    "cnt:publisher": {
+      "@id": "http://purl.org/dc/terms/publisher",
+      "@type": "@id"
     },
-    "cnt:XMLLiteral" : {
-      "@id" : "http://www.w3.org/2000/01/rdf-schema#XMLLiteral"
+    "cnt:XMLLiteral": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#XMLLiteral"
     },
-    "cnt:MethodOfInstruction" : {
-      "@id" : "http://purl.org/dc/terms/MethodOfInstruction"
+    "cnt:MethodOfInstruction": {
+      "@id": "http://purl.org/dc/terms/MethodOfInstruction"
     },
-    "cnt:date" : {
-      "@id" : "http://purl.org/dc/terms/date",
-      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    "cnt:date": {
+      "@id": "http://purl.org/dc/terms/date",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
     },
-    "cnt:Standard" : {
-      "@id" : "http://purl.org/dc/terms/Standard"
+    "cnt:Standard": {
+      "@id": "http://purl.org/dc/terms/Standard"
     },
-    "cnt:extent" : {
-      "@id" : "http://purl.org/dc/terms/extent",
-      "@type" : "@id"
+    "cnt:extent": {
+      "@id": "http://purl.org/dc/terms/extent",
+      "@type": "@id"
     },
-    "cnt:PhysicalResource" : {
-      "@id" : "http://purl.org/dc/terms/PhysicalResource"
+    "cnt:PhysicalResource": {
+      "@id": "http://purl.org/dc/terms/PhysicalResource"
     },
-    "cnt:medium" : {
-      "@id" : "http://purl.org/dc/terms/medium",
-      "@type" : "@id"
+    "cnt:medium": {
+      "@id": "http://purl.org/dc/terms/medium",
+      "@type": "@id"
     },
-    "cnt:language" : {
-      "@id" : "http://purl.org/dc/terms/language",
-      "@type" : "@id"
+    "cnt:language": {
+      "@id": "http://purl.org/dc/terms/language",
+      "@type": "@id"
     },
-    "cnt:rightsHolder" : {
-      "@id" : "http://purl.org/dc/terms/rightsHolder",
-      "@type" : "@id"
+    "cnt:rightsHolder": {
+      "@id": "http://purl.org/dc/terms/rightsHolder",
+      "@type": "@id"
     },
-    "cnt:creator" : {
-      "@id" : "http://purl.org/dc/terms/creator",
-      "@type" : "@id"
+    "cnt:creator": {
+      "@id": "http://purl.org/dc/terms/creator",
+      "@type": "@id"
     },
-    "cnt:systemId" : {
-      "@id" : "http://www.w3.org/2011/content#systemId",
-      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+    "cnt:systemId": {
+      "@id": "http://www.w3.org/2011/content#systemId",
+      "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
     },
-    "cnt:subject" : {
-      "@id" : "http://purl.org/dc/terms/subject"
+    "cnt:subject": {
+      "@id": "http://purl.org/dc/terms/subject"
     },
-    "cnt:description" : {
-      "@id" : "http://purl.org/dc/terms/description"
+    "cnt:description": {
+      "@id": "http://purl.org/dc/terms/description"
     },
-    "cnt:temporal" : {
-      "@id" : "http://purl.org/dc/terms/temporal",
-      "@type" : "@id"
+    "cnt:temporal": {
+      "@id": "http://purl.org/dc/terms/temporal",
+      "@type": "@id"
     },
-    "cnt:dateAccepted" : {
-      "@id" : "http://purl.org/dc/terms/dateAccepted",
-      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    "cnt:dateAccepted": {
+      "@id": "http://purl.org/dc/terms/dateAccepted",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
     }
   }
 }

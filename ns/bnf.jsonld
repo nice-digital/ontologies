@@ -1,0 +1,794 @@
+{
+  "@context": {
+    "bnf:hasFatGrams": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasFatGrams"
+    },
+    "bnf:isMedicinalProductOf": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#isMedicinalProductOf",
+      "@type": "@id"
+    },
+    "bnf:SideEffect": {
+      "@id": "http://ld.nice.org.uk/ns/bnf/SideEffect"
+    },
+    "bnf:hasPrescribingInformationSection": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasPrescribingInformationSection",
+      "@type": "@id"
+    },
+    "bnf:hasSynonyms": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasSynonyms"
+    },
+    "bnf:SideEffectGroup": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#SideEffectGroup"
+    },
+    "bnf:ContraindicationWithIndications": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#ContraindicationWithIndications"
+    },
+    "bnf:EffectOnLaboratoryTest": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#EffectOnLaboratoryTest"
+    },
+    "bnf:InteractionStatement": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#InteractionStatement"
+    },
+    "bnf:isPrescribingInformationSectionOf": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#isPrescribingInformationSectionOf",
+      "@type": "@id"
+    },
+    "bnf:isIndicationsAndDoseOf": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#isIndicationsAndDoseOf",
+      "@type": "@id"
+    },
+    "bnf:Cautions": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#Cautions"
+    },
+    "bnf:hasClassification": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasClassification",
+      "@type": "@id"
+    },
+    "bnf:ConceptionAndContraceptionWarning": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#ConceptionAndContraceptionWarning"
+    },
+    "bnf:HepaticImpairment": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#HepaticImpairment"
+    },
+    "bnf:AdditionalMonitoring": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#AdditionalMonitoring"
+    },
+    "bnf:hasLegalCategory": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasLegalCategory"
+    },
+    "bnf:SideEffectsWithRoutes": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#SideEffectsWithRoutes"
+    },
+    "bnf:ContraIndications": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#ContraIndications"
+    },
+    "bnf:hasControlledDrug": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasControlledDrug"
+    },
+    "bnf:isClassificationOf": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#isClassificationOf",
+      "@type": "@id"
+    },
+    "bnf:DrugClass": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#DrugClass"
+    },
+    "bnf:hasConstituentDrug": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasConstituentDrug",
+      "@type": "@id"
+    },
+    "bnf:GeneralSideEffects": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#GeneralSideEffects"
+    },
+    "bnf:InteractionList": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#InteractionList"
+    },
+    "bnf:TreatmentCessation": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#TreatmentCessation"
+    },
+    "bnf:DoseAdjustment": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#DoseAdjustment"
+    },
+    "bnf:NonNHS": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#NonNHS"
+    },
+    "bnf:isSideEffectsGroupOf": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#isSideEffectsGroupOf",
+      "@type": "@id"
+    },
+    "bnf:isDosageOf": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#isDosageOf",
+      "@type": "@id"
+    },
+    "bnf:FundingDecision": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#FundingDecision"
+    },
+    "bnf:hasEnergyKcal": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasEnergyKcal"
+    },
+    "bnf:PrescribingAndDispensingInformation": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#PrescribingAndDispensingInformation"
+    },
+    "bnf:hasAcbs": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasAcbs"
+    },
+    "bnf:Contraindication": {
+      "@id": "http://ld.nice.org.uk/ns/bnf/Contraindication"
+    },
+    "bnf:hasRoute": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasRoute",
+      "@type": "@id"
+    },
+    "bnf:hasSpecificity": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasSpecificity",
+      "@type": "@id"
+    },
+    "bnf:DirectionsForAdministration": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#DirectionsForAdministration"
+    },
+    "bnf:DirectionForAdministration": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#DirectionForAdministration"
+    },
+    "bnf:hasIndicationsAndDose": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasIndicationsAndDose",
+      "@type": "@id"
+    },
+    "bnf:LessSuitableForPrescribing": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#LessSuitableForPrescribing"
+    },
+    "bnf:isClinicalMedicinalProductInformationOf": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#isClinicalMedicinalProductInformationOf",
+      "@type": "@id"
+    },
+    "bnf:SmcDecisions": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#SmcDecisions"
+    },
+    "bnf:Potency": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#Potency"
+    },
+    "bnf:AllergyAndCrossSensitivityContraindications": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#AllergyAndCrossSensitivityContraindications"
+    },
+    "bnf:AdditionalMonitoringInHepaticImpairment": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#AdditionalMonitoringInHepaticImpairment"
+    },
+    "bnf:ContraindicationsRenalImpairment": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#ContraindicationsRenalImpairment"
+    },
+    "bnf:hasDomainOfEffect": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasDomainOfEffect",
+      "@type": "@id"
+    },
+    "bnf:RenalImpairment": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#RenalImpairment"
+    },
+    "bnf:isCautionsGroupOf": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#isCautionsGroupOf",
+      "@type": "@id"
+    },
+    "bnf:PatientMonitoringProgrammes": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#PatientMonitoringProgrammes"
+    },
+    "bnf:hasClinicalMedicinalProductInformation": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasClinicalMedicinalProductInformation",
+      "@type": "@id"
+    },
+    "bnf:hasManufacturer": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasManufacturer"
+    },
+    "bnf:hasTextContent": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasTextContent"
+    },
+    "bnf:Interactions": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#Interactions"
+    },
+    "bnf:isSideEffectOf": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#isSideEffectOf",
+      "@type": "@id"
+    },
+    "bnf:UnlicencedUse": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#UnlicencedUse"
+    },
+    "bnf:Pharmacokinetics": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#Pharmacokinetics"
+    },
+    "bnf:hasFrequency": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasFrequency",
+      "@type": "@id"
+    },
+    "bnf:LicensingVariationStatement": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#LicensingVariationStatement"
+    },
+    "bnf:BorderlineSubstance": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#BorderlineSubstance"
+    },
+    "bnf:isInheritedClassOf": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#isInheritedClassOf",
+      "@type": "@id"
+    },
+    "bnf:Classification": {
+      "@id": "http://ld.nice.org.uk/ns/bnf/Classification"
+    },
+    "bnf:hasContraindication": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasContraindication",
+      "@type": "@id"
+    },
+    "bnf:hasCategory": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasCategory"
+    },
+    "bnf:TreatmentSummary": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#TreatmentSummary"
+    },
+    "bnf:isMedicinalFormOf": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#isMedicinalFormOf",
+      "@type": "@id"
+    },
+    "bnf:MedicinalForm": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#MedicinalForm"
+    },
+    "bnf:NationalFunding": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#NationalFunding"
+    },
+    "bnf:ContraindicationWithRoutes": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#ContraindicationWithRoutes"
+    },
+    "bnf:isCautionOf": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#isCautionOf",
+      "@type": "@id"
+    },
+    "bnf:Indication": {
+      "@id": "http://ld.nice.org.uk/ns/bnf/Indication"
+    },
+    "bnf:IndicationsAndDose": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#IndicationsAndDose"
+    },
+    "bnf:hasPrimaryClassification": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasPrimaryClassification",
+      "@type": "@id"
+    },
+    "bnf:isContraindicationOf": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#isContraindicationOf",
+      "@type": "@id"
+    },
+    "bnf:hasDitaContent": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasDitaContent"
+    },
+    "bnf:hasAmpid": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasAmpid"
+    },
+    "bnf:MedicalEmergenciesBodySystems": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#MedicalEmergenciesBodySystems"
+    },
+    "bnf:Dosage": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#Dosage"
+    },
+    "bnf:HandlingAndStorage": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#HandlingAndStorage"
+    },
+    "bnf:hasPack": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasPack",
+      "@type": "@id"
+    },
+    "bnf:ImportantSafetyInformations": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#ImportantSafetyInformations"
+    },
+    "bnf:hasFundingDecision": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasFundingDecision",
+      "@type": "@id"
+    },
+    "bnf:SideEffectsOverdosageInformation": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#SideEffectsOverdosageInformation"
+    },
+    "bnf:label": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "bnf:hasSecondaryClassification": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasSecondaryClassification",
+      "@type": "@id"
+    },
+    "bnf:EffectsOnLaboratoryTests": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#EffectsOnLaboratoryTests"
+    },
+    "bnf:AdviceForDentalPractitioners": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#AdviceForDentalPractitioners"
+    },
+    "bnf:hasProteinConstituents": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasProteinConstituents"
+    },
+    "bnf:hasSideEffectsGroup": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasSideEffectsGroup",
+      "@type": "@id"
+    },
+    "bnf:hasIndication": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasIndication",
+      "@type": "@id"
+    },
+    "bnf:AllergyAndCrossSensitivity": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#AllergyAndCrossSensitivity"
+    },
+    "bnf:MonitoringRequirement": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#MonitoringRequirement"
+    },
+    "bnf:isInteractionOf": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#isInteractionOf",
+      "@type": "@id"
+    },
+    "bnf:AllergyAndCrossSensitivityCrossSensitivity": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#AllergyAndCrossSensitivityCrossSensitivity"
+    },
+    "bnf:PrescribingInformation": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#PrescribingInformation"
+    },
+    "bnf:DentalPractitionersFormulary": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#DentalPractitionersFormulary"
+    },
+    "bnf:PatientGroup": {
+      "@id": "http://ld.nice.org.uk/ns/bnf/PatientGroup"
+    },
+    "bnf:Frequency": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#Frequency"
+    },
+    "bnf:DrugActions": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#DrugActions"
+    },
+    "bnf:ConceptionAndContraception": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#ConceptionAndContraception"
+    },
+    "bnf:isConstituentDrugOf": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#isConstituentDrugOf",
+      "@type": "@id"
+    },
+    "bnf:Drug": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#Drug"
+    },
+    "bnf:GeneralInformation": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#GeneralInformation"
+    },
+    "bnf:hasBorderlineSubstancePrep": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasBorderlineSubstancePrep"
+    },
+    "bnf:isRouteOf": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#isRouteOf",
+      "@type": "@id"
+    },
+    "bnf:hasExcipients": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasExcipients"
+    },
+    "bnf:ComparativeInformation": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#ComparativeInformation"
+    },
+    "bnf:hasComplicanceStandards": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasComplicanceStandards"
+    },
+    "bnf:hasMedicinalProductTitle": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasMedicinalProductTitle"
+    },
+    "bnf:hasCarbohydrateGrams": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasCarbohydrateGrams"
+    },
+    "bnf:DentalPractitionersFormularyInformation": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#DentalPractitionersFormularyInformation"
+    },
+    "bnf:isTreatmentSummaryOf": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#isTreatmentSummaryOf",
+      "@type": "@id"
+    },
+    "bnf:hasDosage": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasDosage",
+      "@type": "@id"
+    },
+    "bnf:ContraindicationsGroup": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#ContraindicationsGroup"
+    },
+    "bnf:isSecondaryDomainOfEffectOf": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#isSecondaryDomainOfEffectOf",
+      "@type": "@id"
+    },
+    "bnf:isSpecificityOf": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#isSpecificityOf",
+      "@type": "@id"
+    },
+    "bnf:hasDetails": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasDetails"
+    },
+    "bnf:DoseEquivalence": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#DoseEquivalence"
+    },
+    "bnf:Specificity": {
+      "@id": "http://ld.nice.org.uk/ns/bnf/Specificity"
+    },
+    "bnf:IndicationAndDosageInformation": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#IndicationAndDosageInformation"
+    },
+    "bnf:hasElectrolytes": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasElectrolytes"
+    },
+    "bnf:ConstituentDrug": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#ConstituentDrug"
+    },
+    "bnf:hasIntroductoryNote": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasIntroductoryNote"
+    },
+    "bnf:AdviceAroundMissedDoses": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#AdviceAroundMissedDoses"
+    },
+    "bnf:hasContraindicationsGroup": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasContraindicationsGroup",
+      "@type": "@id"
+    },
+    "bnf:hasPatientGroup": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasPatientGroup",
+      "@type": "@id"
+    },
+    "bnf:topObjectProperty": {
+      "@id": "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type": "@id"
+    },
+    "bnf:hasImportance": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasImportance"
+    },
+    "bnf:isDomainOfEffectOf": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#isDomainOfEffectOf",
+      "@type": "@id"
+    },
+    "bnf:LessSuitableForPrescribings": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#LessSuitableForPrescribings"
+    },
+    "bnf:TreatmentOfBodySystems": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#TreatmentOfBodySystems"
+    },
+    "bnf:inheritsFromClass": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#inheritsFromClass",
+      "@type": "@id"
+    },
+    "bnf:PrescribingAndDispensingInformations": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#PrescribingAndDispensingInformations"
+    },
+    "bnf:hasVtmid": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasVtmid"
+    },
+    "bnf:AdditionalMonitoringInPregnancy": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#AdditionalMonitoringInPregnancy"
+    },
+    "bnf:hasDeviceDescription": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasDeviceDescription"
+    },
+    "bnf:AdditionalMonitoringInBreastFeeding": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#AdditionalMonitoringInBreastFeeding"
+    },
+    "bnf:ExceptionsToLegalCategory": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#ExceptionsToLegalCategory"
+    },
+    "bnf:GeneralPatientAdvice": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#GeneralPatientAdvice"
+    },
+    "bnf:hasCautionaryAdvisoryLabel": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasCautionaryAdvisoryLabel"
+    },
+    "bnf:SideEffectAdvice": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#SideEffectAdvice"
+    },
+    "bnf:hasDrugTarrif": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasDrugTarrif"
+    },
+    "bnf:PatientAdvice": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#PatientAdvice"
+    },
+    "bnf:Caution": {
+      "@id": "http://ld.nice.org.uk/ns/bnf/Caution"
+    },
+    "bnf:FundingIdentifier": {
+      "@id": "http://ld.nice.org.uk/ns/bnf/FundingIdentifier"
+    },
+    "bnf:isFrequencyOf": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#isFrequencyOf",
+      "@type": "@id"
+    },
+    "bnf:hasSideEffect": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasSideEffect",
+      "@type": "@id"
+    },
+    "bnf:GeneralCautions": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#GeneralCautions"
+    },
+    "bnf:hasInteractionList": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasInteractionList",
+      "@type": "@id"
+    },
+    "bnf:hasFibreGrams": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasFibreGrams"
+    },
+    "bnf:ClinicalMedicalDeviceInformationGroup": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#ClinicalMedicalDeviceInformationGroup"
+    },
+    "bnf:hasTitle": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasTitle"
+    },
+    "bnf:isFundingIdentifierOf": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#isFundingIdentifierOf",
+      "@type": "@id"
+    },
+    "bnf:HandlingAndStorageInformation": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#HandlingAndStorageInformation"
+    },
+    "bnf:isContraindicationsGroupOf": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#isContraindicationsGroupOf",
+      "@type": "@id"
+    },
+    "bnf:isSecondaryClassificationOf": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#isSecondaryClassificationOf",
+      "@type": "@id"
+    },
+    "bnf:ExtremesOfBodyWeight": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#ExtremesOfBodyWeight"
+    },
+    "bnf:SideEffectsWithIndications": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#SideEffectsWithIndications"
+    },
+    "bnf:CautionsWithIndications": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#CautionsWithIndications"
+    },
+    "bnf:IndicationsAndDoseSection": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#IndicationsAndDoseSection"
+    },
+    "bnf:ClinicalMedicinalProductInformation": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#ClinicalMedicinalProductInformation"
+    },
+    "bnf:MedicinalProduct": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#MedicinalProduct"
+    },
+    "bnf:UnlicencedUsageInformation": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#UnlicencedUsageInformation"
+    },
+    "bnf:CautionsWithRoutes": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#CautionsWithRoutes"
+    },
+    "bnf:CautionsGroup": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#CautionsGroup"
+    },
+    "bnf:isSubjectOf": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#isSubjectOf",
+      "@type": "@id"
+    },
+    "bnf:hasInteraction": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasInteraction",
+      "@type": "@id"
+    },
+    "bnf:hasEnergyKj": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasEnergyKj"
+    },
+    "bnf:isPackOf": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#isPackOf",
+      "@type": "@id"
+    },
+    "bnf:hasClinicalMedicalDeviceInformationGroup": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasClinicalMedicalDeviceInformationGroup",
+      "@type": "@id"
+    },
+    "bnf:PreTreatmentScreening": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#PreTreatmentScreening"
+    },
+    "bnf:PatientResources": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#PatientResources"
+    },
+    "bnf:hasPrimaryDomainOfEffect": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasPrimaryDomainOfEffect",
+      "@type": "@id"
+    },
+    "bnf:MonitoringOfPatientParameters": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#MonitoringOfPatientParameters"
+    },
+    "bnf:hasPackSize": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasPackSize"
+    },
+    "bnf:isLinkedFrom": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#isLinkedFrom",
+      "@type": "@id"
+    },
+    "bnf:ProfessionSpecificInformation": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#ProfessionSpecificInformation"
+    },
+    "bnf:hasStrengthOfActiveIngredient": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasStrengthOfActiveIngredient"
+    },
+    "bnf:isPrimaryDomainOfEffectOf": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#isPrimaryDomainOfEffectOf",
+      "@type": "@id"
+    },
+    "bnf:isIndicationOf": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#isIndicationOf",
+      "@type": "@id"
+    },
+    "bnf:hasLabelNumber": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasLabelNumber"
+    },
+    "bnf:hasNhsIndicative": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasNhsIndicative"
+    },
+    "bnf:AdviceAroundDrivingAndOtherTasks": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#AdviceAroundDrivingAndOtherTasks"
+    },
+    "bnf:hasCarbohydrateConstituents": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasCarbohydrateConstituents"
+    },
+    "bnf:hasTreatmentSummary": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasTreatmentSummary",
+      "@type": "@id"
+    },
+    "bnf:BreastFeeding": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#BreastFeeding"
+    },
+    "bnf:Advice": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#Advice"
+    },
+    "bnf:PatientAndCarerAdvice": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#PatientAndCarerAdvice"
+    },
+    "bnf:PreTreatmentScreeningInformation": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#PreTreatmentScreeningInformation"
+    },
+    "bnf:Interaction": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#Interaction"
+    },
+    "bnf:Route": {
+      "@id": "http://ld.nice.org.uk/ns/bnf/Route"
+    },
+    "bnf:hasPriceText": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasPriceText"
+    },
+    "bnf:GeneralContraindications": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#GeneralContraindications"
+    },
+    "bnf:hasPresentation": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasPresentation"
+    },
+    "bnf:TheraputicDrugMonitoring": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#TheraputicDrugMonitoring"
+    },
+    "bnf:hasLink": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasLink",
+      "@type": "@id"
+    },
+    "bnf:MedicalDeviceType": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#MedicalDeviceType"
+    },
+    "bnf:hasMedicinalForm": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasMedicinalForm",
+      "@type": "@id"
+    },
+    "bnf:TreatmentCessationInformation": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#TreatmentCessationInformation"
+    },
+    "bnf:PrescribingInformationSection": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#PrescribingInformationSection"
+    },
+    "bnf:isPrimaryClassificationOf": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#isPrimaryClassificationOf",
+      "@type": "@id"
+    },
+    "bnf:ImportantAdvice": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#ImportantAdvice"
+    },
+    "bnf:hasFundingIdentifier": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasFundingIdentifier",
+      "@type": "@id"
+    },
+    "bnf:PatientAdviceInConceptionAndContraception": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#PatientAdviceInConceptionAndContraception"
+    },
+    "bnf:PatientAdviceInPregnancy": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#PatientAdviceInPregnancy"
+    },
+    "bnf:Guidance": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#Guidance"
+    },
+    "bnf:SideEffectsGroup": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#SideEffectsGroup"
+    },
+    "bnf:isClinicalMedicalDeviceInformationGroupOf": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#isClinicalMedicalDeviceInformationGroupOf",
+      "@type": "@id"
+    },
+    "bnf:hasMedicinalProduct": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasMedicinalProduct",
+      "@type": "@id"
+    },
+    "bnf:NiceTechnologyAppraisals": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#NiceTechnologyAppraisals"
+    },
+    "bnf:ManagementOfConditions": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#ManagementOfConditions"
+    },
+    "bnf:hasSubject": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasSubject",
+      "@type": "@id"
+    },
+    "bnf:isPatientGroupOf": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#isPatientGroupOf",
+      "@type": "@id"
+    },
+    "bnf:isInteractionListOf": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#isInteractionListOf",
+      "@type": "@id"
+    },
+    "bnf:DrugAction": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#DrugAction"
+    },
+    "bnf:hasSpecialCharacteristics": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasSpecialCharacteristics"
+    },
+    "bnf:hasCaution": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasCaution",
+      "@type": "@id"
+    },
+    "bnf:ImportantSafetyInformation": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#ImportantSafetyInformation"
+    },
+    "bnf:SideEffects": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#SideEffects"
+    },
+    "bnf:hasNhsIndicativePrice": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasNhsIndicativePrice"
+    },
+    "bnf:hasFormulation": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasFormulation"
+    },
+    "bnf:About": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#About"
+    },
+    "bnf:AdditionalMonitoringInRenalImpairment": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#AdditionalMonitoringInRenalImpairment"
+    },
+    "bnf:hasCautionsGroup": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasCautionsGroup",
+      "@type": "@id"
+    },
+    "bnf:hasFatConstituents": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasFatConstituents"
+    },
+    "bnf:DomainOfEffect": {
+      "@id": "http://ld.nice.org.uk/ns/bnf/DomainOfEffect"
+    },
+    "bnf:isFundingDecisionOf": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#isFundingDecisionOf",
+      "@type": "@id"
+    },
+    "bnf:hasBlackTriangle": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasBlackTriangle"
+    },
+    "bnf:hasDrugTariffPrice": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasDrugTariffPrice"
+    },
+    "bnf:hasUnitOfMeasure": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasUnitOfMeasure"
+    },
+    "bnf:MonitoringRequirements": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#MonitoringRequirements"
+    },
+    "bnf:interactsWith": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#interactsWith",
+      "@type": "@id"
+    },
+    "bnf:ExceptionToLegalCategory": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#ExceptionToLegalCategory"
+    },
+    "bnf:MedicinalFormInformation": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#MedicinalFormInformation"
+    },
+    "bnf:hasSecondaryDomainOfEffect": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasSecondaryDomainOfEffect",
+      "@type": "@id"
+    },
+    "bnf:Pack": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#Pack"
+    },
+    "bnf:DoseAdjustments": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#DoseAdjustments"
+    },
+    "bnf:Pregnancy": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#Pregnancy"
+    },
+    "bnf:hasProteinGrams": {
+      "@id": "http://ld.nice.org.uk/ns/bnf#hasProteinGrams"
+    }
+  }
+}
