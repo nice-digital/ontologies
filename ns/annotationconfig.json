@@ -1,0 +1,35 @@
+{
+  "basettluri": "http://schema/ontologies/",
+  "baseontologyuri": "https://nice.org.uk/ontologies/",
+  "coreontology": { "prefix": "qualitystandard",
+    "ontology": "qualitystandard#",
+    "ttl": "qualitystandard.ttl"
+  },
+  "childontologies": [
+    { "prefix": "setting",
+      "ontology": "setting/",
+      "ttl": "setting.ttl",
+      "corereference": "appliesToSetting"
+    },
+    { "prefix": "agegroup",
+      "ontology": "agegroup/",
+      "ttl": "agegroup.ttl",
+      "corereference": "appliesToAgeGroup"
+    },
+    { "prefix": "servicearea",
+      "ontology": "servicearea/",
+      "ttl": "servicearea.ttl",
+      "corereference": "appliesToServiceArea"
+    },
+    { "prefix": "healthwellbeing",
+      "ontology": "factorsaffectinghealthorwellbeing/",
+      "ttl": "factorsaffectinghealthorwellbeing.ttl",
+      "corereference": "appliesToFactorsAffectingHealthOrWellbeing"
+    },
+    { "prefix": "condition",
+      "ontology": "conditionordisease/",
+      "ttl": "conditionordisease.ttl",
+      "corereference": "appliesToConditionOrDisease"
+    }
+  ]
+ }
