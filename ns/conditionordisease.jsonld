@@ -1,0 +1,762 @@
+{
+  "@context": {
+    "conditionordisease:3f0e0e52_ed9f_490f_80e7_6f2c1eb01090": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/3f0e0e52_ed9f_490f_80e7_6f2c1eb01090"
+    },
+    "conditionordisease:fb1de536_8e41_4a9c_b9d8_f2ea3f7a7cca": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/fb1de536_8e41_4a9c_b9d8_f2ea3f7a7cca"
+    },
+    "conditionordisease:01368400_f3a4_424b_955d_8dc2b1aeebfb": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/01368400_f3a4_424b_955d_8dc2b1aeebfb"
+    },
+    "conditionordisease:hasTopConcept": {
+      "@id": "http://www.w3.org/2004/02/skos/core#hasTopConcept",
+      "@type": "@id"
+    },
+    "conditionordisease:130ae3c3_b332_46f2_a160_26d9bb1a216b": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/130ae3c3_b332_46f2_a160_26d9bb1a216b"
+    },
+    "conditionordisease:1a11dc2e_5fa1_4529_93b6_a511dfc00490": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/1a11dc2e_5fa1_4529_93b6_a511dfc00490"
+    },
+    "conditionordisease:dc744e20_828e_4309_98e8_942432ff4102": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/dc744e20_828e_4309_98e8_942432ff4102"
+    },
+    "conditionordisease:8aab63eb_baaf_43cb_ace7_d8a3eea1509f": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/8aab63eb_baaf_43cb_ace7_d8a3eea1509f"
+    },
+    "conditionordisease:61f54231_2695_41db_a006_6dcc598f9532": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/61f54231_2695_41db_a006_6dcc598f9532"
+    },
+    "conditionordisease:related": {
+      "@id": "http://www.w3.org/2004/02/skos/core#related",
+      "@type": "@id"
+    },
+    "conditionordisease:topConceptOf": {
+      "@id": "http://www.w3.org/2004/02/skos/core#topConceptOf",
+      "@type": "@id"
+    },
+    "conditionordisease:ec2c5ae3_37fb_46e8_9962_5d2f45f63efc": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/ec2c5ae3_37fb_46e8_9962_5d2f45f63efc"
+    },
+    "conditionordisease:0cdc57db_bca8_4e71_83bb_4489370049e3": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/0cdc57db_bca8_4e71_83bb_4489370049e3"
+    },
+    "conditionordisease:265850be_460b_4ed6_846a_635de5783df8": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/265850be_460b_4ed6_846a_635de5783df8"
+    },
+    "conditionordisease:2003b6e1_56c0_4cc5_a258_92cfb9a52325": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/2003b6e1_56c0_4cc5_a258_92cfb9a52325"
+    },
+    "conditionordisease:09347170_d5e8_458b_afff_65f258dc5f72": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/09347170_d5e8_458b_afff_65f258dc5f72"
+    },
+    "conditionordisease:1ec0cbae_e5ad_4ff5_a978_ea2e213dc350": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/1ec0cbae_e5ad_4ff5_a978_ea2e213dc350"
+    },
+    "conditionordisease:b4a488ef_56f9_4e43_806a_8b1c2e147029": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/b4a488ef_56f9_4e43_806a_8b1c2e147029"
+    },
+    "conditionordisease:Collection": {
+      "@id": "http://www.w3.org/2004/02/skos/core#Collection"
+    },
+    "conditionordisease:90e0f844_54da_4d12_a279_e4edcdf9bc8b": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/90e0f844_54da_4d12_a279_e4edcdf9bc8b"
+    },
+    "conditionordisease:creator": {
+      "@id": "http://purl.org/dc/terms/creator"
+    },
+    "conditionordisease:6e807365_df8d_4f97_8c43_c3d84b1eeebb": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/6e807365_df8d_4f97_8c43_c3d84b1eeebb"
+    },
+    "conditionordisease:memberList": {
+      "@id": "http://www.w3.org/2004/02/skos/core#memberList",
+      "@type": "@id"
+    },
+    "conditionordisease:99f3ed7f_5b0e_4a82_9a0e_e99b1a446002": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/99f3ed7f_5b0e_4a82_9a0e_e99b1a446002"
+    },
+    "conditionordisease:00f5c590_e9fe_4922_99e7_03eea6451020": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/00f5c590_e9fe_4922_99e7_03eea6451020"
+    },
+    "conditionordisease:25f7747a_9d42_4025_8b49_8170e64c7c45": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/25f7747a_9d42_4025_8b49_8170e64c7c45"
+    },
+    "conditionordisease:378d3779_f11d_4e1f_b211_6e77a1d88195": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/378d3779_f11d_4e1f_b211_6e77a1d88195"
+    },
+    "conditionordisease:1029b304_ee0f_47ba_8e4e_63a2a2f637de": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/1029b304_ee0f_47ba_8e4e_63a2a2f637de"
+    },
+    "conditionordisease:bb061895_57f2_42bc_8439_b4b4fa26e938": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/bb061895_57f2_42bc_8439_b4b4fa26e938"
+    },
+    "conditionordisease:4d3e2b68_c50b_4b9a_81e0_714d4056aa84": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/4d3e2b68_c50b_4b9a_81e0_714d4056aa84"
+    },
+    "conditionordisease:b418f1e8_967b_49c2_a2bc_57d000b553d8": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/b418f1e8_967b_49c2_a2bc_57d000b553d8"
+    },
+    "conditionordisease:064ec0f4_ff95_48f6_8ff7_c56eadee539a": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/064ec0f4_ff95_48f6_8ff7_c56eadee539a"
+    },
+    "conditionordisease:4c59d5a6_c2fb_4707_b79f_0f9903402eec": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/4c59d5a6_c2fb_4707_b79f_0f9903402eec"
+    },
+    "conditionordisease:66ed0b10_0b80_4fa5_95e8_32e4fe81d718": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/66ed0b10_0b80_4fa5_95e8_32e4fe81d718"
+    },
+    "conditionordisease:exactMatch": {
+      "@id": "http://www.w3.org/2004/02/skos/core#exactMatch",
+      "@type": "@id"
+    },
+    "conditionordisease:834cfd2c_5d39_4b06_bfaa_ef1fbc5fcbdd": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/834cfd2c_5d39_4b06_bfaa_ef1fbc5fcbdd"
+    },
+    "conditionordisease:narrowerTransitive": {
+      "@id": "http://www.w3.org/2004/02/skos/core#narrowerTransitive",
+      "@type": "@id"
+    },
+    "conditionordisease:57551d51_2e5e_40d5_9605_a85b78716560": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/57551d51_2e5e_40d5_9605_a85b78716560"
+    },
+    "conditionordisease:05de0633_57a9_4aea_b029_db282967e683": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/05de0633_57a9_4aea_b029_db282967e683"
+    },
+    "conditionordisease:isDefinedBy": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "conditionordisease:35c3d47f_891e_457b_bb5b_784ed303436e": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/35c3d47f_891e_457b_bb5b_784ed303436e"
+    },
+    "conditionordisease:498b9152_f68e_4b51_8e6c_93019ccf4b1d": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/498b9152_f68e_4b51_8e6c_93019ccf4b1d"
+    },
+    "conditionordisease:945e1dcc_ed7c_401f_81eb_9b119281b78c": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/945e1dcc_ed7c_401f_81eb_9b119281b78c"
+    },
+    "conditionordisease:4c56d1b4_25b1_47aa_b1db_ba2cf57b1998": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/4c56d1b4_25b1_47aa_b1db_ba2cf57b1998"
+    },
+    "conditionordisease:c2294101_10ef_48f9_826f_192b7ae30c9d": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/c2294101_10ef_48f9_826f_192b7ae30c9d"
+    },
+    "conditionordisease:d146aa1b_94cb_44b9_b298_cb58a4754bf6": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/d146aa1b_94cb_44b9_b298_cb58a4754bf6"
+    },
+    "conditionordisease:2f4ac8c8_09ee_4621_baf7_e2011bad75cc": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/2f4ac8c8_09ee_4621_baf7_e2011bad75cc"
+    },
+    "conditionordisease:dcaab0f9_ec40_4327_a89d_b8510ef80f5c": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/dcaab0f9_ec40_4327_a89d_b8510ef80f5c"
+    },
+    "conditionordisease:narrower": {
+      "@id": "http://www.w3.org/2004/02/skos/core#narrower",
+      "@type": "@id"
+    },
+    "conditionordisease:aa5a367b_eaab_43ce_a4bf_791a37d064ec": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/aa5a367b_eaab_43ce_a4bf_791a37d064ec"
+    },
+    "conditionordisease:7fc4bf74_c7c8_4434_b944_24b21ae0ebff": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/7fc4bf74_c7c8_4434_b944_24b21ae0ebff"
+    },
+    "conditionordisease:3ce5282b_9426_4c73_8bf4_8a04bcefccc5": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/3ce5282b_9426_4c73_8bf4_8a04bcefccc5"
+    },
+    "conditionordisease:f6d80782_5b23_4c16_8178_87c1a560bf92": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/f6d80782_5b23_4c16_8178_87c1a560bf92"
+    },
+    "conditionordisease:comment": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "conditionordisease:c6e9a071_d41c_4165_b624_fcc2552ec15a": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/c6e9a071_d41c_4165_b624_fcc2552ec15a"
+    },
+    "conditionordisease:7bc264bf_2a6b_4261_ad83_69b3fb4f092d": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/7bc264bf_2a6b_4261_ad83_69b3fb4f092d"
+    },
+    "conditionordisease:61210bcd_b527_45e9_8a19_2a3fe479a975": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/61210bcd_b527_45e9_8a19_2a3fe479a975"
+    },
+    "conditionordisease:fc142a19_4a9d_4490_bcda_d0b539ea7e11": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/fc142a19_4a9d_4490_bcda_d0b539ea7e11"
+    },
+    "conditionordisease:inScheme": {
+      "@id": "http://www.w3.org/2004/02/skos/core#inScheme",
+      "@type": "@id"
+    },
+    "conditionordisease:99e4e4a0_3d6d_4329_984b_d021583993b4": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/99e4e4a0_3d6d_4329_984b_d021583993b4"
+    },
+    "conditionordisease:hiddenLabel": {
+      "@id": "http://www.w3.org/2004/02/skos/core#hiddenLabel"
+    },
+    "conditionordisease:240cd7c4_eb19_47e1_afba_91ab279883c4": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/240cd7c4_eb19_47e1_afba_91ab279883c4"
+    },
+    "conditionordisease:e364afc3_e04c_4fa9_9d86_dc0c44a170fc": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/e364afc3_e04c_4fa9_9d86_dc0c44a170fc"
+    },
+    "conditionordisease:e822015b_533f_402e_b77b_04a19d07d0f5": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/e822015b_533f_402e_b77b_04a19d07d0f5"
+    },
+    "conditionordisease:description": {
+      "@id": "http://purl.org/dc/terms/description"
+    },
+    "conditionordisease:af9e7b05_ece6_48a7_a2b1_56001eedd3aa": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/af9e7b05_ece6_48a7_a2b1_56001eedd3aa"
+    },
+    "conditionordisease:editorialNote": {
+      "@id": "http://www.w3.org/2004/02/skos/core#editorialNote"
+    },
+    "conditionordisease:eed47f8c_519b_4861_ad86_bada75ba86fa": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/eed47f8c_519b_4861_ad86_bada75ba86fa"
+    },
+    "conditionordisease:title": {
+      "@id": "http://purl.org/dc/terms/title"
+    },
+    "conditionordisease:d3ffb779_cdc9_40d0_8a49_278759e61638": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/d3ffb779_cdc9_40d0_8a49_278759e61638"
+    },
+    "conditionordisease:696a6c99_b308_4e9e_a459_b12e0225c299": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/696a6c99_b308_4e9e_a459_b12e0225c299"
+    },
+    "conditionordisease:4a70adc7_7266_4b15_ae59_774e544098fc": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/4a70adc7_7266_4b15_ae59_774e544098fc"
+    },
+    "conditionordisease:3b3beab5_1ceb_4fcf_abd9_7dcc90fd2854": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/3b3beab5_1ceb_4fcf_abd9_7dcc90fd2854"
+    },
+    "conditionordisease:3cd451f8_0e36_4884_a15d_e79d90d83bf3": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/3cd451f8_0e36_4884_a15d_e79d90d83bf3"
+    },
+    "conditionordisease:8df98f5d_f180_47d7_be8b_7f17095e0f96": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/8df98f5d_f180_47d7_be8b_7f17095e0f96"
+    },
+    "conditionordisease:971e8e99_3571_425b_bc2d_187a833048e3": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/971e8e99_3571_425b_bc2d_187a833048e3"
+    },
+    "conditionordisease:dcdc755d_509e_43a8_ad36_ab48185c7930": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/dcdc755d_509e_43a8_ad36_ab48185c7930"
+    },
+    "conditionordisease:semanticRelation": {
+      "@id": "http://www.w3.org/2004/02/skos/core#semanticRelation",
+      "@type": "@id"
+    },
+    "conditionordisease:closeMatch": {
+      "@id": "http://www.w3.org/2004/02/skos/core#closeMatch",
+      "@type": "@id"
+    },
+    "conditionordisease:broadMatch": {
+      "@id": "http://www.w3.org/2004/02/skos/core#broadMatch",
+      "@type": "@id"
+    },
+    "conditionordisease:d5a8e74c_e20e_48be_aa09_51d2063b1efc": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/d5a8e74c_e20e_48be_aa09_51d2063b1efc"
+    },
+    "conditionordisease:List": {
+      "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#List"
+    },
+    "conditionordisease:broaderTransitive": {
+      "@id": "http://www.w3.org/2004/02/skos/core#broaderTransitive",
+      "@type": "@id"
+    },
+    "conditionordisease:4111277e_2160_4748_a6fc_23c5a82765a3": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/4111277e_2160_4748_a6fc_23c5a82765a3"
+    },
+    "conditionordisease:ac8b1510_e6f5_4e31_8e66_5c0f85f877a5": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/ac8b1510_e6f5_4e31_8e66_5c0f85f877a5"
+    },
+    "conditionordisease:26467e66_0e7c_4078_a1ad_95e9a0ee61f6": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/26467e66_0e7c_4078_a1ad_95e9a0ee61f6"
+    },
+    "conditionordisease:4c4ce234_8ff7_4ed9_a82f_cf392218e2f6": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/4c4ce234_8ff7_4ed9_a82f_cf392218e2f6"
+    },
+    "conditionordisease:5c3015e3_0f71_405f_aa04_3701df7d737b": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/5c3015e3_0f71_405f_aa04_3701df7d737b"
+    },
+    "conditionordisease:1aa8c5e3_a8ed_4682_b1b9_6f7584639508": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/1aa8c5e3_a8ed_4682_b1b9_6f7584639508"
+    },
+    "conditionordisease:7caa7c3e_72ea_4d23_9d0f_d4b569b79800": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/7caa7c3e_72ea_4d23_9d0f_d4b569b79800"
+    },
+    "conditionordisease:9fcfe90f_27e8_4535_b375_e38f33499e13": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/9fcfe90f_27e8_4535_b375_e38f33499e13"
+    },
+    "conditionordisease:901cadab_b55d_4dcd_8e33_91572c03f425": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/901cadab_b55d_4dcd_8e33_91572c03f425"
+    },
+    "conditionordisease:c9e8923f_c736_4424_9c29_a11da306e3b5": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/c9e8923f_c736_4424_9c29_a11da306e3b5"
+    },
+    "conditionordisease:OrderedCollection": {
+      "@id": "http://www.w3.org/2004/02/skos/core#OrderedCollection"
+    },
+    "conditionordisease:a2b68ef7_8106_4cde_b200_64e3c2574f85": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/a2b68ef7_8106_4cde_b200_64e3c2574f85"
+    },
+    "conditionordisease:14eb4bad_02d5_4dff_9077_f473f5b1e8a0": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/14eb4bad_02d5_4dff_9077_f473f5b1e8a0"
+    },
+    "conditionordisease:47d5c91c_f4d3_4825_99c3_c377c188c8ca": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/47d5c91c_f4d3_4825_99c3_c377c188c8ca"
+    },
+    "conditionordisease:90239053_da9b_4ed6_8c8b_3a56eb043376": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/90239053_da9b_4ed6_8c8b_3a56eb043376"
+    },
+    "conditionordisease:b87cff0b_7fba_4bf2_9581_07f35e54195a": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/b87cff0b_7fba_4bf2_9581_07f35e54195a"
+    },
+    "conditionordisease:changeNote": {
+      "@id": "http://www.w3.org/2004/02/skos/core#changeNote"
+    },
+    "conditionordisease:02732b69_06b2_4f83_9e8b_2e29d0a42d0c": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/02732b69_06b2_4f83_9e8b_2e29d0a42d0c"
+    },
+    "conditionordisease:158812e8_acbd_4c1c_ab40_c30ffba0a51a": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/158812e8_acbd_4c1c_ab40_c30ffba0a51a"
+    },
+    "conditionordisease:18081b9c_65d4_426f_8c06_18f732e35f88": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/18081b9c_65d4_426f_8c06_18f732e35f88"
+    },
+    "conditionordisease:contributor": {
+      "@id": "http://purl.org/dc/terms/contributor"
+    },
+    "conditionordisease:example": {
+      "@id": "http://www.w3.org/2004/02/skos/core#example"
+    },
+    "conditionordisease:279b2071_7d87_431a_b209_31e0694d17b7": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/279b2071_7d87_431a_b209_31e0694d17b7"
+    },
+    "conditionordisease:note": {
+      "@id": "http://www.w3.org/2004/02/skos/core#note"
+    },
+    "conditionordisease:mappingRelation": {
+      "@id": "http://www.w3.org/2004/02/skos/core#mappingRelation",
+      "@type": "@id"
+    },
+    "conditionordisease:744f31ec_f742_4634_b58e_0999069b93d6": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/744f31ec_f742_4634_b58e_0999069b93d6"
+    },
+    "conditionordisease:8fe789ed_6301_40c4_9ca4_5f4e70338e39": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/8fe789ed_6301_40c4_9ca4_5f4e70338e39"
+    },
+    "conditionordisease:3ff44ba5_0685_48b4_b97e_30be59d8eb00": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/3ff44ba5_0685_48b4_b97e_30be59d8eb00"
+    },
+    "conditionordisease:c09a2af2_306f_430c_9256_acf4ce4417da": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/c09a2af2_306f_430c_9256_acf4ce4417da"
+    },
+    "conditionordisease:e946c7ec_0ab1_4467_bf4e_b50243f2a5e7": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/e946c7ec_0ab1_4467_bf4e_b50243f2a5e7"
+    },
+    "conditionordisease:5c169bbd_8480_4c22_aa05_f70a999e3766": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/5c169bbd_8480_4c22_aa05_f70a999e3766"
+    },
+    "conditionordisease:8d36e0b3_1b26_433c_83b2_51bc7188a407": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/8d36e0b3_1b26_433c_83b2_51bc7188a407"
+    },
+    "conditionordisease:dc89614f_805f_484b_a7f8_a34c4b531d53": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/dc89614f_805f_484b_a7f8_a34c4b531d53"
+    },
+    "conditionordisease:38663c02_7f78_4138_bd89_4dc6aabc625d": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/38663c02_7f78_4138_bd89_4dc6aabc625d"
+    },
+    "conditionordisease:Concept": {
+      "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    "conditionordisease:label": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "conditionordisease:9f2c2aca_8091_4296_861a_3f736e625abb": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/9f2c2aca_8091_4296_861a_3f736e625abb"
+    },
+    "conditionordisease:de59d797_218f_4237_bf5d_a8c16393516b": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/de59d797_218f_4237_bf5d_a8c16393516b"
+    },
+    "conditionordisease:a4644b24_0937_4cc1_82d3_7df40152ea5b": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/a4644b24_0937_4cc1_82d3_7df40152ea5b"
+    },
+    "conditionordisease:94e0ff92_849f_4532_8134_634ce896ca33": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/94e0ff92_849f_4532_8134_634ce896ca33"
+    },
+    "conditionordisease:52d91a54_68d4_4bf7_9fac_2f8fcb0d1b41": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/52d91a54_68d4_4bf7_9fac_2f8fcb0d1b41"
+    },
+    "conditionordisease:1057c137_77d7_4b37_9495_5853eeffec95": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/1057c137_77d7_4b37_9495_5853eeffec95"
+    },
+    "conditionordisease:36b49f66_bb35_4b1a_981c_5c477756f25e": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/36b49f66_bb35_4b1a_981c_5c477756f25e"
+    },
+    "conditionordisease:49004876_1a32_4e5a_91d3_826607130912": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/49004876_1a32_4e5a_91d3_826607130912"
+    },
+    "conditionordisease:acb63872_2066_431b_b70a_6c718006f572": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/acb63872_2066_431b_b70a_6c718006f572"
+    },
+    "conditionordisease:d0f01f1a_a66e_4e8a_9246_4ede488e65a3": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/d0f01f1a_a66e_4e8a_9246_4ede488e65a3"
+    },
+    "conditionordisease:3d180641_5f6a_4c1c_96be_08e35aed71e6": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/3d180641_5f6a_4c1c_96be_08e35aed71e6"
+    },
+    "conditionordisease:3a3ca279_ad11_4382_abf4_93435b33113f": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/3a3ca279_ad11_4382_abf4_93435b33113f"
+    },
+    "conditionordisease:f7909378_85c0_49f3_bc0e_4f34ed0adb06": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/f7909378_85c0_49f3_bc0e_4f34ed0adb06"
+    },
+    "conditionordisease:274c7b24_3c28_481c_aec1_2e56b4568490": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/274c7b24_3c28_481c_aec1_2e56b4568490"
+    },
+    "conditionordisease:prefLabel": {
+      "@id": "http://www.w3.org/2004/02/skos/core#prefLabel"
+    },
+    "conditionordisease:875fe5a9_e419_489a_9967_74c2cd32a12d": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/875fe5a9_e419_489a_9967_74c2cd32a12d"
+    },
+    "conditionordisease:e49ce1a1_c118_481c_b18b_e0bba3c31649": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/e49ce1a1_c118_481c_b18b_e0bba3c31649"
+    },
+    "conditionordisease:8ad3c273_8c77_48b9_8ada_3db50fc4f409": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/8ad3c273_8c77_48b9_8ada_3db50fc4f409"
+    },
+    "conditionordisease:narrowMatch": {
+      "@id": "http://www.w3.org/2004/02/skos/core#narrowMatch",
+      "@type": "@id"
+    },
+    "conditionordisease:d8988212_fc80_4cf5_9d0a_b40a520746dc": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/d8988212_fc80_4cf5_9d0a_b40a520746dc"
+    },
+    "conditionordisease:0a31ecfd_2fb3_495c_95f5_51728ab6f189": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/0a31ecfd_2fb3_495c_95f5_51728ab6f189"
+    },
+    "conditionordisease:historyNote": {
+      "@id": "http://www.w3.org/2004/02/skos/core#historyNote"
+    },
+    "conditionordisease:96d9f06f_1fd9_4457_91ab_72a3b0efa22e": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/96d9f06f_1fd9_4457_91ab_72a3b0efa22e"
+    },
+    "conditionordisease:1d746fde_a80b_45e1_961f_bf0c1d6852f4": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/1d746fde_a80b_45e1_961f_bf0c1d6852f4"
+    },
+    "conditionordisease:b229a38b_5fae_4952_bb36_d59512494dd5": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/b229a38b_5fae_4952_bb36_d59512494dd5"
+    },
+    "conditionordisease:15a4bb3a_8415_4ddd_bdd7_8d313613a1e0": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/15a4bb3a_8415_4ddd_bdd7_8d313613a1e0"
+    },
+    "conditionordisease:3cf6660d_2d03_4102_9932_59200adf9fea": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/3cf6660d_2d03_4102_9932_59200adf9fea"
+    },
+    "conditionordisease:ebe50c0a_5f1c_44b8_a534_8a53ec63f3be": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/ebe50c0a_5f1c_44b8_a534_8a53ec63f3be"
+    },
+    "conditionordisease:139ffbf6_2e12_4ac2_935f_9645c58b42ee": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/139ffbf6_2e12_4ac2_935f_9645c58b42ee"
+    },
+    "conditionordisease:c94ce1b6_755b_4d41_9f82_1ade00dc8fa4": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/c94ce1b6_755b_4d41_9f82_1ade00dc8fa4"
+    },
+    "conditionordisease:ee6882ab_98e9_4c55_9035_1778909a41b8": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/ee6882ab_98e9_4c55_9035_1778909a41b8"
+    },
+    "conditionordisease:d8f580b2_71ad_48e9_a32c_fe117037053f": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/d8f580b2_71ad_48e9_a32c_fe117037053f"
+    },
+    "conditionordisease:ab643f08_8e44_4f67_baa6_6bb9490707e5": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/ab643f08_8e44_4f67_baa6_6bb9490707e5"
+    },
+    "conditionordisease:9cfad844_8753_44c5_aef8_7f19bb8086f6": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/9cfad844_8753_44c5_aef8_7f19bb8086f6"
+    },
+    "conditionordisease:75dd3a5f_ca93_48c8_9191_04757be47737": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/75dd3a5f_ca93_48c8_9191_04757be47737"
+    },
+    "conditionordisease:notation": {
+      "@id": "http://www.w3.org/2004/02/skos/core#notation"
+    },
+    "conditionordisease:c229a916_5d05_4c83_a8af_a580ee4620e5": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/c229a916_5d05_4c83_a8af_a580ee4620e5"
+    },
+    "conditionordisease:cd63a393_facd_49c1_8ee4_02bfc8d68aeb": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/cd63a393_facd_49c1_8ee4_02bfc8d68aeb"
+    },
+    "conditionordisease:7ece1bfb_eb11_4f8d_9cfe_5d251aee7f0c": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/7ece1bfb_eb11_4f8d_9cfe_5d251aee7f0c"
+    },
+    "conditionordisease:52be11c9_5309_4dd6_9b23_f9b1b370d48a": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/52be11c9_5309_4dd6_9b23_f9b1b370d48a"
+    },
+    "conditionordisease:ccebc6dc_4125_4296_bbe7_18268131101b": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/ccebc6dc_4125_4296_bbe7_18268131101b"
+    },
+    "conditionordisease:altLabel": {
+      "@id": "http://www.w3.org/2004/02/skos/core#altLabel"
+    },
+    "conditionordisease:928e287f_40fa_4fc6_8b2e_89dff1809c79": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/928e287f_40fa_4fc6_8b2e_89dff1809c79"
+    },
+    "conditionordisease:81e8b368_6052_47d7_b23b_8b9930bb5996": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/81e8b368_6052_47d7_b23b_8b9930bb5996"
+    },
+    "conditionordisease:ca4058f9_c1be_42ec_a9ab_708383a4027b": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/ca4058f9_c1be_42ec_a9ab_708383a4027b"
+    },
+    "conditionordisease:47aec5a1_8719_4a68_abb6_67f08a68dbc9": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/47aec5a1_8719_4a68_abb6_67f08a68dbc9"
+    },
+    "conditionordisease:e7ae1489_efd5_4dc1_8662_b7861dff4152": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/e7ae1489_efd5_4dc1_8662_b7861dff4152"
+    },
+    "conditionordisease:62c1fa4b_7663_4ec9_adc9_e69a591b56d5": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/62c1fa4b_7663_4ec9_adc9_e69a591b56d5"
+    },
+    "conditionordisease:8189e6da_5a19_4401_9bac_87b2d6845039": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/8189e6da_5a19_4401_9bac_87b2d6845039"
+    },
+    "conditionordisease:3c65672b_a974_48ee_9bfd_b2c087f971f1": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/3c65672b_a974_48ee_9bfd_b2c087f971f1"
+    },
+    "conditionordisease:84fe1ba3_0b82_47df_a248_e979e2e8660c": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/84fe1ba3_0b82_47df_a248_e979e2e8660c"
+    },
+    "conditionordisease:8be90806_3177_4f64_9ca2_2c37ccbf35fb": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/8be90806_3177_4f64_9ca2_2c37ccbf35fb"
+    },
+    "conditionordisease:17bf330b_c61c_4b1b_8ed8_af4a3d9c36f7": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/17bf330b_c61c_4b1b_8ed8_af4a3d9c36f7"
+    },
+    "conditionordisease:dadadec0_1eae_4304_a223_287d3befd237": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/dadadec0_1eae_4304_a223_287d3befd237"
+    },
+    "conditionordisease:d31dc523_a202_4939_ac1a_c6e46d71deb8": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/d31dc523_a202_4939_ac1a_c6e46d71deb8"
+    },
+    "conditionordisease:member": {
+      "@id": "http://www.w3.org/2004/02/skos/core#member",
+      "@type": "@id"
+    },
+    "conditionordisease:9693494b_ad16_4d8a_846c_1da9a7474f47": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/9693494b_ad16_4d8a_846c_1da9a7474f47"
+    },
+    "conditionordisease:713c35ab_1348_4328_a9e5_fa5fdb3c5548": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/713c35ab_1348_4328_a9e5_fa5fdb3c5548"
+    },
+    "conditionordisease:f8143836_5188_455d_9b03_9f055d4450b3": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/f8143836_5188_455d_9b03_9f055d4450b3"
+    },
+    "conditionordisease:8dfea302_087e_41e1_8bfc_7d9505464c66": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/8dfea302_087e_41e1_8bfc_7d9505464c66"
+    },
+    "conditionordisease:247c074b_8be2_4c14_93a8_7136111bae9b": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/247c074b_8be2_4c14_93a8_7136111bae9b"
+    },
+    "conditionordisease:scopeNote": {
+      "@id": "http://www.w3.org/2004/02/skos/core#scopeNote"
+    },
+    "conditionordisease:5cf20ea3_998c_48ad_899e_24b4025f61b1": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/5cf20ea3_998c_48ad_899e_24b4025f61b1"
+    },
+    "conditionordisease:f5145ff4_e67b_43db_9fee_171a30679cb7": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/f5145ff4_e67b_43db_9fee_171a30679cb7"
+    },
+    "conditionordisease:861e8f3d_aabd_4060_b43d_5d491ab6b33d": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/861e8f3d_aabd_4060_b43d_5d491ab6b33d"
+    },
+    "conditionordisease:89198dbb_ce0c_4c0b_b5ef_7af9a2c90d37": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/89198dbb_ce0c_4c0b_b5ef_7af9a2c90d37"
+    },
+    "conditionordisease:48ac8821_3609_4a98_a363_0c4c70f34bd0": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/48ac8821_3609_4a98_a363_0c4c70f34bd0"
+    },
+    "conditionordisease:4c5eb889_5dbe_448c_9fb4_e377eae6fd72": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/4c5eb889_5dbe_448c_9fb4_e377eae6fd72"
+    },
+    "conditionordisease:9784cb2d_bbc4_4c81_82f3_c68c37d722d4": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/9784cb2d_bbc4_4c81_82f3_c68c37d722d4"
+    },
+    "conditionordisease:00417a67_624c_41b0_9a73_a1216a30ae9c": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/00417a67_624c_41b0_9a73_a1216a30ae9c"
+    },
+    "conditionordisease:87aa1b5b_b5ea_4dd5_8775_e474f28d1107": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/87aa1b5b_b5ea_4dd5_8775_e474f28d1107"
+    },
+    "conditionordisease:ae78a9e1_6de1_4764_9b28_0df2757c0e2c": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/ae78a9e1_6de1_4764_9b28_0df2757c0e2c"
+    },
+    "conditionordisease:ConceptScheme": {
+      "@id": "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+    },
+    "conditionordisease:6c9232db_90aa_4818_b300_ffe7374595a7": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/6c9232db_90aa_4818_b300_ffe7374595a7"
+    },
+    "conditionordisease:97c45442_02c2_456f_98fe_5ef1c8f0d93c": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/97c45442_02c2_456f_98fe_5ef1c8f0d93c"
+    },
+    "conditionordisease:5cdb3afc_0de1_4b12_878f_419019e8f8d7": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/5cdb3afc_0de1_4b12_878f_419019e8f8d7"
+    },
+    "conditionordisease:0e0d828f_31f3_4bef_9a4e_3ba8de1103df": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/0e0d828f_31f3_4bef_9a4e_3ba8de1103df"
+    },
+    "conditionordisease:14d4c5bc_d705_4998_9520_15a98c5b274c": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/14d4c5bc_d705_4998_9520_15a98c5b274c"
+    },
+    "conditionordisease:f81a8047_2087_4ee4_b8fd_f7805de469eb": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/f81a8047_2087_4ee4_b8fd_f7805de469eb"
+    },
+    "conditionordisease:53704b22_a8f8_4778_a600_7460298db83d": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/53704b22_a8f8_4778_a600_7460298db83d"
+    },
+    "conditionordisease:cf53c306_7b18_4ee5_a11d_9d6b528e9fd5": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/cf53c306_7b18_4ee5_a11d_9d6b528e9fd5"
+    },
+    "conditionordisease:95cc22a4_8cc9_4568_a573_72077df57045": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/95cc22a4_8cc9_4568_a573_72077df57045"
+    },
+    "conditionordisease:seeAlso": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    "conditionordisease:definition": {
+      "@id": "http://www.w3.org/2004/02/skos/core#definition"
+    },
+    "conditionordisease:7d7fdd1e_056d_4f9c_bb87_004838462b5e": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/7d7fdd1e_056d_4f9c_bb87_004838462b5e"
+    },
+    "conditionordisease:b7c7910f_d324_43c0_8dda_ae36052090cc": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/b7c7910f_d324_43c0_8dda_ae36052090cc"
+    },
+    "conditionordisease:c47ec94f_15e3_4bcc_8f31_7b631d3d321b": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/c47ec94f_15e3_4bcc_8f31_7b631d3d321b"
+    },
+    "conditionordisease:14abd949_ba13_4814_9033_5ee0a81d7726": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/14abd949_ba13_4814_9033_5ee0a81d7726"
+    },
+    "conditionordisease:2e6d1a2b_f9f4_4183_9a92_0aaf824a7d54": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/2e6d1a2b_f9f4_4183_9a92_0aaf824a7d54"
+    },
+    "conditionordisease:30584955_d754_4f25_ad95_b3c891bad1bd": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/30584955_d754_4f25_ad95_b3c891bad1bd"
+    },
+    "conditionordisease:83bb589d_0f9d_471e_b343_768eb719bb73": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/83bb589d_0f9d_471e_b343_768eb719bb73"
+    },
+    "conditionordisease:2a0cdfb6_4fd2_4acd_9ffe_eff1e62a8e6e": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/2a0cdfb6_4fd2_4acd_9ffe_eff1e62a8e6e"
+    },
+    "conditionordisease:3245dd99_93cf_4ca4_8809_09b6a53b9bd7": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/3245dd99_93cf_4ca4_8809_09b6a53b9bd7"
+    },
+    "conditionordisease:423beafb_86ba_4f64_9b1f_4732444316e7": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/423beafb_86ba_4f64_9b1f_4732444316e7"
+    },
+    "conditionordisease:43682612_0209_42f9_a3d4_0922eecd3c62": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/43682612_0209_42f9_a3d4_0922eecd3c62"
+    },
+    "conditionordisease:d49f3ec4_5982_46fa_8205_7cd95af9377d": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/d49f3ec4_5982_46fa_8205_7cd95af9377d"
+    },
+    "conditionordisease:relatedMatch": {
+      "@id": "http://www.w3.org/2004/02/skos/core#relatedMatch",
+      "@type": "@id"
+    },
+    "conditionordisease:b2260dae_c2bc_40e0_85bb_2b4bc1fa500d": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/b2260dae_c2bc_40e0_85bb_2b4bc1fa500d"
+    },
+    "conditionordisease:e5fb1ffb_ba9f_416b_843a_4c72fcd18dd6": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/e5fb1ffb_ba9f_416b_843a_4c72fcd18dd6"
+    },
+    "conditionordisease:22ce125a_03e9_480b_9eed_751b48db0709": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/22ce125a_03e9_480b_9eed_751b48db0709"
+    },
+    "conditionordisease:1944e6c7_8cb2_4aa3_8448_7c4544248f66": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/1944e6c7_8cb2_4aa3_8448_7c4544248f66"
+    },
+    "conditionordisease:broader": {
+      "@id": "http://www.w3.org/2004/02/skos/core#broader",
+      "@type": "@id"
+    },
+    "conditionordisease:b0330a3c_a570_4a96_ac9f_8ef57524b1c2": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/b0330a3c_a570_4a96_ac9f_8ef57524b1c2"
+    },
+    "conditionordisease:b57c66c4_c4d5_4cb2_8b74_223997773a74": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/b57c66c4_c4d5_4cb2_8b74_223997773a74"
+    },
+    "conditionordisease:f0f0dedf_768f_4ae4_85ff_2fcb9c21a443": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/f0f0dedf_768f_4ae4_85ff_2fcb9c21a443"
+    },
+    "conditionordisease:3475dbff_21f2_42f3_8cf2_105cf4e9c1e4": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/3475dbff_21f2_42f3_8cf2_105cf4e9c1e4"
+    },
+    "conditionordisease:6aace69b_8261_452b_a14a_d9dce8c98c5f": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/6aace69b_8261_452b_a14a_d9dce8c98c5f"
+    },
+    "conditionordisease:0fff667a_b1ce_402c_a9d1_0186e470cd59": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/0fff667a_b1ce_402c_a9d1_0186e470cd59"
+    },
+    "conditionordisease:ad42fb28_cebe_4488_93b9_d777b0b8789b": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/ad42fb28_cebe_4488_93b9_d777b0b8789b"
+    },
+    "conditionordisease:6c8164a4_275d_43e0_8c8e_a015b80d56dc": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/6c8164a4_275d_43e0_8c8e_a015b80d56dc"
+    },
+    "conditionordisease:8213f9aa_5c59_4d25_aae6_b69e85282fdf": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/8213f9aa_5c59_4d25_aae6_b69e85282fdf"
+    },
+    "conditionordisease:f415a82a_d85c_435b_99a1_238cec96c709": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/f415a82a_d85c_435b_99a1_238cec96c709"
+    },
+    "conditionordisease:c3772be3_aa8a_4f5f_bb9c_1aaced2a3899": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/c3772be3_aa8a_4f5f_bb9c_1aaced2a3899"
+    },
+    "conditionordisease:6e49b2b8_936a_4ff4_9642_4bfdba73107f": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/6e49b2b8_936a_4ff4_9642_4bfdba73107f"
+    },
+    "conditionordisease:71b7adfa_0cb3_4785_a223_aff842152241": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/71b7adfa_0cb3_4785_a223_aff842152241"
+    },
+    "conditionordisease:0d129c1e_e997_4c7b_a43e_932e2c790f3c": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/0d129c1e_e997_4c7b_a43e_932e2c790f3c"
+    },
+    "conditionordisease:9e2120c2_223a_49bd_adc8_b0597e2da9ec": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/9e2120c2_223a_49bd_adc8_b0597e2da9ec"
+    },
+    "conditionordisease:80f6f51c_fbc7_4e2d_a021_824bf2a16d5a": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/80f6f51c_fbc7_4e2d_a021_824bf2a16d5a"
+    },
+    "conditionordisease:ddc0ac67_504f_4c6c_b053_178e6bd0b535": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/ddc0ac67_504f_4c6c_b053_178e6bd0b535"
+    },
+    "conditionordisease:8352d81b_a47d_43e1_b06f_aa7c44e73eb4": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/8352d81b_a47d_43e1_b06f_aa7c44e73eb4"
+    },
+    "conditionordisease:12ec7c89_7393_43c3_ab96_123c22e41a69": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/12ec7c89_7393_43c3_ab96_123c22e41a69"
+    },
+    "conditionordisease:031bc6e6_e8a9_4e81_94a5_bfed953943f8": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/031bc6e6_e8a9_4e81_94a5_bfed953943f8"
+    },
+    "conditionordisease:fe3cf820_e393_4d61_a462_b9cf95ac5915": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/fe3cf820_e393_4d61_a462_b9cf95ac5915"
+    },
+    "conditionordisease:cbe8d088_6e19_45ea_9bc8_5a3a62a841fc": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/cbe8d088_6e19_45ea_9bc8_5a3a62a841fc"
+    },
+    "conditionordisease:5811b929_0522_4583_bca6_258a3c9c7328": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/5811b929_0522_4583_bca6_258a3c9c7328"
+    },
+    "conditionordisease:181960d3_70de_4d17_9b72_8d022c46e512": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/181960d3_70de_4d17_9b72_8d022c46e512"
+    },
+    "conditionordisease:572d46bf_492e_4012_ac4a_d558938d611c": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/572d46bf_492e_4012_ac4a_d558938d611c"
+    },
+    "conditionordisease:f7f1d8de_1a0c_43d7_81a3_69460c467bfe": {
+      "@id": "https://nice.org.uk/ontologies/conditionordisease/f7f1d8de_1a0c_43d7_81a3_69460c467bfe"
+    }
+  }
+}

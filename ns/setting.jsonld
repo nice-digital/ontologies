@@ -1,0 +1,165 @@
+{
+  "@context": {
+    "setting:changeNote": {
+      "@id": "http://www.w3.org/2004/02/skos/core#changeNote"
+    },
+    "setting:definition": {
+      "@id": "http://www.w3.org/2004/02/skos/core#definition"
+    },
+    "setting:6369f927_a7b7_42ba_bf68_39482e32d7ab": {
+      "@id": "https://nice.org.uk/ontologies/setting/6369f927_a7b7_42ba_bf68_39482e32d7ab"
+    },
+    "setting:80c545e4_a13c_4373_a530_18f0239ce548": {
+      "@id": "https://nice.org.uk/ontologies/setting/80c545e4_a13c_4373_a530_18f0239ce548"
+    },
+    "setting:narrower": {
+      "@id": "http://www.w3.org/2004/02/skos/core#narrower",
+      "@type": "@id"
+    },
+    "setting:memberList": {
+      "@id": "http://www.w3.org/2004/02/skos/core#memberList",
+      "@type": "@id"
+    },
+    "setting:broaderTransitive": {
+      "@id": "http://www.w3.org/2004/02/skos/core#broaderTransitive",
+      "@type": "@id"
+    },
+    "setting:narrowMatch": {
+      "@id": "http://www.w3.org/2004/02/skos/core#narrowMatch",
+      "@type": "@id"
+    },
+    "setting:16764614_b99f_401e_b95c_d9721dd20825": {
+      "@id": "https://nice.org.uk/ontologies/setting/16764614_b99f_401e_b95c_d9721dd20825"
+    },
+    "setting:description": {
+      "@id": "http://purl.org/dc/terms/description"
+    },
+    "setting:scopeNote": {
+      "@id": "http://www.w3.org/2004/02/skos/core#scopeNote"
+    },
+    "setting:creator": {
+      "@id": "http://purl.org/dc/terms/creator"
+    },
+    "setting:mappingRelation": {
+      "@id": "http://www.w3.org/2004/02/skos/core#mappingRelation",
+      "@type": "@id"
+    },
+    "setting:inScheme": {
+      "@id": "http://www.w3.org/2004/02/skos/core#inScheme",
+      "@type": "@id"
+    },
+    "setting:broader": {
+      "@id": "http://www.w3.org/2004/02/skos/core#broader",
+      "@type": "@id"
+    },
+    "setting:Collection": {
+      "@id": "http://www.w3.org/2004/02/skos/core#Collection"
+    },
+    "setting:notation": {
+      "@id": "http://www.w3.org/2004/02/skos/core#notation"
+    },
+    "setting:title": {
+      "@id": "http://purl.org/dc/terms/title"
+    },
+    "setting:f023a36e_2b46_40ae_b775_241126ab76bd": {
+      "@id": "https://nice.org.uk/ontologies/setting/f023a36e_2b46_40ae_b775_241126ab76bd"
+    },
+    "setting:OrderedCollection": {
+      "@id": "http://www.w3.org/2004/02/skos/core#OrderedCollection"
+    },
+    "setting:topConceptOf": {
+      "@id": "http://www.w3.org/2004/02/skos/core#topConceptOf",
+      "@type": "@id"
+    },
+    "setting:relatedMatch": {
+      "@id": "http://www.w3.org/2004/02/skos/core#relatedMatch",
+      "@type": "@id"
+    },
+    "setting:seeAlso": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    "setting:altLabel": {
+      "@id": "http://www.w3.org/2004/02/skos/core#altLabel"
+    },
+    "setting:Concept": {
+      "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    "setting:exactMatch": {
+      "@id": "http://www.w3.org/2004/02/skos/core#exactMatch",
+      "@type": "@id"
+    },
+    "setting:closeMatch": {
+      "@id": "http://www.w3.org/2004/02/skos/core#closeMatch",
+      "@type": "@id"
+    },
+    "setting:ad41399f_826e_427f_840a_2cb36ee22d92": {
+      "@id": "https://nice.org.uk/ontologies/setting/ad41399f_826e_427f_840a_2cb36ee22d92"
+    },
+    "setting:isDefinedBy": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "setting:contributor": {
+      "@id": "http://purl.org/dc/terms/contributor"
+    },
+    "setting:e517e9af_3c12_4f8b_a320_9323dfdf2510": {
+      "@id": "https://nice.org.uk/ontologies/setting/e517e9af_3c12_4f8b_a320_9323dfdf2510"
+    },
+    "setting:narrowerTransitive": {
+      "@id": "http://www.w3.org/2004/02/skos/core#narrowerTransitive",
+      "@type": "@id"
+    },
+    "setting:List": {
+      "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#List"
+    },
+    "setting:broadMatch": {
+      "@id": "http://www.w3.org/2004/02/skos/core#broadMatch",
+      "@type": "@id"
+    },
+    "setting:hiddenLabel": {
+      "@id": "http://www.w3.org/2004/02/skos/core#hiddenLabel"
+    },
+    "setting:ConceptScheme": {
+      "@id": "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+    },
+    "setting:historyNote": {
+      "@id": "http://www.w3.org/2004/02/skos/core#historyNote"
+    },
+    "setting:6f40063c_702a_4101_ab21_516b74a38519": {
+      "@id": "https://nice.org.uk/ontologies/setting/6f40063c_702a_4101_ab21_516b74a38519"
+    },
+    "setting:prefLabel": {
+      "@id": "http://www.w3.org/2004/02/skos/core#prefLabel"
+    },
+    "setting:editorialNote": {
+      "@id": "http://www.w3.org/2004/02/skos/core#editorialNote"
+    },
+    "setting:label": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "setting:semanticRelation": {
+      "@id": "http://www.w3.org/2004/02/skos/core#semanticRelation",
+      "@type": "@id"
+    },
+    "setting:member": {
+      "@id": "http://www.w3.org/2004/02/skos/core#member",
+      "@type": "@id"
+    },
+    "setting:comment": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "setting:example": {
+      "@id": "http://www.w3.org/2004/02/skos/core#example"
+    },
+    "setting:hasTopConcept": {
+      "@id": "http://www.w3.org/2004/02/skos/core#hasTopConcept",
+      "@type": "@id"
+    },
+    "setting:note": {
+      "@id": "http://www.w3.org/2004/02/skos/core#note"
+    },
+    "setting:related": {
+      "@id": "http://www.w3.org/2004/02/skos/core#related",
+      "@type": "@id"
+    }
+  }
+}

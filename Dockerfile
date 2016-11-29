@@ -5,10 +5,6 @@ MAINTAINER Ryan Roberts <ryansroberts@gmail.com>
 RUN mkdir /ontologies
 ADD . /ontologies/
 
-# Get tools from submodules and generate json.ld files from ttl
-RUN cd /ontologies && \
-    ./build.sh
-
 # Install Nginx.
 RUN apk add --update nginx && rm -rf /var/cache/apk/*
 
