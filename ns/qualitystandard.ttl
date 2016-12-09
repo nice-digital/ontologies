@@ -6,7 +6,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 <https://nice.org.uk/ontologies/qualitystandard> a owl:Ontology ;
-	owl:imports <http://www.w3.org/2004/02/skos/core> .
+	owl:imports <https://nice.org.uk/ontologies/factorsaffectinghealthorwellbeing> , <https://nice.org.uk/ontologies/servicearea> , <https://nice.org.uk/ontologies/setting> , <https://nice.org.uk/ontologies/agegroup> , <https://nice.org.uk/ontologies/conditionordisease> , <http://www.w3.org/2004/02/skos/core> .
 # 
 # 
 # #################################################################
@@ -36,10 +36,20 @@ xsd:date a rdfs:Datatype .
 	rdfs:label "is replaced by"@en ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "is replaced by"@en .
 # 
+# https://nice.org.uk/ontologies/qualitystandard/dd8a6070_a2ed_4721_9f5b_3d3e403bdff7
+
+:dd8a6070_a2ed_4721_9f5b_3d3e403bdff7 a owl:ObjectProperty ;
+	rdfs:subPropertyOf :2a41e426_8990_4c18_a4f3_7f82e42e3d3c ;
+	owl:inverseOf :28f5d3d4_a8b3_4429_873f_8698b443c99f ;
+	rdfs:domain :e29accb1_afde_4130_bb06_2d2c7bf990db ;
+	rdfs:range :e29accb1_afde_4130_bb06_2d2c7bf990db ;
+	rdfs:label "quality statement replaces quality statement"@en .
+# 
 # https://nice.org.uk/ontologies/qualitystandard/18aa6468_de94_4f9f_bd7a_0075fba942a5
 
 :18aa6468_de94_4f9f_bd7a_0075fba942a5 a owl:ObjectProperty ;
 	rdfs:subPropertyOf :693a50d5_304a_4e97_97f3_8f047429ae85 ;
+	rdfs:range <https://nice.org.uk/ontologies/factorsaffectinghealthorwellbeing/ffb060f5_2fc7_4d52_afd6_dd9751a7aa8c> ;
 	rdfs:label "Factors affecting health or wellbeing"@en ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "applies to factor affecting health or wellbeing"@en .
 # 
@@ -49,10 +59,19 @@ xsd:date a rdfs:Datatype .
 	rdfs:label "replaces"@en ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "replaces"@en .
 # 
+# https://nice.org.uk/ontologies/qualitystandard/28f5d3d4_a8b3_4429_873f_8698b443c99f
+
+:28f5d3d4_a8b3_4429_873f_8698b443c99f a owl:ObjectProperty ;
+	rdfs:subPropertyOf :d828e6c0_40e0_4699_9ec2_d7accf601bc8 ;
+	rdfs:domain :e29accb1_afde_4130_bb06_2d2c7bf990db ;
+	rdfs:range :e29accb1_afde_4130_bb06_2d2c7bf990db ;
+	rdfs:label "quality statement is replaced by quality statement"@en .
+# 
 # https://nice.org.uk/ontologies/qualitystandard/28745bc0_6538_46ee_8b71_f0cf107563d9
 
 :28745bc0_6538_46ee_8b71_f0cf107563d9 a owl:ObjectProperty ;
 	rdfs:subPropertyOf :693a50d5_304a_4e97_97f3_8f047429ae85 ;
+	rdfs:range <https://nice.org.uk/ontologies/conditionordisease/3a3ca279_ad11_4382_abf4_93435b33113f> ;
 	rdfs:label "Condition or disease"@en ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "applies to condition or disease"@en .
 # 
@@ -60,6 +79,7 @@ xsd:date a rdfs:Datatype .
 
 :4e7a368e_eae6_411a_8167_97127b490f99 a owl:ObjectProperty ;
 	rdfs:subPropertyOf :693a50d5_304a_4e97_97f3_8f047429ae85 ;
+	rdfs:range <https://nice.org.uk/ontologies/agegroup/011cdd3d_2911_4676_93b4_5af484c359c0> ;
 	rdfs:label "Age group"@en ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "applies to age group"@en .
 # 
@@ -67,6 +87,7 @@ xsd:date a rdfs:Datatype .
 
 :62496684_7027_4f37_bd0e_264c9ff727fd a owl:ObjectProperty ;
 	rdfs:subPropertyOf :693a50d5_304a_4e97_97f3_8f047429ae85 ;
+	rdfs:range <https://nice.org.uk/ontologies/setting/6f40063c_702a_4101_ab21_516b74a38519> ;
 	rdfs:label "Setting"@en ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "applies to setting"@en .
 # 
@@ -80,6 +101,7 @@ xsd:date a rdfs:Datatype .
 
 :7ae8413a_2811_4a09_a655_eff8d276ec87 a owl:ObjectProperty ;
 	rdfs:subPropertyOf :693a50d5_304a_4e97_97f3_8f047429ae85 ;
+	rdfs:range <https://nice.org.uk/ontologies/servicearea/d3244a53_4e38_4b6e_a694_dc6122259f97> ;
 	rdfs:label "Service area"@en ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "applies to service area"@en .
 # 
