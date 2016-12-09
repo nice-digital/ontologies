@@ -33,7 +33,7 @@ xsd:date a rdfs:Datatype .
 
 :d828e6c0_40e0_4699_9ec2_d7accf601bc8 a owl:ObjectProperty ;
 	owl:inverseOf :2a41e426_8990_4c18_a4f3_7f82e42e3d3c ;
-	rdfs:label "is replaced by"@en ;
+	rdfs:label "Replaced by"@en ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "is replaced by"@en .
 # 
 # https://nice.org.uk/ontologies/qualitystandard/dd8a6070_a2ed_4721_9f5b_3d3e403bdff7
@@ -43,7 +43,9 @@ xsd:date a rdfs:Datatype .
 	owl:inverseOf :28f5d3d4_a8b3_4429_873f_8698b443c99f ;
 	rdfs:domain :e29accb1_afde_4130_bb06_2d2c7bf990db ;
 	rdfs:range :e29accb1_afde_4130_bb06_2d2c7bf990db ;
-	rdfs:label "quality statement replaces quality statement"@en .
+	rdfs:comment "quality statement replaces quality statement"@en ;
+	rdfs:label "Replaces statement"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "quality statement replaces quality statement"@en .
 # 
 # https://nice.org.uk/ontologies/qualitystandard/18aa6468_de94_4f9f_bd7a_0075fba942a5
 
@@ -56,7 +58,7 @@ xsd:date a rdfs:Datatype .
 # https://nice.org.uk/ontologies/qualitystandard/2a41e426_8990_4c18_a4f3_7f82e42e3d3c
 
 :2a41e426_8990_4c18_a4f3_7f82e42e3d3c a owl:ObjectProperty ;
-	rdfs:label "replaces"@en ;
+	rdfs:label "Replaces"@en ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "replaces"@en .
 # 
 # https://nice.org.uk/ontologies/qualitystandard/28f5d3d4_a8b3_4429_873f_8698b443c99f
@@ -65,7 +67,9 @@ xsd:date a rdfs:Datatype .
 	rdfs:subPropertyOf :d828e6c0_40e0_4699_9ec2_d7accf601bc8 ;
 	rdfs:domain :e29accb1_afde_4130_bb06_2d2c7bf990db ;
 	rdfs:range :e29accb1_afde_4130_bb06_2d2c7bf990db ;
-	rdfs:label "quality statement is replaced by quality statement"@en .
+	rdfs:comment "quality statement is replaced by quality statement"@en ;
+	rdfs:label "Replaced by statement"@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "quality statement is replaced by quality statement"@en .
 # 
 # https://nice.org.uk/ontologies/qualitystandard/28745bc0_6538_46ee_8b71_f0cf107563d9
 
