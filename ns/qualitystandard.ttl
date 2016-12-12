@@ -44,7 +44,7 @@ xsd:date a rdfs:Datatype .
 	rdfs:domain :e29accb1_afde_4130_bb06_2d2c7bf990db ;
 	rdfs:range :e29accb1_afde_4130_bb06_2d2c7bf990db ;
 	rdfs:comment "quality statement replaces quality statement"@en ;
-	rdfs:label "Replaces statement"@en ;
+	rdfs:label "Replaces quality statement"@en ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "quality statement replaces quality statement"@en .
 # 
 # https://nice.org.uk/ontologies/qualitystandard/18aa6468_de94_4f9f_bd7a_0075fba942a5
@@ -68,7 +68,7 @@ xsd:date a rdfs:Datatype .
 	rdfs:domain :e29accb1_afde_4130_bb06_2d2c7bf990db ;
 	rdfs:range :e29accb1_afde_4130_bb06_2d2c7bf990db ;
 	rdfs:comment "quality statement is replaced by quality statement"@en ;
-	rdfs:label "Replaced by statement"@en ;
+	rdfs:label "Replaced by quality statement"@en ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "quality statement is replaced by quality statement"@en .
 # 
 # https://nice.org.uk/ontologies/qualitystandard/28745bc0_6538_46ee_8b71_f0cf107563d9
