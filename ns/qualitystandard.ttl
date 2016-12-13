@@ -20,6 +20,19 @@
 
 xsd:date a rdfs:Datatype .
 # 
+# https://nice.org.uk/ontologies/qualitystandard/c36ab742_fb14_42b0_9455_1a996bc47b81
+
+:c36ab742_fb14_42b0_9455_1a996bc47b81 a rdfs:Datatype ;
+	rdfs:label "positionalIdStringPattern"@en ;
+	<http://www.w3.org/2004/02/skos/core#example> "qs14-st5"@en ;
+	owl:equivalentClass [ rdf:type rdfs:Datatype ;
+						  owl:onDatatype xsd:string ;
+						  owl:withRestrictions ( [ xsd:pattern "^qs[1-9]\\d*-st[1-9]\\d*$"
+							  					 ]
+							  				   )
+						] .
+
+# 
 # 
 # 
 # #################################################################
@@ -203,7 +216,7 @@ xsd:date a rdfs:Datatype .
 # https://nice.org.uk/ontologies/qualitystandard/84efb231_0424_461e_9598_1ef5272a597a
 
 :84efb231_0424_461e_9598_1ef5272a597a a owl:DatatypeProperty ;
-	rdfs:range xsd:string ;
+	rdfs:range :c36ab742_fb14_42b0_9455_1a996bc47b81 ;
 	rdfs:label "PositionalId"@en ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "has positional ID"@en .
 # 
@@ -225,51 +238,51 @@ xsd:date a rdfs:Datatype .
 # https://nice.org.uk/ontologies/qualitystandard/e29accb1_afde_4130_bb06_2d2c7bf990db
 
 :e29accb1_afde_4130_bb06_2d2c7bf990db a owl:Class ;
-	rdfs:subClassOf _:genid1 .
-
-_:genid1 a owl:Restriction ;
-	owl:onProperty :bc8e0db0_5d8a_4100_98f6_774ac0eb1758 ;
-	owl:someValuesFrom xsd:string .
-
-:e29accb1_afde_4130_bb06_2d2c7bf990db rdfs:subClassOf _:genid2 .
-
-_:genid2 a owl:Restriction ;
-	owl:onProperty :c2cb17d6_238e_437d_af64_1b6f1003bc36 ;
-	owl:someValuesFrom xsd:boolean .
-
-:e29accb1_afde_4130_bb06_2d2c7bf990db rdfs:subClassOf _:genid3 .
-
-_:genid3 a owl:Restriction ;
-	owl:onProperty :e2e723f0_bcb2_4497_8118_11d5469b8d10 ;
-	owl:someValuesFrom xsd:string .
-
-:e29accb1_afde_4130_bb06_2d2c7bf990db rdfs:subClassOf _:genid4 .
-
-_:genid4 a owl:Restriction ;
-	owl:onProperty :0886da59_2c5f_4124_9f46_6be4537a4099 ;
-	owl:someValuesFrom xsd:date .
-
-:e29accb1_afde_4130_bb06_2d2c7bf990db rdfs:subClassOf _:genid5 .
+	rdfs:subClassOf _:genid5 .
 
 _:genid5 a owl:Restriction ;
-	owl:onProperty :1efaaa6a_c81a_4bd6_b598_c626b21c71fd ;
+	owl:onProperty :bc8e0db0_5d8a_4100_98f6_774ac0eb1758 ;
 	owl:someValuesFrom xsd:string .
 
 :e29accb1_afde_4130_bb06_2d2c7bf990db rdfs:subClassOf _:genid6 .
 
 _:genid6 a owl:Restriction ;
-	owl:onProperty :3ff270e4_655a_4884_b186_e033f58759de ;
-	owl:someValuesFrom xsd:integer .
+	owl:onProperty :c2cb17d6_238e_437d_af64_1b6f1003bc36 ;
+	owl:someValuesFrom xsd:boolean .
 
 :e29accb1_afde_4130_bb06_2d2c7bf990db rdfs:subClassOf _:genid7 .
 
 _:genid7 a owl:Restriction ;
-	owl:onProperty :84efb231_0424_461e_9598_1ef5272a597a ;
+	owl:onProperty :e2e723f0_bcb2_4497_8118_11d5469b8d10 ;
 	owl:someValuesFrom xsd:string .
 
 :e29accb1_afde_4130_bb06_2d2c7bf990db rdfs:subClassOf _:genid8 .
 
 _:genid8 a owl:Restriction ;
+	owl:onProperty :0886da59_2c5f_4124_9f46_6be4537a4099 ;
+	owl:someValuesFrom xsd:date .
+
+:e29accb1_afde_4130_bb06_2d2c7bf990db rdfs:subClassOf _:genid9 .
+
+_:genid9 a owl:Restriction ;
+	owl:onProperty :1efaaa6a_c81a_4bd6_b598_c626b21c71fd ;
+	owl:someValuesFrom xsd:string .
+
+:e29accb1_afde_4130_bb06_2d2c7bf990db rdfs:subClassOf _:genid10 .
+
+_:genid10 a owl:Restriction ;
+	owl:onProperty :3ff270e4_655a_4884_b186_e033f58759de ;
+	owl:someValuesFrom xsd:integer .
+
+:e29accb1_afde_4130_bb06_2d2c7bf990db rdfs:subClassOf _:genid11 .
+
+_:genid11 a owl:Restriction ;
+	owl:onProperty :84efb231_0424_461e_9598_1ef5272a597a ;
+	owl:someValuesFrom :c36ab742_fb14_42b0_9455_1a996bc47b81 .
+
+:e29accb1_afde_4130_bb06_2d2c7bf990db rdfs:subClassOf _:genid12 .
+
+_:genid12 a owl:Restriction ;
 	owl:onProperty :9fcb3758_a4d3_49d7_ab10_6591243caa67 ;
 	owl:someValuesFrom xsd:integer .
 
