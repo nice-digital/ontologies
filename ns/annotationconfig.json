@@ -12,6 +12,12 @@
           "pattern": "^qs[1-9]\\d*-st[1-9]\\d*$"
         }
       },
+      { "description": "// First issued",
+        "property": "0886da59_2c5f_4124_9f46_6be4537a4099",
+        "validation": {
+          "mandatory": true
+        }
+      },
       { "description": "// National priority",
         "property": "c2cb17d6_238e_437d_af64_1b6f1003bc36",
         "validation": {
@@ -26,12 +32,6 @@
             "onproperty": "qualitystandard:c2cb17d6_238e_437d_af64_1b6f1003bc36",
             "value": "no"
           }
-        }
-      },
-      { "description": "// First issued",
-        "property": "0886da59_2c5f_4124_9f46_6be4537a4099",
-        "validation": {
-          "mandatory": true
         }
       },
       { "description": "// withdrawn date",
