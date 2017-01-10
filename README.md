@@ -25,5 +25,3 @@ docker build -t ontologies .
 ```
 docker run --name ontologies -d ontologies 
 ```
-
-This is a test please ignore
